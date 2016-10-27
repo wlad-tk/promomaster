@@ -11,12 +11,12 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loader: "babel",
-                exclude: [/node_modules/, /public/]
+                exclude: /(node_modules|bower_components)/,
+                loader: 'babel'
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader!autoprefixer-loader",
+                loader: "style-loader!css-loader!postcss-loader",
                 exclude: [/node_modules/, /public/]
             },
             {
@@ -36,9 +36,12 @@ module.exports = {
                 loader: "url-loader?limit=26000&mimetype=image/svg+xml"
             },
             {
-                test: /\.jsx$/,
-                loader: "react-hot!babel",
-                exclude: [/node_modules/, /public/]
+                test: /.jsx?$/,
+                exclude: /node_modules/,
+                loader: "babel-loader",
+                query: {
+                    presets:['es2015', 'react']
+                }
             },
             {
                 test: /\.json$/,
@@ -46,4 +49,4 @@ module.exports = {
             }
         ]
     }
-}
+};
