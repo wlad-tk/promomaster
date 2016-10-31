@@ -6,7 +6,12 @@ import App from './App.jsx';
 import AboutPage from './components/AboutPage.jsx';
 import InboxPage from './components/InboxPage.jsx';
 import Message from './components/Message.jsx';
-import Home from './components/Home.jsx';
+
+import FirstBlock from './components/FirstBlock.jsx';
+import Home from './components/content/Home.jsx';
+// import Horeca from './components/content/Horeca.jsx';
+// import Clothes from './components/content/Clothes.jsx';
+// import Decol from './components/content/Decol.jsx';
 
 ReactDOM.render(
     <Router history={hashHistory}>
@@ -17,7 +22,12 @@ ReactDOM.render(
                 <Route path='/inbox/messages/:messageId' component={Message} />
             </Route>
         </Route>
-        <Route path='/home' component={Home}/>
+        <Route path='/fb' component={FirstBlock}>
+            <IndexRoute component={Home}/>
+            {/*<Route path='/fb/horeca' component={Horeca} />
+            <Route path='/fb/clothes' component={Clothes} />
+            <Route path='/fb/decol' component={Decol} />*/}
+        </Route>
     </Router>,
     document.getElementById('mount-point')
 );
