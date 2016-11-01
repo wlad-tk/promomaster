@@ -25,8 +25,8 @@ ReactDOM.render(
         <Route path='/fb' component={FirstBlock}>
             <IndexRoute component={Home}/>
             {/*<Route path='/fb/horeca' component={Horeca} />
-            <Route path='/fb/clothes' component={Clothes} />
-            <Route path='/fb/decol' component={Decol} />*/}
+             <Route path='/fb/clothes' component={Clothes} />
+             <Route path='/fb/decol' component={Decol} />*/}
         </Route>
     </Router>,
     document.getElementById('mount-point')
