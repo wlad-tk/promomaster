@@ -14,14 +14,13 @@
 
 .navigation {
   position: fixed;
-  bottom:0;
-  left:0;
+  bottom: 7em;
   z-index: 70;
   list-style: none;
-  margin: 0 0 9% 4%;
-  padding: 0 0 0 0;
+  padding: 0 4em 0 4em;
   //background: darken(deepskyblue, 15%);
-  width: 92%;
+  left: 1em;
+  right: 1em;
 
   display: -webkit-box;
   display: -moz-box;
@@ -47,22 +46,26 @@
   color: rgba(185,45,33,1.00);
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .navigation {
     justify-content: flex-start;
+    margin: 0 0 0 0;
+    bottom: 0;
   }
 }
 
 @media all and (max-width: 600px) {
   .navigation {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
+    //-webkit-flex-flow: column wrap;
+    //flex-flow: column wrap;
+    margin: 0 0 0 0;
+    bottom: 0;
   }
 
   .navigation a {
     text-align: center;
-    padding: 10px;
+    //padding: 10px;
+    padding: 1.4em 1em 1.4em 1em;
     border-top: 1px solid rgba(255,255,255,0.3);
     border-bottom: 1px solid rgba(0,0,0,0.1);
   }

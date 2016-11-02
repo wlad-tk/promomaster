@@ -1,9 +1,43 @@
 {
+    "ru": {
+        "nav": "",
+        "foo": "",
+        "home": {
+            "section0": {
+              "title": "РЕКЛАМНО - ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ",
+              "body": "Рекламно - производственная компания «ПромоМастер Украина» – один из лидеров рынка рекламно-сувенирной продукции Украины. Мы предлагаем своим клиентам, представителям малого, среднего и крупного бизнеса, только качественные решения для продвижения посредством нанесения логотипов Вашей компании на ЛЮБУЮ плоскую поверхность, будь-то <br>• корпоративная одежда (печать на футболках, бейсболки с логотипом,<br> • форма для официантов, униформа для персонала гостиниц, банков и т.д.)<br> • посуда (кружки с логотипом, печать на тарелках, стаканчики для кофе)<br> • сувенирная продукция (печать на холсте, ручки с логотипом)"
+            },
+            "section1": {},
+            "section2": {},
+            "section3": {}
+        },
+        "horeca": {
+            "section0": {},
+            "section1": {},
+            "section2": {},
+            "section3": {}
+        },
+        "clothes": {
+            "section0": {},
+            "section1": {},
+            "section2": {},
+            "section3": {}
+        },
+        "decol": {
+            "section0": {},
+            "section1": {},
+            "section2": {},
+            "section3": {}
+        }
+    },
     "en": {
         "nav": "",
         "foo": "",
         "home": {
-            "section0": {},
+            "section0": {
+              "title": "ADVERTISING AND PRODUCTION COMNANY",
+              "body": "Advertising & Production Company «PromoMaster Ukraine» is one of the leaders on Ukrainian advertising and souvenir production market. We offer our clients, representatives of small, medium and large businesses, high-quality solutions for the promotion of their brands. We can print logo of your company on any flat surfaces:<br> • Corporate uniform (printing on T-shirts, baseball caps with your logo, uniform for waiters, uniform for hotel staff, banks, etc.)<br> • Tableware (cups with your logo, printing on plates, coffee-glasses)<br> • Souvenir products (prints on canvas, pens with your logo)"
+            },
             "section1": {},
             "section2": {},
             "section3": {}
