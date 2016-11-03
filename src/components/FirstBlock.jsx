@@ -23,7 +23,6 @@ const FirstBlock = React.createClass({
         $('html').hasClass('fp-enabled') ? $.fn.fullpage.destroy('all'): false;
 
         $('#contantpage').fullpage({
-            // anchors: ['fb/firstPage', 'fb/secondPage', '3rdPage', '4thpage', 'lastPage'],
             scrollOverflow: true,
             scrollingSpeed: 1000,
         });

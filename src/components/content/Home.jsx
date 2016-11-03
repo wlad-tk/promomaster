@@ -25,6 +25,8 @@ const Home = React.createClass({
             <div>
                 <Section id='section0'>
                     <div className="container-col">
+                        {/*<div style={{width: "10%", height: "20%"}} onClick={e => this.props.qaz("en")}>Click Me</div>*/}
+
                         <div className="col-1">
                             <img className="logo" src={require('../../img/logo_main.svg')}/>
                         </div>
