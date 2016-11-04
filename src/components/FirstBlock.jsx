@@ -46,7 +46,7 @@ const FirstBlock = React.createClass({
                     )}
                 </ul>
                 <Nav lang={lang} />
-                <div key="contantpage" id='contantpage'>
+                <div id='contantpage'>
                     {React.cloneElement(this.props.children, {lang: lang})}
                 </div>
             </div>
