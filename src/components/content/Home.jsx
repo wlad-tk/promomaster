@@ -13,9 +13,13 @@ const Home = React.createClass({
         lang: React.PropTypes.string
     },
 
-    html(sectionid) {
+    html(sectionid, contant="body" ) {
         let home_translate = languages[this.props.lang].home || {};
-        return {__html: home_translate[sectionid] ? home_translate[sectionid].body : 'Такого элемента нет в массиве!'}
+        return {__html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!'}
+    },
+
+    sectionLink(sectionlinkid) {
+        return $.fn.fullpage.moveTo(sectionlinkid);
     },
 
     render() {
@@ -24,7 +28,7 @@ const Home = React.createClass({
             <div>
                 <Section id='section0'>
                     <div className="container-col">
-                        {/*<div style={{width: "10%", height: "20%"}} onClick={e => this.props.qaz("en")}>Click Me</div>*/}
+                        {/*<div style={{width: "10%", height: "20%"}} onClick={e => $.fn.fullpage.moveTo(4)}>Click Me</div>*/}
                         <div className="col-1">
                             <img className="logo" src={require('../../img/logo_main.svg')}/>
                         </div>
@@ -60,14 +64,11 @@ const Home = React.createClass({
                         <div className="col-1">
                             <img className="logo" src={require('../../img/logofoot.svg')}/>
                         </div>
-                        <div className="col-1" style={{textAlign: "left"}}>
-                            <p>Украина<br/>
-                                69076<br/>
-                                Запорожье<br/>
-                                ул. Жукова, 9</p>
+                        <div className="col-1 left">
+                            <p dangerouslySetInnerHTML={this.html("section4", "title")}/>
                         </div>
                         <div className="col-3">
-                            <p className="textOlso" dangerouslySetInnerHTML={this.html("section4")}/>
+                            <p dangerouslySetInnerHTML={this.html("section4")}/>
                         </div>
                     </div>
                 </Section>

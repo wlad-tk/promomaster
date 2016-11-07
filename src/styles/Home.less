@@ -26,6 +26,81 @@
 #section4 {
   background: url(../img/promo_works_master.jpg) no-repeat center;
   background-size: cover; /* Масштабируем фон */
+
+  .textOlso {
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  .container-col {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4em;
+    margin: -1em;
+    background: rgba(0, 0, 0, 0.8);
+
+    .col-1 {
+      text-align: end;
+      color: white;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .col-3 {
+      flex: 3;
+      color: white;
+    }
+
+    .left {
+      text-align: start;
+    }
+
+  }
+}
+
+body:not(.fp-viewing-0) {
+
+  .navigation-bar {
+    top: 4em;
+    animation: nav-bar-bottom 2s 1;
+  }
+  @keyframes nav-bar-bottom {
+    0% {
+      top: 0;
+    }
+    70% {
+      top: 4em;
+    }
+  }
+
+  .active {
+    .container-col {
+      animation: marginSection 3s 1;
+    }
+    @keyframes marginSection {
+      0% {
+        margin: 0 100% 0 -100%;
+      }
+      70% {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.fp-viewing-0 .navigation-bar {
+  bottom: 7em;
+  top: inherit;
+  animation: nav-bar-top 2s 1;
+
+  @keyframes nav-bar-top {
+    0% {
+      bottom: 0;
+    }
+    70% {
+      bottom: 7em;
+    }
+  }
 }
 
 .logo {
@@ -49,44 +124,8 @@
   margin-top: 100px;
   padding: 30px;
   background: rgba(255,255,255,0.8);
-}
 
-#section4 {
-  .textOlso {
-    margin-top: 0;
-    background: rgba(0, 0, 0, 0);
-  }
-  .container-col {
-    position: fixed;
-    bottom: 0;
-    padding: 4em;
-    margin: -1em;
-    background: rgba(0, 0, 0, 0.8);
-
-    .col-1 {
-      text-align: end;
-      color: white;
-      padding-left: 1em;
-    }
-    .col-3 {
-      flex: 3;
-      color: white;
-    }
-
-  }
-}
-
-.textOlso b {
-  line-height: 30px;
-}
-
-.navigation {
-  top: 4em;
-}
-
-.fp-viewing-0 .navigation {
-  bottom: 7em;
-  top: inherit;
+  b {line-height: 30px;}
 }
 
 @media all and (max-width: 1000px){
@@ -100,6 +139,23 @@
     padding: 0 0 0 0;
   }
 
+  .col-3 {
+    text-align: center;
+  }
+
+  #section4 .container-col {
+    .col-1 {
+      text-align: center;
+    }
+
+    .left {
+      text-align: center;
+    }
+    .logo {
+      padding: 0;
+    }
+  }
+
 }
 
 @media handheld and (orientation: portrait) {
@@ -108,7 +164,6 @@
 
     .textSection0 {
       max-width: none;
-      //padding: 0 0 0 30px;
     }
   }
 }

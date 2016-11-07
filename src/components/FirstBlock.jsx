@@ -23,6 +23,9 @@ const FirstBlock = React.createClass({
         $('html').hasClass('fp-enabled') ? $.fn.fullpage.destroy('all'): false;
 
         $('#contantpage').fullpage({
+            // anchors: ['zero', 'one', 'two', 'three', 'four'],
+            css3: true,
+            navigation: true,
             scrollOverflow: true,
             scrollingSpeed: 1000,
         });

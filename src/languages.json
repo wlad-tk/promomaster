@@ -14,7 +14,11 @@
                 "body": "<b>УМНАЯ ЛОГИСТИКА И ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА</b><br> Наш секрет в отлаженной системе логистики и гибкой ценовой политике, направленной на удовлетворение интересов, как оптовых покупателей, так и розничного потребителя. Мы знаем, как доставить готовую продукцию в целости и сохранности любым удобным для заказчика способом в любую точку Украины. Работаем со всеми транспортными компаниями Украины. Груз может быть доставлен в офис или на склад заказчика по его желанию. Формируя заявку, просто укажите, где и как Вы его хотите получить. <br> <b>ОГРОМНЫЙ ОПЫТ</b><br> У нас очень дружный коллектив, мы как одна семья. И это не просто слова. Люди очень любят свою работу и ответственно к ней относятся. Почему? Потому что работа в рекламно-производственной компании «ПромоМастер Украина» – это не обязанность, а стиль жизни, который разделяют наши сотрудники. Мы предоставляем каждому человеку уникальную возможность для самореализации, творчества и самосовершенствования. Высоко ценим профессионализм и надежность. Вместе трудимся и отдыхаем. Даже такой семейный праздник, как новый год, отмечаем вместе. А это о многом говорит, согласитесь."
             },
             "section3": {
-                "body": "<b>SMART LOGISTICS AND FLEXIBLE PRICE POLICY</b><br> Our secret is well-functioning logistics system and a flexible pricing policy, designed to meet the interests wholesale as well as retail consumers. We know how to deliver final product safe and unharmed in any convenient way for customers to any destination in Ukraine. We work with all transport companies of Ukraine. The freight can be delivered to the office or the warehouse of the customer according to his wish. Shaping the application, you just specify where and how you want to receive your product.<br><b>HUGE EXPERIENCE</b><br> We have a very friendly team, we are like one family. And it's not just words. Our Staff love their work and they are responsible. You can ask: “Why?”. Working in Advertising & Production Company «PromoMaster Ukraine» is not obligation, it is lifestyle, which is shared by all our employees. We provide every member of our team the unique opportunity for self-actualization,  creativity and self-development. We highly value professionalism and reliability. We work and rest together. Even family holiday like New Year we celebrate together. We celebrate together. You can agree that it shows a lot."
+                "body": "<b>МЫ ИСКРЕННЕ ЛЮБИМ СВОИХ КЛИЕНТОВ…</b><br> … и переживаем за них, помогаем решать задачи, даже не связанные с основной сферой деятельности. Наша цель – снять любую головную боль с клиента. Вы доверяете нам, а мы, в свою очередь, делаем всё наилучшим образом.<br> Миссия компании «ПромоМастер Украина» – в совершенно невозможных условиях не бросить своего клиента, а быть рядом с ним, пока в нас отпадет необходимость. У Вас важная презентация, выставка либо какое-то другое деловое мероприятие? Будьте уверены: мы всё сделаем вовремя, наилучшим образом, подвезем готовую продукцию в любое указанное Вами место и поможем всё разместить так, чтобы это было идеально. В этом наше предназначение. Деньги, конечно, важны, но они объективно вторичны. <br><b>НАМ ОЧЕНЬ ВАЖНО ВАШЕ МНЕНИЕ!</b><br> Руководство компании «ПромоМастер Украина» всегда открыто для диалога. Мы всегда готовы выслушать от Вас любые предложения или критические замечания, дорогие наши партнеры и клиенты! Дорожим своей репутацией и стремимся к тому, чтобы наше сотрудничество было максимально комфортным. <br> Давайте сотрудничать! Вы будете довольны результатом."
+            },
+            "section4": {
+                "title": "Украина<br> 69076<br> Запорожье<br> ул. Козака Бабури, 9",
+                "body": "Управляющий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
             }
         },
         "horeca": {
@@ -52,6 +56,10 @@
             },
             "section3": {
                 "body": "<b>WE SINCERELY LOVE OUR CUSTOMERS</b><br> ... and worry about them, help our clients solve problems which sometimes aren’t connected with our main sphere of activities. Our goal is to remove any possible problems and inconveniences our clients can face suffer in Ukrainian business environment. You trust us, and we do our best in turn.<br> Mission of the company «PromoMaster Ukraine» is to stay with the client in any unpredictable conditions, be ready to help until the client needs our support Do you plan an important presentation, exhibition or any business event? Rest assured that we will do all everything in time,  deliver final product to any location of your choice and help to place the products the best possible way. It is our mission. Of course, money is important, but it is of secondary importance honestly.<br> <b>YOUR OPINION AND FEEDBACK ARE IMPORTANT FOR US!</b><br> The management of company «PromoMaster Ukraine» is always open for dialogue. We are always ready to listen any kind of your suggestions or criticisms, our dear partners and customers! We value our reputation and strive to make our cooperation as comfortable as possible.<br> Let's cooperate! You will be pleased with the result."
+            },
+            "section4": {
+                "title": "Ukraine<br> 69076<br> Zaporozhye<br> st.Zhukov, 9",
+                "body": "Керуючий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
             }
         },
         "horeca": {
@@ -80,7 +88,11 @@
             "section0": {},
             "section1": {},
             "section2": {},
-            "section3": {}
+            "section3": {},
+            "section4": {
+                "title": "Україна<br> 69076<br> Запоріжжя<br> ву. Козака Бабури, 9",
+                "body": "Managing partner<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
+            }
         },
         "horeca": {
             "section0": {},
