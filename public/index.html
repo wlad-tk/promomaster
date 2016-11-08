@@ -7,12 +7,21 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>-->
 </head>
 <body>
-    <div id='mount-point'></div>
+    <div id="preload" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); z-index: 1060; opacity: 1; position: fixed; padding-top: 30%;" align="center">
+        <img src="build/image/ajax-loader.gif">
+    </div>
+    <script>
+        const elem = document.getElementById('preload');
+            elem.style.display='block';
+            window.onload = function () {elem.style.display='none';}
+    </script>
+
+    <div id='first'></div>
 
     <script src="jquery.min.js"></script>
     <script type="text/javascript" src="scrolloverflow.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.js"></script>
 
-    <script type="text/javascript" src="build/b.js"></script> <!--b.min.js or b.js-->
+    <script type="text/javascript" src="build/b.min.js"></script> <!--b.min.js or b.js-->
 </body>
 </html>

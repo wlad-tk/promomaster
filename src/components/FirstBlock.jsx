@@ -2,7 +2,10 @@ import React from 'react';
 import _ from 'underscore';
 
 import Nav from './header/nav.jsx';
+
 import '../styles/FirstBlock.less';
+
+// const img = require('../img/ajax-loader.gif');
 
 const SUPPORTED_LANGUAGES = {
     ru: 'RU',
@@ -29,6 +32,13 @@ const FirstBlock = React.createClass({
             scrollOverflow: true,
             scrollingSpeed: 1000,
         });
+
+        // return () => {
+        //     var elem = document.getElementById('preload');
+        //     elem.style.display='block';
+        //     window.onload = () => {elem.style.display='none';}
+        // }
+
     },
 
     changeLang(newLang) {
@@ -40,6 +50,9 @@ const FirstBlock = React.createClass({
 
         return (
             <div>
+                {/*<div id="preload" style={{width: "100%", height: "100%", background: "rgb(255, 255, 255)", zIndex: "1060", display: "none", opacity: "1", position: "fixed", paddingTop : "25%"}}>*/}
+                    {/*<img src={img}/>*/}
+                {/*</div>*/}
                 <ul className="lang">
                     {_.map(SUPPORTED_LANGUAGES, (value, key) =>
                         <li key={key} className={`li ${key === lang ? 'active' : ''}`}

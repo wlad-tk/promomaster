@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 import '../../styles/Nav.less';
 
@@ -12,7 +13,7 @@ const Nav = React.createClass ({
 
         return (
             <ul className="navigation-bar">
-                <li className="home"><a href="#/fb/section0">HOME</a></li>
+                <li className="home"><Link to='/'>HOME</Link></li>
                 <li className="blockimage"><a/></li>
                 <li className="olso"><a href="#/fb/section1">HOERECA</a></li>
                 <li className="olso"><a href="#/fb/section2">CLOTHES</a></li>
