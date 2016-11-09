@@ -15,7 +15,7 @@ const Nav = React.createClass ({
             <ul className="navigation-bar">
                 <li className="home"><Link to='/'>HOME</Link></li>
                 <li className="blockimage"><a/></li>
-                <li className="olso"><a href="#/fb/section1">HOERECA</a></li>
+                <li className="olso"><Link to='/horeca'>HOERECA</Link></li>
                 <li className="olso"><a href="#/fb/section2">CLOTHES</a></li>
                 <li className="olso"><a href="#/fb/section3">DECOL</a></li>
                 <li className="olso"><a onClick={e => $.fn.fullpage.moveTo(5)}>CONTACTS</a></li>

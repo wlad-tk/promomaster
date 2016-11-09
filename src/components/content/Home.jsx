@@ -10,7 +10,8 @@ import languages from '../../languages.json';
 
 const Home = React.createClass({
     propTypes: {
-        lang: React.PropTypes.string
+        lang: React.PropTypes.string,
+        cont: React.PropTypes.func
     },
 
     html(sectionid, contant="body" ) {
@@ -22,6 +23,10 @@ const Home = React.createClass({
         return $.fn.fullpage.moveTo(sectionlinkid);
     },
 
+    componentDidMount() {
+        return this.props.cont;
+    },
+
     render() {
         const cont = languages[this.props.lang].home || {};
         return (
@@ -30,7 +35,7 @@ const Home = React.createClass({
                     <div className="container-col">
                         {/*<div style={{width: "10%", height: "20%"}} onClick={e => $.fn.fullpage.moveTo(4)}>Click Me</div>*/}
                         <div className="col-1">
-                            <img className="logo" src={require('../../img/logo_main.svg')}/>
+                            <img className="logo" src={require('../../img/backgrounds/logo_main.svg')}/>
                         </div>
                         <div className="col-2">
                             <b className="title">{cont.section0.title}</b><br/>
@@ -62,7 +67,7 @@ const Home = React.createClass({
                 <Section id="section4">
                     <div className="container-col">
                         <div className="col-1">
-                            <img className="logo" src={require('../../img/logofoot.svg')}/>
+                            <img className="logo" src={require('../../img/backgrounds/logofoot.svg')}/>
                         </div>
                         <div className="col-1 left">
                             <p dangerouslySetInnerHTML={this.html("section4", "title")}/>

@@ -1,17 +1,14 @@
 var webpack = require('webpack');
 var BundleTracker  = require('webpack-bundle-tracker');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var PROD = JSON.parse(process.env.PROD_ENV || '0');
-
-//console.log('Building with entry point: ' + ENTRY);
-//console.log('Production mode: ' + PROD);
-//console.log(' ');
 
 module.exports = {
     entry: "./src/main.js",
     output: {
         path: __dirname + '/public/build/',
-        publicPath: "build/",
+        publicPath: "/",
         filename: PROD ? 'b.min.js' : 'b.js' //'bundle.min.js' or 'bundle.js'
     },
     devtool: 'source-map',
@@ -23,6 +20,7 @@ module.exports = {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),
+        new ExtractTextPlugin('./src/css/b.min.css'),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             // sourceMap: false,
@@ -42,7 +40,8 @@ module.exports = {
                 'NODE_ENV': JSON.stringify('development')
             }
         }),
-        new BundleTracker({filename: './public/build/webpack-stats.json'})
+        new BundleTracker({filename: './public/build/webpack-stats.json'}),
+        new ExtractTextPlugin('./src/css/b.css')
     ],
     module: {
         loaders: [
@@ -55,15 +54,20 @@ module.exports = {
                 }
             },
             {
-                test: /\.(css|less)$/,
-                loader: "style-loader!css-loader!postcss-loader!less",
+                test: /\.(jpe?g|png|gif|svg)$/,
+                loaders: [
+                    'file?hash=sha512&name=[path][hash].[ext]'
+                ]
+            },
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader"),
                 exclude: [/node_modules/, /public/]
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'file?hash=sha512&name=image/[hash].[ext]'
-                ]
+                test: /\.less$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!less"),
+                exclude: [/node_modules/, /public/]
             },
             {
                 test: /\.json$/,

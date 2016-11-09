@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Notes</title>
-    <link rel="stylesheet" href="jquery.fullPage.css">
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="./build/src/css/b.css"> <!--b.min.css or b.css-->
+    <style>
+        #preload {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            z-index: 100;
+            opacity: 1;
+            position: fixed;
+            padding-top: 30%;
+            text-align: center;
+            display: block;
+        }
+    </style>
+
 </head>
 <body>
-    <div id="preload" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); z-index: 1060; opacity: 1; position: fixed; padding-top: 30%;" align="center">
-        <img src="build/image/ajax-loader.gif">
+    <div id="preload">
+        <img src="ajax-loader.gif">
     </div>
     <script>
         const elem = document.getElementById('preload');
-            elem.style.display='block';
-            window.onload = function () {elem.style.display='none';}
+            window.onload = () => {elem.style.display='none'}
     </script>
 
     <div id='first'></div>
@@ -22,6 +35,6 @@
     <script type="text/javascript" src="scrolloverflow.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.js"></script>
 
-    <script type="text/javascript" src="build/b.min.js"></script> <!--b.min.js or b.js-->
+    <script type="text/javascript" src="build/b.js"></script> <!--b.min.js or b.js-->
 </body>
 </html>

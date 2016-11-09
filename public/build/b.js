@@ -34,19 +34,42 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "build/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
+/******/ ((function(modules) {
+	// Check all modules for deduplicated modules
+	for(var i in modules) {
+		if(Object.prototype.hasOwnProperty.call(modules, i)) {
+			switch(typeof modules[i]) {
+			case "function": break;
+			case "object":
+				// Module can be created from a template
+				modules[i] = (function(_m) {
+					var args = _m.slice(1), fn = modules[_m[0]];
+					return function (a,b,c) {
+						fn.apply(this, [a,b,c].concat(args));
+					};
+				}(modules[i]));
+				break;
+			default:
+				// Module is a copy of another module
+				modules[i] = modules[modules[i]];
+				break;
+			}
+		}
+	}
+	return modules;
+}([
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _reactDom = __webpack_require__(160);
+	var _reactDom = __webpack_require__(153);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
@@ -54,26 +77,26 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRouter = __webpack_require__(92);
+	var _reactRouter = __webpack_require__(95);
 	
-	var _FirstBlock = __webpack_require__(121);
+	__webpack_require__(130);
+	
+	var _FirstBlock = __webpack_require__(123);
 	
 	var _FirstBlock2 = _interopRequireDefault(_FirstBlock);
 	
-	var _Home = __webpack_require__(122);
+	var _Home = __webpack_require__(124);
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
+	var _Horeca = __webpack_require__(125);
+	
+	var _Horeca2 = _interopRequireDefault(_Horeca);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// import Horeca from './components/content/Horeca.jsx';
 	// import Clothes from './components/content/Clothes.jsx';
 	// import Decol from './components/content/Decol.jsx';
-	
-	// import App from './App.jsx';
-	// import AboutPage from './components/AboutPage.jsx';
-	// import InboxPage from './components/InboxPage.jsx';
-	// import Message from './components/Message.jsx';
 	
 	_reactDom2.default.render(_react2.default.createElement(
 	    _reactRouter.Router,
@@ -81,9 +104,15 @@
 	    _react2.default.createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _FirstBlock2.default },
-	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default })
+	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/horeca', component: _Horeca2.default })
 	    )
 	), document.getElementById('first'));
+	
+	// import App from './App.jsx';
+	// import AboutPage from './components/AboutPage.jsx';
+	// import InboxPage from './components/InboxPage.jsx';
+	// import Message from './components/Message.jsx';
 
 /***/ },
 /* 1 */
@@ -363,7 +392,7 @@
 	var _prodInvariant = __webpack_require__(3);
 	
 	var DOMProperty = __webpack_require__(22);
-	var ReactDOMComponentFlags = __webpack_require__(99);
+	var ReactDOMComponentFlags = __webpack_require__(102);
 	
 	var invariant = __webpack_require__(1);
 	
@@ -542,7 +571,7 @@
 
 	'use strict';
 	
-	module.exports = __webpack_require__(186);
+	module.exports = __webpack_require__(179);
 
 
 /***/ },
@@ -662,7 +691,7 @@
 	var debugTool = null;
 	
 	if (true) {
-	  var ReactDebugTool = __webpack_require__(207);
+	  var ReactDebugTool = __webpack_require__(200);
 	  debugTool = ReactDebugTool;
 	}
 	
@@ -1431,9 +1460,9 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var CallbackQueue = __webpack_require__(95);
+	var CallbackQueue = __webpack_require__(98);
 	var PooledClass = __webpack_require__(20);
-	var ReactFeatureFlags = __webpack_require__(103);
+	var ReactFeatureFlags = __webpack_require__(106);
 	var ReactReconciler = __webpack_require__(27);
 	var Transaction = __webpack_require__(34);
 	
@@ -3124,7 +3153,7 @@
 	var setInnerHTML = __webpack_require__(44);
 	
 	var createMicrosoftUnsafeLocalFunction = __webpack_require__(69);
-	var setTextContent = __webpack_require__(119);
+	var setTextContent = __webpack_require__(122);
 	
 	var ELEMENT_NODE_TYPE = 1;
 	var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -3243,7 +3272,7 @@
 	
 	'use strict';
 	
-	var ReactRef = __webpack_require__(220);
+	var ReactRef = __webpack_require__(213);
 	var ReactInstrumentation = __webpack_require__(9);
 	
 	var warning = __webpack_require__(2);
@@ -3483,8 +3512,8 @@
 	var EventPluginUtils = __webpack_require__(58);
 	var ReactErrorUtils = __webpack_require__(63);
 	
-	var accumulateInto = __webpack_require__(112);
-	var forEachAccumulated = __webpack_require__(114);
+	var accumulateInto = __webpack_require__(115);
+	var forEachAccumulated = __webpack_require__(117);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -3737,8 +3766,8 @@
 	var EventPluginHub = __webpack_require__(30);
 	var EventPluginUtils = __webpack_require__(58);
 	
-	var accumulateInto = __webpack_require__(112);
-	var forEachAccumulated = __webpack_require__(114);
+	var accumulateInto = __webpack_require__(115);
+	var forEachAccumulated = __webpack_require__(117);
 	var warning = __webpack_require__(2);
 	
 	var PropagationPhases = EventConstants.PropagationPhases;
@@ -4665,10 +4694,10 @@
 	
 	var EventConstants = __webpack_require__(14);
 	var EventPluginRegistry = __webpack_require__(39);
-	var ReactEventEmitterMixin = __webpack_require__(210);
-	var ViewportMetrics = __webpack_require__(111);
+	var ReactEventEmitterMixin = __webpack_require__(203);
+	var ViewportMetrics = __webpack_require__(114);
 	
-	var getVendorPrefixedEventName = __webpack_require__(242);
+	var getVendorPrefixedEventName = __webpack_require__(235);
 	var isEventSupported = __webpack_require__(74);
 	
 	/**
@@ -5024,7 +5053,7 @@
 	'use strict';
 	
 	var SyntheticUIEvent = __webpack_require__(33);
-	var ViewportMetrics = __webpack_require__(111);
+	var ViewportMetrics = __webpack_require__(114);
 	
 	var getEventModifierState = __webpack_require__(71);
 	
@@ -5318,57 +5347,7 @@
 /* 45 */
 /***/ function(module, exports) {
 
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-	
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-	
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 /* 46 */
@@ -5455,7 +5434,7 @@
 	
 	var _DOMUtils = __webpack_require__(37);
 	
-	var _DOMStateStorage = __webpack_require__(82);
+	var _DOMStateStorage = __webpack_require__(84);
 	
 	var _PathUtils = __webpack_require__(18);
 	
@@ -5562,7 +5541,7 @@
 	
 	exports.__esModule = true;
 	
-	var _AsyncUtils = __webpack_require__(151);
+	var _AsyncUtils = __webpack_require__(145);
 	
 	var _PathUtils = __webpack_require__(18);
 	
@@ -6221,7 +6200,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _getRouteParams = __webpack_require__(171);
+	var _getRouteParams = __webpack_require__(164);
 	
 	var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 	
@@ -6357,14 +6336,14 @@
 	'use strict';
 	
 	var DOMLazyTree = __webpack_require__(26);
-	var Danger = __webpack_require__(181);
-	var ReactMultiChildUpdateTypes = __webpack_require__(107);
+	var Danger = __webpack_require__(174);
+	var ReactMultiChildUpdateTypes = __webpack_require__(110);
 	var ReactDOMComponentTree = __webpack_require__(5);
 	var ReactInstrumentation = __webpack_require__(9);
 	
 	var createMicrosoftUnsafeLocalFunction = __webpack_require__(69);
 	var setInnerHTML = __webpack_require__(44);
-	var setTextContent = __webpack_require__(119);
+	var setTextContent = __webpack_require__(122);
 	
 	function getNodeAfter(parentNode, node) {
 	  // Special case for text components, which return [open, close] comments
@@ -6880,7 +6859,7 @@
 	
 	var _prodInvariant = __webpack_require__(3);
 	
-	var ReactPropTypes = __webpack_require__(109);
+	var ReactPropTypes = __webpack_require__(112);
 	var ReactPropTypeLocations = __webpack_require__(41);
 	var ReactPropTypesSecret = __webpack_require__(66);
 	
@@ -8568,253 +8547,35 @@
 /* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0,
-		styleElementsInsertedAtTop = [];
+	"use strict";
 	
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+	var _react = __webpack_require__(6);
 	
-		// By default, add <style> tags to the bottom of <head>.
-		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
+	var _react2 = _interopRequireDefault(_react);
 	
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
+	var Section = _react2.default.createClass({
+	    displayName: "Section",
 	
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
+	    propTypes: {
+	        id: _react2.default.PropTypes.string.isRequired
+	    },
 	
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            { className: "section", id: this.props.id },
+	            this.props.children
+	        );
+	    }
+	});
 	
-	function insertStyleElement(options, styleElement) {
-		var head = getHeadElement();
-		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
-		if (options.insertAt === "top") {
-			if(!lastStyleElementInsertedAtTop) {
-				head.insertBefore(styleElement, head.firstChild);
-			} else if(lastStyleElementInsertedAtTop.nextSibling) {
-				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
-			} else {
-				head.appendChild(styleElement);
-			}
-			styleElementsInsertedAtTop.push(styleElement);
-		} else if (options.insertAt === "bottom") {
-			head.appendChild(styleElement);
-		} else {
-			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-		}
-	}
-	
-	function removeStyleElement(styleElement) {
-		styleElement.parentNode.removeChild(styleElement);
-		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
-		if(idx >= 0) {
-			styleElementsInsertedAtTop.splice(idx, 1);
-		}
-	}
-	
-	function createStyleElement(options) {
-		var styleElement = document.createElement("style");
-		styleElement.type = "text/css";
-		insertStyleElement(options, styleElement);
-		return styleElement;
-	}
-	
-	function createLinkElement(options) {
-		var linkElement = document.createElement("link");
-		linkElement.rel = "stylesheet";
-		insertStyleElement(options, linkElement);
-		return linkElement;
-	}
-	
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-	
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement(options));
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else if(obj.sourceMap &&
-			typeof URL === "function" &&
-			typeof URL.createObjectURL === "function" &&
-			typeof URL.revokeObjectURL === "function" &&
-			typeof Blob === "function" &&
-			typeof btoa === "function") {
-			styleElement = createLinkElement(options);
-			update = updateLink.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-				if(styleElement.href)
-					URL.revokeObjectURL(styleElement.href);
-			};
-		} else {
-			styleElement = createStyleElement(options);
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-			};
-		}
-	
-		update(obj);
-	
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-	
-	var replaceText = (function () {
-		var textStore = [];
-	
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-	
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-	
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-	
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-	
-		if(media) {
-			styleElement.setAttribute("media", media)
-		}
-	
-		if(styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-	
-	function updateLink(linkElement, obj) {
-		var css = obj.css;
-		var sourceMap = obj.sourceMap;
-	
-		if(sourceMap) {
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-	
-		var blob = new Blob([css], { type: "text/css" });
-	
-		var oldSrc = linkElement.href;
-	
-		linkElement.href = URL.createObjectURL(blob);
-	
-		if(oldSrc)
-			URL.revokeObjectURL(oldSrc);
-	}
-
+	exports.default = Section;
 
 /***/ },
 /* 79 */
@@ -8978,6 +8739,18 @@
 /* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "src/img/backgrounds/ec90afa86ce8f8159e8bcb7e145f241b.svg";
+
+/***/ },
+/* 83 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/backgrounds/226511b5e36f664df8d417813f041a22.svg";
+
+/***/ },
+/* 84 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
 	exports.__esModule = true;
@@ -9065,7 +8838,7 @@
 	};
 
 /***/ },
-/* 83 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9179,7 +8952,7 @@
 	exports.default = useBasename;
 
 /***/ },
-/* 84 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9188,7 +8961,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _queryString = __webpack_require__(159);
+	var _queryString = __webpack_require__(152);
 	
 	var _runTransitionHook = __webpack_require__(50);
 	
@@ -9305,7 +9078,219 @@
 	exports.default = useQueries;
 
 /***/ },
-/* 85 */
+/* 87 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"ru": {
+			"nav": "",
+			"foo": "",
+			"home": {
+				"section0": {
+					"title": "РЕКЛАМНО - ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ",
+					"body": "Рекламно - производственная компания «ПромоМастер Украина» – один из лидеров рынка рекламно-сувенирной продукции Украины. Мы предлагаем своим клиентам, представителям малого, среднего и крупного бизнеса, только качественные решения для продвижения посредством нанесения логотипов Вашей компании на ЛЮБУЮ плоскую поверхность, будь-то: <br>• корпоративная одежда (печать на футболках, бейсболки с логотипом,<br> форма для официантов, униформа для персонала гостиниц, банков и т.д.)<br> • посуда (кружки с логотипом, печать на тарелках, стаканчики для кофе)<br> • сувенирная продукция (печать на холсте, ручки с логотипом)"
+				},
+				"section1": {
+					"body": "<b>НАША ФИШКА В ТОМ, ЧТО МЫ МОЖЕМ ВЫПОЛНИТЬ ЗАКАЗ «НА ВЧЕРА»</b><br> Мы действительно выполняем работу <u>в любые</u> необходимые клиенту сроки. Как мы это делаем? Владея собственным технологическим парком, нам не надо кого-то искать, идти и уговаривать что-то сделать. Мы делаем всё сами. Поэтому если говорим клиенту, что продукт будет готов завтра в 9:00 утра, значит так и будет. Мы очень клиентоориентированы. Не стесняемся работать и в выходные, и в праздники, днем и ночью. И это не просто красивые слова, чтобы завлечь Вас. Приезжайте на нашу фабрику в любое время и убедитесь в этом лично.<br> <b>ПЕРЕДОВЫЕ ТЕХНОЛОГИИ И МАТЕРИАЛЫ</b><br> В своей работе используем исключительно передовые технологии и материалы, а также современное оборудование, что позволяет нам предлагать даже самым взыскательным клиентам фантастически сжатые сроки изготовления продукции.<br> <b>КОМПЛЕКСНЫЙ ПОДХОД</b><br> Уникальность нашего предприятия заключается в том, что мы смогли собрать все существующие в природе технологии печати в одном месте. Мы не размещаем заказы на стороне. Подходим к решению любой задачи комплексно. А уже готовую продукцию прилично упакуем. У нас и для этого есть специальное оборудование.<br> <b>ЗАКАЗЫ НА ЛЮБЫЕ ПАРТИИ РЕКЛАМНОЙ ПРОДУКЦИИ</b><br> Вы можете заказать лишь одну единицу рекламной продукции, а можете несколько тысяч. Не рассчитали необходимое количество? У Вас есть возможность дозаказа при сохранении цены на договорных условиях. Не исключаем повтор моделей по вашим образцам (сделаем необходимую доработку, подберем соответствующие материалы)."
+				},
+				"section2": {
+					"body": "<b>УМНАЯ ЛОГИСТИКА И ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА</b><br> Наш секрет в отлаженной системе логистики и гибкой ценовой политике, направленной на удовлетворение интересов, как оптовых покупателей, так и розничного потребителя. Мы знаем, как доставить готовую продукцию в целости и сохранности любым удобным для заказчика способом в любую точку Украины. Работаем со всеми транспортными компаниями Украины. Груз может быть доставлен в офис или на склад заказчика по его желанию. Формируя заявку, просто укажите, где и как Вы его хотите получить. <br> <b>ОГРОМНЫЙ ОПЫТ</b><br> У нас очень дружный коллектив, мы как одна семья. И это не просто слова. Люди очень любят свою работу и ответственно к ней относятся. Почему? Потому что работа в рекламно-производственной компании «ПромоМастер Украина» – это не обязанность, а стиль жизни, который разделяют наши сотрудники. Мы предоставляем каждому человеку уникальную возможность для самореализации, творчества и самосовершенствования. Высоко ценим профессионализм и надежность. Вместе трудимся и отдыхаем. Даже такой семейный праздник, как новый год, отмечаем вместе. А это о многом говорит, согласитесь."
+				},
+				"section3": {
+					"body": "<b>МЫ ИСКРЕННЕ ЛЮБИМ СВОИХ КЛИЕНТОВ…</b><br> … и переживаем за них, помогаем решать задачи, даже не связанные с основной сферой деятельности. Наша цель – снять любую головную боль с клиента. Вы доверяете нам, а мы, в свою очередь, делаем всё наилучшим образом.<br> Миссия компании «ПромоМастер Украина» – в совершенно невозможных условиях не бросить своего клиента, а быть рядом с ним, пока в нас отпадет необходимость. У Вас важная презентация, выставка либо какое-то другое деловое мероприятие? Будьте уверены: мы всё сделаем вовремя, наилучшим образом, подвезем готовую продукцию в любое указанное Вами место и поможем всё разместить так, чтобы это было идеально. В этом наше предназначение. Деньги, конечно, важны, но они объективно вторичны. <br><b>НАМ ОЧЕНЬ ВАЖНО ВАШЕ МНЕНИЕ!</b><br> Руководство компании «ПромоМастер Украина» всегда открыто для диалога. Мы всегда готовы выслушать от Вас любые предложения или критические замечания, дорогие наши партнеры и клиенты! Дорожим своей репутацией и стремимся к тому, чтобы наше сотрудничество было максимально комфортным. <br> Давайте сотрудничать! Вы будете довольны результатом."
+				},
+				"section4": {
+					"title": "Украина<br> 69076<br> Запорожье<br> ул. Козака Бабури, 9",
+					"body": "Управляющий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
+				}
+			},
+			"horeca": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"clothes": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"decol": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			}
+		},
+		"en": {
+			"nav": "",
+			"foo": "",
+			"home": {
+				"section0": {
+					"title": "ADVERTISING AND PRODUCTION COMNANY",
+					"body": "Advertising & Production Company «PromoMaster Ukraine» is one of the leaders on Ukrainian advertising and souvenir production market. We offer our clients, representatives of small, medium and large businesses, high-quality solutions for the promotion of their brands. We can print logo of your company on any flat surfaces:<br> • Corporate uniform (printing on T-shirts, baseball caps with your logo, uniform for waiters, uniform for hotel staff, banks, etc.)<br> • Tableware (cups with your logo, printing on plates, coffee-glasses)<br> • Souvenir products (prints on canvas, pens with your logo)"
+				},
+				"section1": {
+					"body": "<b>OUR SPECIAL FEATURE IS THAT WE CAN FULFIL ANY RUSH JOB.</b><br> We can perform any orders work <u>within any</u> required time limit of our customer. How can we do it? Our company has its own technological park, we do not have to look for someone, go and persuade to do something. We produce everything ourselves.Therefore, if we are tell our clients that the product will be ready at 9:00 am tomorrow, there product will be waiting for the client at 9:00 am tomorrow. We are very customer-oriented. We do not hesitate about working at the weekend and on holidays, during the day and late at night. Moreover, these are not just pretty words to attract you. Come and visit our factory any time in person.<br> <b>ADVANCED TECHNOLOGIES AND MATERIALS</b><br> In our work, we use only advanced technologies and materials, as well as modern equipment that enables us to offer our most demanding customers manufacturingquality goods even in tight deadlines.<br> <b>COMPLEX APPROACH</b><br> The uniqueness of our company is that we were able to collect all of the existing printing technologies at our factory. We do not place orders to external companies. We always solve any problem in complex. We pack the final product properly as we have our own special packing equipment.<br> <b>ORDERS FOR ANY BATCH OF ADVERTISING PRODUCTS</b><br> You can order just one unit of your advertising product as well as thousands. You were incorrect with the calculation of necessary quantity of the goods, were you? You can reorder the goods with the same prices, which were on contractual terms. We do not exclude the possibility of repetition of models according to your samples (We make the necessary improvements and we choose the appropriate materials)."
+				},
+				"section2": {
+					"body": "<b>SMART LOGISTICS AND FLEXIBLE PRICE POLICY</b><br> Our secret is well-functioning logistics system and a flexible pricing policy, designed to meet the interests wholesale as well as retail consumers. We know how to deliver final product safe and unharmed in any convenient way for customers to any destination in Ukraine. We work with all transport companies of Ukraine. The freight can be delivered to the office or the warehouse of the customer according to his wish. Shaping the application, you just specify where and how you want to receive your product.<br><b>HUGE EXPERIENCE</b><br> We have a very friendly team, we are like one family. And it's not just words. Our Staff love their work and they are responsible. You can ask: “Why?”. Working in Advertising & Production Company «PromoMaster Ukraine» is not obligation, it is lifestyle, which is shared by all our employees. We provide every member of our team the unique opportunity for self-actualization,  creativity and self-development. We highly value professionalism and reliability. We work and rest together. Even family holiday like New Year we celebrate together. We celebrate together. You can agree that it shows a lot."
+				},
+				"section3": {
+					"body": "<b>WE SINCERELY LOVE OUR CUSTOMERS…</b><br> … and worry about them, help our clients solve problems which sometimes aren’t connected with our main sphere of activities. Our goal is to remove any possible problems and inconveniences our clients can face suffer in Ukrainian business environment. You trust us, and we do our best in turn.<br> Mission of the company «PromoMaster Ukraine» is to stay with the client in any unpredictable conditions, be ready to help until the client needs our support Do you plan an important presentation, exhibition or any business event? Rest assured that we will do all everything in time,  deliver final product to any location of your choice and help to place the products the best possible way. It is our mission. Of course, money is important, but it is of secondary importance honestly.<br> <b>YOUR OPINION AND FEEDBACK ARE IMPORTANT FOR US!</b><br> The management of company «PromoMaster Ukraine» is always open for dialogue. We are always ready to listen any kind of your suggestions or criticisms, our dear partners and customers! We value our reputation and strive to make our cooperation as comfortable as possible.<br> Let's cooperate! You will be pleased with the result."
+				},
+				"section4": {
+					"title": "Ukraine<br> 69076<br> Zaporozhye<br> st.Zhukov, 9",
+					"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+				}
+			},
+			"horeca": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"clothes": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"decol": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			}
+		},
+		"ua": {
+			"nav": "",
+			"foo": "",
+			"home": {
+				"section0": {
+					"title": "РЕКЛАМНО - ВИРОБНИЧА КОМПАНІЯ",
+					"body": "Рекламно-виробнича компанія «ПромоМайстер Україна» - один з лідерів ринку рекламно-сувенірної продукції України. Ми пропонуємо своїм клієнтам, представникам малого, середнього та великого бізнесу, тільки якісні рішення для просування за допомогою нанесення логотипів Вашої компанії на БУДЬ-ЯКУ пласку поверхню, як це: <br>• корпоративний одяг (друк на футболках, бейсболки з логотипом, <br> форма для офіціантів, уніформа для персоналу готелів, банків і т.д.)<br> • посуд (кухлі з логотипом, друк на тарілках, стаканчики для кави)<br> • сувенірна продукція (друк на полотні, ручки з логотипом)"
+				},
+				"section1": {
+					"body": "<b>НАША ФІШКА В ТОМУ, ЩО МИ МОЖЕМО ВИКОНАТИ ЗАМОВЛЕННЯ «НА ВЧОРА»</b><br>Ми дійсно виконуємо роботу <u>в будь-які</u> необхідні клієнту терміни. Як ми це робимо? Володіючи власним технологічним парком, нам не треба когось шукати, йти і вмовляти щось зробити. Ми робимо все самі. Тому якщо говоримо клієнтові, що продукт буде готовий завтра о 9:00 ранку, значить так і буде. Ми дуже клієнтоорієнтовані. Ми не соромимося працювати і у вихідні, і у свята, вдень і вночі. І це не просто красиві слова, щоб заманити Вас. Приїжджайте на нашу фабрику в будь-який час і переконайтеся в цьому особисто.<br> <b>ПЕРЕДОВІ ТЕХНОЛОГІЇ ТА МАТЕРІАЛИ</b><br>У своїй роботі використовуємо виключно передові технології та матеріали, а також сучасне устаткування, що дозволяє нам пропонувати навіть найвибагливішим клієнтам фантастично стислі терміни виготовлення продукції.<br> <b>КОМПЛЕКСНИЙ ПІДХІД</b><br>Унікальність нашого підприємства полягає в тому, що ми змогли зібрати всі існуючі в природі технології друку в одному місці. Ми не розміщуємо замовлення на стороні. Підходимо до вирішення будь-якої задачі комплексно. А вже готову продукцію пристойно спакуємо. У нас і для цього є спеціальне обладнання.<br> <b>ЗАМОВЛЕННЯ НА БУДЬ ЯКІ ПАРТІЇ РЕКЛАМНИХ ТОВАРІВ</b><br>Ви можете замовити лише одну одиницю рекламної продукції, а можете кілька тисяч. Не розрахували необхідну кількість? У Вас є можливість дозамовлення при збереженні ціни на договірних умовах. Не виключений повтор моделей за вашими зразками (зробимо необхідне доопрацювання, підберемо відповідні матеріали)."
+				},
+				"section2": {
+					"body": "<b>РОЗУМНА ЛОГІСТИКА ТА ГНУЧКА ЦІНОВА ПОЛІТИКА</b><br>Наш секрет в налагодженій системі логістики та гнучкій ціновій політиці, спрямованої на задоволення інтересів, як оптових покупців, так і роздрібного споживача. Ми знаємо, як доставити готову продукцію цілою та неушкодженою будь-яким зручним для замовника способом в будь-яку точку України. Працюємо з усіма транспортними компаніями України. Вантаж може бути доставлений в офіс або на склад замовника за його бажанням. Формуючи заявку, просто вкажіть, де і як Ви її хочете отримати.<br> <b>ВЕЛИЧЕЗНИЙ ДОСВІД</b><br>У нас дуже дружний колектив, ми як одна сім'я. І це не просто слова. Люди дуже люблять свою роботу і відповідально до неї ставляться. Чому? Тому що робота в рекламно-виробничої компанії «ПромоМайстер Україна» - це не обов'язок, а стиль життя, який поділяють наші співробітники. Ми надаємо кожній людині унікальну можливість для самореалізації, творчості і самовдосконалення. Високо цінуємо професіоналізм і надійність. Разом працюємо і відпочиваємо. Навіть таке сімейне свято, як Новий рік, відзначаємо разом. А це багато про що говорить, погодьтеся."
+				},
+				"section3": {
+					"body": "<b>МИ ЩИРО ЛЮБИМО СВОЇХ КЛІЄНТІВ…</b><br>… і переживаємо за них, допомагаємо вирішувати завдання, навіть не пов'язані з основною сферою діяльності. Наша мета - зняти будь-який головний біль з клієнта. Ви довіряєте нам, а ми, в свою чергу, робимо все найкращим чином.<br> Місія компанії «ПромоМайстер Україна» - в абсолютно неможливих умовах не кинути свого клієнта, а бути поруч з ним, поки в нас не відпаде необхідність. У Вас важлива презентація, виставка або якийсь інший діловий захід? Будьте впевнені: ми все зробимо вчасно, найкращим чином, підвеземо готову продукцію в будь-яке зазначене Вами місце і допоможемо все розмістити так, щоб це було ідеально. В цьому наше призначення. Гроші, звичайно, важливі, але вони об'єктивно вторинні.<br> <b>НАМ ДУЖЕ ВАЖЛИВА ВАША ДУМКА!</b><br>Керівництво компанії «ПромоМайстер Україна» завжди відкрито до діалогу. Ми завжди готові вислухати від Вас будь-які пропозиції або критичні зауваження, дорогі наші партнери та клієнти! Дуже цінуємо свою репутацію і прагнемо того, щоб наша співпраця була максимально комфортна.<br> Давайте співпрацювати! Ви будете задоволені результатом"
+				},
+				"section4": {
+					"title": "Україна<br> 69076<br> Запоріжжя<br> вул. Козака Бабури, 9",
+					"body": "Керуючий партнер<br> Козляковскій Максим<br> +380676142930<br> max@promomaster.biz"
+				}
+			},
+			"horeca": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"clothes": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"decol": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			}
+		},
+		"fr": {
+			"nav": "",
+			"foo": "",
+			"home": {
+				"section0": {
+					"title": "LA SOCIÉTÉ DE PUBLICITÉ ET DE PRODUCTION",
+					"body": "La société de publicité et de production «PromoMaster Ukraine» est l&#39;un des leaders du marché des produits promotionnels de l&#39;Ukraine. Nous n’offrons à nos clients – aux petites, moyennes et grandes entreprises – que des solutions promotionnelles haut de gamme par le biais de l&#39;application des logos de leur entreprise sur TOUTE surface plane, que ce soit: <br>• des vêtements d’entreprise (l’impression sur les t-shirts, les casquettes de <br> baseball avec le logo, la forme pour les serveurs, les uniformes pour le personnel des hôtels, des banques, etc.)<br> • la vaisselle (les tasses avec logo, l’impression sur les assiettes, les gobelets à café)<br> • les souvenirs (l&#39;impression sur toile, les stylos avec le logo)"
+				},
+				"section1": {
+					"body": "<b></b><br><br> <b>LES TECHNOLOGIES ET DES MATÉRIAUX DE POINTE</b><br>Dans notre travail, nous utilisons exclusivement des technologies et des matériaux de pointe, ainsi que des équipements modernes, ce qui nous permet d&#39;offrir aux clients les plus exigeants les délais fantastiques de fabrication des produits.<br> <b>UNE APPROCHE INTÉGRÉE</b><br>L&#39;unicité de notre entreprise réside dans le fait que nous avons réussi à recueillir tout ce qui existe dans la nature de la technologie d&#39;impression en un seul endroit. Nous ne transférons jamais les commandes à autrui. Chez nous, on vous offre une solution complète à chaque tâche. Et nous emballerons bien les produits finis. Pour cela, nous sommes dotés d’équipement spécial.<br> <b>LES COMMANDES DE PRODUITS PROMOTIONNELS EN N’IMPORTE QUELLE QUANTITÉ</b><br>Vous pouvez commander une seule unité des produits promotionnels, comme vous pouvez en commander quelques milliers. Vous n’avez pas calculé la quantité nécessaire ? Vous avez l’option de réapprovisionnement tout en gardant des prix sur une base contractuelle. Nous n&#39;excluons pas la répétition de modèles selon vos échantillons (nous ferons une révision nécessaire, choisirons les matériaux appropriés)."
+				},
+				"section2": {
+					"body": "<b>LA LOGISTIQUE INTELLIGENTE ET LA POLITIQUE DES PRIX FLEXIBLE</b><br>Vous bénéficierez de notre système de la logistique bien ajusté et de la politique des prix flexible visant à satisfaire les intérêts de nos clients, tant acheteurs en gros que consommateurs en détail. Nous savons comment livrer les produits finis sains et saufs par n&#39;importe quel moyen, convenable au client, partout en Ukraine. Nous travaillons avec toutes les compagnies de transport de l&#39;Ukraine. Les marchandises peuvent être livrées au bureau ou à l&#39;entrepôt du client à sa demande. En formant une demande, il suffit d&#39;indiquer où et comment vous voulez les obtenir.<br> <b>UNE EXPÉRIENCE ÉNORME</b><br>Notre collectif est très sympathique, nous sommes tous comme une famille. Et ce ne sont pas juste des mots. Les gens aiment leur travail et le font responsablement. Pourquoi ? Parce que le travail dans la société de publicité et de production PromoMaster Ukraine n&#39;est pas une obligation, mais un style de vie, partagé par nos employés. Nous fournissons à chaque personne une occasion unique pour la réalisation de soi, la créativité et le perfectionnement personnel. Nous apprécions le professionnalisme et la fiabilité. Nous travaillons et nous nous reposons ensemble. Nous célébrons ensemble même une telle fête familiale que le Nouvel An. Et cela en dit beaucoup, n’est-ce pas? "
+				},
+				"section3": {
+					"body": "<b>NOUS AIMONS SINCÈREMENT NOS CLIENTS…</b><br>… Et nous nous faisons du souci pour eux, en les aidant à résoudre même les problèmes, non liés à notre activité principale. Notre objectif est de remédier au casse-tête du client. Vous nous faites confiance et nous, à notre tour, nous efforçons de tout faire du mieux.<br> La mission de l&#39;entreprise PromoMaster Ukraine est de ne pas quitter son client dans les conditions totalement insupportables et d&#39;être à côté de lui, jusqu’à qu’il n’ait plus besoin de nous. Vous avez une présentation importante, une exposition ou un autre événement d&#39;affaires ? Soyez assuré que nous ferons tout à l&#39;heure, de notre mieux, livrerons les produits finis dans n&#39;importe quel endroit de votre choix et nous vous aiderons à les placer parfaitement. C&#39;est notre mission. L&#39;argent, il est bien sûr important, mais tout à fait secondaire.<br> <b>VOTRE OPINION EST TRÈS IMPORTANT POUR NOUS !</b><br>La direction de l&#39;entreprise PromoMaster Ukraine est toujours ouverte au dialogue. Nous sommes toujours prêts à entendre vos suggestions ou critiques, nos chers partenaires et clients ! Nous apprécions notre réputation et nous nous efforçons de rendre notre coopération aussi confortable que possible.<br> Travaillons ensemble ! Vous serez satisfait du résultat"
+				},
+				"section4": {
+					"title": "Ukraine<br> 69076<br> Zaporіzhya<br> la. Kozak Babur, 9",
+					"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+				}
+			},
+			"horeca": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"clothes": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"decol": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			}
+		},
+		"de": {
+			"nav": "",
+			"foo": "",
+			"home": {
+				"section0": {
+					"title": "WERBUG- UND PRODUKTIONSFIRMA",
+					"body": "Werbung- und Produktionsfirma «PromoMaster Ukraine» ist eine der leitenden Firmen auf dem Markt der Werbung und Souvenirproduktion in der Ukraine. Wir bieten unseren Kunden, Vertretern von kleinen, mittleren und großen Unternehmen nur qualitative hochwertige Lösungen für die Weiterführung durch das Auftragen von Ihrem Firmenlogo auf JEDE flache Oberfläche an, und zwar: <br>• corporate-Identity- Kleidung (Druck auf T-Shirts, Baseball-Kappen mit <br>dem Logo, die Uniform für Kellner, Hotel- und Bankenarbeiter usw.)<br> • geschirr (Tassen mit einem Logo, Druck auf Tellern, Kaffeetassen)<br> • souvenirprodukte (Druck auf Leinwand, Kugelschreiber mit einem Logo)"
+				},
+				"section1": {
+					"body": "<b></b><br><br> <b>FORTGESCHRITTENE TECHNOLOGIEN UND MATERIALIEN</b><br>In unserer Arbeit verwenden wir nur fortschrittliche Technologien und Materialien sowie moderne Ausrüstung, was uns leistet, auch den anspruchsvollsten Kunden unglaublich kurze Fristen der Herstellung von Waren anzubieten.<br> <b>GANZHEITLICHER ANSATZ</b><br>Die Einzigartigkeit unserer Firma ist, dass wir es geschafft haben, auf einem Punkt alle existierende Drucktechnologien zu sammeln. Wir legen keine Bestellungen für Fremde an und lösen jede Aufgabe ganzheitlich. Die fertige Ware wird gut verpackt. Dafür haben wir auch Sonderausstattung.<br> <b>BESTELLUNGEN FÜR JEDE BELIEBIGE MENGE VON WAREN</b><br>Sie können sowohl eine einzige Produktionseinheit, als auch ein paar tausend davon bestellen. Haben Sie die erforderliche Menge nicht berechnet? Sie können eine Nachbestellung machen, während die Preise auf vertraglicher Basis behalten werden. Wir schließen die Wiederholung von Modellen nach Ihrem Muster nicht aus (wir werden die notwendige Nachbearbeitung machen und die geeigneten Materialien auswählen)."
+				},
+				"section2": {
+					"body": "<b>KLUGE LOGISTIK UND FLEXIBLE PREISPOLITIK</b><br>Unser Vorteil liegt in einem gut funktionierenden Logistiksystem und in einer flexiblen Preispolitik, die auf die Interessen von Groß- und Einzelhandel Käufern orientiert ist. Wir wissen Bescheid, wie das fertige Produkt wohlbehalten auf jede geeignete Weise für Kunden überall in der Ukraine geliefert werden soll. Wir arbeiten mit allen Verkehrsunternehmen in der Ukraine. Die Ladung kann ans Büro oder Lager auf Wunsch des Kunden geliefert werden. Bei der Anmeldung weisen Sie darauf hin, wo und wie Sie Ihre Bestellung bekommen möchten.<br> <b>GROßE ERFAHRUNG</b><br>Wir haben eine sehr freundliche Belegschaft, wir sind wie eine Familie. Und es ist nicht nur Worte. Die Leute mögen ihre Arbeit und sind dafür verantwortlich. Warum? Die Arbeit in der Werbung- und Produktionsfirma &quot;PromoMaster Ukraine&quot; ist keine Pflicht, sondern ein Lebensstil, der von unseren Mitarbeitern geteilt wird. Wir geben jeder Person eine Möglichkeit zur Selbstverwirklichung, Kreativität und Selbstverbesserung. Wir schätzen die Professionalität und Zuverlässigkeit. Wir arbeiten und erholen uns zusammen. Sogar das Neujahr, ein Familienfest, feiern wir auch zusammen. Das sagt viel aus."
+				},
+				"section3": {
+					"body": "<b>WIR LIEBEN UNSERE KUNDEN…</b><br>… und sorgen für sie. Wir helfen ihnen, die Probleme zu lösen, die sogar nicht mit der Haupttätigkeit verbunden sind. Unser Ziel ist, Kunden, so weit wie möglich, vom Stress zu lösen. Sie vertrauen uns und wir tun wiederum unser Bestes.<br> Die Hauptaufgabe von &quot;PromoMaster Ukraine&quot; ist, in völlig unmöglichen Bedingungen ihre Kunden nicht im Stich zu lassen und da zu sein, bis es notwendig ist. Haben Sie eine wichtige Präsentation, eine Ausstellung oder eine andere Veranstaltung? Seien Sie sicher, dass wir alles rechtzeitig und am besten erfüllen werden. Außerdem werden wir das fertige Produkt auf jeden von Ihnen bestimmten Ort liefern und helfen, alles an seinen Platz zu stellen, damit das perfekt wird. Das ist unsere Berufung. Das Geld ist natürlich wichtig, aber es ist objektiv zweitrangig.<br> <b>WIR SCHÄTZEN IHRE MEINUNG!</b><br>Die Leitung der Firma &quot;PromoMaster Ukraine&quot; ist immer offen für den Dialog. Wir sind immer bereit, von Ihnen Anregungen oder Kritik zu hören, unsere lieben Partner und Kunden! Wir schätzen unseren guten Ruf und bemühen uns, unsere Zusammenarbeit so angenehm wie möglich zu machen.<br> Lassen Sie uns zusammenarbeiten! Sie werden mit dem Ergebnis zufrieden sein."
+				},
+				"section4": {
+					"title": "Ukraine<br> 69076<br> Zaporozhye<br> der. Kozak Babur, 9",
+					"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+				}
+			},
+			"horeca": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"clothes": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			},
+			"decol": {
+				"section0": {},
+				"section1": {},
+				"section2": {},
+				"section3": {}
+			}
+		}
+	};
+
+/***/ },
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9468,7 +9453,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 86 */
+/* 89 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -9480,7 +9465,7 @@
 	}
 
 /***/ },
-/* 87 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9588,7 +9573,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 88 */
+/* 91 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9621,7 +9606,7 @@
 	}
 
 /***/ },
-/* 89 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9629,15 +9614,15 @@
 	exports.__esModule = true;
 	exports.default = createMemoryHistory;
 	
-	var _useQueries = __webpack_require__(84);
+	var _useQueries = __webpack_require__(86);
 	
 	var _useQueries2 = _interopRequireDefault(_useQueries);
 	
-	var _useBasename = __webpack_require__(83);
+	var _useBasename = __webpack_require__(85);
 	
 	var _useBasename2 = _interopRequireDefault(_useBasename);
 	
-	var _createMemoryHistory = __webpack_require__(156);
+	var _createMemoryHistory = __webpack_require__(150);
 	
 	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 	
@@ -9657,7 +9642,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 90 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9670,7 +9655,7 @@
 	  return history;
 	};
 	
-	var _useRouterHistory = __webpack_require__(93);
+	var _useRouterHistory = __webpack_require__(96);
 	
 	var _useRouterHistory2 = _interopRequireDefault(_useRouterHistory);
 	
@@ -9681,7 +9666,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 91 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9696,21 +9681,21 @@
 	
 	var _routerWarning2 = _interopRequireDefault(_routerWarning);
 	
-	var _computeChangedRoutes2 = __webpack_require__(169);
+	var _computeChangedRoutes2 = __webpack_require__(162);
 	
 	var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 	
-	var _TransitionUtils = __webpack_require__(166);
+	var _TransitionUtils = __webpack_require__(159);
 	
-	var _isActive2 = __webpack_require__(173);
+	var _isActive2 = __webpack_require__(166);
 	
 	var _isActive3 = _interopRequireDefault(_isActive2);
 	
-	var _getComponents = __webpack_require__(170);
+	var _getComponents = __webpack_require__(163);
 	
 	var _getComponents2 = _interopRequireDefault(_getComponents);
 	
-	var _matchRoutes = __webpack_require__(175);
+	var _matchRoutes = __webpack_require__(168);
 	
 	var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 	
@@ -9961,7 +9946,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 92 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10002,35 +9987,35 @@
 	  }
 	});
 	
-	var _Router2 = __webpack_require__(165);
+	var _Router2 = __webpack_require__(158);
 	
 	var _Router3 = _interopRequireDefault(_Router2);
 	
-	var _Link2 = __webpack_require__(85);
+	var _Link2 = __webpack_require__(88);
 	
 	var _Link3 = _interopRequireDefault(_Link2);
 	
-	var _IndexLink2 = __webpack_require__(161);
+	var _IndexLink2 = __webpack_require__(154);
 	
 	var _IndexLink3 = _interopRequireDefault(_IndexLink2);
 	
-	var _withRouter2 = __webpack_require__(176);
+	var _withRouter2 = __webpack_require__(169);
 	
 	var _withRouter3 = _interopRequireDefault(_withRouter2);
 	
-	var _IndexRedirect2 = __webpack_require__(162);
+	var _IndexRedirect2 = __webpack_require__(155);
 	
 	var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
 	
-	var _IndexRoute2 = __webpack_require__(163);
+	var _IndexRoute2 = __webpack_require__(156);
 	
 	var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
 	
-	var _Redirect2 = __webpack_require__(87);
+	var _Redirect2 = __webpack_require__(90);
 	
 	var _Redirect3 = _interopRequireDefault(_Redirect2);
 	
-	var _Route2 = __webpack_require__(164);
+	var _Route2 = __webpack_require__(157);
 	
 	var _Route3 = _interopRequireDefault(_Route2);
 	
@@ -10038,27 +10023,27 @@
 	
 	var _RouterContext3 = _interopRequireDefault(_RouterContext2);
 	
-	var _match2 = __webpack_require__(174);
+	var _match2 = __webpack_require__(167);
 	
 	var _match3 = _interopRequireDefault(_match2);
 	
-	var _useRouterHistory2 = __webpack_require__(93);
+	var _useRouterHistory2 = __webpack_require__(96);
 	
 	var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
 	
-	var _applyRouterMiddleware2 = __webpack_require__(167);
+	var _applyRouterMiddleware2 = __webpack_require__(160);
 	
 	var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
 	
-	var _browserHistory2 = __webpack_require__(168);
+	var _browserHistory2 = __webpack_require__(161);
 	
 	var _browserHistory3 = _interopRequireDefault(_browserHistory2);
 	
-	var _hashHistory2 = __webpack_require__(172);
+	var _hashHistory2 = __webpack_require__(165);
 	
 	var _hashHistory3 = _interopRequireDefault(_hashHistory2);
 	
-	var _createMemoryHistory2 = __webpack_require__(89);
+	var _createMemoryHistory2 = __webpack_require__(92);
 	
 	var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
 	
@@ -10091,7 +10076,7 @@
 	exports.createMemoryHistory = _createMemoryHistory3.default;
 
 /***/ },
-/* 93 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10099,11 +10084,11 @@
 	exports.__esModule = true;
 	exports.default = useRouterHistory;
 	
-	var _useQueries = __webpack_require__(84);
+	var _useQueries = __webpack_require__(86);
 	
 	var _useQueries2 = _interopRequireDefault(_useQueries);
 	
-	var _useBasename = __webpack_require__(83);
+	var _useBasename = __webpack_require__(85);
 	
 	var _useBasename2 = _interopRequireDefault(_useBasename);
 	
@@ -10118,7 +10103,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 94 */
+/* 97 */
 /***/ function(module, exports) {
 
 	/**
@@ -10271,7 +10256,7 @@
 	module.exports = CSSProperty;
 
 /***/ },
-/* 95 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10382,7 +10367,7 @@
 	module.exports = CallbackQueue;
 
 /***/ },
-/* 96 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10402,7 +10387,7 @@
 	var ReactDOMComponentTree = __webpack_require__(5);
 	var ReactInstrumentation = __webpack_require__(9);
 	
-	var quoteAttributeValueForBrowser = __webpack_require__(244);
+	var quoteAttributeValueForBrowser = __webpack_require__(237);
 	var warning = __webpack_require__(2);
 	
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -10608,7 +10593,7 @@
 	module.exports = DOMPropertyOperations;
 
 /***/ },
-/* 97 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10804,7 +10789,7 @@
 	module.exports = ReactChildren;
 
 /***/ },
-/* 98 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11541,7 +11526,7 @@
 	module.exports = ReactClass;
 
 /***/ },
-/* 99 */
+/* 102 */
 /***/ function(module, exports) {
 
 	/**
@@ -11564,7 +11549,7 @@
 	module.exports = ReactDOMComponentFlags;
 
 /***/ },
-/* 100 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11770,7 +11755,7 @@
 	module.exports = ReactDOMSelect;
 
 /***/ },
-/* 101 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11798,7 +11783,7 @@
 	var ReactElement = __webpack_require__(12);
 	var ReactPropTypeLocations = __webpack_require__(41);
 	
-	var checkReactTypeSpec = __webpack_require__(113);
+	var checkReactTypeSpec = __webpack_require__(116);
 	
 	var canDefineProperty = __webpack_require__(68);
 	var getIteratorFn = __webpack_require__(73);
@@ -12003,7 +11988,7 @@
 	module.exports = ReactElementValidator;
 
 /***/ },
-/* 102 */
+/* 105 */
 /***/ function(module, exports) {
 
 	/**
@@ -12038,7 +12023,7 @@
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 103 */
+/* 106 */
 /***/ function(module, exports) {
 
 	/**
@@ -12065,7 +12050,7 @@
 	module.exports = ReactFeatureFlags;
 
 /***/ },
-/* 104 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12146,7 +12131,7 @@
 	module.exports = ReactHostComponent;
 
 /***/ },
-/* 105 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12162,9 +12147,9 @@
 	
 	'use strict';
 	
-	var ReactDOMSelection = __webpack_require__(202);
+	var ReactDOMSelection = __webpack_require__(195);
 	
-	var containsNode = __webpack_require__(130);
+	var containsNode = __webpack_require__(133);
 	var focusNode = __webpack_require__(80);
 	var getActiveElement = __webpack_require__(81);
 	
@@ -12275,7 +12260,7 @@
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 106 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12298,19 +12283,19 @@
 	var ReactBrowserEventEmitter = __webpack_require__(40);
 	var ReactCurrentOwner = __webpack_require__(15);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMContainerInfo = __webpack_require__(194);
-	var ReactDOMFeatureFlags = __webpack_require__(197);
+	var ReactDOMContainerInfo = __webpack_require__(187);
+	var ReactDOMFeatureFlags = __webpack_require__(190);
 	var ReactElement = __webpack_require__(12);
-	var ReactFeatureFlags = __webpack_require__(103);
+	var ReactFeatureFlags = __webpack_require__(106);
 	var ReactInstanceMap = __webpack_require__(32);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactMarkupChecksum = __webpack_require__(215);
+	var ReactMarkupChecksum = __webpack_require__(208);
 	var ReactReconciler = __webpack_require__(27);
 	var ReactUpdateQueue = __webpack_require__(67);
 	var ReactUpdates = __webpack_require__(13);
 	
 	var emptyObject = __webpack_require__(28);
-	var instantiateReactComponent = __webpack_require__(117);
+	var instantiateReactComponent = __webpack_require__(120);
 	var invariant = __webpack_require__(1);
 	var setInnerHTML = __webpack_require__(44);
 	var shouldUpdateReactComponent = __webpack_require__(75);
@@ -12814,7 +12799,7 @@
 	module.exports = ReactMount;
 
 /***/ },
-/* 107 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12851,7 +12836,7 @@
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 108 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12896,7 +12881,7 @@
 	module.exports = ReactNodeTypes;
 
 /***/ },
-/* 109 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13332,7 +13317,7 @@
 	module.exports = ReactPropTypes;
 
 /***/ },
-/* 110 */
+/* 113 */
 /***/ function(module, exports) {
 
 	/**
@@ -13351,7 +13336,7 @@
 	module.exports = '15.3.2';
 
 /***/ },
-/* 111 */
+/* 114 */
 /***/ function(module, exports) {
 
 	/**
@@ -13383,7 +13368,7 @@
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 112 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13446,7 +13431,7 @@
 	module.exports = accumulateInto;
 
 /***/ },
-/* 113 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -13539,7 +13524,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(51)))
 
 /***/ },
-/* 114 */
+/* 117 */
 /***/ function(module, exports) {
 
 	/**
@@ -13575,7 +13560,7 @@
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 115 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13591,7 +13576,7 @@
 	
 	'use strict';
 	
-	var ReactNodeTypes = __webpack_require__(108);
+	var ReactNodeTypes = __webpack_require__(111);
 	
 	function getHostComponentFromComposite(inst) {
 	  var type;
@@ -13610,7 +13595,7 @@
 	module.exports = getHostComponentFromComposite;
 
 /***/ },
-/* 116 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13648,7 +13633,7 @@
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 117 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13667,9 +13652,9 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var ReactCompositeComponent = __webpack_require__(190);
-	var ReactEmptyComponent = __webpack_require__(102);
-	var ReactHostComponent = __webpack_require__(104);
+	var ReactCompositeComponent = __webpack_require__(183);
+	var ReactEmptyComponent = __webpack_require__(105);
+	var ReactHostComponent = __webpack_require__(107);
 	
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(2);
@@ -13772,7 +13757,7 @@
 	module.exports = instantiateReactComponent;
 
 /***/ },
-/* 118 */
+/* 121 */
 /***/ function(module, exports) {
 
 	/**
@@ -13828,7 +13813,7 @@
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 119 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13881,33 +13866,7 @@
 	module.exports = setTextContent;
 
 /***/ },
-/* 120 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(125);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(78)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./FirstBlock.less", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./FirstBlock.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 121 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13920,19 +13879,17 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _underscore = __webpack_require__(249);
+	var _underscore = __webpack_require__(240);
 	
 	var _underscore2 = _interopRequireDefault(_underscore);
 	
-	var _nav = __webpack_require__(124);
+	var _nav = __webpack_require__(126);
 	
 	var _nav2 = _interopRequireDefault(_nav);
 	
-	__webpack_require__(120);
+	__webpack_require__(45);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// const img = require('../img/ajax-loader.gif');
 	
 	var SUPPORTED_LANGUAGES = {
 	    ru: 'RU',
@@ -13949,25 +13906,22 @@
 	            lang: 'en'
 	        };
 	    },
-	    componentDidMount: function componentDidMount() {
+	    contantpage: function contantpage() {
 	        $('html').hasClass('fp-enabled') ? $.fn.fullpage.destroy('all') : false;
 	
-	        $('#contantpage').fullpage({
+	        return $('#contantpage').fullpage({
 	            // anchors: ['zero', 'one', 'two', 'three', 'four'],
 	            css3: true,
 	            navigation: true,
 	            scrollOverflow: true,
 	            scrollingSpeed: 1000
 	        });
-	
-	        // return () => {
-	        //     var elem = document.getElementById('preload');
-	        //     elem.style.display='block';
-	        //     window.onload = () => {elem.style.display='none';}
-	        // }
 	    },
 	    changeLang: function changeLang(newLang) {
 	        this.setState({ lang: newLang });
+	    },
+	    componentDidMount: function componentDidMount() {
+	        this.contantpage();
 	    },
 	    render: function render() {
 	        var _this = this;
@@ -13996,7 +13950,7 @@
 	            _react2.default.createElement(
 	                'div',
 	                { id: 'contantpage' },
-	                _react2.default.cloneElement(this.props.children, { lang: lang })
+	                _react2.default.cloneElement(this.props.children, { lang: lang, cont: this.contantpage() })
 	            )
 	        );
 	    }
@@ -14005,7 +13959,7 @@
 	exports.default = FirstBlock;
 
 /***/ },
-/* 122 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14018,15 +13972,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Section = __webpack_require__(123);
+	var _Section = __webpack_require__(78);
 	
 	var _Section2 = _interopRequireDefault(_Section);
 	
-	__webpack_require__(247);
+	__webpack_require__(127);
 	
-	__webpack_require__(120);
+	__webpack_require__(45);
 	
-	var _languages = __webpack_require__(158);
+	var _languages = __webpack_require__(87);
 	
 	var _languages2 = _interopRequireDefault(_languages);
 	
@@ -14036,7 +13990,8 @@
 	    displayName: 'Home',
 	
 	    propTypes: {
-	        lang: _react2.default.PropTypes.string
+	        lang: _react2.default.PropTypes.string,
+	        cont: _react2.default.PropTypes.func
 	    },
 	
 	    html: function html(sectionid) {
@@ -14047,6 +14002,9 @@
 	    },
 	    sectionLink: function sectionLink(sectionlinkid) {
 	        return $.fn.fullpage.moveTo(sectionlinkid);
+	    },
+	    componentDidMount: function componentDidMount() {
+	        return this.props.cont;
 	    },
 	    render: function render() {
 	        var cont = _languages2.default[this.props.lang].home || {};
@@ -14062,7 +14020,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'col-1' },
-	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(146) })
+	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(82) })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -14125,7 +14083,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'col-1' },
-	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(147) })
+	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(83) })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -14147,41 +14105,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 123 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Section = _react2.default.createClass({
-	    displayName: "Section",
-	
-	    propTypes: {
-	        id: _react2.default.PropTypes.string.isRequired
-	    },
-	
-	    render: function render() {
-	        return _react2.default.createElement(
-	            "div",
-	            { className: "section", id: this.props.id },
-	            this.props.children
-	        );
-	    }
-	});
-	
-	exports.default = Section;
-
-/***/ },
-/* 124 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14194,9 +14118,156 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRouter = __webpack_require__(92);
+	var _Section = __webpack_require__(78);
 	
-	__webpack_require__(248);
+	var _Section2 = _interopRequireDefault(_Section);
+	
+	__webpack_require__(128);
+	
+	__webpack_require__(45);
+	
+	var _languages = __webpack_require__(87);
+	
+	var _languages2 = _interopRequireDefault(_languages);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Horeca = _react2.default.createClass({
+	    displayName: 'Horeca',
+	
+	    propTypes: {
+	        lang: _react2.default.PropTypes.string,
+	        cont: _react2.default.PropTypes.func
+	
+	    },
+	
+	    html: function html(sectionid) {
+	        var contant = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "body";
+	
+	        var home_translate = _languages2.default[this.props.lang].home || {};
+	        return { __html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!' };
+	    },
+	    sectionLink: function sectionLink(sectionlinkid) {
+	        return $.fn.fullpage.moveTo(sectionlinkid);
+	    },
+	    componentDidMount: function componentDidMount() {
+	        return this.props.cont;
+	    },
+	    render: function render() {
+	        var cont = _languages2.default[this.props.lang].home || {};
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                _Section2.default,
+	                { id: 'section0' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'container-col' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-1' },
+	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(82) })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-2' },
+	                        _react2.default.createElement(
+	                            'b',
+	                            { className: 'title' },
+	                            cont.section0.title
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('p', { className: 'textSection0', dangerouslySetInnerHTML: this.html("section0") })
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                _Section2.default,
+	                { id: 'section1' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'container-col' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-1' },
+	                        _react2.default.createElement('p', { className: 'textOlso', dangerouslySetInnerHTML: this.html("section1") })
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                _Section2.default,
+	                { id: 'section2' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'container-col' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-1' },
+	                        _react2.default.createElement('p', { className: 'textOlso', dangerouslySetInnerHTML: this.html("section2") })
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                _Section2.default,
+	                { id: 'section3' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'container-col' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-1' },
+	                        _react2.default.createElement('p', { className: 'textOlso', dangerouslySetInnerHTML: this.html("section3") })
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                _Section2.default,
+	                { id: 'section4' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'container-col' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-1' },
+	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(83) })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-1 left' },
+	                        _react2.default.createElement('p', { dangerouslySetInnerHTML: this.html("section4", "title") })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-3' },
+	                        _react2.default.createElement('p', { dangerouslySetInnerHTML: this.html("section4") })
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	//noinspection JSUnresolvedVariable
+	exports.default = Horeca;
+
+/***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(95);
+	
+	__webpack_require__(129);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -14230,8 +14301,8 @@
 	                'li',
 	                { className: 'olso' },
 	                _react2.default.createElement(
-	                    'a',
-	                    { href: '#/fb/section1' },
+	                    _reactRouter.Link,
+	                    { to: '/horeca' },
 	                    'HOERECA'
 	                )
 	            ),
@@ -14280,49 +14351,15 @@
 	exports.default = Nav;
 
 /***/ },
-/* 125 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(45)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".lang {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 70;\n  list-style: none;\n  margin: 0 0 0 35%;\n  padding: 0 0 0 0;\n  width: 30%;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  align-items: center;\n  -webkit-flex-flow: row wrap;\n  justify-content: space-between;\n}\n.li {\n  flex: 1;\n  text-align: center;\n  min-height: 20px;\n  background: #0086b3;\n  border-radius: 0 0 10px 10px;\n}\n.container-col {\n  padding: 5em 4em 0 4em;\n  list-style: none;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-flow: row wrap;\n  justify-content: space-between;\n}\n.col-1 {\n  flex: 1;\n}\n.col-2 {\n  flex: 2;\n}\n@media all and (max-width: 1000px) {\n  .container-col {\n    -webkit-flex-flow: column wrap;\n    flex-flow: column wrap;\n  }\n  .col-1 {\n    text-align: center;\n  }\n}\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 126 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(45)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".section {\n  background-size: cover;\n}\n#section0 {\n  background: url(" + __webpack_require__(142) + ") no-repeat center;\n  background-size: cover;\n  /* Масштабируем фон */\n}\n#section1 {\n  background: url(" + __webpack_require__(144) + ") no-repeat center;\n  background-size: cover;\n  /* Масштабируем фон */\n}\n#section2 {\n  background: url(" + __webpack_require__(143) + ") no-repeat center;\n  background-size: cover;\n  /* Масштабируем фон */\n}\n#section3 {\n  background: url(" + __webpack_require__(150) + ") no-repeat center;\n  background-size: cover;\n  /* Масштабируем фон */\n}\n#section4 {\n  background: url(" + __webpack_require__(149) + ") no-repeat center;\n  background-size: cover;\n  /* Масштабируем фон */\n}\n#section4 .textOlso {\n  margin-top: 0;\n  background: rgba(0, 0, 0, 0);\n}\n#section4 .container-col {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  padding: 4em;\n  margin: -1em;\n  background: rgba(0, 0, 0, 0.8);\n}\n#section4 .container-col .col-1 {\n  text-align: end;\n  color: white;\n  padding-left: 1em;\n  padding-right: 1em;\n}\n#section4 .container-col .col-3 {\n  flex: 3;\n  color: white;\n}\n#section4 .container-col .left {\n  text-align: start;\n}\nbody:not(.fp-viewing-0) .navigation-bar {\n  top: 4em;\n  animation: nav-bar-bottom 2s 1;\n}\n@keyframes nav-bar-bottom {\n  0% {\n    top: 0;\n  }\n  70% {\n    top: 4em;\n  }\n}\nbody:not(.fp-viewing-0) .active .container-col {\n  animation: marginSection 3s 1;\n}\n@keyframes marginSection {\n  0% {\n    margin: 0 100% 0 -100%;\n  }\n  70% {\n    margin: 0;\n  }\n}\n.fp-viewing-0 .navigation-bar {\n  bottom: 7em;\n  top: inherit;\n  animation: nav-bar-top 2s 1;\n}\n@keyframes nav-bar-top {\n  0% {\n    bottom: 0;\n  }\n  70% {\n    bottom: 7em;\n  }\n}\n.logo {\n  padding: 0 0 2em 0;\n}\n.title {\n  background: #b92d21;\n  color: white;\n  padding: 0 13px 0 30px;\n}\n.textSection0 {\n  max-width: 37em;\n  padding: 0 0 0 30px;\n}\n.textOlso {\n  left: 2em;\n  right: 2em;\n  margin-top: 100px;\n  padding: 30px;\n  background: rgba(255, 255, 255, 0.8);\n}\n.textOlso b {\n  line-height: 30px;\n}\n@media all and (max-width: 1000px) {\n  .title {\n    background: #b92d21;\n    color: white;\n    padding: 0 0 0 0;\n  }\n  .textSection0 {\n    padding: 0 0 0 0;\n  }\n  .col-3 {\n    text-align: center;\n  }\n  #section4 .container-col .col-1 {\n    text-align: center;\n  }\n  #section4 .container-col .left {\n    text-align: center;\n  }\n  #section4 .container-col .logo {\n    padding: 0;\n  }\n}\n@media handheld and (orientation: portrait) {\n  .col-2 {\n    text-align: center;\n  }\n  .col-2 .textSection0 {\n    max-width: none;\n  }\n}\n", ""]);
-	
-	// exports
-
-
-/***/ },
 /* 127 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(45)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".navigation-bar {\n  position: fixed;\n  z-index: 70;\n  list-style: none;\n  padding: 0 4em 0 4em;\n  left: 0;\n  right: 0;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  align-items: center;\n  -webkit-flex-flow: row wrap;\n  justify-content: space-between;\n}\n.navigation-bar a {\n  text-decoration: none;\n  display: block;\n  padding: 1.4em 1em 1.4em 1em;\n  color: black;\n  background-color: rgba(245, 245, 245, 0.8);\n}\n.navigation-bar a:hover {\n  color: #b92d21;\n}\n.home {\n  flex: 3;\n}\n.home a {\n  background: rgba(245, 245, 245, 0.8) url(" + __webpack_require__(145) + ") 14px no-repeat;\n  border-radius: 5px 0 0 5px;\n  padding-left: 57px;\n}\n.blockimage a {\n  width: 8px;\n  min-height: 4em;\n  padding: 0;\n  background: rgba(245, 245, 245, 0) url(" + __webpack_require__(148) + ") repeat;\n}\n.olso {\n  text-align: center;\n  flex: 2;\n}\n.last a {\n  border-radius: 0 5px 5px 0;\n}\n@media all and (max-width: 1000px) {\n  .navigation-bar {\n    justify-content: flex-start;\n    margin: 0 0 0 0;\n  }\n}\n@media all and (max-width: 600px) {\n  .navigation-bar {\n    margin: 0 0 0 0;\n  }\n  .navigation-bar a {\n    text-align: center;\n    padding: 1.4em 1em 1.4em 1em;\n    border-top: 1px solid rgba(255, 255, 255, 0.3);\n    border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  }\n  .navigation-bar li:last-of-type a {\n    border-bottom: none;\n  }\n  .blockimage a {\n    padding: 0;\n  }\n}\n", ""]);
-	
-	// exports
-
-
-/***/ },
+45,
 /* 128 */
+45,
+/* 129 */
+45,
+/* 130 */
+45,
+/* 131 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14358,7 +14395,7 @@
 	module.exports = camelize;
 
 /***/ },
-/* 129 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14374,7 +14411,7 @@
 	
 	'use strict';
 	
-	var camelize = __webpack_require__(128);
+	var camelize = __webpack_require__(131);
 	
 	var msPattern = /^-ms-/;
 	
@@ -14402,7 +14439,7 @@
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 130 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14418,7 +14455,7 @@
 	 * 
 	 */
 	
-	var isTextNode = __webpack_require__(138);
+	var isTextNode = __webpack_require__(141);
 	
 	/*eslint-disable no-bitwise */
 	
@@ -14446,7 +14483,7 @@
 	module.exports = containsNode;
 
 /***/ },
-/* 131 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14577,7 +14614,7 @@
 	module.exports = createArrayFromMixed;
 
 /***/ },
-/* 132 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14597,8 +14634,8 @@
 	
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var createArrayFromMixed = __webpack_require__(131);
-	var getMarkupWrap = __webpack_require__(133);
+	var createArrayFromMixed = __webpack_require__(134);
+	var getMarkupWrap = __webpack_require__(136);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -14665,7 +14702,7 @@
 	module.exports = createNodesFromMarkup;
 
 /***/ },
-/* 133 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14764,7 +14801,7 @@
 	module.exports = getMarkupWrap;
 
 /***/ },
-/* 134 */
+/* 137 */
 /***/ function(module, exports) {
 
 	/**
@@ -14807,7 +14844,7 @@
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 135 */
+/* 138 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14844,7 +14881,7 @@
 	module.exports = hyphenate;
 
 /***/ },
-/* 136 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14860,7 +14897,7 @@
 	
 	'use strict';
 	
-	var hyphenate = __webpack_require__(135);
+	var hyphenate = __webpack_require__(138);
 	
 	var msPattern = /^ms-/;
 	
@@ -14887,7 +14924,7 @@
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 137 */
+/* 140 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14914,7 +14951,7 @@
 	module.exports = isNode;
 
 /***/ },
-/* 138 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14930,7 +14967,7 @@
 	 * @typechecks
 	 */
 	
-	var isNode = __webpack_require__(137);
+	var isNode = __webpack_require__(140);
 	
 	/**
 	 * @param {*} object The object to check.
@@ -14943,7 +14980,7 @@
 	module.exports = isTextNode;
 
 /***/ },
-/* 139 */
+/* 142 */
 /***/ function(module, exports) {
 
 	/**
@@ -14977,7 +15014,7 @@
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 140 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15004,7 +15041,7 @@
 	module.exports = performance || {};
 
 /***/ },
-/* 141 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15020,7 +15057,7 @@
 	 * @typechecks
 	 */
 	
-	var performance = __webpack_require__(140);
+	var performance = __webpack_require__(143);
 	
 	var performanceNow;
 	
@@ -15042,61 +15079,7 @@
 	module.exports = performanceNow;
 
 /***/ },
-/* 142 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/200683909e50ecf37530945bd1fcfbed.jpg";
-
-/***/ },
-/* 143 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/89c669a259bd0d6a95304c0c0aac31f5.jpg";
-
-/***/ },
-/* 144 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/993a42e8abd6cd3cf16b2cdd9aedbe36.jpg";
-
-/***/ },
 /* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/20d793f1a13382838a42505467ca2a73.png";
-
-/***/ },
-/* 146 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/ec90afa86ce8f8159e8bcb7e145f241b.svg";
-
-/***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/226511b5e36f664df8d417813f041a22.svg";
-
-/***/ },
-/* 148 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/64daeb6c85a5d3edd570cdc9a16d2d18.png";
-
-/***/ },
-/* 149 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/3f15fb3ca109d5f930fd7f87d5652c02.jpg";
-
-/***/ },
-/* 150 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "image/f75a14bd1b568a22c77c3089b0afbbc8.jpg";
-
-/***/ },
-/* 151 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -15157,7 +15140,7 @@
 	};
 
 /***/ },
-/* 152 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15188,7 +15171,7 @@
 	
 	var _DOMUtils = __webpack_require__(37);
 	
-	var _DOMStateStorage = __webpack_require__(82);
+	var _DOMStateStorage = __webpack_require__(84);
 	
 	var _PathUtils = __webpack_require__(18);
 	
@@ -15298,7 +15281,7 @@
 	};
 
 /***/ },
-/* 153 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15340,7 +15323,7 @@
 	};
 
 /***/ },
-/* 154 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15359,7 +15342,7 @@
 	
 	var BrowserProtocol = _interopRequireWildcard(_BrowserProtocol);
 	
-	var _RefreshProtocol = __webpack_require__(153);
+	var _RefreshProtocol = __webpack_require__(147);
 	
 	var RefreshProtocol = _interopRequireWildcard(_RefreshProtocol);
 	
@@ -15438,7 +15421,7 @@
 	exports.default = createBrowserHistory;
 
 /***/ },
-/* 155 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15459,7 +15442,7 @@
 	
 	var _DOMUtils = __webpack_require__(37);
 	
-	var _HashProtocol = __webpack_require__(152);
+	var _HashProtocol = __webpack_require__(146);
 	
 	var HashProtocol = _interopRequireWildcard(_HashProtocol);
 	
@@ -15590,7 +15573,7 @@
 	exports.default = createHashHistory;
 
 /***/ },
-/* 156 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15735,7 +15718,7 @@
 	exports.default = createMemoryHistory;
 
 /***/ },
-/* 157 */
+/* 151 */
 /***/ function(module, exports) {
 
 	/**
@@ -15791,223 +15774,11 @@
 
 
 /***/ },
-/* 158 */
-/***/ function(module, exports) {
-
-	module.exports = {
-		"ru": {
-			"nav": "",
-			"foo": "",
-			"home": {
-				"section0": {
-					"title": "РЕКЛАМНО - ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ",
-					"body": "Рекламно - производственная компания «ПромоМастер Украина» – один из лидеров рынка рекламно-сувенирной продукции Украины. Мы предлагаем своим клиентам, представителям малого, среднего и крупного бизнеса, только качественные решения для продвижения посредством нанесения логотипов Вашей компании на ЛЮБУЮ плоскую поверхность, будь-то: <br>• корпоративная одежда (печать на футболках, бейсболки с логотипом,<br> форма для официантов, униформа для персонала гостиниц, банков и т.д.)<br> • посуда (кружки с логотипом, печать на тарелках, стаканчики для кофе)<br> • сувенирная продукция (печать на холсте, ручки с логотипом)"
-				},
-				"section1": {
-					"body": "<b>НАША ФИШКА В ТОМ, ЧТО МЫ МОЖЕМ ВЫПОЛНИТЬ ЗАКАЗ «НА ВЧЕРА»</b><br> Мы действительно выполняем работу <u>в любые</u> необходимые клиенту сроки. Как мы это делаем? Владея собственным технологическим парком, нам не надо кого-то искать, идти и уговаривать что-то сделать. Мы делаем всё сами. Поэтому если говорим клиенту, что продукт будет готов завтра в 9:00 утра, значит так и будет. Мы очень клиентоориентированы. Не стесняемся работать и в выходные, и в праздники, днем и ночью. И это не просто красивые слова, чтобы завлечь Вас. Приезжайте на нашу фабрику в любое время и убедитесь в этом лично.<br> <b>ПЕРЕДОВЫЕ ТЕХНОЛОГИИ И МАТЕРИАЛЫ</b><br> В своей работе используем исключительно передовые технологии и материалы, а также современное оборудование, что позволяет нам предлагать даже самым взыскательным клиентам фантастически сжатые сроки изготовления продукции.<br> <b>КОМПЛЕКСНЫЙ ПОДХОД</b><br> Уникальность нашего предприятия заключается в том, что мы смогли собрать все существующие в природе технологии печати в одном месте. Мы не размещаем заказы на стороне. Подходим к решению любой задачи комплексно. А уже готовую продукцию прилично упакуем. У нас и для этого есть специальное оборудование.<br> <b>ЗАКАЗЫ НА ЛЮБЫЕ ПАРТИИ РЕКЛАМНОЙ ПРОДУКЦИИ</b><br> Вы можете заказать лишь одну единицу рекламной продукции, а можете несколько тысяч. Не рассчитали необходимое количество? У Вас есть возможность дозаказа при сохранении цены на договорных условиях. Не исключаем повтор моделей по вашим образцам (сделаем необходимую доработку, подберем соответствующие материалы)."
-				},
-				"section2": {
-					"body": "<b>УМНАЯ ЛОГИСТИКА И ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА</b><br> Наш секрет в отлаженной системе логистики и гибкой ценовой политике, направленной на удовлетворение интересов, как оптовых покупателей, так и розничного потребителя. Мы знаем, как доставить готовую продукцию в целости и сохранности любым удобным для заказчика способом в любую точку Украины. Работаем со всеми транспортными компаниями Украины. Груз может быть доставлен в офис или на склад заказчика по его желанию. Формируя заявку, просто укажите, где и как Вы его хотите получить. <br> <b>ОГРОМНЫЙ ОПЫТ</b><br> У нас очень дружный коллектив, мы как одна семья. И это не просто слова. Люди очень любят свою работу и ответственно к ней относятся. Почему? Потому что работа в рекламно-производственной компании «ПромоМастер Украина» – это не обязанность, а стиль жизни, который разделяют наши сотрудники. Мы предоставляем каждому человеку уникальную возможность для самореализации, творчества и самосовершенствования. Высоко ценим профессионализм и надежность. Вместе трудимся и отдыхаем. Даже такой семейный праздник, как новый год, отмечаем вместе. А это о многом говорит, согласитесь."
-				},
-				"section3": {
-					"body": "<b>МЫ ИСКРЕННЕ ЛЮБИМ СВОИХ КЛИЕНТОВ…</b><br> … и переживаем за них, помогаем решать задачи, даже не связанные с основной сферой деятельности. Наша цель – снять любую головную боль с клиента. Вы доверяете нам, а мы, в свою очередь, делаем всё наилучшим образом.<br> Миссия компании «ПромоМастер Украина» – в совершенно невозможных условиях не бросить своего клиента, а быть рядом с ним, пока в нас отпадет необходимость. У Вас важная презентация, выставка либо какое-то другое деловое мероприятие? Будьте уверены: мы всё сделаем вовремя, наилучшим образом, подвезем готовую продукцию в любое указанное Вами место и поможем всё разместить так, чтобы это было идеально. В этом наше предназначение. Деньги, конечно, важны, но они объективно вторичны. <br><b>НАМ ОЧЕНЬ ВАЖНО ВАШЕ МНЕНИЕ!</b><br> Руководство компании «ПромоМастер Украина» всегда открыто для диалога. Мы всегда готовы выслушать от Вас любые предложения или критические замечания, дорогие наши партнеры и клиенты! Дорожим своей репутацией и стремимся к тому, чтобы наше сотрудничество было максимально комфортным. <br> Давайте сотрудничать! Вы будете довольны результатом."
-				},
-				"section4": {
-					"title": "Украина<br> 69076<br> Запорожье<br> ул. Козака Бабури, 9",
-					"body": "Управляющий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
-				}
-			},
-			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"clothes": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"decol": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			}
-		},
-		"en": {
-			"nav": "",
-			"foo": "",
-			"home": {
-				"section0": {
-					"title": "ADVERTISING AND PRODUCTION COMNANY",
-					"body": "Advertising & Production Company «PromoMaster Ukraine» is one of the leaders on Ukrainian advertising and souvenir production market. We offer our clients, representatives of small, medium and large businesses, high-quality solutions for the promotion of their brands. We can print logo of your company on any flat surfaces:<br> • Corporate uniform (printing on T-shirts, baseball caps with your logo, uniform for waiters, uniform for hotel staff, banks, etc.)<br> • Tableware (cups with your logo, printing on plates, coffee-glasses)<br> • Souvenir products (prints on canvas, pens with your logo)"
-				},
-				"section1": {
-					"body": "<b>OUR SPECIAL FEATURE IS THAT WE CAN FULFIL ANY RUSH JOB.</b><br> We can perform any orders work <u>within any</u> required time limit of our customer. How can we do it? Our company has its own technological park, we do not have to look for someone, go and persuade to do something. We produce everything ourselves.Therefore, if we are tell our clients that the product will be ready at 9:00 am tomorrow, there product will be waiting for the client at 9:00 am tomorrow. We are very customer-oriented. We do not hesitate about working at the weekend and on holidays, during the day and late at night. Moreover, these are not just pretty words to attract you. Come and visit our factory any time in person.<br> <b>ADVANCED TECHNOLOGIES AND MATERIALS</b><br> In our work, we use only advanced technologies and materials, as well as modern equipment that enables us to offer our most demanding customers manufacturingquality goods even in tight deadlines.<br> <b>COMPLEX APPROACH</b><br> The uniqueness of our company is that we were able to collect all of the existing printing technologies at our factory. We do not place orders to external companies. We always solve any problem in complex. We pack the final product properly as we have our own special packing equipment.<br> <b>ORDERS FOR ANY BATCH OF ADVERTISING PRODUCTS</b><br> You can order just one unit of your advertising product as well as thousands. You were incorrect with the calculation of necessary quantity of the goods, were you? You can reorder the goods with the same prices, which were on contractual terms. We do not exclude the possibility of repetition of models according to your samples (We make the necessary improvements and we choose the appropriate materials)."
-				},
-				"section2": {
-					"body": "<b>SMART LOGISTICS AND FLEXIBLE PRICE POLICY</b><br> Our secret is well-functioning logistics system and a flexible pricing policy, designed to meet the interests wholesale as well as retail consumers. We know how to deliver final product safe and unharmed in any convenient way for customers to any destination in Ukraine. We work with all transport companies of Ukraine. The freight can be delivered to the office or the warehouse of the customer according to his wish. Shaping the application, you just specify where and how you want to receive your product.<br><b>HUGE EXPERIENCE</b><br> We have a very friendly team, we are like one family. And it's not just words. Our Staff love their work and they are responsible. You can ask: “Why?”. Working in Advertising & Production Company «PromoMaster Ukraine» is not obligation, it is lifestyle, which is shared by all our employees. We provide every member of our team the unique opportunity for self-actualization,  creativity and self-development. We highly value professionalism and reliability. We work and rest together. Even family holiday like New Year we celebrate together. We celebrate together. You can agree that it shows a lot."
-				},
-				"section3": {
-					"body": "<b>WE SINCERELY LOVE OUR CUSTOMERS…</b><br> … and worry about them, help our clients solve problems which sometimes aren’t connected with our main sphere of activities. Our goal is to remove any possible problems and inconveniences our clients can face suffer in Ukrainian business environment. You trust us, and we do our best in turn.<br> Mission of the company «PromoMaster Ukraine» is to stay with the client in any unpredictable conditions, be ready to help until the client needs our support Do you plan an important presentation, exhibition or any business event? Rest assured that we will do all everything in time,  deliver final product to any location of your choice and help to place the products the best possible way. It is our mission. Of course, money is important, but it is of secondary importance honestly.<br> <b>YOUR OPINION AND FEEDBACK ARE IMPORTANT FOR US!</b><br> The management of company «PromoMaster Ukraine» is always open for dialogue. We are always ready to listen any kind of your suggestions or criticisms, our dear partners and customers! We value our reputation and strive to make our cooperation as comfortable as possible.<br> Let's cooperate! You will be pleased with the result."
-				},
-				"section4": {
-					"title": "Ukraine<br> 69076<br> Zaporozhye<br> st.Zhukov, 9",
-					"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
-				}
-			},
-			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"clothes": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"decol": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			}
-		},
-		"ua": {
-			"nav": "",
-			"foo": "",
-			"home": {
-				"section0": {
-					"title": "РЕКЛАМНО - ВИРОБНИЧА КОМПАНІЯ",
-					"body": "Рекламно-виробнича компанія «ПромоМайстер Україна» - один з лідерів ринку рекламно-сувенірної продукції України. Ми пропонуємо своїм клієнтам, представникам малого, середнього та великого бізнесу, тільки якісні рішення для просування за допомогою нанесення логотипів Вашої компанії на БУДЬ-ЯКУ пласку поверхню, як це: <br>• корпоративний одяг (друк на футболках, бейсболки з логотипом, <br> форма для офіціантів, уніформа для персоналу готелів, банків і т.д.)<br> • посуд (кухлі з логотипом, друк на тарілках, стаканчики для кави)<br> • сувенірна продукція (друк на полотні, ручки з логотипом)"
-				},
-				"section1": {
-					"body": "<b>НАША ФІШКА В ТОМУ, ЩО МИ МОЖЕМО ВИКОНАТИ ЗАМОВЛЕННЯ «НА ВЧОРА»</b><br>Ми дійсно виконуємо роботу <u>в будь-які</u> необхідні клієнту терміни. Як ми це робимо? Володіючи власним технологічним парком, нам не треба когось шукати, йти і вмовляти щось зробити. Ми робимо все самі. Тому якщо говоримо клієнтові, що продукт буде готовий завтра о 9:00 ранку, значить так і буде. Ми дуже клієнтоорієнтовані. Ми не соромимося працювати і у вихідні, і у свята, вдень і вночі. І це не просто красиві слова, щоб заманити Вас. Приїжджайте на нашу фабрику в будь-який час і переконайтеся в цьому особисто.<br> <b>ПЕРЕДОВІ ТЕХНОЛОГІЇ ТА МАТЕРІАЛИ</b><br>У своїй роботі використовуємо виключно передові технології та матеріали, а також сучасне устаткування, що дозволяє нам пропонувати навіть найвибагливішим клієнтам фантастично стислі терміни виготовлення продукції.<br> <b>КОМПЛЕКСНИЙ ПІДХІД</b><br>Унікальність нашого підприємства полягає в тому, що ми змогли зібрати всі існуючі в природі технології друку в одному місці. Ми не розміщуємо замовлення на стороні. Підходимо до вирішення будь-якої задачі комплексно. А вже готову продукцію пристойно спакуємо. У нас і для цього є спеціальне обладнання.<br> <b>ЗАМОВЛЕННЯ НА БУДЬ ЯКІ ПАРТІЇ РЕКЛАМНИХ ТОВАРІВ</b><br>Ви можете замовити лише одну одиницю рекламної продукції, а можете кілька тисяч. Не розрахували необхідну кількість? У Вас є можливість дозамовлення при збереженні ціни на договірних умовах. Не виключений повтор моделей за вашими зразками (зробимо необхідне доопрацювання, підберемо відповідні матеріали)."
-				},
-				"section2": {
-					"body": "<b>РОЗУМНА ЛОГІСТИКА ТА ГНУЧКА ЦІНОВА ПОЛІТИКА</b><br>Наш секрет в налагодженій системі логістики та гнучкій ціновій політиці, спрямованої на задоволення інтересів, як оптових покупців, так і роздрібного споживача. Ми знаємо, як доставити готову продукцію цілою та неушкодженою будь-яким зручним для замовника способом в будь-яку точку України. Працюємо з усіма транспортними компаніями України. Вантаж може бути доставлений в офіс або на склад замовника за його бажанням. Формуючи заявку, просто вкажіть, де і як Ви її хочете отримати.<br> <b>ВЕЛИЧЕЗНИЙ ДОСВІД</b><br>У нас дуже дружний колектив, ми як одна сім'я. І це не просто слова. Люди дуже люблять свою роботу і відповідально до неї ставляться. Чому? Тому що робота в рекламно-виробничої компанії «ПромоМайстер Україна» - це не обов'язок, а стиль життя, який поділяють наші співробітники. Ми надаємо кожній людині унікальну можливість для самореалізації, творчості і самовдосконалення. Високо цінуємо професіоналізм і надійність. Разом працюємо і відпочиваємо. Навіть таке сімейне свято, як Новий рік, відзначаємо разом. А це багато про що говорить, погодьтеся."
-				},
-				"section3": {
-					"body": "<b>МИ ЩИРО ЛЮБИМО СВОЇХ КЛІЄНТІВ…</b><br>… і переживаємо за них, допомагаємо вирішувати завдання, навіть не пов'язані з основною сферою діяльності. Наша мета - зняти будь-який головний біль з клієнта. Ви довіряєте нам, а ми, в свою чергу, робимо все найкращим чином.<br> Місія компанії «ПромоМайстер Україна» - в абсолютно неможливих умовах не кинути свого клієнта, а бути поруч з ним, поки в нас не відпаде необхідність. У Вас важлива презентація, виставка або якийсь інший діловий захід? Будьте впевнені: ми все зробимо вчасно, найкращим чином, підвеземо готову продукцію в будь-яке зазначене Вами місце і допоможемо все розмістити так, щоб це було ідеально. В цьому наше призначення. Гроші, звичайно, важливі, але вони об'єктивно вторинні.<br> <b>НАМ ДУЖЕ ВАЖЛИВА ВАША ДУМКА!</b><br>Керівництво компанії «ПромоМайстер Україна» завжди відкрито до діалогу. Ми завжди готові вислухати від Вас будь-які пропозиції або критичні зауваження, дорогі наші партнери та клієнти! Дуже цінуємо свою репутацію і прагнемо того, щоб наша співпраця була максимально комфортна.<br> Давайте співпрацювати! Ви будете задоволені результатом"
-				},
-				"section4": {
-					"title": "Україна<br> 69076<br> Запоріжжя<br> вул. Козака Бабури, 9",
-					"body": "Керуючий партнер<br> Козляковскій Максим<br> +380676142930<br> max@promomaster.biz"
-				}
-			},
-			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"clothes": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"decol": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			}
-		},
-		"fr": {
-			"nav": "",
-			"foo": "",
-			"home": {
-				"section0": {
-					"title": "LA SOCIÉTÉ DE PUBLICITÉ ET DE PRODUCTION",
-					"body": "La société de publicité et de production «PromoMaster Ukraine» est l&#39;un des leaders du marché des produits promotionnels de l&#39;Ukraine. Nous n’offrons à nos clients – aux petites, moyennes et grandes entreprises – que des solutions promotionnelles haut de gamme par le biais de l&#39;application des logos de leur entreprise sur TOUTE surface plane, que ce soit: <br>• des vêtements d’entreprise (l’impression sur les t-shirts, les casquettes de <br> baseball avec le logo, la forme pour les serveurs, les uniformes pour le personnel des hôtels, des banques, etc.)<br> • la vaisselle (les tasses avec logo, l’impression sur les assiettes, les gobelets à café)<br> • les souvenirs (l&#39;impression sur toile, les stylos avec le logo)"
-				},
-				"section1": {
-					"body": "<b></b><br><br> <b>LES TECHNOLOGIES ET DES MATÉRIAUX DE POINTE</b><br>Dans notre travail, nous utilisons exclusivement des technologies et des matériaux de pointe, ainsi que des équipements modernes, ce qui nous permet d&#39;offrir aux clients les plus exigeants les délais fantastiques de fabrication des produits.<br> <b>UNE APPROCHE INTÉGRÉE</b><br>L&#39;unicité de notre entreprise réside dans le fait que nous avons réussi à recueillir tout ce qui existe dans la nature de la technologie d&#39;impression en un seul endroit. Nous ne transférons jamais les commandes à autrui. Chez nous, on vous offre une solution complète à chaque tâche. Et nous emballerons bien les produits finis. Pour cela, nous sommes dotés d’équipement spécial.<br> <b>LES COMMANDES DE PRODUITS PROMOTIONNELS EN N’IMPORTE QUELLE QUANTITÉ</b><br>Vous pouvez commander une seule unité des produits promotionnels, comme vous pouvez en commander quelques milliers. Vous n’avez pas calculé la quantité nécessaire ? Vous avez l’option de réapprovisionnement tout en gardant des prix sur une base contractuelle. Nous n&#39;excluons pas la répétition de modèles selon vos échantillons (nous ferons une révision nécessaire, choisirons les matériaux appropriés)."
-				},
-				"section2": {
-					"body": "<b>LA LOGISTIQUE INTELLIGENTE ET LA POLITIQUE DES PRIX FLEXIBLE</b><br>Vous bénéficierez de notre système de la logistique bien ajusté et de la politique des prix flexible visant à satisfaire les intérêts de nos clients, tant acheteurs en gros que consommateurs en détail. Nous savons comment livrer les produits finis sains et saufs par n&#39;importe quel moyen, convenable au client, partout en Ukraine. Nous travaillons avec toutes les compagnies de transport de l&#39;Ukraine. Les marchandises peuvent être livrées au bureau ou à l&#39;entrepôt du client à sa demande. En formant une demande, il suffit d&#39;indiquer où et comment vous voulez les obtenir.<br> <b>UNE EXPÉRIENCE ÉNORME</b><br>Notre collectif est très sympathique, nous sommes tous comme une famille. Et ce ne sont pas juste des mots. Les gens aiment leur travail et le font responsablement. Pourquoi ? Parce que le travail dans la société de publicité et de production PromoMaster Ukraine n&#39;est pas une obligation, mais un style de vie, partagé par nos employés. Nous fournissons à chaque personne une occasion unique pour la réalisation de soi, la créativité et le perfectionnement personnel. Nous apprécions le professionnalisme et la fiabilité. Nous travaillons et nous nous reposons ensemble. Nous célébrons ensemble même une telle fête familiale que le Nouvel An. Et cela en dit beaucoup, n’est-ce pas? "
-				},
-				"section3": {
-					"body": "<b>NOUS AIMONS SINCÈREMENT NOS CLIENTS…</b><br>… Et nous nous faisons du souci pour eux, en les aidant à résoudre même les problèmes, non liés à notre activité principale. Notre objectif est de remédier au casse-tête du client. Vous nous faites confiance et nous, à notre tour, nous efforçons de tout faire du mieux.<br> La mission de l&#39;entreprise PromoMaster Ukraine est de ne pas quitter son client dans les conditions totalement insupportables et d&#39;être à côté de lui, jusqu’à qu’il n’ait plus besoin de nous. Vous avez une présentation importante, une exposition ou un autre événement d&#39;affaires ? Soyez assuré que nous ferons tout à l&#39;heure, de notre mieux, livrerons les produits finis dans n&#39;importe quel endroit de votre choix et nous vous aiderons à les placer parfaitement. C&#39;est notre mission. L&#39;argent, il est bien sûr important, mais tout à fait secondaire.<br> <b>VOTRE OPINION EST TRÈS IMPORTANT POUR NOUS !</b><br>La direction de l&#39;entreprise PromoMaster Ukraine est toujours ouverte au dialogue. Nous sommes toujours prêts à entendre vos suggestions ou critiques, nos chers partenaires et clients ! Nous apprécions notre réputation et nous nous efforçons de rendre notre coopération aussi confortable que possible.<br> Travaillons ensemble ! Vous serez satisfait du résultat"
-				},
-				"section4": {
-					"title": "Ukraine<br> 69076<br> Zaporіzhya<br> la. Kozak Babur, 9",
-					"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
-				}
-			},
-			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"clothes": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"decol": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			}
-		},
-		"de": {
-			"nav": "",
-			"foo": "",
-			"home": {
-				"section0": {
-					"title": "WERBUG- UND PRODUKTIONSFIRMA",
-					"body": "Werbung- und Produktionsfirma «PromoMaster Ukraine» ist eine der leitenden Firmen auf dem Markt der Werbung und Souvenirproduktion in der Ukraine. Wir bieten unseren Kunden, Vertretern von kleinen, mittleren und großen Unternehmen nur qualitative hochwertige Lösungen für die Weiterführung durch das Auftragen von Ihrem Firmenlogo auf JEDE flache Oberfläche an, und zwar: <br>• corporate-Identity- Kleidung (Druck auf T-Shirts, Baseball-Kappen mit <br>dem Logo, die Uniform für Kellner, Hotel- und Bankenarbeiter usw.)<br> • geschirr (Tassen mit einem Logo, Druck auf Tellern, Kaffeetassen)<br> • souvenirprodukte (Druck auf Leinwand, Kugelschreiber mit einem Logo)"
-				},
-				"section1": {
-					"body": "<b></b><br><br> <b>FORTGESCHRITTENE TECHNOLOGIEN UND MATERIALIEN</b><br>In unserer Arbeit verwenden wir nur fortschrittliche Technologien und Materialien sowie moderne Ausrüstung, was uns leistet, auch den anspruchsvollsten Kunden unglaublich kurze Fristen der Herstellung von Waren anzubieten.<br> <b>GANZHEITLICHER ANSATZ</b><br>Die Einzigartigkeit unserer Firma ist, dass wir es geschafft haben, auf einem Punkt alle existierende Drucktechnologien zu sammeln. Wir legen keine Bestellungen für Fremde an und lösen jede Aufgabe ganzheitlich. Die fertige Ware wird gut verpackt. Dafür haben wir auch Sonderausstattung.<br> <b>BESTELLUNGEN FÜR JEDE BELIEBIGE MENGE VON WAREN</b><br>Sie können sowohl eine einzige Produktionseinheit, als auch ein paar tausend davon bestellen. Haben Sie die erforderliche Menge nicht berechnet? Sie können eine Nachbestellung machen, während die Preise auf vertraglicher Basis behalten werden. Wir schließen die Wiederholung von Modellen nach Ihrem Muster nicht aus (wir werden die notwendige Nachbearbeitung machen und die geeigneten Materialien auswählen)."
-				},
-				"section2": {
-					"body": "<b>KLUGE LOGISTIK UND FLEXIBLE PREISPOLITIK</b><br>Unser Vorteil liegt in einem gut funktionierenden Logistiksystem und in einer flexiblen Preispolitik, die auf die Interessen von Groß- und Einzelhandel Käufern orientiert ist. Wir wissen Bescheid, wie das fertige Produkt wohlbehalten auf jede geeignete Weise für Kunden überall in der Ukraine geliefert werden soll. Wir arbeiten mit allen Verkehrsunternehmen in der Ukraine. Die Ladung kann ans Büro oder Lager auf Wunsch des Kunden geliefert werden. Bei der Anmeldung weisen Sie darauf hin, wo und wie Sie Ihre Bestellung bekommen möchten.<br> <b>GROßE ERFAHRUNG</b><br>Wir haben eine sehr freundliche Belegschaft, wir sind wie eine Familie. Und es ist nicht nur Worte. Die Leute mögen ihre Arbeit und sind dafür verantwortlich. Warum? Die Arbeit in der Werbung- und Produktionsfirma &quot;PromoMaster Ukraine&quot; ist keine Pflicht, sondern ein Lebensstil, der von unseren Mitarbeitern geteilt wird. Wir geben jeder Person eine Möglichkeit zur Selbstverwirklichung, Kreativität und Selbstverbesserung. Wir schätzen die Professionalität und Zuverlässigkeit. Wir arbeiten und erholen uns zusammen. Sogar das Neujahr, ein Familienfest, feiern wir auch zusammen. Das sagt viel aus."
-				},
-				"section3": {
-					"body": "<b>WIR LIEBEN UNSERE KUNDEN…</b><br>… und sorgen für sie. Wir helfen ihnen, die Probleme zu lösen, die sogar nicht mit der Haupttätigkeit verbunden sind. Unser Ziel ist, Kunden, so weit wie möglich, vom Stress zu lösen. Sie vertrauen uns und wir tun wiederum unser Bestes.<br> Die Hauptaufgabe von &quot;PromoMaster Ukraine&quot; ist, in völlig unmöglichen Bedingungen ihre Kunden nicht im Stich zu lassen und da zu sein, bis es notwendig ist. Haben Sie eine wichtige Präsentation, eine Ausstellung oder eine andere Veranstaltung? Seien Sie sicher, dass wir alles rechtzeitig und am besten erfüllen werden. Außerdem werden wir das fertige Produkt auf jeden von Ihnen bestimmten Ort liefern und helfen, alles an seinen Platz zu stellen, damit das perfekt wird. Das ist unsere Berufung. Das Geld ist natürlich wichtig, aber es ist objektiv zweitrangig.<br> <b>WIR SCHÄTZEN IHRE MEINUNG!</b><br>Die Leitung der Firma &quot;PromoMaster Ukraine&quot; ist immer offen für den Dialog. Wir sind immer bereit, von Ihnen Anregungen oder Kritik zu hören, unsere lieben Partner und Kunden! Wir schätzen unseren guten Ruf und bemühen uns, unsere Zusammenarbeit so angenehm wie möglich zu machen.<br> Lassen Sie uns zusammenarbeiten! Sie werden mit dem Ergebnis zufrieden sein."
-				},
-				"section4": {
-					"title": "Ukraine<br> 69076<br> Zaporozhye<br> der. Kozak Babur, 9",
-					"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
-				}
-			},
-			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"clothes": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			},
-			"decol": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
-			}
-		}
-	};
-
-/***/ },
-/* 159 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strictUriEncode = __webpack_require__(246);
+	var strictUriEncode = __webpack_require__(239);
 	var objectAssign = __webpack_require__(4);
 	
 	function encode(value, opts) {
@@ -16107,16 +15878,16 @@
 
 
 /***/ },
-/* 160 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(191);
+	module.exports = __webpack_require__(184);
 
 
 /***/ },
-/* 161 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16129,7 +15900,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Link = __webpack_require__(85);
+	var _Link = __webpack_require__(88);
 	
 	var _Link2 = _interopRequireDefault(_Link);
 	
@@ -16149,7 +15920,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 162 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16168,7 +15939,7 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _Redirect = __webpack_require__(87);
+	var _Redirect = __webpack_require__(90);
 	
 	var _Redirect2 = _interopRequireDefault(_Redirect);
 	
@@ -16218,7 +15989,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 163 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16284,7 +16055,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 164 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16347,7 +16118,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 165 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16364,7 +16135,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _createTransitionManager2 = __webpack_require__(91);
+	var _createTransitionManager2 = __webpack_require__(94);
 	
 	var _createTransitionManager3 = _interopRequireDefault(_createTransitionManager2);
 	
@@ -16376,7 +16147,7 @@
 	
 	var _RouteUtils = __webpack_require__(19);
 	
-	var _RouterUtils = __webpack_require__(88);
+	var _RouterUtils = __webpack_require__(91);
 	
 	var _routerWarning = __webpack_require__(25);
 	
@@ -16527,7 +16298,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 166 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16687,7 +16458,7 @@
 	}
 
 /***/ },
-/* 167 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16749,18 +16520,18 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 168 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _createBrowserHistory = __webpack_require__(154);
+	var _createBrowserHistory = __webpack_require__(148);
 	
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 	
-	var _createRouterHistory = __webpack_require__(90);
+	var _createRouterHistory = __webpack_require__(93);
 	
 	var _createRouterHistory2 = _interopRequireDefault(_createRouterHistory);
 	
@@ -16770,7 +16541,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 169 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16852,7 +16623,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 170 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16861,7 +16632,7 @@
 	
 	var _AsyncUtils = __webpack_require__(52);
 	
-	var _PromiseUtils = __webpack_require__(86);
+	var _PromiseUtils = __webpack_require__(89);
 	
 	function getComponentsForRoute(nextState, route, callback) {
 	  if (route.component || route.components) {
@@ -16897,7 +16668,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 171 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16928,18 +16699,18 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 172 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _createHashHistory = __webpack_require__(155);
+	var _createHashHistory = __webpack_require__(149);
 	
 	var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 	
-	var _createRouterHistory = __webpack_require__(90);
+	var _createRouterHistory = __webpack_require__(93);
 	
 	var _createRouterHistory2 = _interopRequireDefault(_createRouterHistory);
 	
@@ -16949,7 +16720,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 173 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17106,7 +16877,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 174 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17121,17 +16892,17 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _createMemoryHistory = __webpack_require__(89);
+	var _createMemoryHistory = __webpack_require__(92);
 	
 	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 	
-	var _createTransitionManager = __webpack_require__(91);
+	var _createTransitionManager = __webpack_require__(94);
 	
 	var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 	
 	var _RouteUtils = __webpack_require__(19);
 	
-	var _RouterUtils = __webpack_require__(88);
+	var _RouterUtils = __webpack_require__(91);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -17183,7 +16954,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 175 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17198,7 +16969,7 @@
 	
 	var _AsyncUtils = __webpack_require__(52);
 	
-	var _PromiseUtils = __webpack_require__(86);
+	var _PromiseUtils = __webpack_require__(89);
 	
 	var _PatternUtils = __webpack_require__(24);
 	
@@ -17441,7 +17212,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 176 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17460,7 +17231,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _hoistNonReactStatics = __webpack_require__(157);
+	var _hoistNonReactStatics = __webpack_require__(151);
 	
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 	
@@ -17518,7 +17289,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 177 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17547,7 +17318,7 @@
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 178 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17566,9 +17337,9 @@
 	var EventConstants = __webpack_require__(14);
 	var EventPropagators = __webpack_require__(31);
 	var ExecutionEnvironment = __webpack_require__(7);
-	var FallbackCompositionState = __webpack_require__(184);
-	var SyntheticCompositionEvent = __webpack_require__(228);
-	var SyntheticInputEvent = __webpack_require__(231);
+	var FallbackCompositionState = __webpack_require__(177);
+	var SyntheticCompositionEvent = __webpack_require__(221);
+	var SyntheticInputEvent = __webpack_require__(224);
 	
 	var keyOf = __webpack_require__(17);
 	
@@ -17942,7 +17713,7 @@
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 179 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17958,14 +17729,14 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(94);
+	var CSSProperty = __webpack_require__(97);
 	var ExecutionEnvironment = __webpack_require__(7);
 	var ReactInstrumentation = __webpack_require__(9);
 	
-	var camelizeStyleName = __webpack_require__(129);
-	var dangerousStyleValue = __webpack_require__(237);
-	var hyphenateStyleName = __webpack_require__(136);
-	var memoizeStringOnly = __webpack_require__(139);
+	var camelizeStyleName = __webpack_require__(132);
+	var dangerousStyleValue = __webpack_require__(230);
+	var hyphenateStyleName = __webpack_require__(139);
+	var memoizeStringOnly = __webpack_require__(142);
 	var warning = __webpack_require__(2);
 	
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -18152,7 +17923,7 @@
 	module.exports = CSSPropertyOperations;
 
 /***/ },
-/* 180 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18178,7 +17949,7 @@
 	
 	var getEventTarget = __webpack_require__(72);
 	var isEventSupported = __webpack_require__(74);
-	var isTextInputElement = __webpack_require__(118);
+	var isTextInputElement = __webpack_require__(121);
 	var keyOf = __webpack_require__(17);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -18482,7 +18253,7 @@
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 181 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18503,7 +18274,7 @@
 	var DOMLazyTree = __webpack_require__(26);
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var createNodesFromMarkup = __webpack_require__(132);
+	var createNodesFromMarkup = __webpack_require__(135);
 	var emptyFunction = __webpack_require__(10);
 	var invariant = __webpack_require__(1);
 	
@@ -18535,7 +18306,7 @@
 	module.exports = Danger;
 
 /***/ },
-/* 182 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18567,7 +18338,7 @@
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 183 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18677,7 +18448,7 @@
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 184 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18697,7 +18468,7 @@
 	
 	var PooledClass = __webpack_require__(20);
 	
-	var getTextContentAccessor = __webpack_require__(116);
+	var getTextContentAccessor = __webpack_require__(119);
 	
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -18777,7 +18548,7 @@
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 185 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18994,7 +18765,7 @@
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 186 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19012,16 +18783,16 @@
 	
 	var _assign = __webpack_require__(4);
 	
-	var ReactChildren = __webpack_require__(97);
+	var ReactChildren = __webpack_require__(100);
 	var ReactComponent = __webpack_require__(61);
-	var ReactPureComponent = __webpack_require__(218);
-	var ReactClass = __webpack_require__(98);
-	var ReactDOMFactories = __webpack_require__(196);
+	var ReactPureComponent = __webpack_require__(211);
+	var ReactClass = __webpack_require__(101);
+	var ReactDOMFactories = __webpack_require__(189);
 	var ReactElement = __webpack_require__(12);
-	var ReactPropTypes = __webpack_require__(109);
-	var ReactVersion = __webpack_require__(110);
+	var ReactPropTypes = __webpack_require__(112);
+	var ReactVersion = __webpack_require__(113);
 	
-	var onlyChild = __webpack_require__(243);
+	var onlyChild = __webpack_require__(236);
 	var warning = __webpack_require__(2);
 	
 	var createElement = ReactElement.createElement;
@@ -19029,7 +18800,7 @@
 	var cloneElement = ReactElement.cloneElement;
 	
 	if (true) {
-	  var ReactElementValidator = __webpack_require__(101);
+	  var ReactElementValidator = __webpack_require__(104);
 	  createElement = ReactElementValidator.createElement;
 	  createFactory = ReactElementValidator.createFactory;
 	  cloneElement = ReactElementValidator.cloneElement;
@@ -19088,7 +18859,7 @@
 	module.exports = React;
 
 /***/ },
-/* 187 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -19106,7 +18877,7 @@
 	
 	var ReactReconciler = __webpack_require__(27);
 	
-	var instantiateReactComponent = __webpack_require__(117);
+	var instantiateReactComponent = __webpack_require__(120);
 	var KeyEscapeUtils = __webpack_require__(59);
 	var shouldUpdateReactComponent = __webpack_require__(75);
 	var traverseAllChildren = __webpack_require__(76);
@@ -19248,7 +19019,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(51)))
 
 /***/ },
-/* 188 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19307,7 +19078,7 @@
 	module.exports = ReactChildrenMutationWarningHook;
 
 /***/ },
-/* 189 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19324,7 +19095,7 @@
 	'use strict';
 	
 	var DOMChildrenOperations = __webpack_require__(56);
-	var ReactDOMIDOperations = __webpack_require__(198);
+	var ReactDOMIDOperations = __webpack_require__(191);
 	
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -19342,7 +19113,7 @@
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 190 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19367,11 +19138,11 @@
 	var ReactErrorUtils = __webpack_require__(63);
 	var ReactInstanceMap = __webpack_require__(32);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactNodeTypes = __webpack_require__(108);
+	var ReactNodeTypes = __webpack_require__(111);
 	var ReactPropTypeLocations = __webpack_require__(41);
 	var ReactReconciler = __webpack_require__(27);
 	
-	var checkReactTypeSpec = __webpack_require__(113);
+	var checkReactTypeSpec = __webpack_require__(116);
 	var emptyObject = __webpack_require__(28);
 	var invariant = __webpack_require__(1);
 	var shallowEqual = __webpack_require__(46);
@@ -20251,7 +20022,7 @@
 	module.exports = ReactCompositeComponent;
 
 /***/ },
-/* 191 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20270,15 +20041,15 @@
 	'use strict';
 	
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDefaultInjection = __webpack_require__(209);
-	var ReactMount = __webpack_require__(106);
+	var ReactDefaultInjection = __webpack_require__(202);
+	var ReactMount = __webpack_require__(109);
 	var ReactReconciler = __webpack_require__(27);
 	var ReactUpdates = __webpack_require__(13);
-	var ReactVersion = __webpack_require__(110);
+	var ReactVersion = __webpack_require__(113);
 	
-	var findDOMNode = __webpack_require__(238);
-	var getHostComponentFromComposite = __webpack_require__(115);
-	var renderSubtreeIntoContainer = __webpack_require__(245);
+	var findDOMNode = __webpack_require__(231);
+	var getHostComponentFromComposite = __webpack_require__(118);
+	var renderSubtreeIntoContainer = __webpack_require__(238);
 	var warning = __webpack_require__(2);
 	
 	ReactDefaultInjection.inject();
@@ -20356,8 +20127,8 @@
 	
 	if (true) {
 	  var ReactInstrumentation = __webpack_require__(9);
-	  var ReactDOMUnknownPropertyHook = __webpack_require__(206);
-	  var ReactDOMNullInputValuePropHook = __webpack_require__(200);
+	  var ReactDOMUnknownPropertyHook = __webpack_require__(199);
+	  var ReactDOMNullInputValuePropHook = __webpack_require__(193);
 	
 	  ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
 	  ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -20366,7 +20137,7 @@
 	module.exports = ReactDOM;
 
 /***/ },
-/* 192 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20395,7 +20166,7 @@
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 193 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20416,26 +20187,26 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var AutoFocusUtils = __webpack_require__(177);
-	var CSSPropertyOperations = __webpack_require__(179);
+	var AutoFocusUtils = __webpack_require__(170);
+	var CSSPropertyOperations = __webpack_require__(172);
 	var DOMLazyTree = __webpack_require__(26);
 	var DOMNamespaces = __webpack_require__(57);
 	var DOMProperty = __webpack_require__(22);
-	var DOMPropertyOperations = __webpack_require__(96);
+	var DOMPropertyOperations = __webpack_require__(99);
 	var EventConstants = __webpack_require__(14);
 	var EventPluginHub = __webpack_require__(30);
 	var EventPluginRegistry = __webpack_require__(39);
 	var ReactBrowserEventEmitter = __webpack_require__(40);
-	var ReactDOMButton = __webpack_require__(192);
-	var ReactDOMComponentFlags = __webpack_require__(99);
+	var ReactDOMButton = __webpack_require__(185);
+	var ReactDOMComponentFlags = __webpack_require__(102);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMInput = __webpack_require__(199);
-	var ReactDOMOption = __webpack_require__(201);
-	var ReactDOMSelect = __webpack_require__(100);
-	var ReactDOMTextarea = __webpack_require__(204);
+	var ReactDOMInput = __webpack_require__(192);
+	var ReactDOMOption = __webpack_require__(194);
+	var ReactDOMSelect = __webpack_require__(103);
+	var ReactDOMTextarea = __webpack_require__(197);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactMultiChild = __webpack_require__(216);
-	var ReactServerRenderingTransaction = __webpack_require__(221);
+	var ReactMultiChild = __webpack_require__(209);
+	var ReactServerRenderingTransaction = __webpack_require__(214);
 	
 	var emptyFunction = __webpack_require__(10);
 	var escapeTextContentForBrowser = __webpack_require__(43);
@@ -21406,7 +21177,7 @@
 	module.exports = ReactDOMComponent;
 
 /***/ },
-/* 194 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21444,7 +21215,7 @@
 	module.exports = ReactDOMContainerInfo;
 
 /***/ },
-/* 195 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21509,7 +21280,7 @@
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 196 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21534,7 +21305,7 @@
 	 */
 	var createDOMFactory = ReactElement.createFactory;
 	if (true) {
-	  var ReactElementValidator = __webpack_require__(101);
+	  var ReactElementValidator = __webpack_require__(104);
 	  createDOMFactory = ReactElementValidator.createFactory;
 	}
 	
@@ -21684,7 +21455,7 @@
 	module.exports = ReactDOMFactories;
 
 /***/ },
-/* 197 */
+/* 190 */
 /***/ function(module, exports) {
 
 	/**
@@ -21707,7 +21478,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 198 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21746,7 +21517,7 @@
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 199 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21766,7 +21537,7 @@
 	    _assign = __webpack_require__(4);
 	
 	var DisabledInputUtils = __webpack_require__(38);
-	var DOMPropertyOperations = __webpack_require__(96);
+	var DOMPropertyOperations = __webpack_require__(99);
 	var LinkedValueUtils = __webpack_require__(60);
 	var ReactDOMComponentTree = __webpack_require__(5);
 	var ReactUpdates = __webpack_require__(13);
@@ -22020,7 +21791,7 @@
 	module.exports = ReactDOMInput;
 
 /***/ },
-/* 200 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22068,7 +21839,7 @@
 	module.exports = ReactDOMNullInputValuePropHook;
 
 /***/ },
-/* 201 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22086,9 +21857,9 @@
 	
 	var _assign = __webpack_require__(4);
 	
-	var ReactChildren = __webpack_require__(97);
+	var ReactChildren = __webpack_require__(100);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMSelect = __webpack_require__(100);
+	var ReactDOMSelect = __webpack_require__(103);
 	
 	var warning = __webpack_require__(2);
 	var didWarnInvalidOptionChildren = false;
@@ -22196,7 +21967,7 @@
 	module.exports = ReactDOMOption;
 
 /***/ },
-/* 202 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22214,8 +21985,8 @@
 	
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var getNodeForCharacterOffset = __webpack_require__(241);
-	var getTextContentAccessor = __webpack_require__(116);
+	var getNodeForCharacterOffset = __webpack_require__(234);
+	var getTextContentAccessor = __webpack_require__(119);
 	
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -22413,7 +22184,7 @@
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 203 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22582,7 +22353,7 @@
 	module.exports = ReactDOMTextComponent;
 
 /***/ },
-/* 204 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22742,7 +22513,7 @@
 	module.exports = ReactDOMTextarea;
 
 /***/ },
-/* 205 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22883,7 +22654,7 @@
 	};
 
 /***/ },
-/* 206 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23000,7 +22771,7 @@
 	module.exports = ReactDOMUnknownPropertyHook;
 
 /***/ },
-/* 207 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23016,13 +22787,13 @@
 	
 	'use strict';
 	
-	var ReactInvalidSetStateWarningHook = __webpack_require__(214);
-	var ReactHostOperationHistoryHook = __webpack_require__(212);
+	var ReactInvalidSetStateWarningHook = __webpack_require__(207);
+	var ReactHostOperationHistoryHook = __webpack_require__(205);
 	var ReactComponentTreeHook = __webpack_require__(11);
-	var ReactChildrenMutationWarningHook = __webpack_require__(188);
+	var ReactChildrenMutationWarningHook = __webpack_require__(181);
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var performanceNow = __webpack_require__(141);
+	var performanceNow = __webpack_require__(144);
 	var warning = __webpack_require__(2);
 	
 	var hooks = [];
@@ -23306,7 +23077,7 @@
 	module.exports = ReactDebugTool;
 
 /***/ },
-/* 208 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23379,7 +23150,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 209 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23395,24 +23166,24 @@
 	
 	'use strict';
 	
-	var BeforeInputEventPlugin = __webpack_require__(178);
-	var ChangeEventPlugin = __webpack_require__(180);
-	var DefaultEventPluginOrder = __webpack_require__(182);
-	var EnterLeaveEventPlugin = __webpack_require__(183);
-	var HTMLDOMPropertyConfig = __webpack_require__(185);
-	var ReactComponentBrowserEnvironment = __webpack_require__(189);
-	var ReactDOMComponent = __webpack_require__(193);
+	var BeforeInputEventPlugin = __webpack_require__(171);
+	var ChangeEventPlugin = __webpack_require__(173);
+	var DefaultEventPluginOrder = __webpack_require__(175);
+	var EnterLeaveEventPlugin = __webpack_require__(176);
+	var HTMLDOMPropertyConfig = __webpack_require__(178);
+	var ReactComponentBrowserEnvironment = __webpack_require__(182);
+	var ReactDOMComponent = __webpack_require__(186);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMEmptyComponent = __webpack_require__(195);
-	var ReactDOMTreeTraversal = __webpack_require__(205);
-	var ReactDOMTextComponent = __webpack_require__(203);
-	var ReactDefaultBatchingStrategy = __webpack_require__(208);
-	var ReactEventListener = __webpack_require__(211);
-	var ReactInjection = __webpack_require__(213);
-	var ReactReconcileTransaction = __webpack_require__(219);
-	var SVGDOMPropertyConfig = __webpack_require__(223);
-	var SelectEventPlugin = __webpack_require__(224);
-	var SimpleEventPlugin = __webpack_require__(225);
+	var ReactDOMEmptyComponent = __webpack_require__(188);
+	var ReactDOMTreeTraversal = __webpack_require__(198);
+	var ReactDOMTextComponent = __webpack_require__(196);
+	var ReactDefaultBatchingStrategy = __webpack_require__(201);
+	var ReactEventListener = __webpack_require__(204);
+	var ReactInjection = __webpack_require__(206);
+	var ReactReconcileTransaction = __webpack_require__(212);
+	var SVGDOMPropertyConfig = __webpack_require__(216);
+	var SelectEventPlugin = __webpack_require__(217);
+	var SimpleEventPlugin = __webpack_require__(218);
 	
 	var alreadyInjected = false;
 	
@@ -23468,7 +23239,7 @@
 	};
 
 /***/ },
-/* 210 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23506,7 +23277,7 @@
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 211 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23531,7 +23302,7 @@
 	var ReactUpdates = __webpack_require__(13);
 	
 	var getEventTarget = __webpack_require__(72);
-	var getUnboundedScrollPosition = __webpack_require__(134);
+	var getUnboundedScrollPosition = __webpack_require__(137);
 	
 	/**
 	 * Find the deepest React component completely containing the root of the
@@ -23668,7 +23439,7 @@
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 212 */
+/* 205 */
 /***/ function(module, exports) {
 
 	/**
@@ -23710,7 +23481,7 @@
 	module.exports = ReactHostOperationHistoryHook;
 
 /***/ },
-/* 213 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23730,10 +23501,10 @@
 	var EventPluginHub = __webpack_require__(30);
 	var EventPluginUtils = __webpack_require__(58);
 	var ReactComponentEnvironment = __webpack_require__(62);
-	var ReactClass = __webpack_require__(98);
-	var ReactEmptyComponent = __webpack_require__(102);
+	var ReactClass = __webpack_require__(101);
+	var ReactEmptyComponent = __webpack_require__(105);
 	var ReactBrowserEventEmitter = __webpack_require__(40);
-	var ReactHostComponent = __webpack_require__(104);
+	var ReactHostComponent = __webpack_require__(107);
 	var ReactUpdates = __webpack_require__(13);
 	
 	var ReactInjection = {
@@ -23751,7 +23522,7 @@
 	module.exports = ReactInjection;
 
 /***/ },
-/* 214 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23792,7 +23563,7 @@
 	module.exports = ReactInvalidSetStateWarningHook;
 
 /***/ },
-/* 215 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23808,7 +23579,7 @@
 	
 	'use strict';
 	
-	var adler32 = __webpack_require__(236);
+	var adler32 = __webpack_require__(229);
 	
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -23847,7 +23618,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 216 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23868,14 +23639,14 @@
 	var ReactComponentEnvironment = __webpack_require__(62);
 	var ReactInstanceMap = __webpack_require__(32);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactMultiChildUpdateTypes = __webpack_require__(107);
+	var ReactMultiChildUpdateTypes = __webpack_require__(110);
 	
 	var ReactCurrentOwner = __webpack_require__(15);
 	var ReactReconciler = __webpack_require__(27);
-	var ReactChildReconciler = __webpack_require__(187);
+	var ReactChildReconciler = __webpack_require__(180);
 	
 	var emptyFunction = __webpack_require__(10);
-	var flattenChildren = __webpack_require__(239);
+	var flattenChildren = __webpack_require__(232);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -24303,7 +24074,7 @@
 	module.exports = ReactMultiChild;
 
 /***/ },
-/* 217 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24402,7 +24173,7 @@
 	module.exports = ReactOwner;
 
 /***/ },
-/* 218 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24449,7 +24220,7 @@
 	module.exports = ReactPureComponent;
 
 /***/ },
-/* 219 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24467,10 +24238,10 @@
 	
 	var _assign = __webpack_require__(4);
 	
-	var CallbackQueue = __webpack_require__(95);
+	var CallbackQueue = __webpack_require__(98);
 	var PooledClass = __webpack_require__(20);
 	var ReactBrowserEventEmitter = __webpack_require__(40);
-	var ReactInputSelection = __webpack_require__(105);
+	var ReactInputSelection = __webpack_require__(108);
 	var ReactInstrumentation = __webpack_require__(9);
 	var Transaction = __webpack_require__(34);
 	var ReactUpdateQueue = __webpack_require__(67);
@@ -24632,7 +24403,7 @@
 	module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 220 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24648,7 +24419,7 @@
 	
 	'use strict';
 	
-	var ReactOwner = __webpack_require__(217);
+	var ReactOwner = __webpack_require__(210);
 	
 	var ReactRef = {};
 	
@@ -24717,7 +24488,7 @@
 	module.exports = ReactRef;
 
 /***/ },
-/* 221 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24738,7 +24509,7 @@
 	var PooledClass = __webpack_require__(20);
 	var Transaction = __webpack_require__(34);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactServerUpdateQueue = __webpack_require__(222);
+	var ReactServerUpdateQueue = __webpack_require__(215);
 	
 	/**
 	 * Executed within the scope of the `Transaction` instance. Consider these as
@@ -24812,7 +24583,7 @@
 	module.exports = ReactServerRenderingTransaction;
 
 /***/ },
-/* 222 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24958,7 +24729,7 @@
 	module.exports = ReactServerUpdateQueue;
 
 /***/ },
-/* 223 */
+/* 216 */
 /***/ function(module, exports) {
 
 	/**
@@ -25265,7 +25036,7 @@
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 224 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25285,11 +25056,11 @@
 	var EventPropagators = __webpack_require__(31);
 	var ExecutionEnvironment = __webpack_require__(7);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactInputSelection = __webpack_require__(105);
+	var ReactInputSelection = __webpack_require__(108);
 	var SyntheticEvent = __webpack_require__(16);
 	
 	var getActiveElement = __webpack_require__(81);
-	var isTextInputElement = __webpack_require__(118);
+	var isTextInputElement = __webpack_require__(121);
 	var keyOf = __webpack_require__(17);
 	var shallowEqual = __webpack_require__(46);
 	
@@ -25466,7 +25237,7 @@
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 225 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25488,17 +25259,17 @@
 	var EventListener = __webpack_require__(79);
 	var EventPropagators = __webpack_require__(31);
 	var ReactDOMComponentTree = __webpack_require__(5);
-	var SyntheticAnimationEvent = __webpack_require__(226);
-	var SyntheticClipboardEvent = __webpack_require__(227);
+	var SyntheticAnimationEvent = __webpack_require__(219);
+	var SyntheticClipboardEvent = __webpack_require__(220);
 	var SyntheticEvent = __webpack_require__(16);
-	var SyntheticFocusEvent = __webpack_require__(230);
-	var SyntheticKeyboardEvent = __webpack_require__(232);
+	var SyntheticFocusEvent = __webpack_require__(223);
+	var SyntheticKeyboardEvent = __webpack_require__(225);
 	var SyntheticMouseEvent = __webpack_require__(42);
-	var SyntheticDragEvent = __webpack_require__(229);
-	var SyntheticTouchEvent = __webpack_require__(233);
-	var SyntheticTransitionEvent = __webpack_require__(234);
+	var SyntheticDragEvent = __webpack_require__(222);
+	var SyntheticTouchEvent = __webpack_require__(226);
+	var SyntheticTransitionEvent = __webpack_require__(227);
 	var SyntheticUIEvent = __webpack_require__(33);
-	var SyntheticWheelEvent = __webpack_require__(235);
+	var SyntheticWheelEvent = __webpack_require__(228);
 	
 	var emptyFunction = __webpack_require__(10);
 	var getEventCharCode = __webpack_require__(70);
@@ -26106,7 +25877,7 @@
 	module.exports = SimpleEventPlugin;
 
 /***/ },
-/* 226 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26150,7 +25921,7 @@
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 227 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26193,7 +25964,7 @@
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 228 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26234,7 +26005,7 @@
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 229 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26275,7 +26046,7 @@
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 230 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26316,7 +26087,7 @@
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 231 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26358,7 +26129,7 @@
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 232 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26377,7 +26148,7 @@
 	var SyntheticUIEvent = __webpack_require__(33);
 	
 	var getEventCharCode = __webpack_require__(70);
-	var getEventKey = __webpack_require__(240);
+	var getEventKey = __webpack_require__(233);
 	var getEventModifierState = __webpack_require__(71);
 	
 	/**
@@ -26447,7 +26218,7 @@
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 233 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26497,7 +26268,7 @@
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 234 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26541,7 +26312,7 @@
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 235 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26600,7 +26371,7 @@
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 236 */
+/* 229 */
 /***/ function(module, exports) {
 
 	/**
@@ -26649,7 +26420,7 @@
 	module.exports = adler32;
 
 /***/ },
-/* 237 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26665,7 +26436,7 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(94);
+	var CSSProperty = __webpack_require__(97);
 	var warning = __webpack_require__(2);
 	
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -26733,7 +26504,7 @@
 	module.exports = dangerousStyleValue;
 
 /***/ },
-/* 238 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26755,7 +26526,7 @@
 	var ReactDOMComponentTree = __webpack_require__(5);
 	var ReactInstanceMap = __webpack_require__(32);
 	
-	var getHostComponentFromComposite = __webpack_require__(115);
+	var getHostComponentFromComposite = __webpack_require__(118);
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(2);
 	
@@ -26798,7 +26569,7 @@
 	module.exports = findDOMNode;
 
 /***/ },
-/* 239 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -26880,7 +26651,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(51)))
 
 /***/ },
-/* 240 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26987,7 +26758,7 @@
 	module.exports = getEventKey;
 
 /***/ },
-/* 241 */
+/* 234 */
 /***/ function(module, exports) {
 
 	/**
@@ -27066,7 +26837,7 @@
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 242 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27172,7 +26943,7 @@
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 243 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27215,7 +26986,7 @@
 	module.exports = onlyChild;
 
 /***/ },
-/* 244 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27246,7 +27017,7 @@
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 245 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27262,12 +27033,12 @@
 	
 	'use strict';
 	
-	var ReactMount = __webpack_require__(106);
+	var ReactMount = __webpack_require__(109);
 	
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 246 */
+/* 239 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27279,59 +27050,7 @@
 
 
 /***/ },
-/* 247 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(126);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(78)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./Home.less", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./Home.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(127);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(78)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./Nav.less", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./Nav.less");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 249 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscore.js 1.8.3
@@ -28885,5 +28604,5 @@
 
 
 /***/ }
-/******/ ]);
+/******/ ])));
 //# sourceMappingURL=b.js.map

@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
+import './styles/jquery.fullPage.css';
+
 // import App from './App.jsx';
 // import AboutPage from './components/AboutPage.jsx';
 // import InboxPage from './components/InboxPage.jsx';
@@ -9,7 +11,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import FirstBlock from './components/FirstBlock.jsx';
 import Home from './components/content/Home.jsx';
-// import Horeca from './components/content/Horeca.jsx';
+import Horeca from './components/content/Horeca.jsx';
 // import Clothes from './components/content/Clothes.jsx';
 // import Decol from './components/content/Decol.jsx';
 
@@ -24,9 +26,9 @@ ReactDOM.render(
         {/*</Route>*/}
         <Route path='/' component={FirstBlock}>
             <IndexRoute component={Home}/>
-            {/*<Route path='/fb/horeca' component={Horeca} />
-             <Route path='/fb/clothes' component={Clothes} />
-             <Route path='/fb/decol' component={Decol} />*/}
+            <Route path='/horeca' component={Horeca} />
+            {/*<Route path='/fb/clothes' component={Clothes} />*/}
+            {/*<Route path='/fb/decol' component={Decol} />*/}
         </Route>
     </Router>,
     document.getElementById('first')
