@@ -31,7 +31,7 @@ const Home = React.createClass({
         const cont = languages[this.props.lang].home || {};
         return (
             <div>
-                <Section id='section0'>
+                <Section id='section0' imageUrl={require('../../img/backgrounds/home/1-.jpg')}>
                     <div className="container-col">
                         {/*<div style={{width: "10%", height: "20%"}} onClick={e => $.fn.fullpage.moveTo(4)}>Click Me</div>*/}
                         <div className="col-1">
@@ -43,28 +43,28 @@ const Home = React.createClass({
                         </div>
                     </div>
                 </Section>
-                <Section id="section1">
+                <Section id="section1" imageUrl={require('../../img/backgrounds/home/about_5.jpg')}>
                     <div className="container-col">
                         <div className="col-1">
                             <p className="textOlso" dangerouslySetInnerHTML={this.html("section1")}/>
                         </div>
                     </div>
                 </Section>
-                <Section id="section2">
+                <Section id="section2" imageUrl={require('../../img/backgrounds/home/DSC_6399.jpg')}>
                     <div className="container-col">
                         <div className="col-1">
                             <p className="textOlso" dangerouslySetInnerHTML={this.html("section2")}/>
                         </div>
                     </div>
                 </Section>
-                <Section id="section3">
+                <Section id="section3" imageUrl={require('../../img/backgrounds/home/sh_p_005.jpg')}>
                     <div className="container-col">
                         <div className="col-1">
                             <p className="textOlso" dangerouslySetInnerHTML={this.html("section3")}/>
                         </div>
                     </div>
                 </Section>
-                <Section id="section4">
+                <Section id="section4" imageUrl={require('../../img/backgrounds/promo_works_master.jpg')}>
                     <div className="container-col">
                         <div className="col-1">
                             <img className="logo" src={require('../../img/backgrounds/logofoot.svg')}/>
