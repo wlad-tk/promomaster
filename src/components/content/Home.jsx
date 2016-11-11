@@ -1,9 +1,8 @@
 import React from 'react'
 
-import Section from './Section.jsx'
-
 import '../../styles/Home.less';
 import '../../styles/FirstBlock.less';
+import '../../styles/jquery.fullPage.css';
 
 //noinspection JSUnresolvedVariable
 import languages from '../../languages.json';
@@ -11,7 +10,6 @@ import languages from '../../languages.json';
 const Home = React.createClass({
     propTypes: {
         lang: React.PropTypes.string,
-        cont: React.PropTypes.func
     },
 
     html(sectionid, contant="body" ) {
@@ -24,16 +22,32 @@ const Home = React.createClass({
     },
 
     componentDidMount() {
-        return this.props.cont;
+        let htmlElem = document.documentElement;
+
+        htmlElem.classList.contains('fp-enabled') ? $.fn.fullpage.destroy('all'): {};
+        htmlElem.className = 'Home';
+
+        $('#Home').fullpage({
+            css3: true,
+            navigation: true,
+            scrollOverflow: true,
+            scrollingSpeed: 1000,
+        });
     },
 
     render() {
         const cont = languages[this.props.lang].home || {};
+
         return (
-            <div>
-                <Section id='section0' imageUrl={require('../../img/backgrounds/home/1-.jpg')}>
+            <div id="Home">
+                <div className="section active"
+                     id="section0"
+                     style={{
+                         background: 'url('+ require('../../img/backgrounds/home/1-.jpg') + ') no-repeat center',
+                         backgroundSize: 'cover'
+                     }}>
+
                     <div className="container-col">
-                        {/*<div style={{width: "10%", height: "20%"}} onClick={e => $.fn.fullpage.moveTo(4)}>Click Me</div>*/}
                         <div className="col-1">
                             <img className="logo" src={require('../../img/backgrounds/logo_main.svg')}/>
                         </div>
@@ -42,29 +56,53 @@ const Home = React.createClass({
                             <p className="textSection0" dangerouslySetInnerHTML={this.html("section0")}/>
                         </div>
                     </div>
-                </Section>
-                <Section id="section1" imageUrl={require('../../img/backgrounds/home/about_5.jpg')}>
+                </div>
+                <div className="section"
+                     id="section1"
+                     style={{
+                         background: 'url('+ require('../../img/backgrounds/home/about_5.jpg') + ') no-repeat center',
+                         backgroundSize: 'cover'
+                     }}>
+
                     <div className="container-col">
                         <div className="col-1">
                             <p className="textOlso" dangerouslySetInnerHTML={this.html("section1")}/>
                         </div>
                     </div>
-                </Section>
-                <Section id="section2" imageUrl={require('../../img/backgrounds/home/DSC_6399.jpg')}>
+                </div>
+                <div className="section"
+                     id="section2"
+                     style={{
+                         background: 'url('+ require('../../img/backgrounds/home/DSC_6399.jpg') + ') no-repeat center',
+                         backgroundSize: 'cover'
+                     }}>
+
                     <div className="container-col">
                         <div className="col-1">
                             <p className="textOlso" dangerouslySetInnerHTML={this.html("section2")}/>
                         </div>
                     </div>
-                </Section>
-                <Section id="section3" imageUrl={require('../../img/backgrounds/home/sh_p_005.jpg')}>
+                </div>
+                <div className="section"
+                     id="section3"
+                     style={{
+                         background: 'url('+ require('../../img/backgrounds/home/sh_p_005.jpg') + ') no-repeat center',
+                         backgroundSize: 'cover'
+                     }}>
+
                     <div className="container-col">
                         <div className="col-1">
                             <p className="textOlso" dangerouslySetInnerHTML={this.html("section3")}/>
                         </div>
                     </div>
-                </Section>
-                <Section id="section4" imageUrl={require('../../img/backgrounds/promo_works_master.jpg')}>
+                </div>
+                <div className="section"
+                     id="section4"
+                     style={{
+                         background: 'url('+ require('../../img/backgrounds/promo_works_master.jpg') + ') no-repeat center',
+                         backgroundSize: 'cover'
+                     }}>
+
                     <div className="container-col">
                         <div className="col-1">
                             <img className="logo" src={require('../../img/backgrounds/logofoot.svg')}/>
@@ -76,7 +114,7 @@ const Home = React.createClass({
                             <p dangerouslySetInnerHTML={this.html("section4")}/>
                         </div>
                     </div>
-                </Section>
+                </div>
             </div>
         )
     }

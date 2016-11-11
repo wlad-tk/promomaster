@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var BundleTracker  = require('webpack-bundle-tracker');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+// var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var PROD = JSON.parse(process.env.PROD_ENV || '0');
 
@@ -20,7 +20,7 @@ module.exports = {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),
-        new ExtractTextPlugin('./src/css/b.min.css'),
+        // new ExtractTextPlugin('./src/css/b.min.css'),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             // sourceMap: false,
@@ -33,15 +33,15 @@ module.exports = {
         }),
         new BundleTracker({filename: './public/build/webpack-stats.json'})
     ] : [
-        new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.optimize.DedupePlugin(),
-        new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': JSON.stringify('development')
-            }
-        }),
-        new BundleTracker({filename: './public/build/webpack-stats.json'}),
-        new ExtractTextPlugin('./src/css/b.css')
+        // new webpack.optimize.OccurenceOrderPlugin(),
+        // new webpack.optimize.DedupePlugin(),
+        // new webpack.DefinePlugin({
+        //     'process.env': {
+        //         'NODE_ENV': JSON.stringify('development')
+        //     }
+        // }),
+        // new BundleTracker({filename: './public/build/webpack-stats.json'}),
+        // new ExtractTextPlugin('./src/css/b.css')
     ],
     module: {
         loaders: [
@@ -50,6 +50,7 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
                 query: {
+                    compact: false,
                     presets:['es2015', 'react']
                 }
             },
@@ -60,15 +61,20 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader"),
+                test: /\.(css|less)$/,
+                loader: "style-loader!css-loader!postcss-loader!less",
                 exclude: [/node_modules/, /public/]
             },
-            {
-                test: /\.less$/,
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!less"),
-                exclude: [/node_modules/, /public/]
-            },
+            // {
+            //     test: /\.css$/,
+            //     loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader"),
+            //     exclude: [/node_modules/, /public/]
+            // },
+            // {
+            //     test: /\.less$/,
+            //     loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!less"),
+            //     exclude: [/node_modules/, /public/]
+            // },
             {
                 test: /\.json$/,
                 loader: "json-loader"

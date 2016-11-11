@@ -2,8 +2,6 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import './styles/jquery.fullPage.css';
-
 // import App from './App.jsx';
 // import AboutPage from './components/AboutPage.jsx';
 // import InboxPage from './components/InboxPage.jsx';

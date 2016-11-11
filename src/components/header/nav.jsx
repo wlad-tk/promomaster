@@ -3,7 +3,6 @@ import { Link } from 'react-router'
 
 import '../../styles/Nav.less';
 
-
 const Nav = React.createClass ({
     propTypes: {
         lang: React.PropTypes.string.isRequired

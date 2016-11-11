@@ -20,24 +20,24 @@ const FirstBlock = React.createClass({
         }
     },
 
-    contantpage() {
-        $('html').hasClass('fp-enabled') ? $.fn.fullpage.destroy('all'): false;
-
-        return $('#contantpage').fullpage({
-            // anchors: ['zero', 'one', 'two', 'three', 'four'],
-            css3: true,
-            navigation: true,
-            scrollOverflow: true,
-            scrollingSpeed: 1000,
-        });
-    },
+    // contantpage() {
+    //     $('html').hasClass('fp-enabled') ? $.fn.fullpage.destroy('all'): false;
+    //
+    //     return $('#contantpage').fullpage({
+    //         // anchors: ['zero', 'one', 'two', 'three', 'four'],
+    //         css3: true,
+    //         navigation: true,
+    //         scrollOverflow: true,
+    //         scrollingSpeed: 1000,
+    //     });
+    // },
 
     changeLang(newLang) {
         this.setState({lang: newLang});
     },
 
     componentDidMount() {
-        this.contantpage()
+        // this.contantpage()
     },
 
     render() {
@@ -54,9 +54,7 @@ const FirstBlock = React.createClass({
                     )}
                 </ul>
                 <Nav lang={lang} />
-                <div id='contantpage'>
-                    {React.cloneElement(this.props.children, {lang: lang, cont: this.contantpage()})}
-                </div>
+                {React.cloneElement(this.props.children, {lang: lang})}
             </div>
         )
     }
