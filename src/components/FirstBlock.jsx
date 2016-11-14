@@ -20,24 +20,8 @@ const FirstBlock = React.createClass({
         }
     },
 
-    // contantpage() {
-    //     $('html').hasClass('fp-enabled') ? $.fn.fullpage.destroy('all'): false;
-    //
-    //     return $('#contantpage').fullpage({
-    //         // anchors: ['zero', 'one', 'two', 'three', 'four'],
-    //         css3: true,
-    //         navigation: true,
-    //         scrollOverflow: true,
-    //         scrollingSpeed: 1000,
-    //     });
-    // },
-
     changeLang(newLang) {
-        this.setState({lang: newLang});
-    },
-
-    componentDidMount() {
-        // this.contantpage()
+        this.state.lang !== newLang ? this.setState({lang: newLang}): {};
     },
 
     render() {

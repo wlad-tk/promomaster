@@ -18,16 +18,16 @@ const Home = React.createClass({
     },
 
     sectionLink(sectionlinkid) {
-        return $.fn.fullpage.moveTo(sectionlinkid);
+        $(this.refs.Home).fullpage.moveTo(sectionlinkid);
     },
 
     componentDidMount() {
         let htmlElem = document.documentElement;
 
-        htmlElem.classList.contains('fp-enabled') ? $.fn.fullpage.destroy('all'): {};
+        htmlElem.classList.contains('fp-enabled') ? $(this.refs.Home).fullpage.destroy('all'): {};
         htmlElem.className = 'Home';
 
-        $('#Home').fullpage({
+        $(this.refs.Home).fullpage({
             css3: true,
             navigation: true,
             scrollOverflow: true,
@@ -39,7 +39,7 @@ const Home = React.createClass({
         const cont = languages[this.props.lang].home || {};
 
         return (
-            <div id="Home">
+            <div ref="Home">
                 <div className="section active"
                      id="section0"
                      style={{
