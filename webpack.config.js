@@ -20,7 +20,7 @@ module.exports = {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),
-        new ExtractTextPlugin('./src/css/b.min.css'),
+        new ExtractTextPlugin('./src/b.min.css'),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             // sourceMap: false,
@@ -41,7 +41,7 @@ module.exports = {
             }
         }),
         new BundleTracker({filename: './public/build/webpack-stats.json'}),
-        new ExtractTextPlugin('./src/css/b.css')
+        new ExtractTextPlugin('./src/b.css')
     ],
     module: {
         loaders: [

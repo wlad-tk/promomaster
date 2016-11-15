@@ -9083,7 +9083,7 @@
 				},
 				"section1": {
 					"title": "ВНИМАНИЕ К ДЕТАЛЯМ",
-					"body": "Наша фишка – комплексный подход для предприятий сегмента HoReCa, особое внимание к деталям. Производственные мощности «ПромоМастер Украина», опытный, творческий персонал подчеркнут Ваш корпоративный стиль в мельчайших деталях, а если надо – разработаем всё с нуля. Для нас нет ничего невозможного! Мы быстро и качественно выполняем <br> • деколь столовой и питьевой посуды <br> • пошив одежды для официантов, барменов, поварская форма <br> • изготовление папок-меню, бирдекелей, стаканчиков для кофе <br>• печать с логотипом холдеров и термо-поясов для кофе <br>• брендирование чашек, тарелок, стаканов, бокалов <br>• изготовление упаковки для пиццы и т.п."
+					"body": "Наша фишка – комплексный подход для предприятий сегмента HoReCa, особое внимание к деталям. Производственные мощности «ПромоМастер Украина», опытный, творческий персонал подчеркнут Ваш корпоративный стиль в мельчайших деталях, а если надо – разработаем всё с нуля. Для нас нет ничего невозможного! Мы быстро и качественно выполняем: <br> • деколь столовой и питьевой посуды <br> • пошив одежды для официантов, барменов, поварская форма <br> • изготовление папок-меню, бирдекелей, стаканчиков для кофе <br>• печать с логотипом холдеров и термо-поясов для кофе <br>• брендирование чашек, тарелок, стаканов, бокалов <br>• изготовление упаковки для пиццы и т.п."
 				},
 				"section2": {
 					"title": "ПЕРЕДОВАЯ ТЕХНОЛОГИЯ ПЕРЕНОСА ИЗОБРАЖЕНИЯ",
@@ -9183,10 +9183,22 @@
 				}
 			},
 			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
+				"section0": {
+					"title": "МИ - ЦЕ УСПІХ ВАШОГО БІЗНЕСУ",
+					"body": "Серед постійних клієнтів рекламно-виробничої компанії «ПромоМайстер Україна» - провідні представники сегмента HoReCa (готелі, ресторани, кафе). Для цих компаній брендування посуду, так само як і пошиття корпоративного одягу, - постійна практика, продиктована ринком. Для успішного запуску закладу дуже важлива підкреслена індивідуальність і відчуття стилю, втілене у всьому - від форми тарілок до кольору одягу для персоналу. Наш досвід дозволяє знаходити оптимальні рішення для Вашого закладу або корпоративного заходу. Стильний, якісний та практичний корпоративний одяг в поєднанні з брендованим посудом та аксесуарами найкращим чином відображає концепцію закладу, підкреслюючи його ключові особливості."
+				},
+				"section1": {
+					"title": "УВАГА ДО ДЕТАЛЕЙ",
+					"body": "Наша фішка - комплексний підхід для підприємств сегменту HoReCa, особлива увага до деталей. Виробничі потужності «ПромоМайстер Україна», досвідчений, творчий персонал підкреслять Ваш корпоративний стиль в найдрібніших деталях, а якщо треба - розробимо все з нуля. Для нас немає нічого неможливого! Ми швидко і якісно виконуємо: <br> • деколь столового та питного посуду <br> • пошиття одягу для офіціантів, барменів, кухарська форма <br> • виготовлення папок-меню, бірдіклей, стаканчиків для кави <br> • друк з логотипом холдерів і термо-поясів для кави <br> • брендування чашок, тарілок, склянок, келихів <br> • виготовлення упаковки для піци і т.п."
+				},
+				"section2": {
+					"title": "ПЕРЕДОВА ТЕХНОЛОГІЯ ПЕРЕНОСУ ЗОБРАЖЕНЬ",
+					"body": "Методи нанесення логотипів, які ми застосовуємо при пошитті одягу для персоналу з логотипом ресторану чи готелю - вишивка або шовкотрафаретний друк. Брендування посуду і аксесуарів здійснюється методом деколювання. Деколь - один з найпоширеніших методів тиражування інформації на будь-яких поверхнях. Це найпередовіша технологія перенесення зображення на керамічну і скляну поверхню для брендування посуду."
+				},
+				"section3": {
+					"title": "РЕАЛІЗУЄМО НАЙБІЛЬШ СКЛАДНІ ПРОЕКТИ",
+					"body": "Успіх готельно-ресторанного бізнесу визначається ідеєю, яка за ним стоїть. Практика показує, що дійсно успішні заклади відрізняються неординарними концепціями і пильною увагою до найдрібніших деталей - будь-то фірмовий одяг для персоналу або брендований посуд. Фахівці компанії «ПромоМайстер Україна» більш ніж за 10-ти річну історію реалізували сотні успішних проектів у багатьох містах України. Професіоналізм команди, солідний досвід роботи, самовіддача і творчий підхід дозволяють нам реалізувати найскладніші і амбітні проекти наших клієнтів. Ваша продукція гідна бути унікальною! Телефонуйте прямо зараз! Ми знаємо, як це зробити."
+				}
 			},
 			"clothes": {
 				"section0": {},
@@ -9224,10 +9236,22 @@
 				}
 			},
 			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
+				"section0": {
+					"title": "NOUS – C&#39;EST LA RÉUSSITE DE VOTRE ENTREPRISE",
+					"body": "Les principaux représentants du segment HoReCa (hôtels, restaurants, cafés) se trouvent parmi les clients réguliers de la société de publicité et de production «PromoMaster Ukraine». Pour ces entreprises, le branding de la vaisselle, ainsi que la couture des vêtements d&#39;entreprise est une pratique habituelle, engendrée par le marché. Pour le succès du lancement de l&#39;institution, il est très important de souligner la personnalité et le sens du style, incarné dans la forme des assiettes et dans les couleurs des vêtements pour le personnel. Notre expérience nous permet de trouver les solutions optimales pour votre établissement ou pour votre événement d&#39;entreprise. Des vêtements d&#39;entreprise élégants, pratiques et de bonne qualité en combinaison avec des ustensiles de cuisine à la mode et des accessoires reflètent le mieux la conception de l&#39;institution,  mettant l&#39;accent sur ses principales caractéristiques."
+				},
+				"section1": {
+					"title": "L&#39;ATTENTION AU DÉTAIL",
+					"body": "Notre particularité est une approche intégrée pour les entreprises du segment HoReCa, avec une attention particulière aux détails. La capacité de production de PromoMaster Ukraine, le personnel expérimenté et créatif souligneront votre style d&#39;entreprise dans les moindres détails, et si nécessaire, nous développerons tout à partir de zéro. Pour nous, rien n&#39;est impossible ! Nous accomplissons rapidement et qualitativement: <br> • la décalcomanie de la vaisselle de la salle à manger et à boire <br> • la confection de vêtements pour les serveurs, barmen, la forme de cuisinier <br> • la fabrication des dossiers-menu, des sous-verres, des gobelets à café <br> • l’impression avec logo des détenteurs et des thermo-ceintures pour le café <br> • le branding des tasses, des assiettes, des verres, des verres à vin <br> • la production de l&#39;emballage pour la pizza, etc."
+				},
+				"section2": {
+					"title": "LA TECHNOLOGIE AVANCÉE DE TRANSFERT D&#39;IMAGE",
+					"body": "Les méthodes de l&#39;application des logos que nous appliquons lors de la couture des vêtements pour le personnel, avec le logo du restaurant ou de l&#39;hôtel, c’est la broderie ou la sérigraphie. Le branding de la vaisselle et des accessoires par la méthode de la décalcomanie. La décalcomanie, c’est l&#39;une des techniques les plus répandues de duplication de l&#39;information sur toutes les surfaces. C&#39;est la technologie la plus avancée de transfert d&#39;image sur la surface céramique et en verre pour le branding de la vaisselle."
+				},
+				"section3": {
+					"title": "NOUS METTONS EN ŒUVRE LES PROJETS LES PLUS DIFFICILES",
+					"body": "Le succès de l&#39;hôtellerie est déterminée par une idée. La pratique montre que des établissements vraiment prospères se distinguent par des concepts extraordinaires et par une attention aux moindres détails que ce soit des vêtements de marque pour le personnel ou des ustensiles de cuisine de marque. Les spécialistes de la société «PromoMaster Ukraine» pendant plus de 10 ans d&#39;histoire ont réalisé des centaines de projets dans de nombreuses villes de l&#39;Ukraine. Le professionnalisme de l&#39;équipe, solide expérience de travail, nos dévouement et créativité nous permettent de réaliser les projets de nos clients les plus complexes et les plus ambitieux. Votre produit est digne d&#39;être unique ! Appelez-nous dès maintenant ! Nous savons comment le faire."
+				}
 			},
 			"clothes": {
 				"section0": {},
@@ -9265,10 +9289,22 @@
 				}
 			},
 			"horeca": {
-				"section0": {},
-				"section1": {},
-				"section2": {},
-				"section3": {}
+				"section0": {
+					"title": "WIR VERSORGEN DEN ERFOLG IHRES UNTERNEHMENS",
+					"body": "Zu den Stammkunden von Werbung- und Produktionsfirma «PromoMaster Ukraine» gehören die führenden Vertreter des HoReCa-Segment (Hotels, Restaurants, Cafés). Für diese Unternehmen ist Geschirr Branding, sowie die Anfertigung der Corporate-Identity- Kleidung, eine ständige Praxis, die vom Markt bestimmt ist. Für den erfolgreichen Start des Unternehmens sind die Individualität und Sinn für Stil sehr wichtig, der in allen Kleinigkeiten wiederspiegelt ist – von Tellerform bis Kleidungsfarbe fürs Personal. Unsere Erfahrung leistet es uns, optimale Lösungen für Ihr Unternehmen oder ein Firmenevent zu finden. Eine moderne, praktische und hochqualitative Corporate-Identity- Kleidung in Verbindung mit dem gemarkten Geschirr und Zubehör widerspiegelt am besten die Konzeption der Firma und betont ihre Hauptmerkmale."
+				},
+				"section1": {
+					"title": "DIE LIEBE ZUM DETAIL",
+					"body": "Unser Trick ist ein ganzheitlicher Ansatz für die HoReCa-Unternehmen, viel Liebe zum Detail. Herstellungskapazität von «PromoMaster Ukraine», erfahrene und kreative Mitarbeiter betonen ganz genau Ihren Corporate-Stil und, wenn es erforderlich ist, werden wir alles von Grund auf neu konzipieren. Für uns ist nichts unmöglich! Wir erledigen die Bestellungen schnell und effizient, und zwar: <br> • abziehbilder für Essen und Trinken Utensilien <br> • die Anfertigung für die Kellner, Barmixer, Kochbekleidung <br> • herstellung von Menü-Karten , Untersetzern, Kaffeetassen <br> • stempel mit dem Logo für Kaffeehalter und Thermogürtel <br> • tassen-, Teller-, Gläserbranding <br> • herstellung von der Pizzaverpackung usw."
+				},
+				"section2": {
+					"title": "EINE FORTGESCHRITTENE BILDÜBERTRAGUNGSTECHNOLOGIE",
+					"body": "Methoden des Logoauftragens, die wir bei der Anfertigung von Personalbekleidung mit einem Restaurant oder Hotel-Logo verwenden, sind Stickerei oder Seidensiebdruck. Geschirr- und Accessoires-Branding wird durch das Aufkleben von Abziehbildern ausgeführt. Das Abziehbild ist eine der häufigsten Methoden der Datenreplikation auf allen Oberflächen. Das ist die fortgeschrittenste Auftragungstechnik auf der keramischen und gläsernen Oberfläche fürs gemarkte Geschirr."
+				},
+				"section3": {
+					"title": "WIR VERWIRKLICHEN DIE KOMPLEXESTEN PROJEKTE",
+					"body": "Der Erfolg des Hotel- und Gaststättengewerbe ist von der Idee bestimmt, die hinter ihm steht. Unsere Erfahrung zeigt, dass die wirklich erfolgreichen Unternehmen durch eine außergewöhnliche Konzeption und viel Liebe zum Detail gekennzeichnet sind, ob es Firmenbekleidung oder das gemarkte Geschirr ist. Die Fachleute von «PromoMaster Ukraine» verwirklichten seit mehr als 10 Jahren Hunderte von erfolgreichen Projekten in vielen Städten der Ukraine. Die Professionalismus des Teams, große Erfahrung, Engagement und Kreativität leistet es uns, die komplexen und anspruchsvollen Projekte von unseren Kunden zu realisieren. Ihre Produktion verdient es, einzigartig zu sein! Rufen Sie jetzt an! Wir wissen, wie das geht."
+				}
 			},
 			"clothes": {
 				"section0": {},
