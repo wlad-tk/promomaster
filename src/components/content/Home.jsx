@@ -36,7 +36,7 @@ const Home = React.createClass({
     },
 
     render() {
-        const cont = languages[this.props.lang].home || {};
+        const cont = languages[this.props.lang].section4;
 
         return (
             <div ref="Home">
@@ -52,7 +52,7 @@ const Home = React.createClass({
                             <img className="logo" src={require('../../img/backgrounds/logo_main.svg')}/>
                         </div>
                         <div className="col-2">
-                            <b className="title">{cont.section0.title}</b><br/>
+                            <b className="title" dangerouslySetInnerHTML={this.html("section0", "title")}/>
                             <p className="textSection0" dangerouslySetInnerHTML={this.html("section0")}/>
                         </div>
                     </div>
@@ -108,10 +108,10 @@ const Home = React.createClass({
                             <img className="logo" src={require('../../img/backgrounds/logofoot.svg')}/>
                         </div>
                         <div className="col-1 left">
-                            <p dangerouslySetInnerHTML={this.html("section4", "title")}/>
+                            <p dangerouslySetInnerHTML={{__html: cont.title}}/>
                         </div>
                         <div className="col-3">
-                            <p dangerouslySetInnerHTML={this.html("section4")}/>
+                            <p dangerouslySetInnerHTML={{__html: cont.body}}/>
                         </div>
                     </div>
                 </div>

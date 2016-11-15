@@ -2,6 +2,10 @@
     "ru": {
         "nav": "",
         "foo": "",
+        "section4": {
+            "title": "Украина<br> 69076<br> Запорожье<br> ул. Козака Бабури, 9",
+            "body": "Управляющий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
+        },
         "home": {
             "section0": {
                 "title": "РЕКЛАМНО - ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ",
@@ -15,17 +19,25 @@
             },
             "section3": {
                 "body": "<b>МЫ ИСКРЕННЕ ЛЮБИМ СВОИХ КЛИЕНТОВ…</b><br> … и переживаем за них, помогаем решать задачи, даже не связанные с основной сферой деятельности. Наша цель – снять любую головную боль с клиента. Вы доверяете нам, а мы, в свою очередь, делаем всё наилучшим образом.<br> Миссия компании «ПромоМастер Украина» – в совершенно невозможных условиях не бросить своего клиента, а быть рядом с ним, пока в нас отпадет необходимость. У Вас важная презентация, выставка либо какое-то другое деловое мероприятие? Будьте уверены: мы всё сделаем вовремя, наилучшим образом, подвезем готовую продукцию в любое указанное Вами место и поможем всё разместить так, чтобы это было идеально. В этом наше предназначение. Деньги, конечно, важны, но они объективно вторичны. <br><b>НАМ ОЧЕНЬ ВАЖНО ВАШЕ МНЕНИЕ!</b><br> Руководство компании «ПромоМастер Украина» всегда открыто для диалога. Мы всегда готовы выслушать от Вас любые предложения или критические замечания, дорогие наши партнеры и клиенты! Дорожим своей репутацией и стремимся к тому, чтобы наше сотрудничество было максимально комфортным. <br> Давайте сотрудничать! Вы будете довольны результатом."
-            },
-            "section4": {
-                "title": "Украина<br> 69076<br> Запорожье<br> ул. Козака Бабури, 9",
-                "body": "Управляющий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
             }
         },
         "horeca": {
-            "section0": {},
-            "section1": {},
-            "section2": {},
-            "section3": {}
+            "section0": {
+                "title": "МЫ — ЭТО УСПЕХ ВАШЕГО БИЗНЕСА",
+                "body": "Среди постоянных клиентов рекламно-производственной компании «ПромоМастер Украина» – ведущие представители сегмента HoReCa (отели, рестораны, кафе). Для этих компаний брендирование посуды, равно как и пошив корпоративной одежды, – постоянная практика, продиктованная рынком. Для успешного запуска заведения очень важна подчеркнутая индивидуальность и чувство стиля, воплощенное во всем – от формы тарелок до цвета одежды для персонала. Наш опыт позволяет находить оптимальные решения для Вашего заведения или корпоративного мероприятия. Стильная, качественная и практичная корпоративная одежда в сочетании с брендированной посудой и аксессуарами наилучшим образом отражает концепцию заведения, подчеркивая его ключевые особенности."
+            },
+            "section1": {
+                "title": "ВНИМАНИЕ К ДЕТАЛЯМ",
+                "body": "Наша фишка – комплексный подход для предприятий сегмента HoReCa, особое внимание к деталям. Производственные мощности «ПромоМастер Украина», опытный, творческий персонал подчеркнут Ваш корпоративный стиль в мельчайших деталях, а если надо – разработаем всё с нуля. Для нас нет ничего невозможного! Мы быстро и качественно выполняем: <br> • деколь столовой и питьевой посуды <br> • пошив одежды для официантов, барменов, поварская форма <br> • изготовление папок-меню, бирдекелей, стаканчиков для кофе <br>• печать с логотипом холдеров и термо-поясов для кофе <br>• брендирование чашек, тарелок, стаканов, бокалов <br>• изготовление упаковки для пиццы и т.п."
+            },
+            "section2": {
+                "title": "ПЕРЕДОВАЯ ТЕХНОЛОГИЯ ПЕРЕНОСА ИЗОБРАЖЕНИЯ",
+                "body": "Методы нанесения логотипов, которые мы применяем при пошиве одежды для персонала с логотипом ресторана или гостиницы – вышивка либо шелкотрафаретная печать. Брендирование посуды и аксессуаров осуществляется методом деколирования. Деколь – один из самых распространенных методов тиражирования информации на любых поверхностях. Это самая передовая технология переноса изображения на керамическую и стеклянную поверхность для брендирования посуды."
+            },
+            "section3": {
+                "title": "РЕАЛИЗУЕМ САМЫЕ СЛОЖНЫЕ ПРОЕКТЫ",
+                "body": "Успех гостинично-ресторанного бизнеса определяется идеей, которая за ним стоит. Практика показывает, что действительно успешные заведения отличаются неординарными концепциями и пристальным вниманием к мельчайшим деталям – будь-то фирменная одежда для персонала либо брендированная посуда. Специалисты компании «ПромоМастер Украина» более чем за 10-ти летнюю историю реализовали сотни успешных проектов во многих городах Украины. Профессионализм команды, солидный опыт работы, самоотдача и творческий подход позволяют нам реализовать самые сложные и амбициозные проекты наших клиентов. Ваша продукция достойна быть уникальной! Звоните прямо сейчас! Мы знаем, как это сделать."
+            }
         },
         "clothes": {
             "section0": {},
@@ -43,6 +55,10 @@
     "en": {
         "nav": "",
         "foo": "",
+        "section4": {
+            "title": "Ukraine<br> 69076<br> Zaporozhye<br> st.Zhukov, 9",
+            "body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+        },
         "home": {
             "section0": {
                 "title": "ADVERTISING AND PRODUCTION COMNANY",
@@ -56,17 +72,25 @@
             },
             "section3": {
                 "body": "<b>WE SINCERELY LOVE OUR CUSTOMERS…</b><br> … and worry about them, help our clients solve problems which sometimes aren’t connected with our main sphere of activities. Our goal is to remove any possible problems and inconveniences our clients can face suffer in Ukrainian business environment. You trust us, and we do our best in turn.<br> Mission of the company «PromoMaster Ukraine» is to stay with the client in any unpredictable conditions, be ready to help until the client needs our support Do you plan an important presentation, exhibition or any business event? Rest assured that we will do all everything in time,  deliver final product to any location of your choice and help to place the products the best possible way. It is our mission. Of course, money is important, but it is of secondary importance honestly.<br> <b>YOUR OPINION AND FEEDBACK ARE IMPORTANT FOR US!</b><br> The management of company «PromoMaster Ukraine» is always open for dialogue. We are always ready to listen any kind of your suggestions or criticisms, our dear partners and customers! We value our reputation and strive to make our cooperation as comfortable as possible.<br> Let's cooperate! You will be pleased with the result."
-            },
-            "section4": {
-                "title": "Ukraine<br> 69076<br> Zaporozhye<br> st.Zhukov, 9",
-                "body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
             }
         },
         "horeca": {
-            "section0": {},
-            "section1": {},
-            "section2": {},
-            "section3": {}
+            "section0": {
+                "title": "WE ARE HERE FOR SUPPORTING YOUR BUSINESS",
+                "body": "Leading representatives of the HoReCa business segment (hotels, restaurants, cafes) are among our regular clients of Advertising &Production Company «PromoMaster Ukraine». For the companies of this segment tableware branding, as well as the tailoring of corporate clothes are the constant practice dictated by the market. For the successful launch place (hotel, restaurant, cafe), it is very important to highlight the individuality and sense of style, incarnated in everything, from plates shape to the color of clothes for the staff. Our experience allows us to find optimal solutions for your newly opened café, restaurant or hotel as well as a corporate event. The stylish, practical and quality corporate uniform combined with a branded tableware and accessories reflect the concept of your place or event, highlighting its key features the best way."
+            },
+            "section1": {
+                "title": "ATTENTION TO DETAILS",
+                "body": "Our special feature is the comprehensive approach for HoReCa enterprises and special attention to any smallest details. The production facilities of «PromoMaster Ukraine», experienced and creative staff can accentuate your corporate style to the smallest detail, and if it is necessary our team can work out a brand new effort. There is nothing impossible for us! We quickly and efficiently fulfill: <br> • decal of dining and drinking tableware <br> • tailoring of uniform for waiters, bartenders, chefs <br> • manufacturing of menu-folders, coasters, coffee-cups <br> • printing of logo for holders and thermal-belts for coffee-cups <br> • branding of the cups, plates, glasses, goblets <br> • producing of packing for pizza, etc."
+            },
+            "section2": {
+                "title": "ADVANCED TECHNOLOGY IMAGE TRANSFERRING",
+                "body": "Logo transferring methods that we use during tailoring staff uniform with a logo of a restaurant or a hotel are embroidery or screen-printing. Branding tableware and accessories made by decalling. Decal is one of the most common methods of data replication on different surfaces. It is the most advanced image transfer technology on ceramic and glass tableware surface for branding."
+            },
+            "section3": {
+                "title": "WE IMPLEMENT THE MOST DIFFICULT PROJECTS",
+                "body": "Success of Hotel and Catering Business is determined by the idea, which lays in the concept of the place. Practice shows that the most successful places differ due to philosophy of the place and close attention to every smallest detail - whether it is corporate uniform for personnel or branded glassware.Specialists of «PromoMaster Ukraine» have more than 10-years prosperous history of implementation of hundreds of successful projects in many Ukrainian cities. The professionalism of the team in combination with considerable work experience as well as self-dedication and creativity allow us to carry out the most complex and ambitious projects of our clients. Your products deserve to be unique! Call us now! We know how to make it."
+            }
         },
         "clothes": {
             "section0": {},
@@ -84,6 +108,10 @@
     "ua": {
         "nav": "",
         "foo": "",
+        "section4": {
+            "title": "Україна<br> 69076<br> Запоріжжя<br> вул. Козака Бабури, 9",
+            "body": "Керуючий партнер<br> Козляковскій Максим<br> +380676142930<br> max@promomaster.biz"
+        },
         "home": {
             "section0": {
                 "title": "РЕКЛАМНО - ВИРОБНИЧА КОМПАНІЯ",
@@ -97,17 +125,25 @@
             },
             "section3": {
                 "body": "<b>МИ ЩИРО ЛЮБИМО СВОЇХ КЛІЄНТІВ…</b><br>… і переживаємо за них, допомагаємо вирішувати завдання, навіть не пов'язані з основною сферою діяльності. Наша мета - зняти будь-який головний біль з клієнта. Ви довіряєте нам, а ми, в свою чергу, робимо все найкращим чином.<br> Місія компанії «ПромоМайстер Україна» - в абсолютно неможливих умовах не кинути свого клієнта, а бути поруч з ним, поки в нас не відпаде необхідність. У Вас важлива презентація, виставка або якийсь інший діловий захід? Будьте впевнені: ми все зробимо вчасно, найкращим чином, підвеземо готову продукцію в будь-яке зазначене Вами місце і допоможемо все розмістити так, щоб це було ідеально. В цьому наше призначення. Гроші, звичайно, важливі, але вони об'єктивно вторинні.<br> <b>НАМ ДУЖЕ ВАЖЛИВА ВАША ДУМКА!</b><br>Керівництво компанії «ПромоМайстер Україна» завжди відкрито до діалогу. Ми завжди готові вислухати від Вас будь-які пропозиції або критичні зауваження, дорогі наші партнери та клієнти! Дуже цінуємо свою репутацію і прагнемо того, щоб наша співпраця була максимально комфортна.<br> Давайте співпрацювати! Ви будете задоволені результатом"
-            },
-            "section4": {
-                "title": "Україна<br> 69076<br> Запоріжжя<br> вул. Козака Бабури, 9",
-                "body": "Керуючий партнер<br> Козляковскій Максим<br> +380676142930<br> max@promomaster.biz"
             }
         },
         "horeca": {
-            "section0": {},
-            "section1": {},
-            "section2": {},
-            "section3": {}
+            "section0": {
+                "title": "МИ - ЦЕ УСПІХ ВАШОГО БІЗНЕСУ",
+                "body": "Серед постійних клієнтів рекламно-виробничої компанії «ПромоМайстер Україна» - провідні представники сегмента HoReCa (готелі, ресторани, кафе). Для цих компаній брендування посуду, так само як і пошиття корпоративного одягу, - постійна практика, продиктована ринком. Для успішного запуску закладу дуже важлива підкреслена індивідуальність і відчуття стилю, втілене у всьому - від форми тарілок до кольору одягу для персоналу. Наш досвід дозволяє знаходити оптимальні рішення для Вашого закладу або корпоративного заходу. Стильний, якісний та практичний корпоративний одяг в поєднанні з брендованим посудом та аксесуарами найкращим чином відображає концепцію закладу, підкреслюючи його ключові особливості."
+            },
+            "section1": {
+                "title": "УВАГА ДО ДЕТАЛЕЙ",
+                "body": "Наша фішка - комплексний підхід для підприємств сегменту HoReCa, особлива увага до деталей. Виробничі потужності «ПромоМайстер Україна», досвідчений, творчий персонал підкреслять Ваш корпоративний стиль в найдрібніших деталях, а якщо треба - розробимо все з нуля. Для нас немає нічого неможливого! Ми швидко і якісно виконуємо: <br> • деколь столового та питного посуду <br> • пошиття одягу для офіціантів, барменів, кухарська форма <br> • виготовлення папок-меню, бірдіклей, стаканчиків для кави <br> • друк з логотипом холдерів і термо-поясів для кави <br> • брендування чашок, тарілок, склянок, келихів <br> • виготовлення упаковки для піци і т.п."
+            },
+            "section2": {
+                "title": "ПЕРЕДОВА ТЕХНОЛОГІЯ ПЕРЕНОСУ ЗОБРАЖЕНЬ",
+                "body": "Методи нанесення логотипів, які ми застосовуємо при пошитті одягу для персоналу з логотипом ресторану чи готелю - вишивка або шовкотрафаретний друк. Брендування посуду і аксесуарів здійснюється методом деколювання. Деколь - один з найпоширеніших методів тиражування інформації на будь-яких поверхнях. Це найпередовіша технологія перенесення зображення на керамічну і скляну поверхню для брендування посуду."
+            },
+            "section3": {
+                "title": "РЕАЛІЗУЄМО НАЙБІЛЬШ СКЛАДНІ ПРОЕКТИ",
+                "body": "Успіх готельно-ресторанного бізнесу визначається ідеєю, яка за ним стоїть. Практика показує, що дійсно успішні заклади відрізняються неординарними концепціями і пильною увагою до найдрібніших деталей - будь-то фірмовий одяг для персоналу або брендований посуд. Фахівці компанії «ПромоМайстер Україна» більш ніж за 10-ти річну історію реалізували сотні успішних проектів у багатьох містах України. Професіоналізм команди, солідний досвід роботи, самовіддача і творчий підхід дозволяють нам реалізувати найскладніші і амбітні проекти наших клієнтів. Ваша продукція гідна бути унікальною! Телефонуйте прямо зараз! Ми знаємо, як це зробити."
+            }
         },
         "clothes": {
             "section0": {},
@@ -125,6 +161,10 @@
     "fr": {
         "nav": "",
         "foo": "",
+        "section4": {
+            "title": "Ukraine<br> 69076<br> Zaporіzhya<br> la. Kozak Babur, 9",
+            "body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+        },
         "home": {
             "section0": {
                 "title": "LA SOCIÉTÉ DE PUBLICITÉ ET DE PRODUCTION",
@@ -138,17 +178,25 @@
             },
             "section3": {
                 "body": "<b>NOUS AIMONS SINCÈREMENT NOS CLIENTS…</b><br>… Et nous nous faisons du souci pour eux, en les aidant à résoudre même les problèmes, non liés à notre activité principale. Notre objectif est de remédier au casse-tête du client. Vous nous faites confiance et nous, à notre tour, nous efforçons de tout faire du mieux.<br> La mission de l&#39;entreprise PromoMaster Ukraine est de ne pas quitter son client dans les conditions totalement insupportables et d&#39;être à côté de lui, jusqu’à qu’il n’ait plus besoin de nous. Vous avez une présentation importante, une exposition ou un autre événement d&#39;affaires ? Soyez assuré que nous ferons tout à l&#39;heure, de notre mieux, livrerons les produits finis dans n&#39;importe quel endroit de votre choix et nous vous aiderons à les placer parfaitement. C&#39;est notre mission. L&#39;argent, il est bien sûr important, mais tout à fait secondaire.<br> <b>VOTRE OPINION EST TRÈS IMPORTANT POUR NOUS !</b><br>La direction de l&#39;entreprise PromoMaster Ukraine est toujours ouverte au dialogue. Nous sommes toujours prêts à entendre vos suggestions ou critiques, nos chers partenaires et clients ! Nous apprécions notre réputation et nous nous efforçons de rendre notre coopération aussi confortable que possible.<br> Travaillons ensemble ! Vous serez satisfait du résultat"
-            },
-            "section4": {
-                "title": "Ukraine<br> 69076<br> Zaporіzhya<br> la. Kozak Babur, 9",
-                "body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
             }
         },
         "horeca": {
-            "section0": {},
-            "section1": {},
-            "section2": {},
-            "section3": {}
+            "section0": {
+                "title": "NOUS – C&#39;EST LA RÉUSSITE DE VOTRE ENTREPRISE",
+                "body": "Les principaux représentants du segment HoReCa (hôtels, restaurants, cafés) se trouvent parmi les clients réguliers de la société de publicité et de production «PromoMaster Ukraine». Pour ces entreprises, le branding de la vaisselle, ainsi que la couture des vêtements d&#39;entreprise est une pratique habituelle, engendrée par le marché. Pour le succès du lancement de l&#39;institution, il est très important de souligner la personnalité et le sens du style, incarné dans la forme des assiettes et dans les couleurs des vêtements pour le personnel. Notre expérience nous permet de trouver les solutions optimales pour votre établissement ou pour votre événement d&#39;entreprise. Des vêtements d&#39;entreprise élégants, pratiques et de bonne qualité en combinaison avec des ustensiles de cuisine à la mode et des accessoires reflètent le mieux la conception de l&#39;institution,  mettant l&#39;accent sur ses principales caractéristiques."
+            },
+            "section1": {
+                "title": "L&#39;ATTENTION AU DÉTAIL",
+                "body": "Notre particularité est une approche intégrée pour les entreprises du segment HoReCa, avec une attention particulière aux détails. La capacité de production de PromoMaster Ukraine, le personnel expérimenté et créatif souligneront votre style d&#39;entreprise dans les moindres détails, et si nécessaire, nous développerons tout à partir de zéro. Pour nous, rien n&#39;est impossible ! Nous accomplissons rapidement et qualitativement: <br> • la décalcomanie de la vaisselle de la salle à manger et à boire <br> • la confection de vêtements pour les serveurs, barmen, la forme de cuisinier <br> • la fabrication des dossiers-menu, des sous-verres, des gobelets à café <br> • l’impression avec logo des détenteurs et des thermo-ceintures pour le café <br> • le branding des tasses, des assiettes, des verres, des verres à vin <br> • la production de l&#39;emballage pour la pizza, etc."
+            },
+            "section2": {
+                "title": "LA TECHNOLOGIE AVANCÉE DE TRANSFERT D&#39;IMAGE",
+                "body": "Les méthodes de l&#39;application des logos que nous appliquons lors de la couture des vêtements pour le personnel, avec le logo du restaurant ou de l&#39;hôtel, c’est la broderie ou la sérigraphie. Le branding de la vaisselle et des accessoires par la méthode de la décalcomanie. La décalcomanie, c’est l&#39;une des techniques les plus répandues de duplication de l&#39;information sur toutes les surfaces. C&#39;est la technologie la plus avancée de transfert d&#39;image sur la surface céramique et en verre pour le branding de la vaisselle."
+            },
+            "section3": {
+                "title": "NOUS METTONS EN ŒUVRE LES PROJETS LES PLUS DIFFICILES",
+                "body": "Le succès de l&#39;hôtellerie est déterminée par une idée. La pratique montre que des établissements vraiment prospères se distinguent par des concepts extraordinaires et par une attention aux moindres détails que ce soit des vêtements de marque pour le personnel ou des ustensiles de cuisine de marque. Les spécialistes de la société «PromoMaster Ukraine» pendant plus de 10 ans d&#39;histoire ont réalisé des centaines de projets dans de nombreuses villes de l&#39;Ukraine. Le professionnalisme de l&#39;équipe, solide expérience de travail, nos dévouement et créativité nous permettent de réaliser les projets de nos clients les plus complexes et les plus ambitieux. Votre produit est digne d&#39;être unique ! Appelez-nous dès maintenant ! Nous savons comment le faire."
+            }
         },
         "clothes": {
             "section0": {},
@@ -166,6 +214,10 @@
     "de": {
         "nav": "",
         "foo": "",
+        "section4": {
+            "title": "Ukraine<br> 69076<br> Zaporozhye<br> der. Kozak Babur, 9",
+            "body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+        },
         "home": {
             "section0": {
                 "title": "WERBUG- UND PRODUKTIONSFIRMA",
@@ -179,17 +231,25 @@
             },
             "section3": {
                 "body": "<b>WIR LIEBEN UNSERE KUNDEN…</b><br>… und sorgen für sie. Wir helfen ihnen, die Probleme zu lösen, die sogar nicht mit der Haupttätigkeit verbunden sind. Unser Ziel ist, Kunden, so weit wie möglich, vom Stress zu lösen. Sie vertrauen uns und wir tun wiederum unser Bestes.<br> Die Hauptaufgabe von &quot;PromoMaster Ukraine&quot; ist, in völlig unmöglichen Bedingungen ihre Kunden nicht im Stich zu lassen und da zu sein, bis es notwendig ist. Haben Sie eine wichtige Präsentation, eine Ausstellung oder eine andere Veranstaltung? Seien Sie sicher, dass wir alles rechtzeitig und am besten erfüllen werden. Außerdem werden wir das fertige Produkt auf jeden von Ihnen bestimmten Ort liefern und helfen, alles an seinen Platz zu stellen, damit das perfekt wird. Das ist unsere Berufung. Das Geld ist natürlich wichtig, aber es ist objektiv zweitrangig.<br> <b>WIR SCHÄTZEN IHRE MEINUNG!</b><br>Die Leitung der Firma &quot;PromoMaster Ukraine&quot; ist immer offen für den Dialog. Wir sind immer bereit, von Ihnen Anregungen oder Kritik zu hören, unsere lieben Partner und Kunden! Wir schätzen unseren guten Ruf und bemühen uns, unsere Zusammenarbeit so angenehm wie möglich zu machen.<br> Lassen Sie uns zusammenarbeiten! Sie werden mit dem Ergebnis zufrieden sein."
-            },
-            "section4": {
-                "title": "Ukraine<br> 69076<br> Zaporozhye<br> der. Kozak Babur, 9",
-                "body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
             }
         },
         "horeca": {
-            "section0": {},
-            "section1": {},
-            "section2": {},
-            "section3": {}
+            "section0": {
+                "title": "WIR VERSORGEN DEN ERFOLG IHRES UNTERNEHMENS",
+                "body": "Zu den Stammkunden von Werbung- und Produktionsfirma «PromoMaster Ukraine» gehören die führenden Vertreter des HoReCa-Segment (Hotels, Restaurants, Cafés). Für diese Unternehmen ist Geschirr Branding, sowie die Anfertigung der Corporate-Identity- Kleidung, eine ständige Praxis, die vom Markt bestimmt ist. Für den erfolgreichen Start des Unternehmens sind die Individualität und Sinn für Stil sehr wichtig, der in allen Kleinigkeiten wiederspiegelt ist – von Tellerform bis Kleidungsfarbe fürs Personal. Unsere Erfahrung leistet es uns, optimale Lösungen für Ihr Unternehmen oder ein Firmenevent zu finden. Eine moderne, praktische und hochqualitative Corporate-Identity- Kleidung in Verbindung mit dem gemarkten Geschirr und Zubehör widerspiegelt am besten die Konzeption der Firma und betont ihre Hauptmerkmale."
+            },
+            "section1": {
+                "title": "DIE LIEBE ZUM DETAIL",
+                "body": "Unser Trick ist ein ganzheitlicher Ansatz für die HoReCa-Unternehmen, viel Liebe zum Detail. Herstellungskapazität von «PromoMaster Ukraine», erfahrene und kreative Mitarbeiter betonen ganz genau Ihren Corporate-Stil und, wenn es erforderlich ist, werden wir alles von Grund auf neu konzipieren. Für uns ist nichts unmöglich! Wir erledigen die Bestellungen schnell und effizient, und zwar: <br> • abziehbilder für Essen und Trinken Utensilien <br> • die Anfertigung für die Kellner, Barmixer, Kochbekleidung <br> • herstellung von Menü-Karten , Untersetzern, Kaffeetassen <br> • stempel mit dem Logo für Kaffeehalter und Thermogürtel <br> • tassen-, Teller-, Gläserbranding <br> • herstellung von der Pizzaverpackung usw."
+            },
+            "section2": {
+                "title": "EINE FORTGESCHRITTENE BILDÜBERTRAGUNGSTECHNOLOGIE",
+                "body": "Methoden des Logoauftragens, die wir bei der Anfertigung von Personalbekleidung mit einem Restaurant oder Hotel-Logo verwenden, sind Stickerei oder Seidensiebdruck. Geschirr- und Accessoires-Branding wird durch das Aufkleben von Abziehbildern ausgeführt. Das Abziehbild ist eine der häufigsten Methoden der Datenreplikation auf allen Oberflächen. Das ist die fortgeschrittenste Auftragungstechnik auf der keramischen und gläsernen Oberfläche fürs gemarkte Geschirr."
+            },
+            "section3": {
+                "title": "WIR VERWIRKLICHEN DIE KOMPLEXESTEN PROJEKTE",
+                "body": "Der Erfolg des Hotel- und Gaststättengewerbe ist von der Idee bestimmt, die hinter ihm steht. Unsere Erfahrung zeigt, dass die wirklich erfolgreichen Unternehmen durch eine außergewöhnliche Konzeption und viel Liebe zum Detail gekennzeichnet sind, ob es Firmenbekleidung oder das gemarkte Geschirr ist. Die Fachleute von «PromoMaster Ukraine» verwirklichten seit mehr als 10 Jahren Hunderte von erfolgreichen Projekten in vielen Städten der Ukraine. Die Professionalismus des Teams, große Erfahrung, Engagement und Kreativität leistet es uns, die komplexen und anspruchsvollen Projekte von unseren Kunden zu realisieren. Ihre Produktion verdient es, einzigartig zu sein! Rufen Sie jetzt an! Wir wissen, wie das geht."
+            }
         },
         "clothes": {
             "section0": {},

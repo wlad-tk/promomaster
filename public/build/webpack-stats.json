@@ -1,1 +1,1 @@
-{"status":"done","chunks":{"main":[{"name":"b.js","publicPath":"/b.js","path":"/home/vlad/workspace/promomaster/public/build/b.js"},{"name":"b.js.map","publicPath":"/b.js.map","path":"/home/vlad/workspace/promomaster/public/build/b.js.map"}]},"publicPath":"/"}
+{"status":"done","chunks":{"main":[{"name":"b.js","publicPath":"/build/b.js","path":"/b.js"},{"name":"./src/css/b.css","publicPath":"/build/./src/css/b.css","path":"/src/css/b.css"}]},"publicPath":"/build/"}

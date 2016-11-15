@@ -56,6 +56,22 @@ const IMAGES_DATA = [
     }
 ];
 
+const PAGE_BLOCK = [
+    {
+        background: require('../../img/backgrounds/h/h_001.jpg'),
+        logo: require('../../img/backgrounds/logo_main.svg'),
+    },{
+        background: require('../../img/backgrounds/h/h_002.jpg'),
+        logo: require('../../img/backgrounds/logo_main.svg'),
+    },{
+        background: require('../../img/backgrounds/h/h_003.jpg'),
+        logo: require('../../img/backgrounds/logo_main.svg'),
+    },{
+        background: require('../../img/backgrounds/h/h_004.jpg'),
+        logo: require('../../img/backgrounds/logo_main.svg'),
+    }
+];
+
 const Horeca = React.createClass({
     propTypes: {
         lang: React.PropTypes.string,
@@ -63,7 +79,7 @@ const Horeca = React.createClass({
     },
 
     html(sectionid, contant="body" ) {
-        let home_translate = languages[this.props.lang].home || {};
+        let home_translate = languages[this.props.lang].horeca || {};
         return {__html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!'}
     },
 
@@ -86,69 +102,34 @@ const Horeca = React.createClass({
     },
 
     render() {
-        const cont = languages[this.props.lang].home || {};
+        const cont = languages[this.props.lang].section4;
+
         return (
             <div>
                 <ul className="galleryHoreca">
                     <a onClick={e => blueimp.Gallery($(this.refs.linksImg).find('a'))}>GALLERY</a>
                 </ul>
                 <div ref='Horeca'>
-                    <div className="section active"
-                         id="section0"
-                         style={{
-                             background: 'url('+ require('../../img/backgrounds/h/h_001.jpg') + ') no-repeat center',
-                             backgroundSize: 'cover'
-                         }}>
+                    {_.map(PAGE_BLOCK, (value, key) =>
+                        <div key={key}
+                             className="section"
+                             id={"section" + key}
+                             style={{
+                                 background: 'url('+ value.background + ') no-repeat center',
+                                 backgroundSize: 'cover'
+                             }}>
 
-                        <div className="container-col">
-                            <div className="col-1">
-                                <img className="logo" src={require('../../img/backgrounds/logo_main.svg')}/>
+                            <div className="container-col">
+                                <div className="col-1">
+                                    <img className="logo" src={value.logo}/>
+                                </div>
+                                <div className="col-2">
+                                    <b className="title" dangerouslySetInnerHTML={this.html("section" + key, "title")}/>
+                                    <p className="textOlso" dangerouslySetInnerHTML={this.html("section" + key)}/>
+                                </div>
                             </div>
-                            <div className="col-2">
-                                <b className="title">{cont.section0.title}</b><br/>
-                                <p className="textSection0" dangerouslySetInnerHTML={this.html("section0")}/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section"
-                         id="section1"
-                         style={{
-                             background: 'url('+ require('../../img/backgrounds/h/h_002.jpg') + ') no-repeat center',
-                             backgroundSize: 'cover'
-                         }}>
-
-                        <div className="container-col">
-                            <div className="col-1">
-                                <p className="textOlso" dangerouslySetInnerHTML={this.html("section1")}/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section"
-                         id="section2"
-                         style={{
-                             background: 'url('+ require('../../img/backgrounds/h/h_003.jpg') + ') no-repeat center',
-                             backgroundSize: 'cover'
-                         }}>
-
-                        <div className="container-col">
-                            <div className="col-1">
-                                <p className="textOlso" dangerouslySetInnerHTML={this.html("section2")}/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section"
-                         id="section3"
-                         style={{
-                             background: 'url('+ require('../../img/backgrounds/h/h_004.jpg') + ') no-repeat center',
-                             backgroundSize: 'cover'
-                         }}>
-
-                        <div className="container-col">
-                            <div className="col-1">
-                                <p className="textOlso" dangerouslySetInnerHTML={this.html("section3")}/>
-                            </div>
-                        </div>
-                    </div>
+                        </div>)
+                    }
                     <div className="section"
                          id="section4"
                          style={{
@@ -161,10 +142,10 @@ const Horeca = React.createClass({
                                 <img className="logo" src={require('../../img/backgrounds/logofoot.svg')}/>
                             </div>
                             <div className="col-1 left">
-                                <p dangerouslySetInnerHTML={this.html("section4", "title")}/>
+                                <p dangerouslySetInnerHTML={{__html: cont.title}}/>
                             </div>
                             <div className="col-3">
-                                <p dangerouslySetInnerHTML={this.html("section4")}/>
+                                <p dangerouslySetInnerHTML={{__html: cont.body}}/>
                             </div>
                         </div>
                     </div>
