@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory, browserHistory } from 'react-router';
 
 // import App from './App.jsx';
 // import AboutPage from './components/AboutPage.jsx';
@@ -14,7 +14,7 @@ import Clothes from './components/content/Clothes.jsx';
 // import Decol from './components/content/Decol.jsx';
 
 ReactDOM.render(
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         {/*<Route path='/' component={App}>*/}
             {/*<IndexRoute component={AboutPage}/>*/}
             {/*<Route path='/about' component={AboutPage} />*/}

@@ -8,7 +8,7 @@ module.exports = {
     entry: "./src/main.js",
     output: {
         path: __dirname + '/public/build/',
-        publicPath: PROD ? "./build/": "/build/",
+        publicPath: "/build/",
         filename: PROD ? 'b.min.js' : 'b.js' //'bundle.min.js' or 'bundle.js'
     },
     devtool: 'source-map',
