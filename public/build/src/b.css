@@ -493,7 +493,9 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
-}.Horeca body:not(.fp-viewing-4) .navigation-bar {
+}.Decol body:not(.fp-viewing-4) .navigation-bar,
+.Clothes body:not(.fp-viewing-4) .navigation-bar,
+.Horeca body:not(.fp-viewing-4) .navigation-bar {
   bottom: 7em;
   top: inherit;
   animation: nav-bar-top 2s 1;
@@ -506,11 +508,15 @@ html.fp-enabled,
     bottom: 7em;
   }
 }
+.Decol body:not(.fp-viewing-4) .container-col,
+.Clothes body:not(.fp-viewing-4) .container-col,
 .Horeca body:not(.fp-viewing-4) .container-col {
   padding: 3em 4em 0 4em;
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
 }
+.Decol body:not(.fp-viewing-4) .container-col .col-2,
+.Clothes body:not(.fp-viewing-4) .container-col .col-2,
 .Horeca body:not(.fp-viewing-4) .container-col .col-2 {
   margin-top: 2em;
   padding-top: 40px;
@@ -518,6 +524,8 @@ html.fp-enabled,
   text-align: left;
   background: rgba(255, 255, 255, 0.8);
 }
+.Decol body:not(.fp-viewing-4) .active .container-col .col-2,
+.Clothes body:not(.fp-viewing-4) .active .container-col .col-2,
 .Horeca body:not(.fp-viewing-4) .active .container-col .col-2 {
   animation: marginSection 3s 1;
 }
@@ -529,6 +537,8 @@ html.fp-enabled,
     margin: 2em 0 0 0;
   }
 }
+.Decol .fp-viewing-4 .navigation-bar,
+.Clothes .fp-viewing-4 .navigation-bar,
 .Horeca .fp-viewing-4 .navigation-bar {
   top: 4em;
   animation: nav-bar-bottom 2s 1;
@@ -541,50 +551,74 @@ html.fp-enabled,
     top: 4em;
   }
 }
+.Decol .title,
+.Clothes .title,
 .Horeca .title {
   padding: 0 13px 0 35px;
   font-weight: 900;
 }
+.Decol .logo,
+.Clothes .logo,
 .Horeca .logo {
   width: 5em;
   padding: 0;
 }
+.Decol .textOlso,
+.Clothes .textOlso,
 .Horeca .textOlso {
   left: 2em;
   right: 2em;
   padding: 0 35px 30px 35px;
 }
+.Decol .textOlso b,
+.Clothes .textOlso b,
 .Horeca .textOlso b {
   line-height: 30px;
 }
 @media all and (max-width: 1000px) {
+  .Decol .title,
+  .Clothes .title,
   .Horeca .title {
     background: #b92d21;
     color: white;
     padding: 0 0 0 0;
   }
+  .Decol body:not(.fp-viewing-4) .container-col .col-2,
+  .Clothes body:not(.fp-viewing-4) .container-col .col-2,
   .Horeca body:not(.fp-viewing-4) .container-col .col-2 {
     text-align: center;
     max-width: none;
     background: rgba(255, 255, 255, 0.8);
   }
+  .Decol .col-1,
+  .Clothes .col-1,
   .Horeca .col-1 {
     text-align: left;
   }
+  .Decol .col-3,
+  .Clothes .col-3,
   .Horeca .col-3 {
     text-align: center;
   }
+  .Decol #section4 .container-col .col-1,
+  .Clothes #section4 .container-col .col-1,
   .Horeca #section4 .container-col .col-1 {
     text-align: center;
   }
+  .Decol #section4 .container-col .left,
+  .Clothes #section4 .container-col .left,
   .Horeca #section4 .container-col .left {
     text-align: center;
   }
+  .Decol #section4 .container-col .logo,
+  .Clothes #section4 .container-col .logo,
   .Horeca #section4 .container-col .logo {
     padding: 0;
   }
 }
 @media handheld and (orientation: portrait) {
+  .Decol .col-2,
+  .Clothes .col-2,
   .Horeca .col-2 {
     max-width: none;
     text-align: center;

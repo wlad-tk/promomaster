@@ -1,7 +1,7 @@
 import React from 'react'
 import _ from 'underscore';
 
-import '../../styles/Horeca.less';
+import '../../styles/HoClDe.less';
 import '../../styles/FirstBlock.less';
 
 import '../../styles/jquery.fullPage.css';
@@ -25,7 +25,7 @@ const IMAGES_DATA = [
         title: 'Набор фарфоровой посуды \n Изготовлен для ТМ JACOBS'
     },{
         url: require('../../img/horeca/pm_kaa_01.jpg'),
-        title: 'Набор фарфоровой посуды \n Изготовлен для сети L`Kafa Cafe"'
+        title: 'Набор фарфоровой посуды \n Изготовлен для сети L`Kafa Cafe'
     },{
         url: require('../../img/horeca/pm_pinta_01.jpg'),
         title: 'Футболка-поло и декорированные пивные бокалы \n Изготовлено для Pinta Trattoria and Pub'
@@ -106,7 +106,7 @@ const Horeca = React.createClass({
 
         return (
             <div>
-                <ul className="galleryHoreca">
+                <ul className="gallery">
                     <a onClick={e => blueimp.Gallery($(this.refs.linksImg).find('a'))}>GALLERY</a>
                 </ul>
                 <div ref='Horeca'>
