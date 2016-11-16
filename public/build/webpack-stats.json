@@ -1,1 +1,1 @@
-{"status":"done","chunks":{"main":[{"name":"b.js","publicPath":"/build/b.js","path":"/b.js"},{"name":"./src/b.css","publicPath":"/build/./src/b.css","path":"/src/b.css"}]},"publicPath":"/build/"}
+{"status":"done","chunks":{"main":[{"name":"b.js","publicPath":"/build/b.js","path":"/b.js"},{"name":"0.a6f5bb9722c1ce6b888f.hot-update.js","publicPath":"/build/0.a6f5bb9722c1ce6b888f.hot-update.js","path":"/0.a6f5bb9722c1ce6b888f.hot-update.js"},{"name":"./src/b.css","publicPath":"/build/./src/b.css","path":"/src/b.css"}]},"publicPath":"/build/"}
