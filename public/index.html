@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Notes</title>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>-->
-    <link rel="stylesheet" type="text/css" href="./build/src/b.css">
-    <!--b.min.css or b.css-->
+    <link rel="stylesheet" type="text/css" href="./build/src/b.css"> <!--b.min.css or b.css-->
+    <link rel="shortcut icon" href="favicon.ico">
+
     <style>
         #preload {
             width: 100%;
@@ -26,8 +26,7 @@
         <img src="ajax-loader.gif">
     </div>
     <script>
-        const elem = document.getElementById('preload');
-            window.onload = () => {elem.style.display='none'}
+        window.onload = () => {document.getElementById('preload').style.display='none'}
     </script>
 
     <div id='first'></div>

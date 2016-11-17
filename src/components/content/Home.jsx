@@ -22,10 +22,10 @@ const Home = React.createClass({
     },
 
     componentDidMount() {
-        let htmlElem = document.documentElement;
-
-        htmlElem.classList.contains('fp-enabled') ? $(this.refs.Home).fullpage.destroy('all'): {};
-        htmlElem.className = 'Home';
+        let htmlElem = document;
+        htmlElem.title = 'Home';
+        htmlElem.documentElement.classList.contains('fp-enabled') ? $(this.refs.Home).fullpage.destroy('all'): {};
+        htmlElem.documentElement.className = 'Home';
 
         $(this.refs.Home).fullpage({
             css3: true,
