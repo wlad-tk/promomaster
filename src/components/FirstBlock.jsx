@@ -20,10 +20,6 @@ const FirstBlock = React.createClass({
         }
     },
 
-    changeLang(newLang) {
-        this.state.lang !== newLang ? this.setState({lang: newLang}): {};
-    },
-
     render() {
         let {lang} = this.state;
 
@@ -41,7 +37,12 @@ const FirstBlock = React.createClass({
                 {React.cloneElement(this.props.children, {lang: lang})}
             </div>
         )
+    },
+
+    changeLang(newLang) {
+        this.state.lang !== newLang ? this.setState({lang: newLang}): {};
     }
+
 });
 
 export default FirstBlock;

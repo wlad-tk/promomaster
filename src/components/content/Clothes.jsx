@@ -79,15 +79,6 @@ const Clothes = React.createClass({
         cont: React.PropTypes.func
     },
 
-    html(sectionid, contant="body" ) {
-        let home_translate = languages[this.props.lang].clothes || {};
-        return {__html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!'}
-    },
-
-    sectionLink(sectionlinkid) {
-        $(this.refs.Clothes).fullpage.moveTo(sectionlinkid);
-    },
-
     componentDidMount() {
         let htmlElem = document;
         htmlElem.title = 'Clothes';
@@ -173,6 +164,15 @@ const Clothes = React.createClass({
                 </div>
             </div>
         )
+    },
+
+    html(sectionid, contant="body" ) {
+        let home_translate = languages[this.props.lang].clothes || {};
+        return {__html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!'}
+    },
+
+    sectionLink(sectionlinkid) {
+        $(this.refs.Clothes).fullpage.moveTo(sectionlinkid);
     }
 });
 
