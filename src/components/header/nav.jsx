@@ -16,9 +16,9 @@ const Nav = React.createClass ({
                 <li className="blockimage"><a/></li>
                 <li className="olso"><Link to='/horeca'>HOERECA</Link></li>
                 <li className="olso"><Link to='/clothes'>CLOTHES</Link></li>
-                <li className="olso"><a href="#/fb/section3">DECOL</a></li>
+                <li className="olso"><Link to="/decol">DECOL</Link></li>
                 <li className="olso"><a onClick={e => $.fn.fullpage.moveTo(5)}>CONTACTS</a></li>
-                <li className="olso last"><a href="#/fb/section5">FEEDBACK</a></li>
+                <li className="olso last"><a onClick={e => jivo_api.open()}>FEEDBACK</a></li>
             </ul>
         )
     }

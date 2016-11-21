@@ -57,20 +57,12 @@ const IMAGE = {
         }
     ],
     page: [
-        {
-            background: require('../../img/backgrounds/h/h_001.jpg'),
-            logo: require('../../img/backgrounds/logo_main.svg'),
-        },{
-            background: require('../../img/backgrounds/h/h_002.jpg'),
-            logo: require('../../img/backgrounds/logo_main.svg'),
-        },{
-            background: require('../../img/backgrounds/h/h_003.jpg'),
-            logo: require('../../img/backgrounds/logo_main.svg'),
-        },{
-            background: require('../../img/backgrounds/h/h_004.jpg'),
-            logo: require('../../img/backgrounds/logo_main.svg'),
-        }
-    ]
+        require('../../img/backgrounds/h/h_001.jpg'),
+        require('../../img/backgrounds/h/h_002.jpg'),
+        require('../../img/backgrounds/h/h_003.jpg'),
+        require('../../img/backgrounds/h/h_004.jpg'),
+    ],
+    logo: require('../../img/backgrounds/logo_main.svg')
 };
 
 const Horeca = React.createClass({
@@ -106,13 +98,13 @@ const Horeca = React.createClass({
                              className="section"
                              id={"section" + key}
                              style={{
-                                 background: 'url('+ value.background + ') no-repeat center',
+                                 background: 'url('+ value + ') no-repeat center',
                                  backgroundSize: 'cover'
                              }}>
 
                             <div className="container-col">
                                 <div className="col-1">
-                                    <img className="logo" src={value.logo}/>
+                                    <img className="logo" src={IMAGE.logo}/>
                                 </div>
                                 <div className="col-2">
                                     <b className="title" dangerouslySetInnerHTML={this.html("section" + key, "title")}/>

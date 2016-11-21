@@ -69,11 +69,11 @@
 
 	'use strict';
 	
-	var _reactDom = __webpack_require__(196);
+	var _reactDom = __webpack_require__(214);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -83,11 +83,11 @@
 	
 	var _FirstBlock2 = _interopRequireDefault(_FirstBlock);
 	
-	var _Home = __webpack_require__(129);
+	var _Home = __webpack_require__(130);
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
-	var _Horeca = __webpack_require__(130);
+	var _Horeca = __webpack_require__(131);
 	
 	var _Horeca2 = _interopRequireDefault(_Horeca);
 	
@@ -95,14 +95,11 @@
 	
 	var _Clothes2 = _interopRequireDefault(_Clothes);
 	
+	var _Decol = __webpack_require__(129);
+	
+	var _Decol2 = _interopRequireDefault(_Decol);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// import Decol from './components/content/Decol.jsx';
-	
-	// import App from './App.jsx';
-	// import AboutPage from './components/AboutPage.jsx';
-	// import InboxPage from './components/InboxPage.jsx';
-	// import Message from './components/Message.jsx';
 	
 	_reactDom2.default.render(_react2.default.createElement(
 	    _reactRouter.Router,
@@ -112,9 +109,15 @@
 	        { path: '/', component: _FirstBlock2.default },
 	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/horeca', component: _Horeca2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/clothes', component: _Clothes2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: '/clothes', component: _Clothes2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/decol', component: _Decol2.default })
 	    )
 	), document.getElementById('first'));
+	
+	// import App from './App.jsx';
+	// import AboutPage from './components/AboutPage.jsx';
+	// import InboxPage from './components/InboxPage.jsx';
+	// import Message from './components/Message.jsx';
 
 /***/ },
 /* 1 */
@@ -378,6 +381,15 @@
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+	
+	module.exports = __webpack_require__(240);
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/**
 	 * Copyright 2013-present, Facebook, Inc.
 	 * All rights reserved.
@@ -568,15 +580,6 @@
 	module.exports = ReactDOMComponentTree;
 
 /***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	module.exports = __webpack_require__(222);
-
-
-/***/ },
 /* 7 */
 /***/ function(module, exports) {
 
@@ -693,7 +696,7 @@
 	var debugTool = null;
 	
 	if (true) {
-	  var ReactDebugTool = __webpack_require__(243);
+	  var ReactDebugTool = __webpack_require__(261);
 	  debugTool = ReactDebugTool;
 	}
 	
@@ -1111,7 +1114,7 @@
 	var ReactCurrentOwner = __webpack_require__(16);
 	
 	var warning = __webpack_require__(2);
-	var canDefineProperty = __webpack_require__(73);
+	var canDefineProperty = __webpack_require__(76);
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
 	
 	// The Symbol used to tag the ReactElement type. If there is no native Symbol
@@ -1446,6 +1449,12 @@
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "src/img/backgrounds/ec90afa86ce8f8159e8bcb7e145f241b.svg";
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/**
 	 * Copyright 2013-present, Facebook, Inc.
 	 * All rights reserved.
@@ -1466,7 +1475,7 @@
 	var PooledClass = __webpack_require__(21);
 	var ReactFeatureFlags = __webpack_require__(110);
 	var ReactReconciler = __webpack_require__(28);
-	var Transaction = __webpack_require__(35);
+	var Transaction = __webpack_require__(36);
 	
 	var invariant = __webpack_require__(1);
 	
@@ -1699,12 +1708,6 @@
 	module.exports = ReactUpdates;
 
 /***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "src/img/backgrounds/ec90afa86ce8f8159e8bcb7e145f241b.svg";
-
-/***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1721,7 +1724,7 @@
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(37);
+	var keyMirror = __webpack_require__(38);
 	
 	var PropagationPhases = keyMirror({ bubbled: null, captured: null });
 	
@@ -2275,7 +2278,7 @@
 	exports.createRoutesFromReactChildren = createRoutesFromReactChildren;
 	exports.createRoutes = createRoutes;
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -2784,7 +2787,7 @@
 	
 	var _PathUtils = __webpack_require__(19);
 	
-	var _Actions = __webpack_require__(38);
+	var _Actions = __webpack_require__(41);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -3157,10 +3160,10 @@
 	
 	'use strict';
 	
-	var DOMNamespaces = __webpack_require__(62);
-	var setInnerHTML = __webpack_require__(46);
+	var DOMNamespaces = __webpack_require__(65);
+	var setInnerHTML = __webpack_require__(50);
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(74);
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(77);
 	var setTextContent = __webpack_require__(126);
 	
 	var ELEMENT_NODE_TYPE = 1;
@@ -3280,7 +3283,7 @@
 	
 	'use strict';
 	
-	var ReactRef = __webpack_require__(256);
+	var ReactRef = __webpack_require__(274);
 	var ReactInstrumentation = __webpack_require__(9);
 	
 	var warning = __webpack_require__(2);
@@ -3438,6 +3441,12 @@
 
 /***/ },
 /* 29 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3461,7 +3470,7 @@
 	module.exports = emptyObject;
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3470,7 +3479,7 @@
 	exports.routes = exports.route = exports.components = exports.component = exports.history = undefined;
 	exports.falsy = falsy;
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var func = _react.PropTypes.func,
 	    object = _react.PropTypes.object,
@@ -3498,7 +3507,7 @@
 	var routes = exports.routes = oneOfType([route, arrayOf(route)]);
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3516,9 +3525,9 @@
 	
 	var _prodInvariant = __webpack_require__(3);
 	
-	var EventPluginRegistry = __webpack_require__(41);
-	var EventPluginUtils = __webpack_require__(63);
-	var ReactErrorUtils = __webpack_require__(68);
+	var EventPluginRegistry = __webpack_require__(45);
+	var EventPluginUtils = __webpack_require__(66);
+	var ReactErrorUtils = __webpack_require__(71);
 	
 	var accumulateInto = __webpack_require__(119);
 	var forEachAccumulated = __webpack_require__(121);
@@ -3754,7 +3763,7 @@
 	module.exports = EventPluginHub;
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3771,8 +3780,8 @@
 	'use strict';
 	
 	var EventConstants = __webpack_require__(15);
-	var EventPluginHub = __webpack_require__(31);
-	var EventPluginUtils = __webpack_require__(63);
+	var EventPluginHub = __webpack_require__(32);
+	var EventPluginUtils = __webpack_require__(66);
 	
 	var accumulateInto = __webpack_require__(119);
 	var forEachAccumulated = __webpack_require__(121);
@@ -3896,7 +3905,7 @@
 	module.exports = EventPropagators;
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports) {
 
 	/**
@@ -3949,7 +3958,7 @@
 	module.exports = ReactInstanceMap;
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3967,7 +3976,7 @@
 	
 	var SyntheticEvent = __webpack_require__(17);
 	
-	var getEventTarget = __webpack_require__(77);
+	var getEventTarget = __webpack_require__(80);
 	
 	/**
 	 * @interface UIEvent
@@ -4013,7 +4022,7 @@
 	module.exports = SyntheticUIEvent;
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4251,13 +4260,9 @@
 	module.exports = Transaction;
 
 /***/ },
-/* 36 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
 /* 37 */
+29,
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4309,7 +4314,19 @@
 	module.exports = keyMirror;
 
 /***/ },
-/* 38 */
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/backgrounds/226511b5e36f664df8d417813f041a22.svg";
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/backgrounds/3f15fb3ca109d5f930fd7f87d5652c02.jpg";
+
+/***/ },
+/* 41 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4336,7 +4353,7 @@
 	var POP = exports.POP = 'POP';
 
 /***/ },
-/* 39 */
+/* 42 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4381,7 +4398,399 @@
 	};
 
 /***/ },
-/* 40 */
+/* 43 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"ru": {
+			"nav": "",
+			"foo": "",
+			"section4": {
+				"title": "Украина<br> 69076<br> Запорожье<br> ул. Козака Бабури, 9",
+				"body": "Управляющий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
+			},
+			"home": {
+				"section0": {
+					"title": "РЕКЛАМНО - ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ",
+					"body": "Рекламно - производственная компания «Промо Мастер Украина» – один из лидеров рынка рекламно-сувенирной продукции Украины. Мы предлагаем своим клиентам, представителям малого, среднего и крупного бизнеса, только качественные решения для продвижения посредством нанесения логотипов Вашей компании на ЛЮБУЮ плоскую поверхность, будь-то: <br>• корпоративная одежда (печать на футболках, бейсболки с логотипом,<br> форма для официантов, униформа для персонала гостиниц, банков и т.д.)<br> • посуда (кружки с логотипом, печать на тарелках, стаканчики для кофе)<br> • сувенирная продукция (печать на холсте, ручки с логотипом)"
+				},
+				"section1": {
+					"body": "<b>НАША ФИШКА В ТОМ, ЧТО МЫ МОЖЕМ ВЫПОЛНИТЬ ЗАКАЗ «НА ВЧЕРА»</b><br> Мы действительно выполняем работу <u>в любые</u> необходимые клиенту сроки. Как мы это делаем? Владея собственным технологическим парком, нам не надо кого-то искать, идти и уговаривать что-то сделать. Мы делаем всё сами. Поэтому если говорим клиенту, что продукт будет готов завтра в 9:00 утра, значит так и будет. Мы очень клиентоориентированы. Не стесняемся работать и в выходные, и в праздники, днем и ночью. И это не просто красивые слова, чтобы завлечь Вас. Приезжайте на нашу фабрику в любое время и убедитесь в этом лично.<br> <b>ПЕРЕДОВЫЕ ТЕХНОЛОГИИ И МАТЕРИАЛЫ</b><br> В своей работе используем исключительно передовые технологии и материалы, а также современное оборудование, что позволяет нам предлагать даже самым взыскательным клиентам фантастически сжатые сроки изготовления продукции.<br> <b>КОМПЛЕКСНЫЙ ПОДХОД</b><br> Уникальность нашего предприятия заключается в том, что мы смогли собрать все существующие в природе технологии печати в одном месте. Мы не размещаем заказы на стороне. Подходим к решению любой задачи комплексно. А уже готовую продукцию прилично упакуем. У нас и для этого есть специальное оборудование.<br> <b>ЗАКАЗЫ НА ЛЮБЫЕ ПАРТИИ РЕКЛАМНОЙ ПРОДУКЦИИ</b><br> Вы можете заказать лишь одну единицу рекламной продукции, а можете несколько тысяч. Не рассчитали необходимое количество? У Вас есть возможность дозаказа при сохранении цены на договорных условиях. Не исключаем повтор моделей по вашим образцам (сделаем необходимую доработку, подберем соответствующие материалы)."
+				},
+				"section2": {
+					"body": "<b>УМНАЯ ЛОГИСТИКА И ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА</b><br> Наш секрет в отлаженной системе логистики и гибкой ценовой политике, направленной на удовлетворение интересов, как оптовых покупателей, так и розничного потребителя. Мы знаем, как доставить готовую продукцию в целости и сохранности любым удобным для заказчика способом в любую точку Украины. Работаем со всеми транспортными компаниями Украины. Груз может быть доставлен в офис или на склад заказчика по его желанию. Формируя заявку, просто укажите, где и как Вы его хотите получить. <br> <b>ОГРОМНЫЙ ОПЫТ</b><br> У нас очень дружный коллектив, мы как одна семья. И это не просто слова. Люди очень любят свою работу и ответственно к ней относятся. Почему? Потому что работа в рекламно-производственной компании «Промо Мастер Украина» – это не обязанность, а стиль жизни, который разделяют наши сотрудники. Мы предоставляем каждому человеку уникальную возможность для самореализации, творчества и самосовершенствования. Высоко ценим профессионализм и надежность. Вместе трудимся и отдыхаем. Даже такой семейный праздник, как новый год, отмечаем вместе. А это о многом говорит, согласитесь."
+				},
+				"section3": {
+					"body": "<b>МЫ ИСКРЕННЕ ЛЮБИМ СВОИХ КЛИЕНТОВ…</b><br> … и переживаем за них, помогаем решать задачи, даже не связанные с основной сферой деятельности. Наша цель – снять любую головную боль с клиента. Вы доверяете нам, а мы, в свою очередь, делаем всё наилучшим образом.<br> Миссия компании «Промо Мастер Украина» – в совершенно невозможных условиях не бросить своего клиента, а быть рядом с ним, пока в нас отпадет необходимость. У Вас важная презентация, выставка либо какое-то другое деловое мероприятие? Будьте уверены: мы всё сделаем вовремя, наилучшим образом, подвезем готовую продукцию в любое указанное Вами место и поможем всё разместить так, чтобы это было идеально. В этом наше предназначение. Деньги, конечно, важны, но они объективно вторичны. <br><b>НАМ ОЧЕНЬ ВАЖНО ВАШЕ МНЕНИЕ!</b><br> Руководство компании «Промо Мастер Украина» всегда открыто для диалога. Мы всегда готовы выслушать от Вас любые предложения или критические замечания, дорогие наши партнеры и клиенты! Дорожим своей репутацией и стремимся к тому, чтобы наше сотрудничество было максимально комфортным. <br> Давайте сотрудничать! Вы будете довольны результатом."
+				}
+			},
+			"horeca": {
+				"section0": {
+					"title": "МЫ — ЭТО УСПЕХ ВАШЕГО БИЗНЕСА",
+					"body": "Среди постоянных клиентов рекламно-производственной компании «Промо Мастер Украина» – ведущие представители сегмента HoReCa (отели, рестораны, кафе). Для этих компаний брендирование посуды, равно как и пошив корпоративной одежды, – постоянная практика, продиктованная рынком. Для успешного запуска заведения очень важна подчеркнутая индивидуальность и чувство стиля, воплощенное во всем – от формы тарелок до цвета одежды для персонала. Наш опыт позволяет находить оптимальные решения для Вашего заведения или корпоративного мероприятия. Стильная, качественная и практичная корпоративная одежда в сочетании с брендированной посудой и аксессуарами наилучшим образом отражает концепцию заведения, подчеркивая его ключевые особенности."
+				},
+				"section1": {
+					"title": "ВНИМАНИЕ К ДЕТАЛЯМ",
+					"body": "Наша фишка – комплексный подход для предприятий сегмента HoReCa, особое внимание к деталям. Производственные мощности «Промо Мастер Украина», опытный, творческий персонал подчеркнут Ваш корпоративный стиль в мельчайших деталях, а если надо – разработаем всё с нуля. Для нас нет ничего невозможного! Мы быстро и качественно выполняем: <br> • деколь столовой и питьевой посуды <br> • пошив одежды для официантов, барменов, поварская форма <br> • изготовление папок-меню, бирдекелей, стаканчиков для кофе <br>• печать с логотипом холдеров и термо-поясов для кофе <br>• брендирование чашек, тарелок, стаканов, бокалов <br>• изготовление упаковки для пиццы и т.п."
+				},
+				"section2": {
+					"title": "ПЕРЕДОВАЯ ТЕХНОЛОГИЯ ПЕРЕНОСА ИЗОБРАЖЕНИЯ",
+					"body": "Методы нанесения логотипов, которые мы применяем при пошиве одежды для персонала с логотипом ресторана или гостиницы – вышивка либо шелкотрафаретная печать. Брендирование посуды и аксессуаров осуществляется методом деколирования. Деколь – один из самых распространенных методов тиражирования информации на любых поверхностях. Это самая передовая технология переноса изображения на керамическую и стеклянную поверхность для брендирования посуды."
+				},
+				"section3": {
+					"title": "РЕАЛИЗУЕМ САМЫЕ СЛОЖНЫЕ ПРОЕКТЫ",
+					"body": "Успех гостинично-ресторанного бизнеса определяется идеей, которая за ним стоит. Практика показывает, что действительно успешные заведения отличаются неординарными концепциями и пристальным вниманием к мельчайшим деталям – будь-то фирменная одежда для персонала либо брендированная посуда. Специалисты компании «Промо Мастер Украина» более чем за 10-ти летнюю историю реализовали сотни успешных проектов во многих городах Украины. Профессионализм команды, солидный опыт работы, самоотдача и творческий подход позволяют нам реализовать самые сложные и амбициозные проекты наших клиентов. Ваша продукция достойна быть уникальной! Звоните прямо сейчас! Мы знаем, как это сделать."
+				}
+			},
+			"clothes": {
+				"section0": {
+					"title": "ПОШИВ ОДЕЖДЫ НА ЗАКАЗ",
+					"body": "Корпоративная одежда – важнейший фактор визуализации высоких внутренних стандартов компании. Внешний вид Ваших сотрудников, а не только их профессиональные и деловые качества, – важнейшая составляющая образа фирмы, впечатления, которое она производит. Во что одеты люди в офисе, одежда для охраны, поварская форма и даже фартуки для официантов важны – они создают информационный посыл для Ваших клиентов и деловых партнеров. Когда этот образ вызывает положительные эмоции, Ваш бизнес процветает. Если он не вызывает доверия, не задает активный, энергичный ритм для результативных служебных достижений – это тревожный сигнал. Рекламно-производственная компания «ПромоМастерУкраина» профессионально разработает дизайн корпоративной одежды с учетом специфики Вашего бизнеса, сделает необходимые акценты на детали. И всё это быстро и качественно!"
+				},
+				"section1": {
+					"title": "ПРОМО- ОДЕЖДА",
+					"body": "Мы располагаем современным швейным производством, мощности которого позволяют воплотить в жизнь любые пожелания заказчика – будь-то пошив корпоративной формы, индивидуальный пошив спецодежды или нанесение логотипа на одежду. У нас Вы всегда можете заказать брендированную одежду для проведения различных промо-мероприятий, а также обеспечить персонал качественной и стильной корпоративной формой и спецодеждой. <br> «ПромоМастерУкраина» предлагает комплексные решения – от разработки дизайна одежды, подбора тканей, фасонов и размеров и до нанесения логотипа Вашего предприятия. При этом мы можем нанести Ваш логотип на ткань любым из способов, применяемых в современной практике: <br> • шелкотрафаретная печать <br> • термоперенос <br> • сублимационная печать на ткани <br> • машинная вышивка."
+				},
+				"section2": {
+					"title": "СОВРЕМЕННОЕ ШВЕЙНОЕ ПРОИЗВОДСТВО",
+					"body": "Минимально возможный заказ – от пяти единиц продукции любого вида, срок производства – от трех рабочих дней. <br> Пошив одежды на заказ – это не дань моде, а производственная необходимость для серьезных компаний, заботящихся о развитии своего бренда. Многолетний опыт производства в сочетании с широким выбором тканей и фурнитуры, которую мы закупаем по оптовым ценам у ведущих производителей Украины, обеспечивает высокое качество и лояльные цены. <br> Наши деловые партнеры – такие известные ведущие текстильные компании на рынке Украины, как «Текстиль-Контакт», «Гранд-текстиль», Торговый Дом «Химмельтек-Украина», фирма «Море Ткани» и др. Поэтому мы с уверенностью и говорим о: <br> • самом широком ассортименте тканей и фурнитуры в Украине <br> • его высоком качестве (продукция сертифицирована) <br> • огромном выборе расцветок и фактур <br> • регулярном обновлении ассортимента."
+				},
+				"section3": {
+					"title": "ВЫСОКОЕ КАЧЕСТВО ТКАНЕЙ И ФУРНИТУРЫ",
+					"body": "Промо-одежду нашего производства уже выбрали для своих сотрудников ведущие компании Украины и региона. Мы гордимся тем, что в портфолио – десятки примеров удачного воплощения дизайнерских идей наших клиентов, которым заказ корпоративной одежды в «ПромоМастерУкраина» позволил достичь поставленных бизнес-целей. <br> Всех наших клиентов объединяет доверие к гарантированно высокому качеству, сжатым срокам выполнения заказов и партнерскому стилю ведения бизнеса компанией «ПромоМастерУкраина». Мы помогаем людям в красивой, удобной и модной униформе зарабатывать деньги с удовольствием. <br> Если у Вас есть вопросы по пошиву одежды на заказ для сотрудников Вашей фирмы – оставьте сообщение нашим консультантам или позвоните."
+				}
+			},
+			"decol": {
+				"section0": {
+					"title": "",
+					"body": ""
+				},
+				"section1": {
+					"title": "",
+					"body": ""
+				},
+				"section2": {
+					"title": "",
+					"body": ""
+				},
+				"section3": {
+					"title": "",
+					"body": ""
+				}
+			}
+		},
+		"en": {
+			"nav": "",
+			"foo": "",
+			"section4": {
+				"title": "Ukraine<br> 69076<br> Zaporozhye<br> st.Zhukov, 9",
+				"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+			},
+			"home": {
+				"section0": {
+					"title": "ADVERTISING AND PRODUCTION COMNANY",
+					"body": "Advertising & Production Company «Promo Master Ukraine» is one of the leaders on Ukrainian advertising and souvenir production market. We offer our clients, representatives of small, medium and large businesses, high-quality solutions for the promotion of their brands. We can print logo of your company on any flat surfaces:<br> • Corporate uniform (printing on T-shirts, baseball caps with your logo, uniform for waiters, uniform for hotel staff, banks, etc.)<br> • Tableware (cups with your logo, printing on plates, coffee-glasses)<br> • Souvenir products (prints on canvas, pens with your logo)"
+				},
+				"section1": {
+					"body": "<b>OUR SPECIAL FEATURE IS THAT WE CAN FULFIL ANY RUSH JOB.</b><br> We can perform any orders work <u>within any</u> required time limit of our customer. How can we do it? Our company has its own technological park, we do not have to look for someone, go and persuade to do something. We produce everything ourselves.Therefore, if we are tell our clients that the product will be ready at 9:00 am tomorrow, there product will be waiting for the client at 9:00 am tomorrow. We are very customer-oriented. We do not hesitate about working at the weekend and on holidays, during the day and late at night. Moreover, these are not just pretty words to attract you. Come and visit our factory any time in person.<br> <b>ADVANCED TECHNOLOGIES AND MATERIALS</b><br> In our work, we use only advanced technologies and materials, as well as modern equipment that enables us to offer our most demanding customers manufacturingquality goods even in tight deadlines.<br> <b>COMPLEX APPROACH</b><br> The uniqueness of our company is that we were able to collect all of the existing printing technologies at our factory. We do not place orders to external companies. We always solve any problem in complex. We pack the final product properly as we have our own special packing equipment.<br> <b>ORDERS FOR ANY BATCH OF ADVERTISING PRODUCTS</b><br> You can order just one unit of your advertising product as well as thousands. You were incorrect with the calculation of necessary quantity of the goods, were you? You can reorder the goods with the same prices, which were on contractual terms. We do not exclude the possibility of repetition of models according to your samples (We make the necessary improvements and we choose the appropriate materials)."
+				},
+				"section2": {
+					"body": "<b>SMART LOGISTICS AND FLEXIBLE PRICE POLICY</b><br> Our secret is well-functioning logistics system and a flexible pricing policy, designed to meet the interests wholesale as well as retail consumers. We know how to deliver final product safe and unharmed in any convenient way for customers to any destination in Ukraine. We work with all transport companies of Ukraine. The freight can be delivered to the office or the warehouse of the customer according to his wish. Shaping the application, you just specify where and how you want to receive your product.<br><b>HUGE EXPERIENCE</b><br> We have a very friendly team, we are like one family. And it's not just words. Our Staff love their work and they are responsible. You can ask: “Why?”. Working in Advertising & Production Company «Promo Master Ukraine» is not obligation, it is lifestyle, which is shared by all our employees. We provide every member of our team the unique opportunity for self-actualization,  creativity and self-development. We highly value professionalism and reliability. We work and rest together. Even family holiday like New Year we celebrate together. We celebrate together. You can agree that it shows a lot."
+				},
+				"section3": {
+					"body": "<b>WE SINCERELY LOVE OUR CUSTOMERS…</b><br> … and worry about them, help our clients solve problems which sometimes aren’t connected with our main sphere of activities. Our goal is to remove any possible problems and inconveniences our clients can face suffer in Ukrainian business environment. You trust us, and we do our best in turn.<br> Mission of the company «Promo Master Ukraine» is to stay with the client in any unpredictable conditions, be ready to help until the client needs our support Do you plan an important presentation, exhibition or any business event? Rest assured that we will do all everything in time,  deliver final product to any location of your choice and help to place the products the best possible way. It is our mission. Of course, money is important, but it is of secondary importance honestly.<br> <b>YOUR OPINION AND FEEDBACK ARE IMPORTANT FOR US!</b><br> The management of company «Promo Master Ukraine» is always open for dialogue. We are always ready to listen any kind of your suggestions or criticisms, our dear partners and customers! We value our reputation and strive to make our cooperation as comfortable as possible.<br> Let's cooperate! You will be pleased with the result."
+				}
+			},
+			"horeca": {
+				"section0": {
+					"title": "WE ARE HERE FOR SUPPORTING YOUR BUSINESS",
+					"body": "Leading representatives of the HoReCa business segment (hotels, restaurants, cafes) are among our regular clients of Advertising &Production Company «Promo Master Ukraine». For the companies of this segment tableware branding, as well as the tailoring of corporate clothes are the constant practice dictated by the market. For the successful launch place (hotel, restaurant, cafe), it is very important to highlight the individuality and sense of style, incarnated in everything, from plates shape to the color of clothes for the staff. Our experience allows us to find optimal solutions for your newly opened café, restaurant or hotel as well as a corporate event. The stylish, practical and quality corporate uniform combined with a branded tableware and accessories reflect the concept of your place or event, highlighting its key features the best way."
+				},
+				"section1": {
+					"title": "ATTENTION TO DETAILS",
+					"body": "Our special feature is the comprehensive approach for HoReCa enterprises and special attention to any smallest details. The production facilities of «Promo Master Ukraine», experienced and creative staff can accentuate your corporate style to the smallest detail, and if it is necessary our team can work out a brand new effort. There is nothing impossible for us! We quickly and efficiently fulfill: <br> • decal of dining and drinking tableware <br> • tailoring of uniform for waiters, bartenders, chefs <br> • manufacturing of menu-folders, coasters, coffee-cups <br> • printing of logo for holders and thermal-belts for coffee-cups <br> • branding of the cups, plates, glasses, goblets <br> • producing of packing for pizza, etc."
+				},
+				"section2": {
+					"title": "ADVANCED TECHNOLOGY IMAGE TRANSFERRING",
+					"body": "Logo transferring methods that we use during tailoring staff uniform with a logo of a restaurant or a hotel are embroidery or screen-printing. Branding tableware and accessories made by decalling. Decal is one of the most common methods of data replication on different surfaces. It is the most advanced image transfer technology on ceramic and glass tableware surface for branding."
+				},
+				"section3": {
+					"title": "WE IMPLEMENT THE MOST DIFFICULT PROJECTS",
+					"body": "Success of Hotel and Catering Business is determined by the idea, which lays in the concept of the place. Practice shows that the most successful places differ due to philosophy of the place and close attention to every smallest detail - whether it is corporate uniform for personnel or branded glassware.Specialists of «Promo Master Ukraine» have more than 10-years prosperous history of implementation of hundreds of successful projects in many Ukrainian cities. The professionalism of the team in combination with considerable work experience as well as self-dedication and creativity allow us to carry out the most complex and ambitious projects of our clients. Your products deserve to be unique! Call us now! We know how to make it."
+				}
+			},
+			"clothes": {
+				"section0": {
+					"title": "CUSTOM TAILORING",
+					"body": "Corporate clothing is the major visualization factor of company’s highest internal standards. The appearance of your employees, and not merely professional and business skills, is the most important component of the company’s image, the impression that it produces. What people wear in office, security uniform, chefs’ uniform as well as aprons for waiters are important. These details create and send important messages to your customers and business partners. When this image evokes positive emotions, your business is flourishing.If the image is not credible ordoes not specify the active, energetic rhythm for efficient service achievements, it is an alarm signal. Advertising & Production Company «PromoMasterUkraina» professionally developes corporate clothes design, taking into account the specificity of your business, makes the necessary emphasis on the details. We will create your business image quickly and efficiently!"
+				},
+				"section1": {
+					"title": "PROMOTIONAL CLOTHES",
+					"body": "We have modern sewing production, which allows realizing any customer wishes - whether it is sewing of corporate uniform, sewing of individual workwear or transferring your logo on clothing. Here you can always order branded clothing for a variety of promotional activities as well as provide your staff with high quality and stylish corporate form and workwear. <br> «PromoMasterUkraina» provides complex solutions starting from the clothes design development as well as selection of fabrics, styles and sizes, to the transferring your company’s logo. However, we can put your logo on the fabric by any of the methods used in current practice: <br> • silk-screen printing <br> • thermal transfer <br> • sublimation printing on fabric <br> • machine embroidery."
+				},
+				"section2": {
+					"title": "MODERN SEWING PRODUCTION",
+					"body": "Minimum possible order - from five production units of any kind, the production period - from three working days. <br> Tailoring to order is not a fashion statement anymore; it has become the necessity for the big enterprises that care about the development of their brand. Years of production experience, combined with a wide selection of fabrics and accessories, which we buy at wholesale prices from the leading manufacturers of Ukraine, provides high quality and loyal prices. <br> Our business associates are well-known leading textile companies on Ukrainian market such as the «Textile-Contact», «Grand-textiles», Trading House «Himmeltek-Ukraine» company «Sea Fabrics», etc. Therefore, we are confident, and talk about: <br> • the widest range of fabrics and accessories in Ukraine <br> • high quality of the fabrics (certified products) <br> • vast choice of colors and textures <br> • regular updating range."
+				},
+				"section3": {
+					"title": "HIGH QUALITY FABRIC AND ACCESSORIES",
+					"body": "Promo clothing of our production have already been chosen for the employees of leading Ukrainian companies. We are proud that our portfolio includes dozens of examples of successful design ideas implementation of our customers who ordered corporate clothes to achieve their business goals with «PromoMasterUkraina». <br> All our clients are united with confidence in guaranteed high quality, short terms of orders and partnership style of conducting business with «PromoMasterUkraina». We help people to make money with pleasure in a smartly designed, comfortable and fashionable uniforms. <br> If you have questions about tailoring in order for the employees of your company - leave a message or call our consultants."
+				}
+			},
+			"decol": {
+				"section0": {
+					"title": "",
+					"body": ""
+				},
+				"section1": {
+					"title": "",
+					"body": ""
+				},
+				"section2": {
+					"title": "",
+					"body": ""
+				},
+				"section3": {
+					"title": "",
+					"body": ""
+				}
+			}
+		},
+		"ua": {
+			"nav": "",
+			"foo": "",
+			"section4": {
+				"title": "Україна<br> 69076<br> Запоріжжя<br> вул. Козака Бабури, 9",
+				"body": "Керуючий партнер<br> Козляковскій Максим<br> +380676142930<br> max@promomaster.biz"
+			},
+			"home": {
+				"section0": {
+					"title": "РЕКЛАМНО - ВИРОБНИЧА КОМПАНІЯ",
+					"body": "Рекламно-виробнича компанія «Промо Майстер Україна» - один з лідерів ринку рекламно-сувенірної продукції України. Ми пропонуємо своїм клієнтам, представникам малого, середнього та великого бізнесу, тільки якісні рішення для просування за допомогою нанесення логотипів Вашої компанії на БУДЬ-ЯКУ пласку поверхню, як це: <br>• корпоративний одяг (друк на футболках, бейсболки з логотипом, <br> форма для офіціантів, уніформа для персоналу готелів, банків і т.д.)<br> • посуд (кухлі з логотипом, друк на тарілках, стаканчики для кави)<br> • сувенірна продукція (друк на полотні, ручки з логотипом)"
+				},
+				"section1": {
+					"body": "<b>НАША ФІШКА В ТОМУ, ЩО МИ МОЖЕМО ВИКОНАТИ ЗАМОВЛЕННЯ «НА ВЧОРА»</b><br>Ми дійсно виконуємо роботу <u>в будь-які</u> необхідні клієнту терміни. Як ми це робимо? Володіючи власним технологічним парком, нам не треба когось шукати, йти і вмовляти щось зробити. Ми робимо все самі. Тому якщо говоримо клієнтові, що продукт буде готовий завтра о 9:00 ранку, значить так і буде. Ми дуже клієнтоорієнтовані. Ми не соромимося працювати і у вихідні, і у свята, вдень і вночі. І це не просто красиві слова, щоб заманити Вас. Приїжджайте на нашу фабрику в будь-який час і переконайтеся в цьому особисто.<br> <b>ПЕРЕДОВІ ТЕХНОЛОГІЇ ТА МАТЕРІАЛИ</b><br>У своїй роботі використовуємо виключно передові технології та матеріали, а також сучасне устаткування, що дозволяє нам пропонувати навіть найвибагливішим клієнтам фантастично стислі терміни виготовлення продукції.<br> <b>КОМПЛЕКСНИЙ ПІДХІД</b><br>Унікальність нашого підприємства полягає в тому, що ми змогли зібрати всі існуючі в природі технології друку в одному місці. Ми не розміщуємо замовлення на стороні. Підходимо до вирішення будь-якої задачі комплексно. А вже готову продукцію пристойно спакуємо. У нас і для цього є спеціальне обладнання.<br> <b>ЗАМОВЛЕННЯ НА БУДЬ ЯКІ ПАРТІЇ РЕКЛАМНИХ ТОВАРІВ</b><br>Ви можете замовити лише одну одиницю рекламної продукції, а можете кілька тисяч. Не розрахували необхідну кількість? У Вас є можливість дозамовлення при збереженні ціни на договірних умовах. Не виключений повтор моделей за вашими зразками (зробимо необхідне доопрацювання, підберемо відповідні матеріали)."
+				},
+				"section2": {
+					"body": "<b>РОЗУМНА ЛОГІСТИКА ТА ГНУЧКА ЦІНОВА ПОЛІТИКА</b><br>Наш секрет в налагодженій системі логістики та гнучкій ціновій політиці, спрямованої на задоволення інтересів, як оптових покупців, так і роздрібного споживача. Ми знаємо, як доставити готову продукцію цілою та неушкодженою будь-яким зручним для замовника способом в будь-яку точку України. Працюємо з усіма транспортними компаніями України. Вантаж може бути доставлений в офіс або на склад замовника за його бажанням. Формуючи заявку, просто вкажіть, де і як Ви її хочете отримати.<br> <b>ВЕЛИЧЕЗНИЙ ДОСВІД</b><br>У нас дуже дружний колектив, ми як одна сім'я. І це не просто слова. Люди дуже люблять свою роботу і відповідально до неї ставляться. Чому? Тому що робота в рекламно-виробничої компанії «Промо Майстер Україна» - це не обов'язок, а стиль життя, який поділяють наші співробітники. Ми надаємо кожній людині унікальну можливість для самореалізації, творчості і самовдосконалення. Високо цінуємо професіоналізм і надійність. Разом працюємо і відпочиваємо. Навіть таке сімейне свято, як Новий рік, відзначаємо разом. А це багато про що говорить, погодьтеся."
+				},
+				"section3": {
+					"body": "<b>МИ ЩИРО ЛЮБИМО СВОЇХ КЛІЄНТІВ…</b><br>… і переживаємо за них, допомагаємо вирішувати завдання, навіть не пов'язані з основною сферою діяльності. Наша мета - зняти будь-який головний біль з клієнта. Ви довіряєте нам, а ми, в свою чергу, робимо все найкращим чином.<br> Місія компанії «Промо Майстер Україна» - в абсолютно неможливих умовах не кинути свого клієнта, а бути поруч з ним, поки в нас не відпаде необхідність. У Вас важлива презентація, виставка або якийсь інший діловий захід? Будьте впевнені: ми все зробимо вчасно, найкращим чином, підвеземо готову продукцію в будь-яке зазначене Вами місце і допоможемо все розмістити так, щоб це було ідеально. В цьому наше призначення. Гроші, звичайно, важливі, але вони об'єктивно вторинні.<br> <b>НАМ ДУЖЕ ВАЖЛИВА ВАША ДУМКА!</b><br>Керівництво компанії «Промо Майстер Україна» завжди відкрито до діалогу. Ми завжди готові вислухати від Вас будь-які пропозиції або критичні зауваження, дорогі наші партнери та клієнти! Дуже цінуємо свою репутацію і прагнемо того, щоб наша співпраця була максимально комфортна.<br> Давайте співпрацювати! Ви будете задоволені результатом"
+				}
+			},
+			"horeca": {
+				"section0": {
+					"title": "МИ - ЦЕ УСПІХ ВАШОГО БІЗНЕСУ",
+					"body": "Серед постійних клієнтів рекламно-виробничої компанії «Промо Майстер Україна» - провідні представники сегмента HoReCa (готелі, ресторани, кафе). Для цих компаній брендування посуду, так само як і пошиття корпоративного одягу, - постійна практика, продиктована ринком. Для успішного запуску закладу дуже важлива підкреслена індивідуальність і відчуття стилю, втілене у всьому - від форми тарілок до кольору одягу для персоналу. Наш досвід дозволяє знаходити оптимальні рішення для Вашого закладу або корпоративного заходу. Стильний, якісний та практичний корпоративний одяг в поєднанні з брендованим посудом та аксесуарами найкращим чином відображає концепцію закладу, підкреслюючи його ключові особливості."
+				},
+				"section1": {
+					"title": "УВАГА ДО ДЕТАЛЕЙ",
+					"body": "Наша фішка - комплексний підхід для підприємств сегменту HoReCa, особлива увага до деталей. Виробничі потужності «Промо Майстер Україна», досвідчений, творчий персонал підкреслять Ваш корпоративний стиль в найдрібніших деталях, а якщо треба - розробимо все з нуля. Для нас немає нічого неможливого! Ми швидко і якісно виконуємо: <br> • деколь столового та питного посуду <br> • пошиття одягу для офіціантів, барменів, кухарська форма <br> • виготовлення папок-меню, бірдіклей, стаканчиків для кави <br> • друк з логотипом холдерів і термо-поясів для кави <br> • брендування чашок, тарілок, склянок, келихів <br> • виготовлення упаковки для піци і т.п."
+				},
+				"section2": {
+					"title": "ПЕРЕДОВА ТЕХНОЛОГІЯ ПЕРЕНОСУ ЗОБРАЖЕНЬ",
+					"body": "Методи нанесення логотипів, які ми застосовуємо при пошитті одягу для персоналу з логотипом ресторану чи готелю - вишивка або шовкотрафаретний друк. Брендування посуду і аксесуарів здійснюється методом деколювання. Деколь - один з найпоширеніших методів тиражування інформації на будь-яких поверхнях. Це найпередовіша технологія перенесення зображення на керамічну і скляну поверхню для брендування посуду."
+				},
+				"section3": {
+					"title": "РЕАЛІЗУЄМО НАЙБІЛЬШ СКЛАДНІ ПРОЕКТИ",
+					"body": "Успіх готельно-ресторанного бізнесу визначається ідеєю, яка за ним стоїть. Практика показує, що дійсно успішні заклади відрізняються неординарними концепціями і пильною увагою до найдрібніших деталей - будь-то фірмовий одяг для персоналу або брендований посуд. Фахівці компанії «Промо Майстер Україна» більш ніж за 10-ти річну історію реалізували сотні успішних проектів у багатьох містах України. Професіоналізм команди, солідний досвід роботи, самовіддача і творчий підхід дозволяють нам реалізувати найскладніші і амбітні проекти наших клієнтів. Ваша продукція гідна бути унікальною! Телефонуйте прямо зараз! Ми знаємо, як це зробити."
+				}
+			},
+			"clothes": {
+				"section0": {
+					"title": "ПОШИТТЯ ОДЯГУ НА ЗАМОВЛЕННЯ",
+					"body": "Корпоративний одяг - найважливіший фактор візуалізації високих внутрішніх стандартів компанії. Зовнішній вигляд Ваших співробітників, а не тільки їх професійні та ділові якості, - найважливіша складова образу фірми, враження, яке вона справляє. У що одягнені люди в офісі, одяг для охорони, кухарський форма та навіть фартухи для офіціантів важливі - вони створюють інформаційний посил для Ваших клієнтів та ділових партнерів. Коли цей образ викликає позитивні емоції, Ваш бізнес процвітає. Якщо він не викликає довіри, не ставить активний, енергійний ритм для результативних службових досягнень - це тривожний сигнал. Рекламно-виробнича компанія «Промо Майстер Україна» професійно розробить дизайн корпоративного одягу з урахуванням специфіки Вашого бізнесу, зробить необхідні акценти на деталі. І все це швидко та якісно!"
+				},
+				"section1": {
+					"title": "ПРОМО-ОДЯГ",
+					"body": "Ми маємо в своєму розпорядженні сучасне швацьке виробництво, потужності якого дозволяють втілити в життя будь-які побажання замовника - як то пошиття корпоративної форми, індивідуальний пошив спецодягу або нанесення логотипу на одяг. У нас Ви завжди можете замовити брендований одяг для проведення різних промо-заходів, а також забезпечити персонал якісною та стильною корпоративною формою та спецодягом. <br> «Промо Майстер Україна» пропонує комплексні рішення - від розробки дизайну одягу, підбору тканин, фасонів та розмірів і до нанесення логотипу Вашого підприємства. При цьому ми можемо нанести Ваш логотип на тканину будь-яким із способів, що застосовуються в сучасній практиці: <br> • шовкотрафаретний друк <br> • термоперенесення <br> • сублімаційний друк на тканині <br> • машинна вишивка."
+				},
+				"section2": {
+					"title": "СУЧАСНЕ ШВАЦЬКЕ ВИРОБНИЦТВО",
+					"body": "Мінімально можливе замовлення - від п'яти одиниць продукції будь-якого виду, термін виробництва - від трьох робочих днів. <br> Пошиття одягу на замовлення - це не данина моді, а виробнича необхідність для серйозних компаній, що піклуються про розвиток свого бренду. Багаторічний досвід виробництва в поєднанні з широким вибором тканин і фурнітури, яку ми закуповуємо за оптовими цінами у провідних виробників України, забезпечує високу якість і лояльні ціни. <br> Наші ділові партнери - такі відомі ведучі текстильні компанії на ринку України, як «Текстиль-Контакт», «Гранд-текстиль», Торговий Дім «Хіммельтек-Україна», фірма «Море Тканини» та ін. Тому ми з впевненістю говоримо про: <br> • найширший асортимент тканин та фурнітури в Україні <br> • його високу якість (продукція сертифікована) <br> • величезний вибір кольорів та фактур <br> • регулярне оновлення асортименту."
+				},
+				"section3": {
+					"title": "ВИСОКА ЯКІСТЬ ТКАНИН І ФУРНІТУРИ",
+					"body": "Промо-одяг нашого виробництва вже вибрали для своїх співробітників провідні компанії України та регіону. Ми пишаємося тим, що в портфоліо - десятки прикладів успішної реалізації дизайнерських ідей наших клієнтів, яким замовлення корпоративного одягу в «Промо Майстер Україна» дозволило досягти поставлених бізнес-цілей. <br> Усіх наших клієнтів об'єднує довіра до гарантовано високої якості, стислим термінам виконання замовлень та партнерського стилю ведення бізнесу компанією «Промо Майстер Україна». Ми допомагаємо людям у гарній, зручній та модній уніформі заробляти гроші з задоволенням. <br> Якщо у Вас є питання з пошиття одягу на замовлення для співробітників Вашої фірми - залиште повідомлення нашим консультантам або зателефонуйте."
+				}
+			},
+			"decol": {
+				"section0": {
+					"title": "",
+					"body": ""
+				},
+				"section1": {
+					"title": "",
+					"body": ""
+				},
+				"section2": {
+					"title": "",
+					"body": ""
+				},
+				"section3": {
+					"title": "",
+					"body": ""
+				}
+			}
+		},
+		"fr": {
+			"nav": "",
+			"foo": "",
+			"section4": {
+				"title": "Ukraine<br> 69076<br> Zaporіzhya<br> la. Kozak Babur, 9",
+				"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+			},
+			"home": {
+				"section0": {
+					"title": "LA SOCIÉTÉ DE PUBLICITÉ ET DE PRODUCTION",
+					"body": "La société de publicité et de production «Promo Master Ukraine» est l&#39;un des leaders du marché des produits promotionnels de l&#39;Ukraine. Nous n’offrons à nos clients – aux petites, moyennes et grandes entreprises – que des solutions promotionnelles haut de gamme par le biais de l&#39;application des logos de leur entreprise sur TOUTE surface plane, que ce soit: <br>• des vêtements d’entreprise (l’impression sur les t-shirts, les casquettes de <br> baseball avec le logo, la forme pour les serveurs, les uniformes pour le personnel des hôtels, des banques, etc.)<br> • la vaisselle (les tasses avec logo, l’impression sur les assiettes, les gobelets à café)<br> • les souvenirs (l&#39;impression sur toile, les stylos avec le logo)"
+				},
+				"section1": {
+					"body": "<b>LES TECHNOLOGIES ET DES MATÉRIAUX DE POINTE</b><br>Dans notre travail, nous utilisons exclusivement des technologies et des matériaux de pointe, ainsi que des équipements modernes, ce qui nous permet d&#39;offrir aux clients les plus exigeants les délais fantastiques de fabrication des produits.<br> <b>UNE APPROCHE INTÉGRÉE</b><br>L&#39;unicité de notre entreprise réside dans le fait que nous avons réussi à recueillir tout ce qui existe dans la nature de la technologie d&#39;impression en un seul endroit. Nous ne transférons jamais les commandes à autrui. Chez nous, on vous offre une solution complète à chaque tâche. Et nous emballerons bien les produits finis. Pour cela, nous sommes dotés d’équipement spécial.<br> <b>LES COMMANDES DE PRODUITS PROMOTIONNELS EN N’IMPORTE QUELLE QUANTITÉ</b><br>Vous pouvez commander une seule unité des produits promotionnels, comme vous pouvez en commander quelques milliers. Vous n’avez pas calculé la quantité nécessaire ? Vous avez l’option de réapprovisionnement tout en gardant des prix sur une base contractuelle. Nous n&#39;excluons pas la répétition de modèles selon vos échantillons (nous ferons une révision nécessaire, choisirons les matériaux appropriés)."
+				},
+				"section2": {
+					"body": "<b>LA LOGISTIQUE INTELLIGENTE ET LA POLITIQUE DES PRIX FLEXIBLE</b><br>Vous bénéficierez de notre système de la logistique bien ajusté et de la politique des prix flexible visant à satisfaire les intérêts de nos clients, tant acheteurs en gros que consommateurs en détail. Nous savons comment livrer les produits finis sains et saufs par n&#39;importe quel moyen, convenable au client, partout en Ukraine. Nous travaillons avec toutes les compagnies de transport de l&#39;Ukraine. Les marchandises peuvent être livrées au bureau ou à l&#39;entrepôt du client à sa demande. En formant une demande, il suffit d&#39;indiquer où et comment vous voulez les obtenir.<br> <b>UNE EXPÉRIENCE ÉNORME</b><br>Notre collectif est très sympathique, nous sommes tous comme une famille. Et ce ne sont pas juste des mots. Les gens aiment leur travail et le font responsablement. Pourquoi ? Parce que le travail dans la société de publicité et de production Promo Master Ukraine n&#39;est pas une obligation, mais un style de vie, partagé par nos employés. Nous fournissons à chaque personne une occasion unique pour la réalisation de soi, la créativité et le perfectionnement personnel. Nous apprécions le professionnalisme et la fiabilité. Nous travaillons et nous nous reposons ensemble. Nous célébrons ensemble même une telle fête familiale que le Nouvel An. Et cela en dit beaucoup, n’est-ce pas? "
+				},
+				"section3": {
+					"body": "<b>NOUS AIMONS SINCÈREMENT NOS CLIENTS…</b><br>… Et nous nous faisons du souci pour eux, en les aidant à résoudre même les problèmes, non liés à notre activité principale. Notre objectif est de remédier au casse-tête du client. Vous nous faites confiance et nous, à notre tour, nous efforçons de tout faire du mieux.<br> La mission de l&#39;entreprise Promo Master Ukraine est de ne pas quitter son client dans les conditions totalement insupportables et d&#39;être à côté de lui, jusqu’à qu’il n’ait plus besoin de nous. Vous avez une présentation importante, une exposition ou un autre événement d&#39;affaires ? Soyez assuré que nous ferons tout à l&#39;heure, de notre mieux, livrerons les produits finis dans n&#39;importe quel endroit de votre choix et nous vous aiderons à les placer parfaitement. C&#39;est notre mission. L&#39;argent, il est bien sûr important, mais tout à fait secondaire.<br> <b>VOTRE OPINION EST TRÈS IMPORTANT POUR NOUS !</b><br>La direction de l&#39;entreprise Promo Master Ukraine est toujours ouverte au dialogue. Nous sommes toujours prêts à entendre vos suggestions ou critiques, nos chers partenaires et clients ! Nous apprécions notre réputation et nous nous efforçons de rendre notre coopération aussi confortable que possible.<br> Travaillons ensemble ! Vous serez satisfait du résultat"
+				}
+			},
+			"horeca": {
+				"section0": {
+					"title": "NOUS – C&#39;EST LA RÉUSSITE DE VOTRE ENTREPRISE",
+					"body": "Les principaux représentants du segment HoReCa (hôtels, restaurants, cafés) se trouvent parmi les clients réguliers de la société de publicité et de production «Promo Master Ukraine». Pour ces entreprises, le branding de la vaisselle, ainsi que la couture des vêtements d&#39;entreprise est une pratique habituelle, engendrée par le marché. Pour le succès du lancement de l&#39;institution, il est très important de souligner la personnalité et le sens du style, incarné dans la forme des assiettes et dans les couleurs des vêtements pour le personnel. Notre expérience nous permet de trouver les solutions optimales pour votre établissement ou pour votre événement d&#39;entreprise. Des vêtements d&#39;entreprise élégants, pratiques et de bonne qualité en combinaison avec des ustensiles de cuisine à la mode et des accessoires reflètent le mieux la conception de l&#39;institution,  mettant l&#39;accent sur ses principales caractéristiques."
+				},
+				"section1": {
+					"title": "L&#39;ATTENTION AU DÉTAIL",
+					"body": "Notre particularité est une approche intégrée pour les entreprises du segment HoReCa, avec une attention particulière aux détails. La capacité de production de Promo Master Ukraine, le personnel expérimenté et créatif souligneront votre style d&#39;entreprise dans les moindres détails, et si nécessaire, nous développerons tout à partir de zéro. Pour nous, rien n&#39;est impossible ! Nous accomplissons rapidement et qualitativement: <br> • la décalcomanie de la vaisselle de la salle à manger et à boire <br> • la confection de vêtements pour les serveurs, barmen, la forme de cuisinier <br> • la fabrication des dossiers-menu, des sous-verres, des gobelets à café <br> • l’impression avec logo des détenteurs et des thermo-ceintures pour le café <br> • le branding des tasses, des assiettes, des verres, des verres à vin <br> • la production de l&#39;emballage pour la pizza, etc."
+				},
+				"section2": {
+					"title": "LA TECHNOLOGIE AVANCÉE DE TRANSFERT D&#39;IMAGE",
+					"body": "Les méthodes de l&#39;application des logos que nous appliquons lors de la couture des vêtements pour le personnel, avec le logo du restaurant ou de l&#39;hôtel, c’est la broderie ou la sérigraphie. Le branding de la vaisselle et des accessoires par la méthode de la décalcomanie. La décalcomanie, c’est l&#39;une des techniques les plus répandues de duplication de l&#39;information sur toutes les surfaces. C&#39;est la technologie la plus avancée de transfert d&#39;image sur la surface céramique et en verre pour le branding de la vaisselle."
+				},
+				"section3": {
+					"title": "NOUS METTONS EN ŒUVRE LES PROJETS LES PLUS DIFFICILES",
+					"body": "Le succès de l&#39;hôtellerie est déterminée par une idée. La pratique montre que des établissements vraiment prospères se distinguent par des concepts extraordinaires et par une attention aux moindres détails que ce soit des vêtements de marque pour le personnel ou des ustensiles de cuisine de marque. Les spécialistes de la société «Promo Master Ukraine» pendant plus de 10 ans d&#39;histoire ont réalisé des centaines de projets dans de nombreuses villes de l&#39;Ukraine. Le professionnalisme de l&#39;équipe, solide expérience de travail, nos dévouement et créativité nous permettent de réaliser les projets de nos clients les plus complexes et les plus ambitieux. Votre produit est digne d&#39;être unique ! Appelez-nous dès maintenant ! Nous savons comment le faire."
+				}
+			},
+			"clothes": {
+				"section0": {
+					"title": "COUTURE SUR MESURE",
+					"body": "Les vêtements d&#39;entreprise est un facteur essentiel de la visualisation de hautes normes internes de l&#39;entreprise. L&#39;apparence de vos employés, hormis leurs qualités professionnelles et commerciales, sert d&#39;une composante la plus importante de l&#39;image de la firme, d&#39;une impression qu&#39;elle produit. La tenue vestimentaire des gens dans le bureau, les vêtements de sécurité, la forme des cuisiniers et même les tabliers pour les serveurs sont importants : ils créent de l&#39;information promesse pour vos clients et vos partenaires d&#39;affaires. Lorsque cette image provoque des émotions positives, votre entreprise est en plein essor. Si elle n&#39;est pas digne de confiance, ni définit pas un rythm actif et énergique pour les réalisations prolifiques de l’entreprise, c’est un signal d&#39;alarme. La société de publicité et de production «Promo Master Ukraine» élaborera professionnellement la conception de vêtements d&#39;entreprise en tenant compte des spécificités de votre entreprise, fera les accents sur les détails. Et tout cela rapidement et efficacement!"
+				},
+				"section1": {
+					"title": "PROMO VÊTEMENTS",
+					"body": "Nous disposons de l&#39;atelier de confection moderne, dont la capacité nous permet de réaliser tous les souhaits du client – que ce soit la couture d&#39;uniformes d&#39;entreprise, la couture individuelle de vêtements de travail ou de l&#39;application du logo sur les vêtements. Chez nous, vous pouvez toujours commander des vêtements de marque pour organiser des activités de promotion, ainsi que de fournir le personnel de la forme de l&#39;entreprise élégante et de haute qualité, et de vêtements de travail. <br> «Promo Master Ukraine» propose des solutions complètes – de la conception des vêtements, du choix des tissus, de styles et de tailles et jusqu’à la mise de logo de votre entreprise. Dans ce cas, nous pouvons placer votre logo sur le tissu à l&#39;aide d’un des moyens utilisés dans la pratique moderne: <br> • la sérigraphie <br> • le transfert thermique <br> • l’impression par sublimation sur tissu <br> • la broderie de machine."
+				},
+				"section2": {
+					"title": "LA CONFECTION MODERNE",
+					"body": "La commande minimum est de cinq unités de produits de toute nature, la durée de la production est de trois jours ouvrables. <br> Couture sur mesure – ce n&#39;est pas une mode, mais la nécessité de la production pour les grandes entreprises, soucieuses de développement de sa marque. De nombreuses années d&#39;expérience en production, en combinaison avec une large sélection de tissus et d&#39;accessoires, que nous achetons au prix de gros chez les principaux fabricants de l&#39;Ukraine, fournissent une haute qualité et des prix loyaux. <br> Nos partenaires d’affaires sont les célèbres entreprises textiles sur le marché de l&#39;Ukraine, comme Tekstil- Kontakt, Grand-tekstil, la Maison de commerce Khimmeltek-Ukraina, l&#39;entreprise More Tkani et d&#39;autres. C’est pourquoi nous parlons avec confiance de: <br> • la plus large gamme de tissus et d&#39;accessoires en Ukraine <br> • la plus haute qualité de ça (produits certifiés) <br> • un grand choix de coloris et de textures <br> • une mise à jour régulière de la gamme."
+				},
+				"section3": {
+					"title": "HAUTE QUALITÉ DES TISSUS ET DES ACCESSOIRES",
+					"body": "Promo vêtements, fabriqués par nous, sont déjà choisis pour les employés des entreprises leaders de l&#39;Ukraine et de la région. Nous sommes fiers d&#39;avoir dans le portefeuille des dizaines d&#39;exemples de succès de la mise en oeuvre des idées de conception de nos clients, qui ont réussi à atteindre leurs objectifs d&#39;affaires visés après qu&#39;ils ont commandé des vêtements d&#39;entreprise chez «Promo Master Ukraine». <br> Tous les clients de la société «Promo Master Ukraine» sont réunis par la confiance à haute qualité assurée, aux délais d&#39;exécution des commandes brefs et à notre façon de mener des affaires. Nous aidons les gens dans une uniforme belle, confortable et à la mode à gagner de l&#39;argent avec plaisir. <br> Si vous avez des questions sur la couture de vêtements sur mesure pour les employés de votre entreprise – laissez un message ou appelez nos conseillers."
+				}
+			},
+			"decol": {
+				"section0": {
+					"title": "",
+					"body": ""
+				},
+				"section1": {
+					"title": "",
+					"body": ""
+				},
+				"section2": {
+					"title": "",
+					"body": ""
+				},
+				"section3": {
+					"title": "",
+					"body": ""
+				}
+			}
+		},
+		"de": {
+			"nav": "",
+			"foo": "",
+			"section4": {
+				"title": "Ukraine<br> 69076<br> Zaporozhye<br> der. Kozak Babur, 9",
+				"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
+			},
+			"home": {
+				"section0": {
+					"title": "WERBUG- UND PRODUKTIONSFIRMA",
+					"body": "Werbung- und Produktionsfirma «Promo Master Ukraine» ist eine der leitenden Firmen auf dem Markt der Werbung und Souvenirproduktion in der Ukraine. Wir bieten unseren Kunden, Vertretern von kleinen, mittleren und großen Unternehmen nur qualitative hochwertige Lösungen für die Weiterführung durch das Auftragen von Ihrem Firmenlogo auf JEDE flache Oberfläche an, und zwar: <br>• corporate-Identity- Kleidung (Druck auf T-Shirts, Baseball-Kappen mit <br>dem Logo, die Uniform für Kellner, Hotel- und Bankenarbeiter usw.)<br> • geschirr (Tassen mit einem Logo, Druck auf Tellern, Kaffeetassen)<br> • souvenirprodukte (Druck auf Leinwand, Kugelschreiber mit einem Logo)"
+				},
+				"section1": {
+					"body": "<b>FORTGESCHRITTENE TECHNOLOGIEN UND MATERIALIEN</b><br>In unserer Arbeit verwenden wir nur fortschrittliche Technologien und Materialien sowie moderne Ausrüstung, was uns leistet, auch den anspruchsvollsten Kunden unglaublich kurze Fristen der Herstellung von Waren anzubieten.<br> <b>GANZHEITLICHER ANSATZ</b><br>Die Einzigartigkeit unserer Firma ist, dass wir es geschafft haben, auf einem Punkt alle existierende Drucktechnologien zu sammeln. Wir legen keine Bestellungen für Fremde an und lösen jede Aufgabe ganzheitlich. Die fertige Ware wird gut verpackt. Dafür haben wir auch Sonderausstattung.<br> <b>BESTELLUNGEN FÜR JEDE BELIEBIGE MENGE VON WAREN</b><br>Sie können sowohl eine einzige Produktionseinheit, als auch ein paar tausend davon bestellen. Haben Sie die erforderliche Menge nicht berechnet? Sie können eine Nachbestellung machen, während die Preise auf vertraglicher Basis behalten werden. Wir schließen die Wiederholung von Modellen nach Ihrem Muster nicht aus (wir werden die notwendige Nachbearbeitung machen und die geeigneten Materialien auswählen)."
+				},
+				"section2": {
+					"body": "<b>KLUGE LOGISTIK UND FLEXIBLE PREISPOLITIK</b><br>Unser Vorteil liegt in einem gut funktionierenden Logistiksystem und in einer flexiblen Preispolitik, die auf die Interessen von Groß- und Einzelhandel Käufern orientiert ist. Wir wissen Bescheid, wie das fertige Produkt wohlbehalten auf jede geeignete Weise für Kunden überall in der Ukraine geliefert werden soll. Wir arbeiten mit allen Verkehrsunternehmen in der Ukraine. Die Ladung kann ans Büro oder Lager auf Wunsch des Kunden geliefert werden. Bei der Anmeldung weisen Sie darauf hin, wo und wie Sie Ihre Bestellung bekommen möchten.<br> <b>GROßE ERFAHRUNG</b><br>Wir haben eine sehr freundliche Belegschaft, wir sind wie eine Familie. Und es ist nicht nur Worte. Die Leute mögen ihre Arbeit und sind dafür verantwortlich. Warum? Die Arbeit in der Werbung- und Produktionsfirma &quot;Promo Master Ukraine&quot; ist keine Pflicht, sondern ein Lebensstil, der von unseren Mitarbeitern geteilt wird. Wir geben jeder Person eine Möglichkeit zur Selbstverwirklichung, Kreativität und Selbstverbesserung. Wir schätzen die Professionalität und Zuverlässigkeit. Wir arbeiten und erholen uns zusammen. Sogar das Neujahr, ein Familienfest, feiern wir auch zusammen. Das sagt viel aus."
+				},
+				"section3": {
+					"body": "<b>WIR LIEBEN UNSERE KUNDEN…</b><br>… und sorgen für sie. Wir helfen ihnen, die Probleme zu lösen, die sogar nicht mit der Haupttätigkeit verbunden sind. Unser Ziel ist, Kunden, so weit wie möglich, vom Stress zu lösen. Sie vertrauen uns und wir tun wiederum unser Bestes.<br> Die Hauptaufgabe von &quot;Promo Master Ukraine&quot; ist, in völlig unmöglichen Bedingungen ihre Kunden nicht im Stich zu lassen und da zu sein, bis es notwendig ist. Haben Sie eine wichtige Präsentation, eine Ausstellung oder eine andere Veranstaltung? Seien Sie sicher, dass wir alles rechtzeitig und am besten erfüllen werden. Außerdem werden wir das fertige Produkt auf jeden von Ihnen bestimmten Ort liefern und helfen, alles an seinen Platz zu stellen, damit das perfekt wird. Das ist unsere Berufung. Das Geld ist natürlich wichtig, aber es ist objektiv zweitrangig.<br> <b>WIR SCHÄTZEN IHRE MEINUNG!</b><br>Die Leitung der Firma &quot;Promo Master Ukraine&quot; ist immer offen für den Dialog. Wir sind immer bereit, von Ihnen Anregungen oder Kritik zu hören, unsere lieben Partner und Kunden! Wir schätzen unseren guten Ruf und bemühen uns, unsere Zusammenarbeit so angenehm wie möglich zu machen.<br> Lassen Sie uns zusammenarbeiten! Sie werden mit dem Ergebnis zufrieden sein."
+				}
+			},
+			"horeca": {
+				"section0": {
+					"title": "WIR VERSORGEN DEN ERFOLG IHRES UNTERNEHMENS",
+					"body": "Zu den Stammkunden von Werbung- und Produktionsfirma «Promo Master Ukraine» gehören die führenden Vertreter des HoReCa-Segment (Hotels, Restaurants, Cafés). Für diese Unternehmen ist Geschirr Branding, sowie die Anfertigung der Corporate-Identity- Kleidung, eine ständige Praxis, die vom Markt bestimmt ist. Für den erfolgreichen Start des Unternehmens sind die Individualität und Sinn für Stil sehr wichtig, der in allen Kleinigkeiten wiederspiegelt ist – von Tellerform bis Kleidungsfarbe fürs Personal. Unsere Erfahrung leistet es uns, optimale Lösungen für Ihr Unternehmen oder ein Firmenevent zu finden. Eine moderne, praktische und hochqualitative Corporate-Identity- Kleidung in Verbindung mit dem gemarkten Geschirr und Zubehör widerspiegelt am besten die Konzeption der Firma und betont ihre Hauptmerkmale."
+				},
+				"section1": {
+					"title": "DIE LIEBE ZUM DETAIL",
+					"body": "Unser Trick ist ein ganzheitlicher Ansatz für die HoReCa-Unternehmen, viel Liebe zum Detail. Herstellungskapazität von «Promo Master Ukraine», erfahrene und kreative Mitarbeiter betonen ganz genau Ihren Corporate-Stil und, wenn es erforderlich ist, werden wir alles von Grund auf neu konzipieren. Für uns ist nichts unmöglich! Wir erledigen die Bestellungen schnell und effizient, und zwar: <br> • abziehbilder für Essen und Trinken Utensilien <br> • die Anfertigung für die Kellner, Barmixer, Kochbekleidung <br> • herstellung von Menü-Karten , Untersetzern, Kaffeetassen <br> • stempel mit dem Logo für Kaffeehalter und Thermogürtel <br> • tassen-, Teller-, Gläserbranding <br> • herstellung von der Pizzaverpackung usw."
+				},
+				"section2": {
+					"title": "EINE FORTGESCHRITTENE BILDÜBERTRAGUNGSTECHNOLOGIE",
+					"body": "Methoden des Logoauftragens, die wir bei der Anfertigung von Personalbekleidung mit einem Restaurant oder Hotel-Logo verwenden, sind Stickerei oder Seidensiebdruck. Geschirr- und Accessoires-Branding wird durch das Aufkleben von Abziehbildern ausgeführt. Das Abziehbild ist eine der häufigsten Methoden der Datenreplikation auf allen Oberflächen. Das ist die fortgeschrittenste Auftragungstechnik auf der keramischen und gläsernen Oberfläche fürs gemarkte Geschirr."
+				},
+				"section3": {
+					"title": "WIR VERWIRKLICHEN DIE KOMPLEXESTEN PROJEKTE",
+					"body": "Der Erfolg des Hotel- und Gaststättengewerbe ist von der Idee bestimmt, die hinter ihm steht. Unsere Erfahrung zeigt, dass die wirklich erfolgreichen Unternehmen durch eine außergewöhnliche Konzeption und viel Liebe zum Detail gekennzeichnet sind, ob es Firmenbekleidung oder das gemarkte Geschirr ist. Die Fachleute von «Promo Master Ukraine» verwirklichten seit mehr als 10 Jahren Hunderte von erfolgreichen Projekten in vielen Städten der Ukraine. Die Professionalismus des Teams, große Erfahrung, Engagement und Kreativität leistet es uns, die komplexen und anspruchsvollen Projekte von unseren Kunden zu realisieren. Ihre Produktion verdient es, einzigartig zu sein! Rufen Sie jetzt an! Wir wissen, wie das geht."
+				}
+			},
+			"clothes": {
+				"section0": {
+					"title": "MAßSCHNEIDERN",
+					"body": "Firmenbekleidung ist der wichtigste Faktor der Darstellung von hohen inneren Unternehmensstandards. Das Aussehen Ihrer Mitarbeiter, und nicht nur ihre beruflichen und geschäftlichen Fähigkeiten, ist der wichtigste Bestandteil des Unternehmensimage, der Eindruck, den es macht. Was die Menschen im Büro tragen, Uniform für die Wache, Kochbekleidung und sogar Kochschürzen sind wichtig. Es schafft eine Informationsmeldung für Ihre Kunden und Geschäftspartner. Wenn dieses Bild positive Emotionen hervorruft , prosperiert Ihr Geschäft. Wenn es nicht glaubwürdig ist, wenn es kein aktives, energisches Tempo für effizienten Service Leistungen bestimmt, ist das ein alarmierendes Zeichen. Die Werbung- und Produktionsfirma «Promo Master Ukraine» konzipiert professionell Firmenbekleidung unter Berücksichtigung der Besonderheiten Ihres Unternehmens und betonnt die Details. Und all dies ist schnell und effizient!"
+				},
+				"section1": {
+					"title": "PROMOKLEIDUNG",
+					"body": "Wir verfügen über moderne Bekleidungsherstellung, deren Kapazität alle mögliche Kundenwünsche verwirklichen lässt, sei es die Anfertigung der Firmenbekleidung, individuelle Anfertigung der Berufskleidung oder das Auftragen des Logos auf die Kleidung. Bei uns können Sie immer Markenkleidung für verschiedene Promo-Veranstaltungen bestellen und Ihr Personal moderne und qualitative Firmenbekleidung versorgen. <br> «Promo Master Ukraine» bietet umfassende Lösungen - von der Entwicklung vom Kleidungsdesign, Auswahl von Stoffen, Designs und Größen bis das Auftragen von Ihrem Firmenlogo. Dabei können wir Ihr Logo auf dem Stoff auf solche Weise auftragen, die heutzutage häufig verwendet wird, und zwar: <br> • Seidensiebdruck <br> • Thermotransfer <br> • Sublimationsdruck auf dem Stoff <br> • Maschinenstickerei."
+				},
+				"section2": {
+					"title": "MODERNE TEXTILHERSTELLUNG",
+					"body": "Die kleinstmögliche Bestellung ist von fünf Produktionseinheiten jeglicher Art, die Produktionszeiten sind von drei Arbeitstagen. <br> Die Anfertigung auf Bestellung ist keine Modelaune, sondern eine Notwendigkeit für die seriösen Unternehmen, die sich um die Entwicklung ihrer Marke kümmern. Langjährige Erfahrung auf dem Gebiet der Herstellung sowie eine große Auswahl an Stoffen und Zubehör, die wir zu Großhandelspreisen bei führenden Herstellern der Ukraine kaufen, bietet eine hohe Qualität und loyale Preise an. <br> Unsere Geschäftspartner sind solche bekannten führenden Textilunternehmen auf dem ukrainischen Markt, wie «Textil-Kontakt», «Grand-Textil», Handelshaus «Himmeltek-Ukraine», Firma «More Tkani» etc. Deshalb sprechen wir zuversichtlich über: <br> • die große Auswahl von Stoffen und Zubehör in der Ukraine <br> • hohe Qualität (zertifizierte Produkte) <br> • große Auswahl an Farben und Texturen <br> • regelmäßige Aktualisierung des Angebots."
+				},
+				"section3": {
+					"title": "STOFFE UND ZUBEHÖR IN HOHER QUALITÄT",
+					"body": "Promotionbekleidung unserer Anfertigung haben für ihre Mitarbeiter führende Unternehmen der Ukraine und Region schon gewählt. Wir sind stolz auf die Tatsache, dass in unserem Portfolio Dutzende von Beispielen von der erfolgreichen Verwirklichung von Designideen unserer Kunden sind. Die Bestellung von unserer Firmenbekleidung half ihnen, ihre Geschäftsziele erreichen zu haben. <br> Was alle unsere Kunden verbindet, ist das Vertrauen in die garantierte hohe Qualität, kurze Laufzeiten von Aufträgen und ein partnerschaftlicher Stil von der Unternehmensführung von «Promo Master Ukraine». Wir helfen Menschen, in einer schönen, bequemen und modischen Firmenbekleidung Geld mit Vergnügen zu verdienen. <br> Wenn Sie Fragen zur Bekleidungsanfertigung auf Bestellung für die Mitarbeiter Ihrer Firma haben, senden Sie bitte eine Meldung an unsere Berater oder rufen Sie an!"
+				}
+			},
+			"decol": {
+				"section0": {
+					"title": "",
+					"body": ""
+				},
+				"section1": {
+					"title": "",
+					"body": ""
+				},
+				"section2": {
+					"title": "",
+					"body": ""
+				},
+				"section3": {
+					"title": "",
+					"body": ""
+				}
+			}
+		}
+	};
+
+/***/ },
+/* 44 */
 /***/ function(module, exports) {
 
 	/**
@@ -4436,7 +4845,7 @@
 	module.exports = DisabledInputUtils;
 
 /***/ },
-/* 41 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4688,7 +5097,7 @@
 	module.exports = EventPluginRegistry;
 
 /***/ },
-/* 42 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4707,12 +5116,12 @@
 	var _assign = __webpack_require__(4);
 	
 	var EventConstants = __webpack_require__(15);
-	var EventPluginRegistry = __webpack_require__(41);
-	var ReactEventEmitterMixin = __webpack_require__(246);
+	var EventPluginRegistry = __webpack_require__(45);
+	var ReactEventEmitterMixin = __webpack_require__(264);
 	var ViewportMetrics = __webpack_require__(118);
 	
-	var getVendorPrefixedEventName = __webpack_require__(278);
-	var isEventSupported = __webpack_require__(79);
+	var getVendorPrefixedEventName = __webpack_require__(296);
+	var isEventSupported = __webpack_require__(82);
 	
 	/**
 	 * Summary of `ReactBrowserEventEmitter` event handling:
@@ -5023,7 +5432,7 @@
 	module.exports = ReactBrowserEventEmitter;
 
 /***/ },
-/* 43 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5039,7 +5448,7 @@
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(37);
+	var keyMirror = __webpack_require__(38);
 	
 	var ReactPropTypeLocations = keyMirror({
 	  prop: null,
@@ -5050,7 +5459,7 @@
 	module.exports = ReactPropTypeLocations;
 
 /***/ },
-/* 44 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5066,10 +5475,10 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(34);
+	var SyntheticUIEvent = __webpack_require__(35);
 	var ViewportMetrics = __webpack_require__(118);
 	
-	var getEventModifierState = __webpack_require__(76);
+	var getEventModifierState = __webpack_require__(79);
 	
 	/**
 	 * @interface MouseEvent
@@ -5127,7 +5536,7 @@
 	module.exports = SyntheticMouseEvent;
 
 /***/ },
-/* 45 */
+/* 49 */
 /***/ function(module, exports) {
 
 	/**
@@ -5255,7 +5664,7 @@
 	module.exports = escapeTextContentForBrowser;
 
 /***/ },
-/* 46 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5272,12 +5681,12 @@
 	'use strict';
 	
 	var ExecutionEnvironment = __webpack_require__(7);
-	var DOMNamespaces = __webpack_require__(62);
+	var DOMNamespaces = __webpack_require__(65);
 	
 	var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 	var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(74);
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(77);
 	
 	// SVG temp container for IE lacking innerHTML
 	var reusableSVGContainer;
@@ -5358,3607 +5767,7 @@
 	module.exports = setInnerHTML;
 
 /***/ },
-/* 47 */
-36,
-/* 48 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @typechecks
-	 * 
-	 */
-	
-	/*eslint-disable no-self-compare */
-	
-	'use strict';
-	
-	var hasOwnProperty = Object.prototype.hasOwnProperty;
-	
-	/**
-	 * inlined Object.is polyfill to avoid requiring consumers ship their own
-	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-	 */
-	function is(x, y) {
-	  // SameValue algorithm
-	  if (x === y) {
-	    // Steps 1-5, 7-10
-	    // Steps 6.b-6.e: +0 != -0
-	    // Added the nonzero y check to make Flow happy, but it is redundant
-	    return x !== 0 || y !== 0 || 1 / x === 1 / y;
-	  } else {
-	    // Step 6.a: NaN == NaN
-	    return x !== x && y !== y;
-	  }
-	}
-	
-	/**
-	 * Performs equality by iterating through keys on an object and returning false
-	 * when any key has values which are not strictly equal between the arguments.
-	 * Returns true when the values of all keys are strictly equal.
-	 */
-	function shallowEqual(objA, objB) {
-	  if (is(objA, objB)) {
-	    return true;
-	  }
-	
-	  if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) {
-	    return false;
-	  }
-	
-	  var keysA = Object.keys(objA);
-	  var keysB = Object.keys(objB);
-	
-	  if (keysA.length !== keysB.length) {
-	    return false;
-	  }
-	
-	  // Test for A's keys different from B.
-	  for (var i = 0; i < keysA.length; i++) {
-	    if (!hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
-	      return false;
-	    }
-	  }
-	
-	  return true;
-	}
-	
-	module.exports = shallowEqual;
-
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "src/img/backgrounds/226511b5e36f664df8d417813f041a22.svg";
-
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "src/img/backgrounds/3f15fb3ca109d5f930fd7f87d5652c02.jpg";
-
-/***/ },
 /* 51 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.go = exports.replaceLocation = exports.pushLocation = exports.startListener = exports.getUserConfirmation = exports.getCurrentLocation = undefined;
-	
-	var _LocationUtils = __webpack_require__(24);
-	
-	var _DOMUtils = __webpack_require__(39);
-	
-	var _DOMStateStorage = __webpack_require__(89);
-	
-	var _PathUtils = __webpack_require__(19);
-	
-	var _ExecutionEnvironment = __webpack_require__(52);
-	
-	var PopStateEvent = 'popstate';
-	var HashChangeEvent = 'hashchange';
-	
-	var needsHashchangeListener = _ExecutionEnvironment.canUseDOM && !(0, _DOMUtils.supportsPopstateOnHashchange)();
-	
-	var _createLocation = function _createLocation(historyState) {
-	  var key = historyState && historyState.key;
-	
-	  return (0, _LocationUtils.createLocation)({
-	    pathname: window.location.pathname,
-	    search: window.location.search,
-	    hash: window.location.hash,
-	    state: key ? (0, _DOMStateStorage.readState)(key) : undefined
-	  }, undefined, key);
-	};
-	
-	var getCurrentLocation = exports.getCurrentLocation = function getCurrentLocation() {
-	  var historyState = void 0;
-	  try {
-	    historyState = window.history.state || {};
-	  } catch (error) {
-	    // IE 11 sometimes throws when accessing window.history.state
-	    // See https://github.com/ReactTraining/history/pull/289
-	    historyState = {};
-	  }
-	
-	  return _createLocation(historyState);
-	};
-	
-	var getUserConfirmation = exports.getUserConfirmation = function getUserConfirmation(message, callback) {
-	  return callback(window.confirm(message));
-	}; // eslint-disable-line no-alert
-	
-	var startListener = exports.startListener = function startListener(listener) {
-	  var handlePopState = function handlePopState(event) {
-	    if (event.state !== undefined) // Ignore extraneous popstate events in WebKit
-	      listener(_createLocation(event.state));
-	  };
-	
-	  (0, _DOMUtils.addEventListener)(window, PopStateEvent, handlePopState);
-	
-	  var handleUnpoppedHashChange = function handleUnpoppedHashChange() {
-	    return listener(getCurrentLocation());
-	  };
-	
-	  if (needsHashchangeListener) {
-	    (0, _DOMUtils.addEventListener)(window, HashChangeEvent, handleUnpoppedHashChange);
-	  }
-	
-	  return function () {
-	    (0, _DOMUtils.removeEventListener)(window, PopStateEvent, handlePopState);
-	
-	    if (needsHashchangeListener) {
-	      (0, _DOMUtils.removeEventListener)(window, HashChangeEvent, handleUnpoppedHashChange);
-	    }
-	  };
-	};
-	
-	var updateLocation = function updateLocation(location, updateState) {
-	  var state = location.state;
-	  var key = location.key;
-	
-	
-	  if (state !== undefined) (0, _DOMStateStorage.saveState)(key, state);
-	
-	  updateState({ key: key }, (0, _PathUtils.createPath)(location));
-	};
-	
-	var pushLocation = exports.pushLocation = function pushLocation(location) {
-	  return updateLocation(location, function (state, path) {
-	    return window.history.pushState(state, null, path);
-	  });
-	};
-	
-	var replaceLocation = exports.replaceLocation = function replaceLocation(location) {
-	  return updateLocation(location, function (state, path) {
-	    return window.history.replaceState(state, null, path);
-	  });
-	};
-	
-	var go = exports.go = function go(n) {
-	  if (n) window.history.go(n);
-	};
-
-/***/ },
-/* 52 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	var canUseDOM = exports.canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-
-/***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _AsyncUtils = __webpack_require__(188);
-	
-	var _PathUtils = __webpack_require__(19);
-	
-	var _runTransitionHook = __webpack_require__(54);
-	
-	var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
-	
-	var _Actions = __webpack_require__(38);
-	
-	var _LocationUtils = __webpack_require__(24);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var createHistory = function createHistory() {
-	  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-	  var getCurrentLocation = options.getCurrentLocation;
-	  var getUserConfirmation = options.getUserConfirmation;
-	  var pushLocation = options.pushLocation;
-	  var replaceLocation = options.replaceLocation;
-	  var go = options.go;
-	  var keyLength = options.keyLength;
-	
-	
-	  var currentLocation = void 0;
-	  var pendingLocation = void 0;
-	  var beforeListeners = [];
-	  var listeners = [];
-	  var allKeys = [];
-	
-	  var getCurrentIndex = function getCurrentIndex() {
-	    if (pendingLocation && pendingLocation.action === _Actions.POP) return allKeys.indexOf(pendingLocation.key);
-	
-	    if (currentLocation) return allKeys.indexOf(currentLocation.key);
-	
-	    return -1;
-	  };
-	
-	  var updateLocation = function updateLocation(nextLocation) {
-	    var currentIndex = getCurrentIndex();
-	
-	    currentLocation = nextLocation;
-	
-	    if (currentLocation.action === _Actions.PUSH) {
-	      allKeys = [].concat(allKeys.slice(0, currentIndex + 1), [currentLocation.key]);
-	    } else if (currentLocation.action === _Actions.REPLACE) {
-	      allKeys[currentIndex] = currentLocation.key;
-	    }
-	
-	    listeners.forEach(function (listener) {
-	      return listener(currentLocation);
-	    });
-	  };
-	
-	  var listenBefore = function listenBefore(listener) {
-	    beforeListeners.push(listener);
-	
-	    return function () {
-	      return beforeListeners = beforeListeners.filter(function (item) {
-	        return item !== listener;
-	      });
-	    };
-	  };
-	
-	  var listen = function listen(listener) {
-	    listeners.push(listener);
-	
-	    return function () {
-	      return listeners = listeners.filter(function (item) {
-	        return item !== listener;
-	      });
-	    };
-	  };
-	
-	  var confirmTransitionTo = function confirmTransitionTo(location, callback) {
-	    (0, _AsyncUtils.loopAsync)(beforeListeners.length, function (index, next, done) {
-	      (0, _runTransitionHook2.default)(beforeListeners[index], location, function (result) {
-	        return result != null ? done(result) : next();
-	      });
-	    }, function (message) {
-	      if (getUserConfirmation && typeof message === 'string') {
-	        getUserConfirmation(message, function (ok) {
-	          return callback(ok !== false);
-	        });
-	      } else {
-	        callback(message !== false);
-	      }
-	    });
-	  };
-	
-	  var transitionTo = function transitionTo(nextLocation) {
-	    if (currentLocation && (0, _LocationUtils.locationsAreEqual)(currentLocation, nextLocation) || pendingLocation && (0, _LocationUtils.locationsAreEqual)(pendingLocation, nextLocation)) return; // Nothing to do
-	
-	    pendingLocation = nextLocation;
-	
-	    confirmTransitionTo(nextLocation, function (ok) {
-	      if (pendingLocation !== nextLocation) return; // Transition was interrupted during confirmation
-	
-	      pendingLocation = null;
-	
-	      if (ok) {
-	        // Treat PUSH to same path like REPLACE to be consistent with browsers
-	        if (nextLocation.action === _Actions.PUSH) {
-	          var prevPath = (0, _PathUtils.createPath)(currentLocation);
-	          var nextPath = (0, _PathUtils.createPath)(nextLocation);
-	
-	          if (nextPath === prevPath && (0, _LocationUtils.statesAreEqual)(currentLocation.state, nextLocation.state)) nextLocation.action = _Actions.REPLACE;
-	        }
-	
-	        if (nextLocation.action === _Actions.POP) {
-	          updateLocation(nextLocation);
-	        } else if (nextLocation.action === _Actions.PUSH) {
-	          if (pushLocation(nextLocation) !== false) updateLocation(nextLocation);
-	        } else if (nextLocation.action === _Actions.REPLACE) {
-	          if (replaceLocation(nextLocation) !== false) updateLocation(nextLocation);
-	        }
-	      } else if (currentLocation && nextLocation.action === _Actions.POP) {
-	        var prevIndex = allKeys.indexOf(currentLocation.key);
-	        var nextIndex = allKeys.indexOf(nextLocation.key);
-	
-	        if (prevIndex !== -1 && nextIndex !== -1) go(prevIndex - nextIndex); // Restore the URL
-	      }
-	    });
-	  };
-	
-	  var push = function push(input) {
-	    return transitionTo(createLocation(input, _Actions.PUSH));
-	  };
-	
-	  var replace = function replace(input) {
-	    return transitionTo(createLocation(input, _Actions.REPLACE));
-	  };
-	
-	  var goBack = function goBack() {
-	    return go(-1);
-	  };
-	
-	  var goForward = function goForward() {
-	    return go(1);
-	  };
-	
-	  var createKey = function createKey() {
-	    return Math.random().toString(36).substr(2, keyLength || 6);
-	  };
-	
-	  var createHref = function createHref(location) {
-	    return (0, _PathUtils.createPath)(location);
-	  };
-	
-	  var createLocation = function createLocation(location, action) {
-	    var key = arguments.length <= 2 || arguments[2] === undefined ? createKey() : arguments[2];
-	    return (0, _LocationUtils.createLocation)(location, action, key);
-	  };
-	
-	  return {
-	    getCurrentLocation: getCurrentLocation,
-	    listenBefore: listenBefore,
-	    listen: listen,
-	    transitionTo: transitionTo,
-	    push: push,
-	    replace: replace,
-	    go: go,
-	    goBack: goBack,
-	    goForward: goForward,
-	    createKey: createKey,
-	    createPath: _PathUtils.createPath,
-	    createHref: createHref,
-	    createLocation: createLocation
-	  };
-	};
-	
-	exports.default = createHistory;
-
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _warning = __webpack_require__(22);
-	
-	var _warning2 = _interopRequireDefault(_warning);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var runTransitionHook = function runTransitionHook(hook, location, callback) {
-	  var result = hook(location, callback);
-	
-	  if (hook.length < 2) {
-	    // Assume the hook runs synchronously and automatically
-	    // call the callback with the return value.
-	    callback(result);
-	  } else {
-	     true ? (0, _warning2.default)(result === undefined, 'You should not "return" in a transition hook with a callback argument; ' + 'call the callback instead') : void 0;
-	  }
-	};
-	
-	exports.default = runTransitionHook;
-
-/***/ },
-/* 55 */
-/***/ function(module, exports) {
-
-	module.exports = {
-		"ru": {
-			"nav": "",
-			"foo": "",
-			"section4": {
-				"title": "Украина<br> 69076<br> Запорожье<br> ул. Козака Бабури, 9",
-				"body": "Управляющий партнер<br> Козляковский Максим<br> +380676142930<br> max@promomaster.biz"
-			},
-			"home": {
-				"section0": {
-					"title": "РЕКЛАМНО - ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ",
-					"body": "Рекламно - производственная компания «ПромоМастер Украина» – один из лидеров рынка рекламно-сувенирной продукции Украины. Мы предлагаем своим клиентам, представителям малого, среднего и крупного бизнеса, только качественные решения для продвижения посредством нанесения логотипов Вашей компании на ЛЮБУЮ плоскую поверхность, будь-то: <br>• корпоративная одежда (печать на футболках, бейсболки с логотипом,<br> форма для официантов, униформа для персонала гостиниц, банков и т.д.)<br> • посуда (кружки с логотипом, печать на тарелках, стаканчики для кофе)<br> • сувенирная продукция (печать на холсте, ручки с логотипом)"
-				},
-				"section1": {
-					"body": "<b>НАША ФИШКА В ТОМ, ЧТО МЫ МОЖЕМ ВЫПОЛНИТЬ ЗАКАЗ «НА ВЧЕРА»</b><br> Мы действительно выполняем работу <u>в любые</u> необходимые клиенту сроки. Как мы это делаем? Владея собственным технологическим парком, нам не надо кого-то искать, идти и уговаривать что-то сделать. Мы делаем всё сами. Поэтому если говорим клиенту, что продукт будет готов завтра в 9:00 утра, значит так и будет. Мы очень клиентоориентированы. Не стесняемся работать и в выходные, и в праздники, днем и ночью. И это не просто красивые слова, чтобы завлечь Вас. Приезжайте на нашу фабрику в любое время и убедитесь в этом лично.<br> <b>ПЕРЕДОВЫЕ ТЕХНОЛОГИИ И МАТЕРИАЛЫ</b><br> В своей работе используем исключительно передовые технологии и материалы, а также современное оборудование, что позволяет нам предлагать даже самым взыскательным клиентам фантастически сжатые сроки изготовления продукции.<br> <b>КОМПЛЕКСНЫЙ ПОДХОД</b><br> Уникальность нашего предприятия заключается в том, что мы смогли собрать все существующие в природе технологии печати в одном месте. Мы не размещаем заказы на стороне. Подходим к решению любой задачи комплексно. А уже готовую продукцию прилично упакуем. У нас и для этого есть специальное оборудование.<br> <b>ЗАКАЗЫ НА ЛЮБЫЕ ПАРТИИ РЕКЛАМНОЙ ПРОДУКЦИИ</b><br> Вы можете заказать лишь одну единицу рекламной продукции, а можете несколько тысяч. Не рассчитали необходимое количество? У Вас есть возможность дозаказа при сохранении цены на договорных условиях. Не исключаем повтор моделей по вашим образцам (сделаем необходимую доработку, подберем соответствующие материалы)."
-				},
-				"section2": {
-					"body": "<b>УМНАЯ ЛОГИСТИКА И ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА</b><br> Наш секрет в отлаженной системе логистики и гибкой ценовой политике, направленной на удовлетворение интересов, как оптовых покупателей, так и розничного потребителя. Мы знаем, как доставить готовую продукцию в целости и сохранности любым удобным для заказчика способом в любую точку Украины. Работаем со всеми транспортными компаниями Украины. Груз может быть доставлен в офис или на склад заказчика по его желанию. Формируя заявку, просто укажите, где и как Вы его хотите получить. <br> <b>ОГРОМНЫЙ ОПЫТ</b><br> У нас очень дружный коллектив, мы как одна семья. И это не просто слова. Люди очень любят свою работу и ответственно к ней относятся. Почему? Потому что работа в рекламно-производственной компании «ПромоМастер Украина» – это не обязанность, а стиль жизни, который разделяют наши сотрудники. Мы предоставляем каждому человеку уникальную возможность для самореализации, творчества и самосовершенствования. Высоко ценим профессионализм и надежность. Вместе трудимся и отдыхаем. Даже такой семейный праздник, как новый год, отмечаем вместе. А это о многом говорит, согласитесь."
-				},
-				"section3": {
-					"body": "<b>МЫ ИСКРЕННЕ ЛЮБИМ СВОИХ КЛИЕНТОВ…</b><br> … и переживаем за них, помогаем решать задачи, даже не связанные с основной сферой деятельности. Наша цель – снять любую головную боль с клиента. Вы доверяете нам, а мы, в свою очередь, делаем всё наилучшим образом.<br> Миссия компании «ПромоМастер Украина» – в совершенно невозможных условиях не бросить своего клиента, а быть рядом с ним, пока в нас отпадет необходимость. У Вас важная презентация, выставка либо какое-то другое деловое мероприятие? Будьте уверены: мы всё сделаем вовремя, наилучшим образом, подвезем готовую продукцию в любое указанное Вами место и поможем всё разместить так, чтобы это было идеально. В этом наше предназначение. Деньги, конечно, важны, но они объективно вторичны. <br><b>НАМ ОЧЕНЬ ВАЖНО ВАШЕ МНЕНИЕ!</b><br> Руководство компании «ПромоМастер Украина» всегда открыто для диалога. Мы всегда готовы выслушать от Вас любые предложения или критические замечания, дорогие наши партнеры и клиенты! Дорожим своей репутацией и стремимся к тому, чтобы наше сотрудничество было максимально комфортным. <br> Давайте сотрудничать! Вы будете довольны результатом."
-				}
-			},
-			"horeca": {
-				"section0": {
-					"title": "МЫ — ЭТО УСПЕХ ВАШЕГО БИЗНЕСА",
-					"body": "Среди постоянных клиентов рекламно-производственной компании «ПромоМастер Украина» – ведущие представители сегмента HoReCa (отели, рестораны, кафе). Для этих компаний брендирование посуды, равно как и пошив корпоративной одежды, – постоянная практика, продиктованная рынком. Для успешного запуска заведения очень важна подчеркнутая индивидуальность и чувство стиля, воплощенное во всем – от формы тарелок до цвета одежды для персонала. Наш опыт позволяет находить оптимальные решения для Вашего заведения или корпоративного мероприятия. Стильная, качественная и практичная корпоративная одежда в сочетании с брендированной посудой и аксессуарами наилучшим образом отражает концепцию заведения, подчеркивая его ключевые особенности."
-				},
-				"section1": {
-					"title": "ВНИМАНИЕ К ДЕТАЛЯМ",
-					"body": "Наша фишка – комплексный подход для предприятий сегмента HoReCa, особое внимание к деталям. Производственные мощности «ПромоМастер Украина», опытный, творческий персонал подчеркнут Ваш корпоративный стиль в мельчайших деталях, а если надо – разработаем всё с нуля. Для нас нет ничего невозможного! Мы быстро и качественно выполняем: <br> • деколь столовой и питьевой посуды <br> • пошив одежды для официантов, барменов, поварская форма <br> • изготовление папок-меню, бирдекелей, стаканчиков для кофе <br>• печать с логотипом холдеров и термо-поясов для кофе <br>• брендирование чашек, тарелок, стаканов, бокалов <br>• изготовление упаковки для пиццы и т.п."
-				},
-				"section2": {
-					"title": "ПЕРЕДОВАЯ ТЕХНОЛОГИЯ ПЕРЕНОСА ИЗОБРАЖЕНИЯ",
-					"body": "Методы нанесения логотипов, которые мы применяем при пошиве одежды для персонала с логотипом ресторана или гостиницы – вышивка либо шелкотрафаретная печать. Брендирование посуды и аксессуаров осуществляется методом деколирования. Деколь – один из самых распространенных методов тиражирования информации на любых поверхностях. Это самая передовая технология переноса изображения на керамическую и стеклянную поверхность для брендирования посуды."
-				},
-				"section3": {
-					"title": "РЕАЛИЗУЕМ САМЫЕ СЛОЖНЫЕ ПРОЕКТЫ",
-					"body": "Успех гостинично-ресторанного бизнеса определяется идеей, которая за ним стоит. Практика показывает, что действительно успешные заведения отличаются неординарными концепциями и пристальным вниманием к мельчайшим деталям – будь-то фирменная одежда для персонала либо брендированная посуда. Специалисты компании «ПромоМастер Украина» более чем за 10-ти летнюю историю реализовали сотни успешных проектов во многих городах Украины. Профессионализм команды, солидный опыт работы, самоотдача и творческий подход позволяют нам реализовать самые сложные и амбициозные проекты наших клиентов. Ваша продукция достойна быть уникальной! Звоните прямо сейчас! Мы знаем, как это сделать."
-				}
-			},
-			"clothes": {
-				"section0": {
-					"title": "ПОШИВ ОДЕЖДЫ НА ЗАКАЗ",
-					"body": "Корпоративная одежда – важнейший фактор визуализации высоких внутренних стандартов компании. Внешний вид Ваших сотрудников, а не только их профессиональные и деловые качества, – важнейшая составляющая образа фирмы, впечатления, которое она производит. Во что одеты люди в офисе, одежда для охраны, поварская форма и даже фартуки для официантов важны – они создают информационный посыл для Ваших клиентов и деловых партнеров. Когда этот образ вызывает положительные эмоции, Ваш бизнес процветает. Если он не вызывает доверия, не задает активный, энергичный ритм для результативных служебных достижений – это тревожный сигнал. Рекламно-производственная компания «ПромоМастерУкраина» профессионально разработает дизайн корпоративной одежды с учетом специфики Вашего бизнеса, сделает необходимые акценты на детали. И всё это быстро и качественно!"
-				},
-				"section1": {
-					"title": "ПРОМО- ОДЕЖДА",
-					"body": "Мы располагаем современным швейным производством, мощности которого позволяют воплотить в жизнь любые пожелания заказчика – будь-то пошив корпоративной формы, индивидуальный пошив спецодежды или нанесение логотипа на одежду. У нас Вы всегда можете заказать брендированную одежду для проведения различных промо-мероприятий, а также обеспечить персонал качественной и стильной корпоративной формой и спецодеждой. <br> «ПромоМастерУкраина» предлагает комплексные решения – от разработки дизайна одежды, подбора тканей, фасонов и размеров и до нанесения логотипа Вашего предприятия. При этом мы можем нанести Ваш логотип на ткань любым из способов, применяемых в современной практике: <br> • шелкотрафаретная печать <br> • термоперенос <br> • сублимационная печать на ткани <br> • машинная вышивка."
-				},
-				"section2": {
-					"title": "СОВРЕМЕННОЕ ШВЕЙНОЕ ПРОИЗВОДСТВО",
-					"body": "Минимально возможный заказ – от пяти единиц продукции любого вида, срок производства – от трех рабочих дней. <br> Пошив одежды на заказ – это не дань моде, а производственная необходимость для серьезных компаний, заботящихся о развитии своего бренда. Многолетний опыт производства в сочетании с широким выбором тканей и фурнитуры, которую мы закупаем по оптовым ценам у ведущих производителей Украины, обеспечивает высокое качество и лояльные цены. <br> Наши деловые партнеры – такие известные ведущие текстильные компании на рынке Украины, как «Текстиль-Контакт», «Гранд-текстиль», Торговый Дом «Химмельтек-Украина», фирма «Море Ткани» и др. Поэтому мы с уверенностью и говорим о: <br> • самом широком ассортименте тканей и фурнитуры в Украине <br> • его высоком качестве (продукция сертифицирована) <br> • огромном выборе расцветок и фактур <br> • регулярном обновлении ассортимента."
-				},
-				"section3": {
-					"title": "ВЫСОКОЕ КАЧЕСТВО ТКАНЕЙ И ФУРНИТУРЫ",
-					"body": "Промо-одежду нашего производства уже выбрали для своих сотрудников ведущие компании Украины и региона. Мы гордимся тем, что в портфолио – десятки примеров удачного воплощения дизайнерских идей наших клиентов, которым заказ корпоративной одежды в «ПромоМастерУкраина» позволил достичь поставленных бизнес-целей. <br> Всех наших клиентов объединяет доверие к гарантированно высокому качеству, сжатым срокам выполнения заказов и партнерскому стилю ведения бизнеса компанией «ПромоМастерУкраина». Мы помогаем людям в красивой, удобной и модной униформе зарабатывать деньги с удовольствием. <br> Если у Вас есть вопросы по пошиву одежды на заказ для сотрудников Вашей фирмы – оставьте сообщение нашим консультантам или позвоните."
-				}
-			},
-			"decol": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			}
-		},
-		"en": {
-			"nav": "",
-			"foo": "",
-			"section4": {
-				"title": "Ukraine<br> 69076<br> Zaporozhye<br> st.Zhukov, 9",
-				"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
-			},
-			"home": {
-				"section0": {
-					"title": "ADVERTISING AND PRODUCTION COMNANY",
-					"body": "Advertising & Production Company «PromoMaster Ukraine» is one of the leaders on Ukrainian advertising and souvenir production market. We offer our clients, representatives of small, medium and large businesses, high-quality solutions for the promotion of their brands. We can print logo of your company on any flat surfaces:<br> • Corporate uniform (printing on T-shirts, baseball caps with your logo, uniform for waiters, uniform for hotel staff, banks, etc.)<br> • Tableware (cups with your logo, printing on plates, coffee-glasses)<br> • Souvenir products (prints on canvas, pens with your logo)"
-				},
-				"section1": {
-					"body": "<b>OUR SPECIAL FEATURE IS THAT WE CAN FULFIL ANY RUSH JOB.</b><br> We can perform any orders work <u>within any</u> required time limit of our customer. How can we do it? Our company has its own technological park, we do not have to look for someone, go and persuade to do something. We produce everything ourselves.Therefore, if we are tell our clients that the product will be ready at 9:00 am tomorrow, there product will be waiting for the client at 9:00 am tomorrow. We are very customer-oriented. We do not hesitate about working at the weekend and on holidays, during the day and late at night. Moreover, these are not just pretty words to attract you. Come and visit our factory any time in person.<br> <b>ADVANCED TECHNOLOGIES AND MATERIALS</b><br> In our work, we use only advanced technologies and materials, as well as modern equipment that enables us to offer our most demanding customers manufacturingquality goods even in tight deadlines.<br> <b>COMPLEX APPROACH</b><br> The uniqueness of our company is that we were able to collect all of the existing printing technologies at our factory. We do not place orders to external companies. We always solve any problem in complex. We pack the final product properly as we have our own special packing equipment.<br> <b>ORDERS FOR ANY BATCH OF ADVERTISING PRODUCTS</b><br> You can order just one unit of your advertising product as well as thousands. You were incorrect with the calculation of necessary quantity of the goods, were you? You can reorder the goods with the same prices, which were on contractual terms. We do not exclude the possibility of repetition of models according to your samples (We make the necessary improvements and we choose the appropriate materials)."
-				},
-				"section2": {
-					"body": "<b>SMART LOGISTICS AND FLEXIBLE PRICE POLICY</b><br> Our secret is well-functioning logistics system and a flexible pricing policy, designed to meet the interests wholesale as well as retail consumers. We know how to deliver final product safe and unharmed in any convenient way for customers to any destination in Ukraine. We work with all transport companies of Ukraine. The freight can be delivered to the office or the warehouse of the customer according to his wish. Shaping the application, you just specify where and how you want to receive your product.<br><b>HUGE EXPERIENCE</b><br> We have a very friendly team, we are like one family. And it's not just words. Our Staff love their work and they are responsible. You can ask: “Why?”. Working in Advertising & Production Company «PromoMaster Ukraine» is not obligation, it is lifestyle, which is shared by all our employees. We provide every member of our team the unique opportunity for self-actualization,  creativity and self-development. We highly value professionalism and reliability. We work and rest together. Even family holiday like New Year we celebrate together. We celebrate together. You can agree that it shows a lot."
-				},
-				"section3": {
-					"body": "<b>WE SINCERELY LOVE OUR CUSTOMERS…</b><br> … and worry about them, help our clients solve problems which sometimes aren’t connected with our main sphere of activities. Our goal is to remove any possible problems and inconveniences our clients can face suffer in Ukrainian business environment. You trust us, and we do our best in turn.<br> Mission of the company «PromoMaster Ukraine» is to stay with the client in any unpredictable conditions, be ready to help until the client needs our support Do you plan an important presentation, exhibition or any business event? Rest assured that we will do all everything in time,  deliver final product to any location of your choice and help to place the products the best possible way. It is our mission. Of course, money is important, but it is of secondary importance honestly.<br> <b>YOUR OPINION AND FEEDBACK ARE IMPORTANT FOR US!</b><br> The management of company «PromoMaster Ukraine» is always open for dialogue. We are always ready to listen any kind of your suggestions or criticisms, our dear partners and customers! We value our reputation and strive to make our cooperation as comfortable as possible.<br> Let's cooperate! You will be pleased with the result."
-				}
-			},
-			"horeca": {
-				"section0": {
-					"title": "WE ARE HERE FOR SUPPORTING YOUR BUSINESS",
-					"body": "Leading representatives of the HoReCa business segment (hotels, restaurants, cafes) are among our regular clients of Advertising &Production Company «PromoMaster Ukraine». For the companies of this segment tableware branding, as well as the tailoring of corporate clothes are the constant practice dictated by the market. For the successful launch place (hotel, restaurant, cafe), it is very important to highlight the individuality and sense of style, incarnated in everything, from plates shape to the color of clothes for the staff. Our experience allows us to find optimal solutions for your newly opened café, restaurant or hotel as well as a corporate event. The stylish, practical and quality corporate uniform combined with a branded tableware and accessories reflect the concept of your place or event, highlighting its key features the best way."
-				},
-				"section1": {
-					"title": "ATTENTION TO DETAILS",
-					"body": "Our special feature is the comprehensive approach for HoReCa enterprises and special attention to any smallest details. The production facilities of «PromoMaster Ukraine», experienced and creative staff can accentuate your corporate style to the smallest detail, and if it is necessary our team can work out a brand new effort. There is nothing impossible for us! We quickly and efficiently fulfill: <br> • decal of dining and drinking tableware <br> • tailoring of uniform for waiters, bartenders, chefs <br> • manufacturing of menu-folders, coasters, coffee-cups <br> • printing of logo for holders and thermal-belts for coffee-cups <br> • branding of the cups, plates, glasses, goblets <br> • producing of packing for pizza, etc."
-				},
-				"section2": {
-					"title": "ADVANCED TECHNOLOGY IMAGE TRANSFERRING",
-					"body": "Logo transferring methods that we use during tailoring staff uniform with a logo of a restaurant or a hotel are embroidery or screen-printing. Branding tableware and accessories made by decalling. Decal is one of the most common methods of data replication on different surfaces. It is the most advanced image transfer technology on ceramic and glass tableware surface for branding."
-				},
-				"section3": {
-					"title": "WE IMPLEMENT THE MOST DIFFICULT PROJECTS",
-					"body": "Success of Hotel and Catering Business is determined by the idea, which lays in the concept of the place. Practice shows that the most successful places differ due to philosophy of the place and close attention to every smallest detail - whether it is corporate uniform for personnel or branded glassware.Specialists of «PromoMaster Ukraine» have more than 10-years prosperous history of implementation of hundreds of successful projects in many Ukrainian cities. The professionalism of the team in combination with considerable work experience as well as self-dedication and creativity allow us to carry out the most complex and ambitious projects of our clients. Your products deserve to be unique! Call us now! We know how to make it."
-				}
-			},
-			"clothes": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			},
-			"decol": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			}
-		},
-		"ua": {
-			"nav": "",
-			"foo": "",
-			"section4": {
-				"title": "Україна<br> 69076<br> Запоріжжя<br> вул. Козака Бабури, 9",
-				"body": "Керуючий партнер<br> Козляковскій Максим<br> +380676142930<br> max@promomaster.biz"
-			},
-			"home": {
-				"section0": {
-					"title": "РЕКЛАМНО - ВИРОБНИЧА КОМПАНІЯ",
-					"body": "Рекламно-виробнича компанія «ПромоМайстер Україна» - один з лідерів ринку рекламно-сувенірної продукції України. Ми пропонуємо своїм клієнтам, представникам малого, середнього та великого бізнесу, тільки якісні рішення для просування за допомогою нанесення логотипів Вашої компанії на БУДЬ-ЯКУ пласку поверхню, як це: <br>• корпоративний одяг (друк на футболках, бейсболки з логотипом, <br> форма для офіціантів, уніформа для персоналу готелів, банків і т.д.)<br> • посуд (кухлі з логотипом, друк на тарілках, стаканчики для кави)<br> • сувенірна продукція (друк на полотні, ручки з логотипом)"
-				},
-				"section1": {
-					"body": "<b>НАША ФІШКА В ТОМУ, ЩО МИ МОЖЕМО ВИКОНАТИ ЗАМОВЛЕННЯ «НА ВЧОРА»</b><br>Ми дійсно виконуємо роботу <u>в будь-які</u> необхідні клієнту терміни. Як ми це робимо? Володіючи власним технологічним парком, нам не треба когось шукати, йти і вмовляти щось зробити. Ми робимо все самі. Тому якщо говоримо клієнтові, що продукт буде готовий завтра о 9:00 ранку, значить так і буде. Ми дуже клієнтоорієнтовані. Ми не соромимося працювати і у вихідні, і у свята, вдень і вночі. І це не просто красиві слова, щоб заманити Вас. Приїжджайте на нашу фабрику в будь-який час і переконайтеся в цьому особисто.<br> <b>ПЕРЕДОВІ ТЕХНОЛОГІЇ ТА МАТЕРІАЛИ</b><br>У своїй роботі використовуємо виключно передові технології та матеріали, а також сучасне устаткування, що дозволяє нам пропонувати навіть найвибагливішим клієнтам фантастично стислі терміни виготовлення продукції.<br> <b>КОМПЛЕКСНИЙ ПІДХІД</b><br>Унікальність нашого підприємства полягає в тому, що ми змогли зібрати всі існуючі в природі технології друку в одному місці. Ми не розміщуємо замовлення на стороні. Підходимо до вирішення будь-якої задачі комплексно. А вже готову продукцію пристойно спакуємо. У нас і для цього є спеціальне обладнання.<br> <b>ЗАМОВЛЕННЯ НА БУДЬ ЯКІ ПАРТІЇ РЕКЛАМНИХ ТОВАРІВ</b><br>Ви можете замовити лише одну одиницю рекламної продукції, а можете кілька тисяч. Не розрахували необхідну кількість? У Вас є можливість дозамовлення при збереженні ціни на договірних умовах. Не виключений повтор моделей за вашими зразками (зробимо необхідне доопрацювання, підберемо відповідні матеріали)."
-				},
-				"section2": {
-					"body": "<b>РОЗУМНА ЛОГІСТИКА ТА ГНУЧКА ЦІНОВА ПОЛІТИКА</b><br>Наш секрет в налагодженій системі логістики та гнучкій ціновій політиці, спрямованої на задоволення інтересів, як оптових покупців, так і роздрібного споживача. Ми знаємо, як доставити готову продукцію цілою та неушкодженою будь-яким зручним для замовника способом в будь-яку точку України. Працюємо з усіма транспортними компаніями України. Вантаж може бути доставлений в офіс або на склад замовника за його бажанням. Формуючи заявку, просто вкажіть, де і як Ви її хочете отримати.<br> <b>ВЕЛИЧЕЗНИЙ ДОСВІД</b><br>У нас дуже дружний колектив, ми як одна сім'я. І це не просто слова. Люди дуже люблять свою роботу і відповідально до неї ставляться. Чому? Тому що робота в рекламно-виробничої компанії «ПромоМайстер Україна» - це не обов'язок, а стиль життя, який поділяють наші співробітники. Ми надаємо кожній людині унікальну можливість для самореалізації, творчості і самовдосконалення. Високо цінуємо професіоналізм і надійність. Разом працюємо і відпочиваємо. Навіть таке сімейне свято, як Новий рік, відзначаємо разом. А це багато про що говорить, погодьтеся."
-				},
-				"section3": {
-					"body": "<b>МИ ЩИРО ЛЮБИМО СВОЇХ КЛІЄНТІВ…</b><br>… і переживаємо за них, допомагаємо вирішувати завдання, навіть не пов'язані з основною сферою діяльності. Наша мета - зняти будь-який головний біль з клієнта. Ви довіряєте нам, а ми, в свою чергу, робимо все найкращим чином.<br> Місія компанії «ПромоМайстер Україна» - в абсолютно неможливих умовах не кинути свого клієнта, а бути поруч з ним, поки в нас не відпаде необхідність. У Вас важлива презентація, виставка або якийсь інший діловий захід? Будьте впевнені: ми все зробимо вчасно, найкращим чином, підвеземо готову продукцію в будь-яке зазначене Вами місце і допоможемо все розмістити так, щоб це було ідеально. В цьому наше призначення. Гроші, звичайно, важливі, але вони об'єктивно вторинні.<br> <b>НАМ ДУЖЕ ВАЖЛИВА ВАША ДУМКА!</b><br>Керівництво компанії «ПромоМайстер Україна» завжди відкрито до діалогу. Ми завжди готові вислухати від Вас будь-які пропозиції або критичні зауваження, дорогі наші партнери та клієнти! Дуже цінуємо свою репутацію і прагнемо того, щоб наша співпраця була максимально комфортна.<br> Давайте співпрацювати! Ви будете задоволені результатом"
-				}
-			},
-			"horeca": {
-				"section0": {
-					"title": "МИ - ЦЕ УСПІХ ВАШОГО БІЗНЕСУ",
-					"body": "Серед постійних клієнтів рекламно-виробничої компанії «ПромоМайстер Україна» - провідні представники сегмента HoReCa (готелі, ресторани, кафе). Для цих компаній брендування посуду, так само як і пошиття корпоративного одягу, - постійна практика, продиктована ринком. Для успішного запуску закладу дуже важлива підкреслена індивідуальність і відчуття стилю, втілене у всьому - від форми тарілок до кольору одягу для персоналу. Наш досвід дозволяє знаходити оптимальні рішення для Вашого закладу або корпоративного заходу. Стильний, якісний та практичний корпоративний одяг в поєднанні з брендованим посудом та аксесуарами найкращим чином відображає концепцію закладу, підкреслюючи його ключові особливості."
-				},
-				"section1": {
-					"title": "УВАГА ДО ДЕТАЛЕЙ",
-					"body": "Наша фішка - комплексний підхід для підприємств сегменту HoReCa, особлива увага до деталей. Виробничі потужності «ПромоМайстер Україна», досвідчений, творчий персонал підкреслять Ваш корпоративний стиль в найдрібніших деталях, а якщо треба - розробимо все з нуля. Для нас немає нічого неможливого! Ми швидко і якісно виконуємо: <br> • деколь столового та питного посуду <br> • пошиття одягу для офіціантів, барменів, кухарська форма <br> • виготовлення папок-меню, бірдіклей, стаканчиків для кави <br> • друк з логотипом холдерів і термо-поясів для кави <br> • брендування чашок, тарілок, склянок, келихів <br> • виготовлення упаковки для піци і т.п."
-				},
-				"section2": {
-					"title": "ПЕРЕДОВА ТЕХНОЛОГІЯ ПЕРЕНОСУ ЗОБРАЖЕНЬ",
-					"body": "Методи нанесення логотипів, які ми застосовуємо при пошитті одягу для персоналу з логотипом ресторану чи готелю - вишивка або шовкотрафаретний друк. Брендування посуду і аксесуарів здійснюється методом деколювання. Деколь - один з найпоширеніших методів тиражування інформації на будь-яких поверхнях. Це найпередовіша технологія перенесення зображення на керамічну і скляну поверхню для брендування посуду."
-				},
-				"section3": {
-					"title": "РЕАЛІЗУЄМО НАЙБІЛЬШ СКЛАДНІ ПРОЕКТИ",
-					"body": "Успіх готельно-ресторанного бізнесу визначається ідеєю, яка за ним стоїть. Практика показує, що дійсно успішні заклади відрізняються неординарними концепціями і пильною увагою до найдрібніших деталей - будь-то фірмовий одяг для персоналу або брендований посуд. Фахівці компанії «ПромоМайстер Україна» більш ніж за 10-ти річну історію реалізували сотні успішних проектів у багатьох містах України. Професіоналізм команди, солідний досвід роботи, самовіддача і творчий підхід дозволяють нам реалізувати найскладніші і амбітні проекти наших клієнтів. Ваша продукція гідна бути унікальною! Телефонуйте прямо зараз! Ми знаємо, як це зробити."
-				}
-			},
-			"clothes": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			},
-			"decol": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			}
-		},
-		"fr": {
-			"nav": "",
-			"foo": "",
-			"section4": {
-				"title": "Ukraine<br> 69076<br> Zaporіzhya<br> la. Kozak Babur, 9",
-				"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
-			},
-			"home": {
-				"section0": {
-					"title": "LA SOCIÉTÉ DE PUBLICITÉ ET DE PRODUCTION",
-					"body": "La société de publicité et de production «PromoMaster Ukraine» est l&#39;un des leaders du marché des produits promotionnels de l&#39;Ukraine. Nous n’offrons à nos clients – aux petites, moyennes et grandes entreprises – que des solutions promotionnelles haut de gamme par le biais de l&#39;application des logos de leur entreprise sur TOUTE surface plane, que ce soit: <br>• des vêtements d’entreprise (l’impression sur les t-shirts, les casquettes de <br> baseball avec le logo, la forme pour les serveurs, les uniformes pour le personnel des hôtels, des banques, etc.)<br> • la vaisselle (les tasses avec logo, l’impression sur les assiettes, les gobelets à café)<br> • les souvenirs (l&#39;impression sur toile, les stylos avec le logo)"
-				},
-				"section1": {
-					"body": "<b>LES TECHNOLOGIES ET DES MATÉRIAUX DE POINTE</b><br>Dans notre travail, nous utilisons exclusivement des technologies et des matériaux de pointe, ainsi que des équipements modernes, ce qui nous permet d&#39;offrir aux clients les plus exigeants les délais fantastiques de fabrication des produits.<br> <b>UNE APPROCHE INTÉGRÉE</b><br>L&#39;unicité de notre entreprise réside dans le fait que nous avons réussi à recueillir tout ce qui existe dans la nature de la technologie d&#39;impression en un seul endroit. Nous ne transférons jamais les commandes à autrui. Chez nous, on vous offre une solution complète à chaque tâche. Et nous emballerons bien les produits finis. Pour cela, nous sommes dotés d’équipement spécial.<br> <b>LES COMMANDES DE PRODUITS PROMOTIONNELS EN N’IMPORTE QUELLE QUANTITÉ</b><br>Vous pouvez commander une seule unité des produits promotionnels, comme vous pouvez en commander quelques milliers. Vous n’avez pas calculé la quantité nécessaire ? Vous avez l’option de réapprovisionnement tout en gardant des prix sur une base contractuelle. Nous n&#39;excluons pas la répétition de modèles selon vos échantillons (nous ferons une révision nécessaire, choisirons les matériaux appropriés)."
-				},
-				"section2": {
-					"body": "<b>LA LOGISTIQUE INTELLIGENTE ET LA POLITIQUE DES PRIX FLEXIBLE</b><br>Vous bénéficierez de notre système de la logistique bien ajusté et de la politique des prix flexible visant à satisfaire les intérêts de nos clients, tant acheteurs en gros que consommateurs en détail. Nous savons comment livrer les produits finis sains et saufs par n&#39;importe quel moyen, convenable au client, partout en Ukraine. Nous travaillons avec toutes les compagnies de transport de l&#39;Ukraine. Les marchandises peuvent être livrées au bureau ou à l&#39;entrepôt du client à sa demande. En formant une demande, il suffit d&#39;indiquer où et comment vous voulez les obtenir.<br> <b>UNE EXPÉRIENCE ÉNORME</b><br>Notre collectif est très sympathique, nous sommes tous comme une famille. Et ce ne sont pas juste des mots. Les gens aiment leur travail et le font responsablement. Pourquoi ? Parce que le travail dans la société de publicité et de production PromoMaster Ukraine n&#39;est pas une obligation, mais un style de vie, partagé par nos employés. Nous fournissons à chaque personne une occasion unique pour la réalisation de soi, la créativité et le perfectionnement personnel. Nous apprécions le professionnalisme et la fiabilité. Nous travaillons et nous nous reposons ensemble. Nous célébrons ensemble même une telle fête familiale que le Nouvel An. Et cela en dit beaucoup, n’est-ce pas? "
-				},
-				"section3": {
-					"body": "<b>NOUS AIMONS SINCÈREMENT NOS CLIENTS…</b><br>… Et nous nous faisons du souci pour eux, en les aidant à résoudre même les problèmes, non liés à notre activité principale. Notre objectif est de remédier au casse-tête du client. Vous nous faites confiance et nous, à notre tour, nous efforçons de tout faire du mieux.<br> La mission de l&#39;entreprise PromoMaster Ukraine est de ne pas quitter son client dans les conditions totalement insupportables et d&#39;être à côté de lui, jusqu’à qu’il n’ait plus besoin de nous. Vous avez une présentation importante, une exposition ou un autre événement d&#39;affaires ? Soyez assuré que nous ferons tout à l&#39;heure, de notre mieux, livrerons les produits finis dans n&#39;importe quel endroit de votre choix et nous vous aiderons à les placer parfaitement. C&#39;est notre mission. L&#39;argent, il est bien sûr important, mais tout à fait secondaire.<br> <b>VOTRE OPINION EST TRÈS IMPORTANT POUR NOUS !</b><br>La direction de l&#39;entreprise PromoMaster Ukraine est toujours ouverte au dialogue. Nous sommes toujours prêts à entendre vos suggestions ou critiques, nos chers partenaires et clients ! Nous apprécions notre réputation et nous nous efforçons de rendre notre coopération aussi confortable que possible.<br> Travaillons ensemble ! Vous serez satisfait du résultat"
-				}
-			},
-			"horeca": {
-				"section0": {
-					"title": "NOUS – C&#39;EST LA RÉUSSITE DE VOTRE ENTREPRISE",
-					"body": "Les principaux représentants du segment HoReCa (hôtels, restaurants, cafés) se trouvent parmi les clients réguliers de la société de publicité et de production «PromoMaster Ukraine». Pour ces entreprises, le branding de la vaisselle, ainsi que la couture des vêtements d&#39;entreprise est une pratique habituelle, engendrée par le marché. Pour le succès du lancement de l&#39;institution, il est très important de souligner la personnalité et le sens du style, incarné dans la forme des assiettes et dans les couleurs des vêtements pour le personnel. Notre expérience nous permet de trouver les solutions optimales pour votre établissement ou pour votre événement d&#39;entreprise. Des vêtements d&#39;entreprise élégants, pratiques et de bonne qualité en combinaison avec des ustensiles de cuisine à la mode et des accessoires reflètent le mieux la conception de l&#39;institution,  mettant l&#39;accent sur ses principales caractéristiques."
-				},
-				"section1": {
-					"title": "L&#39;ATTENTION AU DÉTAIL",
-					"body": "Notre particularité est une approche intégrée pour les entreprises du segment HoReCa, avec une attention particulière aux détails. La capacité de production de PromoMaster Ukraine, le personnel expérimenté et créatif souligneront votre style d&#39;entreprise dans les moindres détails, et si nécessaire, nous développerons tout à partir de zéro. Pour nous, rien n&#39;est impossible ! Nous accomplissons rapidement et qualitativement: <br> • la décalcomanie de la vaisselle de la salle à manger et à boire <br> • la confection de vêtements pour les serveurs, barmen, la forme de cuisinier <br> • la fabrication des dossiers-menu, des sous-verres, des gobelets à café <br> • l’impression avec logo des détenteurs et des thermo-ceintures pour le café <br> • le branding des tasses, des assiettes, des verres, des verres à vin <br> • la production de l&#39;emballage pour la pizza, etc."
-				},
-				"section2": {
-					"title": "LA TECHNOLOGIE AVANCÉE DE TRANSFERT D&#39;IMAGE",
-					"body": "Les méthodes de l&#39;application des logos que nous appliquons lors de la couture des vêtements pour le personnel, avec le logo du restaurant ou de l&#39;hôtel, c’est la broderie ou la sérigraphie. Le branding de la vaisselle et des accessoires par la méthode de la décalcomanie. La décalcomanie, c’est l&#39;une des techniques les plus répandues de duplication de l&#39;information sur toutes les surfaces. C&#39;est la technologie la plus avancée de transfert d&#39;image sur la surface céramique et en verre pour le branding de la vaisselle."
-				},
-				"section3": {
-					"title": "NOUS METTONS EN ŒUVRE LES PROJETS LES PLUS DIFFICILES",
-					"body": "Le succès de l&#39;hôtellerie est déterminée par une idée. La pratique montre que des établissements vraiment prospères se distinguent par des concepts extraordinaires et par une attention aux moindres détails que ce soit des vêtements de marque pour le personnel ou des ustensiles de cuisine de marque. Les spécialistes de la société «PromoMaster Ukraine» pendant plus de 10 ans d&#39;histoire ont réalisé des centaines de projets dans de nombreuses villes de l&#39;Ukraine. Le professionnalisme de l&#39;équipe, solide expérience de travail, nos dévouement et créativité nous permettent de réaliser les projets de nos clients les plus complexes et les plus ambitieux. Votre produit est digne d&#39;être unique ! Appelez-nous dès maintenant ! Nous savons comment le faire."
-				}
-			},
-			"clothes": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			},
-			"decol": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			}
-		},
-		"de": {
-			"nav": "",
-			"foo": "",
-			"section4": {
-				"title": "Ukraine<br> 69076<br> Zaporozhye<br> der. Kozak Babur, 9",
-				"body": "Managing partner<br> Kozlyakovsky Maxim<br> +380676142930<br> max@promomaster.biz"
-			},
-			"home": {
-				"section0": {
-					"title": "WERBUG- UND PRODUKTIONSFIRMA",
-					"body": "Werbung- und Produktionsfirma «PromoMaster Ukraine» ist eine der leitenden Firmen auf dem Markt der Werbung und Souvenirproduktion in der Ukraine. Wir bieten unseren Kunden, Vertretern von kleinen, mittleren und großen Unternehmen nur qualitative hochwertige Lösungen für die Weiterführung durch das Auftragen von Ihrem Firmenlogo auf JEDE flache Oberfläche an, und zwar: <br>• corporate-Identity- Kleidung (Druck auf T-Shirts, Baseball-Kappen mit <br>dem Logo, die Uniform für Kellner, Hotel- und Bankenarbeiter usw.)<br> • geschirr (Tassen mit einem Logo, Druck auf Tellern, Kaffeetassen)<br> • souvenirprodukte (Druck auf Leinwand, Kugelschreiber mit einem Logo)"
-				},
-				"section1": {
-					"body": "<b>FORTGESCHRITTENE TECHNOLOGIEN UND MATERIALIEN</b><br>In unserer Arbeit verwenden wir nur fortschrittliche Technologien und Materialien sowie moderne Ausrüstung, was uns leistet, auch den anspruchsvollsten Kunden unglaublich kurze Fristen der Herstellung von Waren anzubieten.<br> <b>GANZHEITLICHER ANSATZ</b><br>Die Einzigartigkeit unserer Firma ist, dass wir es geschafft haben, auf einem Punkt alle existierende Drucktechnologien zu sammeln. Wir legen keine Bestellungen für Fremde an und lösen jede Aufgabe ganzheitlich. Die fertige Ware wird gut verpackt. Dafür haben wir auch Sonderausstattung.<br> <b>BESTELLUNGEN FÜR JEDE BELIEBIGE MENGE VON WAREN</b><br>Sie können sowohl eine einzige Produktionseinheit, als auch ein paar tausend davon bestellen. Haben Sie die erforderliche Menge nicht berechnet? Sie können eine Nachbestellung machen, während die Preise auf vertraglicher Basis behalten werden. Wir schließen die Wiederholung von Modellen nach Ihrem Muster nicht aus (wir werden die notwendige Nachbearbeitung machen und die geeigneten Materialien auswählen)."
-				},
-				"section2": {
-					"body": "<b>KLUGE LOGISTIK UND FLEXIBLE PREISPOLITIK</b><br>Unser Vorteil liegt in einem gut funktionierenden Logistiksystem und in einer flexiblen Preispolitik, die auf die Interessen von Groß- und Einzelhandel Käufern orientiert ist. Wir wissen Bescheid, wie das fertige Produkt wohlbehalten auf jede geeignete Weise für Kunden überall in der Ukraine geliefert werden soll. Wir arbeiten mit allen Verkehrsunternehmen in der Ukraine. Die Ladung kann ans Büro oder Lager auf Wunsch des Kunden geliefert werden. Bei der Anmeldung weisen Sie darauf hin, wo und wie Sie Ihre Bestellung bekommen möchten.<br> <b>GROßE ERFAHRUNG</b><br>Wir haben eine sehr freundliche Belegschaft, wir sind wie eine Familie. Und es ist nicht nur Worte. Die Leute mögen ihre Arbeit und sind dafür verantwortlich. Warum? Die Arbeit in der Werbung- und Produktionsfirma &quot;PromoMaster Ukraine&quot; ist keine Pflicht, sondern ein Lebensstil, der von unseren Mitarbeitern geteilt wird. Wir geben jeder Person eine Möglichkeit zur Selbstverwirklichung, Kreativität und Selbstverbesserung. Wir schätzen die Professionalität und Zuverlässigkeit. Wir arbeiten und erholen uns zusammen. Sogar das Neujahr, ein Familienfest, feiern wir auch zusammen. Das sagt viel aus."
-				},
-				"section3": {
-					"body": "<b>WIR LIEBEN UNSERE KUNDEN…</b><br>… und sorgen für sie. Wir helfen ihnen, die Probleme zu lösen, die sogar nicht mit der Haupttätigkeit verbunden sind. Unser Ziel ist, Kunden, so weit wie möglich, vom Stress zu lösen. Sie vertrauen uns und wir tun wiederum unser Bestes.<br> Die Hauptaufgabe von &quot;PromoMaster Ukraine&quot; ist, in völlig unmöglichen Bedingungen ihre Kunden nicht im Stich zu lassen und da zu sein, bis es notwendig ist. Haben Sie eine wichtige Präsentation, eine Ausstellung oder eine andere Veranstaltung? Seien Sie sicher, dass wir alles rechtzeitig und am besten erfüllen werden. Außerdem werden wir das fertige Produkt auf jeden von Ihnen bestimmten Ort liefern und helfen, alles an seinen Platz zu stellen, damit das perfekt wird. Das ist unsere Berufung. Das Geld ist natürlich wichtig, aber es ist objektiv zweitrangig.<br> <b>WIR SCHÄTZEN IHRE MEINUNG!</b><br>Die Leitung der Firma &quot;PromoMaster Ukraine&quot; ist immer offen für den Dialog. Wir sind immer bereit, von Ihnen Anregungen oder Kritik zu hören, unsere lieben Partner und Kunden! Wir schätzen unseren guten Ruf und bemühen uns, unsere Zusammenarbeit so angenehm wie möglich zu machen.<br> Lassen Sie uns zusammenarbeiten! Sie werden mit dem Ergebnis zufrieden sein."
-				}
-			},
-			"horeca": {
-				"section0": {
-					"title": "WIR VERSORGEN DEN ERFOLG IHRES UNTERNEHMENS",
-					"body": "Zu den Stammkunden von Werbung- und Produktionsfirma «PromoMaster Ukraine» gehören die führenden Vertreter des HoReCa-Segment (Hotels, Restaurants, Cafés). Für diese Unternehmen ist Geschirr Branding, sowie die Anfertigung der Corporate-Identity- Kleidung, eine ständige Praxis, die vom Markt bestimmt ist. Für den erfolgreichen Start des Unternehmens sind die Individualität und Sinn für Stil sehr wichtig, der in allen Kleinigkeiten wiederspiegelt ist – von Tellerform bis Kleidungsfarbe fürs Personal. Unsere Erfahrung leistet es uns, optimale Lösungen für Ihr Unternehmen oder ein Firmenevent zu finden. Eine moderne, praktische und hochqualitative Corporate-Identity- Kleidung in Verbindung mit dem gemarkten Geschirr und Zubehör widerspiegelt am besten die Konzeption der Firma und betont ihre Hauptmerkmale."
-				},
-				"section1": {
-					"title": "DIE LIEBE ZUM DETAIL",
-					"body": "Unser Trick ist ein ganzheitlicher Ansatz für die HoReCa-Unternehmen, viel Liebe zum Detail. Herstellungskapazität von «PromoMaster Ukraine», erfahrene und kreative Mitarbeiter betonen ganz genau Ihren Corporate-Stil und, wenn es erforderlich ist, werden wir alles von Grund auf neu konzipieren. Für uns ist nichts unmöglich! Wir erledigen die Bestellungen schnell und effizient, und zwar: <br> • abziehbilder für Essen und Trinken Utensilien <br> • die Anfertigung für die Kellner, Barmixer, Kochbekleidung <br> • herstellung von Menü-Karten , Untersetzern, Kaffeetassen <br> • stempel mit dem Logo für Kaffeehalter und Thermogürtel <br> • tassen-, Teller-, Gläserbranding <br> • herstellung von der Pizzaverpackung usw."
-				},
-				"section2": {
-					"title": "EINE FORTGESCHRITTENE BILDÜBERTRAGUNGSTECHNOLOGIE",
-					"body": "Methoden des Logoauftragens, die wir bei der Anfertigung von Personalbekleidung mit einem Restaurant oder Hotel-Logo verwenden, sind Stickerei oder Seidensiebdruck. Geschirr- und Accessoires-Branding wird durch das Aufkleben von Abziehbildern ausgeführt. Das Abziehbild ist eine der häufigsten Methoden der Datenreplikation auf allen Oberflächen. Das ist die fortgeschrittenste Auftragungstechnik auf der keramischen und gläsernen Oberfläche fürs gemarkte Geschirr."
-				},
-				"section3": {
-					"title": "WIR VERWIRKLICHEN DIE KOMPLEXESTEN PROJEKTE",
-					"body": "Der Erfolg des Hotel- und Gaststättengewerbe ist von der Idee bestimmt, die hinter ihm steht. Unsere Erfahrung zeigt, dass die wirklich erfolgreichen Unternehmen durch eine außergewöhnliche Konzeption und viel Liebe zum Detail gekennzeichnet sind, ob es Firmenbekleidung oder das gemarkte Geschirr ist. Die Fachleute von «PromoMaster Ukraine» verwirklichten seit mehr als 10 Jahren Hunderte von erfolgreichen Projekten in vielen Städten der Ukraine. Die Professionalismus des Teams, große Erfahrung, Engagement und Kreativität leistet es uns, die komplexen und anspruchsvollen Projekte von unseren Kunden zu realisieren. Ihre Produktion verdient es, einzigartig zu sein! Rufen Sie jetzt an! Wir wissen, wie das geht."
-				}
-			},
-			"clothes": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			},
-			"decol": {
-				"section0": {
-					"title": "",
-					"body": ""
-				},
-				"section1": {
-					"title": "",
-					"body": ""
-				},
-				"section2": {
-					"title": "",
-					"body": ""
-				},
-				"section3": {
-					"title": "",
-					"body": ""
-				}
-			}
-		}
-	};
-
-/***/ },
-/* 56 */
-/***/ function(module, exports) {
-
-	// shim for using process in browser
-	var process = module.exports = {};
-	
-	// cached from whatever global is present so that test runners that stub it
-	// don't break things.  But we need to wrap it in a try catch in case it is
-	// wrapped in strict mode code which doesn't define any globals.  It's inside a
-	// function because try/catches deoptimize in certain engines.
-	
-	var cachedSetTimeout;
-	var cachedClearTimeout;
-	
-	function defaultSetTimout() {
-	    throw new Error('setTimeout has not been defined');
-	}
-	function defaultClearTimeout () {
-	    throw new Error('clearTimeout has not been defined');
-	}
-	(function () {
-	    try {
-	        if (typeof setTimeout === 'function') {
-	            cachedSetTimeout = setTimeout;
-	        } else {
-	            cachedSetTimeout = defaultSetTimout;
-	        }
-	    } catch (e) {
-	        cachedSetTimeout = defaultSetTimout;
-	    }
-	    try {
-	        if (typeof clearTimeout === 'function') {
-	            cachedClearTimeout = clearTimeout;
-	        } else {
-	            cachedClearTimeout = defaultClearTimeout;
-	        }
-	    } catch (e) {
-	        cachedClearTimeout = defaultClearTimeout;
-	    }
-	} ())
-	function runTimeout(fun) {
-	    if (cachedSetTimeout === setTimeout) {
-	        //normal enviroments in sane situations
-	        return setTimeout(fun, 0);
-	    }
-	    // if setTimeout wasn't available but was latter defined
-	    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-	        cachedSetTimeout = setTimeout;
-	        return setTimeout(fun, 0);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedSetTimeout(fun, 0);
-	    } catch(e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-	            return cachedSetTimeout.call(null, fun, 0);
-	        } catch(e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-	            return cachedSetTimeout.call(this, fun, 0);
-	        }
-	    }
-	
-	
-	}
-	function runClearTimeout(marker) {
-	    if (cachedClearTimeout === clearTimeout) {
-	        //normal enviroments in sane situations
-	        return clearTimeout(marker);
-	    }
-	    // if clearTimeout wasn't available but was latter defined
-	    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-	        cachedClearTimeout = clearTimeout;
-	        return clearTimeout(marker);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedClearTimeout(marker);
-	    } catch (e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-	            return cachedClearTimeout.call(null, marker);
-	        } catch (e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-	            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-	            return cachedClearTimeout.call(this, marker);
-	        }
-	    }
-	
-	
-	
-	}
-	var queue = [];
-	var draining = false;
-	var currentQueue;
-	var queueIndex = -1;
-	
-	function cleanUpNextTick() {
-	    if (!draining || !currentQueue) {
-	        return;
-	    }
-	    draining = false;
-	    if (currentQueue.length) {
-	        queue = currentQueue.concat(queue);
-	    } else {
-	        queueIndex = -1;
-	    }
-	    if (queue.length) {
-	        drainQueue();
-	    }
-	}
-	
-	function drainQueue() {
-	    if (draining) {
-	        return;
-	    }
-	    var timeout = runTimeout(cleanUpNextTick);
-	    draining = true;
-	
-	    var len = queue.length;
-	    while(len) {
-	        currentQueue = queue;
-	        queue = [];
-	        while (++queueIndex < len) {
-	            if (currentQueue) {
-	                currentQueue[queueIndex].run();
-	            }
-	        }
-	        queueIndex = -1;
-	        len = queue.length;
-	    }
-	    currentQueue = null;
-	    draining = false;
-	    runClearTimeout(timeout);
-	}
-	
-	process.nextTick = function (fun) {
-	    var args = new Array(arguments.length - 1);
-	    if (arguments.length > 1) {
-	        for (var i = 1; i < arguments.length; i++) {
-	            args[i - 1] = arguments[i];
-	        }
-	    }
-	    queue.push(new Item(fun, args));
-	    if (queue.length === 1 && !draining) {
-	        runTimeout(drainQueue);
-	    }
-	};
-	
-	// v8 likes predictible objects
-	function Item(fun, array) {
-	    this.fun = fun;
-	    this.array = array;
-	}
-	Item.prototype.run = function () {
-	    this.fun.apply(null, this.array);
-	};
-	process.title = 'browser';
-	process.browser = true;
-	process.env = {};
-	process.argv = [];
-	process.version = ''; // empty string to avoid regexp issues
-	process.versions = {};
-	
-	function noop() {}
-	
-	process.on = noop;
-	process.addListener = noop;
-	process.once = noop;
-	process.off = noop;
-	process.removeListener = noop;
-	process.removeAllListeners = noop;
-	process.emit = noop;
-	
-	process.binding = function (name) {
-	    throw new Error('process.binding is not supported');
-	};
-	
-	process.cwd = function () { return '/' };
-	process.chdir = function (dir) {
-	    throw new Error('process.chdir is not supported');
-	};
-	process.umask = function() { return 0; };
-
-
-/***/ },
-/* 57 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	exports.loopAsync = loopAsync;
-	exports.mapAsync = mapAsync;
-	function loopAsync(turns, work, callback) {
-	  var currentTurn = 0,
-	      isDone = false;
-	  var sync = false,
-	      hasNext = false,
-	      doneArgs = void 0;
-	
-	  function done() {
-	    isDone = true;
-	    if (sync) {
-	      // Iterate instead of recursing if possible.
-	      doneArgs = [].concat(Array.prototype.slice.call(arguments));
-	      return;
-	    }
-	
-	    callback.apply(this, arguments);
-	  }
-	
-	  function next() {
-	    if (isDone) {
-	      return;
-	    }
-	
-	    hasNext = true;
-	    if (sync) {
-	      // Iterate instead of recursing if possible.
-	      return;
-	    }
-	
-	    sync = true;
-	
-	    while (!isDone && currentTurn < turns && hasNext) {
-	      hasNext = false;
-	      work.call(this, currentTurn++, next, done);
-	    }
-	
-	    sync = false;
-	
-	    if (isDone) {
-	      // This means the loop finished synchronously.
-	      callback.apply(this, doneArgs);
-	      return;
-	    }
-	
-	    if (currentTurn >= turns && hasNext) {
-	      isDone = true;
-	      callback();
-	    }
-	  }
-	
-	  next();
-	}
-	
-	function mapAsync(array, work, callback) {
-	  var length = array.length;
-	  var values = [];
-	
-	  if (length === 0) return callback(null, values);
-	
-	  var isDone = false,
-	      doneCount = 0;
-	
-	  function done(index, error, value) {
-	    if (isDone) return;
-	
-	    if (error) {
-	      isDone = true;
-	      callback(error);
-	    } else {
-	      values[index] = value;
-	
-	      isDone = ++doneCount === length;
-	
-	      if (isDone) callback(null, values);
-	    }
-	  }
-	
-	  array.forEach(function (item, index) {
-	    work(item, index, function (error, value) {
-	      done(index, error, value);
-	    });
-	  });
-	}
-
-/***/ },
-/* 58 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.ContextProvider = ContextProvider;
-	exports.ContextSubscriber = ContextSubscriber;
-	
-	var _react = __webpack_require__(6);
-	
-	// Works around issues with context updates failing to propagate.
-	// Caveat: the context value is expected to never change its identity.
-	// https://github.com/facebook/react/issues/2517
-	// https://github.com/reactjs/react-router/issues/470
-	
-	var contextProviderShape = _react.PropTypes.shape({
-	  subscribe: _react.PropTypes.func.isRequired,
-	  eventIndex: _react.PropTypes.number.isRequired
-	});
-	
-	function makeContextName(name) {
-	  return '@@contextSubscriber/' + name;
-	}
-	
-	function ContextProvider(name) {
-	  var _childContextTypes, _ref2;
-	
-	  var contextName = makeContextName(name);
-	  var listenersKey = contextName + '/listeners';
-	  var eventIndexKey = contextName + '/eventIndex';
-	  var subscribeKey = contextName + '/subscribe';
-	
-	  return _ref2 = {
-	    childContextTypes: (_childContextTypes = {}, _childContextTypes[contextName] = contextProviderShape.isRequired, _childContextTypes),
-	
-	    getChildContext: function getChildContext() {
-	      var _ref;
-	
-	      return _ref = {}, _ref[contextName] = {
-	        eventIndex: this[eventIndexKey],
-	        subscribe: this[subscribeKey]
-	      }, _ref;
-	    },
-	    componentWillMount: function componentWillMount() {
-	      this[listenersKey] = [];
-	      this[eventIndexKey] = 0;
-	    },
-	    componentWillReceiveProps: function componentWillReceiveProps() {
-	      this[eventIndexKey]++;
-	    },
-	    componentDidUpdate: function componentDidUpdate() {
-	      var _this = this;
-	
-	      this[listenersKey].forEach(function (listener) {
-	        return listener(_this[eventIndexKey]);
-	      });
-	    }
-	  }, _ref2[subscribeKey] = function (listener) {
-	    var _this2 = this;
-	
-	    // No need to immediately call listener here.
-	    this[listenersKey].push(listener);
-	
-	    return function () {
-	      _this2[listenersKey] = _this2[listenersKey].filter(function (item) {
-	        return item !== listener;
-	      });
-	    };
-	  }, _ref2;
-	}
-	
-	function ContextSubscriber(name) {
-	  var _contextTypes, _ref4;
-	
-	  var contextName = makeContextName(name);
-	  var lastRenderedEventIndexKey = contextName + '/lastRenderedEventIndex';
-	  var handleContextUpdateKey = contextName + '/handleContextUpdate';
-	  var unsubscribeKey = contextName + '/unsubscribe';
-	
-	  return _ref4 = {
-	    contextTypes: (_contextTypes = {}, _contextTypes[contextName] = contextProviderShape, _contextTypes),
-	
-	    getInitialState: function getInitialState() {
-	      var _ref3;
-	
-	      if (!this.context[contextName]) {
-	        return {};
-	      }
-	
-	      return _ref3 = {}, _ref3[lastRenderedEventIndexKey] = this.context[contextName].eventIndex, _ref3;
-	    },
-	    componentDidMount: function componentDidMount() {
-	      if (!this.context[contextName]) {
-	        return;
-	      }
-	
-	      this[unsubscribeKey] = this.context[contextName].subscribe(this[handleContextUpdateKey]);
-	    },
-	    componentWillReceiveProps: function componentWillReceiveProps() {
-	      var _setState;
-	
-	      if (!this.context[contextName]) {
-	        return;
-	      }
-	
-	      this.setState((_setState = {}, _setState[lastRenderedEventIndexKey] = this.context[contextName].eventIndex, _setState));
-	    },
-	    componentWillUnmount: function componentWillUnmount() {
-	      if (!this[unsubscribeKey]) {
-	        return;
-	      }
-	
-	      this[unsubscribeKey]();
-	      this[unsubscribeKey] = null;
-	    }
-	  }, _ref4[handleContextUpdateKey] = function (eventIndex) {
-	    if (eventIndex !== this.state[lastRenderedEventIndexKey]) {
-	      var _setState2;
-	
-	      this.setState((_setState2 = {}, _setState2[lastRenderedEventIndexKey] = eventIndex, _setState2));
-	    }
-	  }, _ref4;
-	}
-
-/***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.locationShape = exports.routerShape = undefined;
-	
-	var _react = __webpack_require__(6);
-	
-	var func = _react.PropTypes.func,
-	    object = _react.PropTypes.object,
-	    shape = _react.PropTypes.shape,
-	    string = _react.PropTypes.string;
-	var routerShape = exports.routerShape = shape({
-	  push: func.isRequired,
-	  replace: func.isRequired,
-	  go: func.isRequired,
-	  goBack: func.isRequired,
-	  goForward: func.isRequired,
-	  setRouteLeaveHook: func.isRequired,
-	  isActive: func.isRequired
-	});
-	
-	var locationShape = exports.locationShape = shape({
-	  pathname: string.isRequired,
-	  search: string.isRequired,
-	  state: object,
-	  action: string.isRequired,
-	  key: string
-	});
-
-/***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-	
-	var _invariant = __webpack_require__(8);
-	
-	var _invariant2 = _interopRequireDefault(_invariant);
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _getRouteParams = __webpack_require__(207);
-	
-	var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
-	
-	var _ContextUtils = __webpack_require__(58);
-	
-	var _RouteUtils = __webpack_require__(20);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var _React$PropTypes = _react2.default.PropTypes,
-	    array = _React$PropTypes.array,
-	    func = _React$PropTypes.func,
-	    object = _React$PropTypes.object;
-	
-	/**
-	 * A <RouterContext> renders the component tree for a given router state
-	 * and sets the history object and the current location in context.
-	 */
-	
-	var RouterContext = _react2.default.createClass({
-	  displayName: 'RouterContext',
-	
-	
-	  mixins: [(0, _ContextUtils.ContextProvider)('router')],
-	
-	  propTypes: {
-	    router: object.isRequired,
-	    location: object.isRequired,
-	    routes: array.isRequired,
-	    params: object.isRequired,
-	    components: array.isRequired,
-	    createElement: func.isRequired
-	  },
-	
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      createElement: _react2.default.createElement
-	    };
-	  },
-	
-	
-	  childContextTypes: {
-	    router: object.isRequired
-	  },
-	
-	  getChildContext: function getChildContext() {
-	    return {
-	      router: this.props.router
-	    };
-	  },
-	  createElement: function createElement(component, props) {
-	    return component == null ? null : this.props.createElement(component, props);
-	  },
-	  render: function render() {
-	    var _this = this;
-	
-	    var _props = this.props,
-	        location = _props.location,
-	        routes = _props.routes,
-	        params = _props.params,
-	        components = _props.components,
-	        router = _props.router;
-	
-	    var element = null;
-	
-	    if (components) {
-	      element = components.reduceRight(function (element, components, index) {
-	        if (components == null) return element; // Don't create new children; use the grandchildren.
-	
-	        var route = routes[index];
-	        var routeParams = (0, _getRouteParams2.default)(route, params);
-	        var props = {
-	          location: location,
-	          params: params,
-	          route: route,
-	          router: router,
-	          routeParams: routeParams,
-	          routes: routes
-	        };
-	
-	        if ((0, _RouteUtils.isReactChildren)(element)) {
-	          props.children = element;
-	        } else if (element) {
-	          for (var prop in element) {
-	            if (Object.prototype.hasOwnProperty.call(element, prop)) props[prop] = element[prop];
-	          }
-	        }
-	
-	        if ((typeof components === 'undefined' ? 'undefined' : _typeof(components)) === 'object') {
-	          var elements = {};
-	
-	          for (var key in components) {
-	            if (Object.prototype.hasOwnProperty.call(components, key)) {
-	              // Pass through the key as a prop to createElement to allow
-	              // custom createElement functions to know which named component
-	              // they're rendering, for e.g. matching up to fetched data.
-	              elements[key] = _this.createElement(components[key], _extends({
-	                key: key }, props));
-	            }
-	          }
-	
-	          return elements;
-	        }
-	
-	        return _this.createElement(components, props);
-	      }, element);
-	    }
-	
-	    !(element === null || element === false || _react2.default.isValidElement(element)) ?  true ? (0, _invariant2.default)(false, 'The root route must render a single element') : (0, _invariant2.default)(false) : void 0;
-	
-	    return element;
-	  }
-	});
-	
-	exports.default = RouterContext;
-	module.exports = exports['default'];
-
-/***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule DOMChildrenOperations
-	 */
-	
-	'use strict';
-	
-	var DOMLazyTree = __webpack_require__(27);
-	var Danger = __webpack_require__(217);
-	var ReactMultiChildUpdateTypes = __webpack_require__(114);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactInstrumentation = __webpack_require__(9);
-	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(74);
-	var setInnerHTML = __webpack_require__(46);
-	var setTextContent = __webpack_require__(126);
-	
-	function getNodeAfter(parentNode, node) {
-	  // Special case for text components, which return [open, close] comments
-	  // from getHostNode.
-	  if (Array.isArray(node)) {
-	    node = node[1];
-	  }
-	  return node ? node.nextSibling : parentNode.firstChild;
-	}
-	
-	/**
-	 * Inserts `childNode` as a child of `parentNode` at the `index`.
-	 *
-	 * @param {DOMElement} parentNode Parent node in which to insert.
-	 * @param {DOMElement} childNode Child node to insert.
-	 * @param {number} index Index at which to insert the child.
-	 * @internal
-	 */
-	var insertChildAt = createMicrosoftUnsafeLocalFunction(function (parentNode, childNode, referenceNode) {
-	  // We rely exclusively on `insertBefore(node, null)` instead of also using
-	  // `appendChild(node)`. (Using `undefined` is not allowed by all browsers so
-	  // we are careful to use `null`.)
-	  parentNode.insertBefore(childNode, referenceNode);
-	});
-	
-	function insertLazyTreeChildAt(parentNode, childTree, referenceNode) {
-	  DOMLazyTree.insertTreeBefore(parentNode, childTree, referenceNode);
-	}
-	
-	function moveChild(parentNode, childNode, referenceNode) {
-	  if (Array.isArray(childNode)) {
-	    moveDelimitedText(parentNode, childNode[0], childNode[1], referenceNode);
-	  } else {
-	    insertChildAt(parentNode, childNode, referenceNode);
-	  }
-	}
-	
-	function removeChild(parentNode, childNode) {
-	  if (Array.isArray(childNode)) {
-	    var closingComment = childNode[1];
-	    childNode = childNode[0];
-	    removeDelimitedText(parentNode, childNode, closingComment);
-	    parentNode.removeChild(closingComment);
-	  }
-	  parentNode.removeChild(childNode);
-	}
-	
-	function moveDelimitedText(parentNode, openingComment, closingComment, referenceNode) {
-	  var node = openingComment;
-	  while (true) {
-	    var nextNode = node.nextSibling;
-	    insertChildAt(parentNode, node, referenceNode);
-	    if (node === closingComment) {
-	      break;
-	    }
-	    node = nextNode;
-	  }
-	}
-	
-	function removeDelimitedText(parentNode, startNode, closingComment) {
-	  while (true) {
-	    var node = startNode.nextSibling;
-	    if (node === closingComment) {
-	      // The closing comment is removed by ReactMultiChild.
-	      break;
-	    } else {
-	      parentNode.removeChild(node);
-	    }
-	  }
-	}
-	
-	function replaceDelimitedText(openingComment, closingComment, stringText) {
-	  var parentNode = openingComment.parentNode;
-	  var nodeAfterComment = openingComment.nextSibling;
-	  if (nodeAfterComment === closingComment) {
-	    // There are no text nodes between the opening and closing comments; insert
-	    // a new one if stringText isn't empty.
-	    if (stringText) {
-	      insertChildAt(parentNode, document.createTextNode(stringText), nodeAfterComment);
-	    }
-	  } else {
-	    if (stringText) {
-	      // Set the text content of the first node after the opening comment, and
-	      // remove all following nodes up until the closing comment.
-	      setTextContent(nodeAfterComment, stringText);
-	      removeDelimitedText(parentNode, nodeAfterComment, closingComment);
-	    } else {
-	      removeDelimitedText(parentNode, openingComment, closingComment);
-	    }
-	  }
-	
-	  if (true) {
-	    ReactInstrumentation.debugTool.onHostOperation(ReactDOMComponentTree.getInstanceFromNode(openingComment)._debugID, 'replace text', stringText);
-	  }
-	}
-	
-	var dangerouslyReplaceNodeWithMarkup = Danger.dangerouslyReplaceNodeWithMarkup;
-	if (true) {
-	  dangerouslyReplaceNodeWithMarkup = function (oldChild, markup, prevInstance) {
-	    Danger.dangerouslyReplaceNodeWithMarkup(oldChild, markup);
-	    if (prevInstance._debugID !== 0) {
-	      ReactInstrumentation.debugTool.onHostOperation(prevInstance._debugID, 'replace with', markup.toString());
-	    } else {
-	      var nextInstance = ReactDOMComponentTree.getInstanceFromNode(markup.node);
-	      if (nextInstance._debugID !== 0) {
-	        ReactInstrumentation.debugTool.onHostOperation(nextInstance._debugID, 'mount', markup.toString());
-	      }
-	    }
-	  };
-	}
-	
-	/**
-	 * Operations for updating with DOM children.
-	 */
-	var DOMChildrenOperations = {
-	
-	  dangerouslyReplaceNodeWithMarkup: dangerouslyReplaceNodeWithMarkup,
-	
-	  replaceDelimitedText: replaceDelimitedText,
-	
-	  /**
-	   * Updates a component's children by processing a series of updates. The
-	   * update configurations are each expected to have a `parentNode` property.
-	   *
-	   * @param {array<object>} updates List of update configurations.
-	   * @internal
-	   */
-	  processUpdates: function (parentNode, updates) {
-	    if (true) {
-	      var parentNodeDebugID = ReactDOMComponentTree.getInstanceFromNode(parentNode)._debugID;
-	    }
-	
-	    for (var k = 0; k < updates.length; k++) {
-	      var update = updates[k];
-	      switch (update.type) {
-	        case ReactMultiChildUpdateTypes.INSERT_MARKUP:
-	          insertLazyTreeChildAt(parentNode, update.content, getNodeAfter(parentNode, update.afterNode));
-	          if (true) {
-	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'insert child', { toIndex: update.toIndex, content: update.content.toString() });
-	          }
-	          break;
-	        case ReactMultiChildUpdateTypes.MOVE_EXISTING:
-	          moveChild(parentNode, update.fromNode, getNodeAfter(parentNode, update.afterNode));
-	          if (true) {
-	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'move child', { fromIndex: update.fromIndex, toIndex: update.toIndex });
-	          }
-	          break;
-	        case ReactMultiChildUpdateTypes.SET_MARKUP:
-	          setInnerHTML(parentNode, update.content);
-	          if (true) {
-	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'replace children', update.content.toString());
-	          }
-	          break;
-	        case ReactMultiChildUpdateTypes.TEXT_CONTENT:
-	          setTextContent(parentNode, update.content);
-	          if (true) {
-	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'replace text', update.content.toString());
-	          }
-	          break;
-	        case ReactMultiChildUpdateTypes.REMOVE_NODE:
-	          removeChild(parentNode, update.fromNode);
-	          if (true) {
-	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'remove child', { fromIndex: update.fromIndex });
-	          }
-	          break;
-	      }
-	    }
-	  }
-	
-	};
-	
-	module.exports = DOMChildrenOperations;
-
-/***/ },
-/* 62 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule DOMNamespaces
-	 */
-	
-	'use strict';
-	
-	var DOMNamespaces = {
-	  html: 'http://www.w3.org/1999/xhtml',
-	  mathml: 'http://www.w3.org/1998/Math/MathML',
-	  svg: 'http://www.w3.org/2000/svg'
-	};
-	
-	module.exports = DOMNamespaces;
-
-/***/ },
-/* 63 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule EventPluginUtils
-	 */
-	
-	'use strict';
-	
-	var _prodInvariant = __webpack_require__(3);
-	
-	var EventConstants = __webpack_require__(15);
-	var ReactErrorUtils = __webpack_require__(68);
-	
-	var invariant = __webpack_require__(1);
-	var warning = __webpack_require__(2);
-	
-	/**
-	 * Injected dependencies:
-	 */
-	
-	/**
-	 * - `ComponentTree`: [required] Module that can convert between React instances
-	 *   and actual node references.
-	 */
-	var ComponentTree;
-	var TreeTraversal;
-	var injection = {
-	  injectComponentTree: function (Injected) {
-	    ComponentTree = Injected;
-	    if (true) {
-	       true ? warning(Injected && Injected.getNodeFromInstance && Injected.getInstanceFromNode, 'EventPluginUtils.injection.injectComponentTree(...): Injected ' + 'module is missing getNodeFromInstance or getInstanceFromNode.') : void 0;
-	    }
-	  },
-	  injectTreeTraversal: function (Injected) {
-	    TreeTraversal = Injected;
-	    if (true) {
-	       true ? warning(Injected && Injected.isAncestor && Injected.getLowestCommonAncestor, 'EventPluginUtils.injection.injectTreeTraversal(...): Injected ' + 'module is missing isAncestor or getLowestCommonAncestor.') : void 0;
-	    }
-	  }
-	};
-	
-	var topLevelTypes = EventConstants.topLevelTypes;
-	
-	function isEndish(topLevelType) {
-	  return topLevelType === topLevelTypes.topMouseUp || topLevelType === topLevelTypes.topTouchEnd || topLevelType === topLevelTypes.topTouchCancel;
-	}
-	
-	function isMoveish(topLevelType) {
-	  return topLevelType === topLevelTypes.topMouseMove || topLevelType === topLevelTypes.topTouchMove;
-	}
-	function isStartish(topLevelType) {
-	  return topLevelType === topLevelTypes.topMouseDown || topLevelType === topLevelTypes.topTouchStart;
-	}
-	
-	var validateEventDispatches;
-	if (true) {
-	  validateEventDispatches = function (event) {
-	    var dispatchListeners = event._dispatchListeners;
-	    var dispatchInstances = event._dispatchInstances;
-	
-	    var listenersIsArr = Array.isArray(dispatchListeners);
-	    var listenersLen = listenersIsArr ? dispatchListeners.length : dispatchListeners ? 1 : 0;
-	
-	    var instancesIsArr = Array.isArray(dispatchInstances);
-	    var instancesLen = instancesIsArr ? dispatchInstances.length : dispatchInstances ? 1 : 0;
-	
-	     true ? warning(instancesIsArr === listenersIsArr && instancesLen === listenersLen, 'EventPluginUtils: Invalid `event`.') : void 0;
-	  };
-	}
-	
-	/**
-	 * Dispatch the event to the listener.
-	 * @param {SyntheticEvent} event SyntheticEvent to handle
-	 * @param {boolean} simulated If the event is simulated (changes exn behavior)
-	 * @param {function} listener Application-level callback
-	 * @param {*} inst Internal component instance
-	 */
-	function executeDispatch(event, simulated, listener, inst) {
-	  var type = event.type || 'unknown-event';
-	  event.currentTarget = EventPluginUtils.getNodeFromInstance(inst);
-	  if (simulated) {
-	    ReactErrorUtils.invokeGuardedCallbackWithCatch(type, listener, event);
-	  } else {
-	    ReactErrorUtils.invokeGuardedCallback(type, listener, event);
-	  }
-	  event.currentTarget = null;
-	}
-	
-	/**
-	 * Standard/simple iteration through an event's collected dispatches.
-	 */
-	function executeDispatchesInOrder(event, simulated) {
-	  var dispatchListeners = event._dispatchListeners;
-	  var dispatchInstances = event._dispatchInstances;
-	  if (true) {
-	    validateEventDispatches(event);
-	  }
-	  if (Array.isArray(dispatchListeners)) {
-	    for (var i = 0; i < dispatchListeners.length; i++) {
-	      if (event.isPropagationStopped()) {
-	        break;
-	      }
-	      // Listeners and Instances are two parallel arrays that are always in sync.
-	      executeDispatch(event, simulated, dispatchListeners[i], dispatchInstances[i]);
-	    }
-	  } else if (dispatchListeners) {
-	    executeDispatch(event, simulated, dispatchListeners, dispatchInstances);
-	  }
-	  event._dispatchListeners = null;
-	  event._dispatchInstances = null;
-	}
-	
-	/**
-	 * Standard/simple iteration through an event's collected dispatches, but stops
-	 * at the first dispatch execution returning true, and returns that id.
-	 *
-	 * @return {?string} id of the first dispatch execution who's listener returns
-	 * true, or null if no listener returned true.
-	 */
-	function executeDispatchesInOrderStopAtTrueImpl(event) {
-	  var dispatchListeners = event._dispatchListeners;
-	  var dispatchInstances = event._dispatchInstances;
-	  if (true) {
-	    validateEventDispatches(event);
-	  }
-	  if (Array.isArray(dispatchListeners)) {
-	    for (var i = 0; i < dispatchListeners.length; i++) {
-	      if (event.isPropagationStopped()) {
-	        break;
-	      }
-	      // Listeners and Instances are two parallel arrays that are always in sync.
-	      if (dispatchListeners[i](event, dispatchInstances[i])) {
-	        return dispatchInstances[i];
-	      }
-	    }
-	  } else if (dispatchListeners) {
-	    if (dispatchListeners(event, dispatchInstances)) {
-	      return dispatchInstances;
-	    }
-	  }
-	  return null;
-	}
-	
-	/**
-	 * @see executeDispatchesInOrderStopAtTrueImpl
-	 */
-	function executeDispatchesInOrderStopAtTrue(event) {
-	  var ret = executeDispatchesInOrderStopAtTrueImpl(event);
-	  event._dispatchInstances = null;
-	  event._dispatchListeners = null;
-	  return ret;
-	}
-	
-	/**
-	 * Execution of a "direct" dispatch - there must be at most one dispatch
-	 * accumulated on the event or it is considered an error. It doesn't really make
-	 * sense for an event with multiple dispatches (bubbled) to keep track of the
-	 * return values at each dispatch execution, but it does tend to make sense when
-	 * dealing with "direct" dispatches.
-	 *
-	 * @return {*} The return value of executing the single dispatch.
-	 */
-	function executeDirectDispatch(event) {
-	  if (true) {
-	    validateEventDispatches(event);
-	  }
-	  var dispatchListener = event._dispatchListeners;
-	  var dispatchInstance = event._dispatchInstances;
-	  !!Array.isArray(dispatchListener) ?  true ? invariant(false, 'executeDirectDispatch(...): Invalid `event`.') : _prodInvariant('103') : void 0;
-	  event.currentTarget = dispatchListener ? EventPluginUtils.getNodeFromInstance(dispatchInstance) : null;
-	  var res = dispatchListener ? dispatchListener(event) : null;
-	  event.currentTarget = null;
-	  event._dispatchListeners = null;
-	  event._dispatchInstances = null;
-	  return res;
-	}
-	
-	/**
-	 * @param {SyntheticEvent} event
-	 * @return {boolean} True iff number of dispatches accumulated is greater than 0.
-	 */
-	function hasDispatches(event) {
-	  return !!event._dispatchListeners;
-	}
-	
-	/**
-	 * General utilities that are useful in creating custom Event Plugins.
-	 */
-	var EventPluginUtils = {
-	  isEndish: isEndish,
-	  isMoveish: isMoveish,
-	  isStartish: isStartish,
-	
-	  executeDirectDispatch: executeDirectDispatch,
-	  executeDispatchesInOrder: executeDispatchesInOrder,
-	  executeDispatchesInOrderStopAtTrue: executeDispatchesInOrderStopAtTrue,
-	  hasDispatches: hasDispatches,
-	
-	  getInstanceFromNode: function (node) {
-	    return ComponentTree.getInstanceFromNode(node);
-	  },
-	  getNodeFromInstance: function (node) {
-	    return ComponentTree.getNodeFromInstance(node);
-	  },
-	  isAncestor: function (a, b) {
-	    return TreeTraversal.isAncestor(a, b);
-	  },
-	  getLowestCommonAncestor: function (a, b) {
-	    return TreeTraversal.getLowestCommonAncestor(a, b);
-	  },
-	  getParentInstance: function (inst) {
-	    return TreeTraversal.getParentInstance(inst);
-	  },
-	  traverseTwoPhase: function (target, fn, arg) {
-	    return TreeTraversal.traverseTwoPhase(target, fn, arg);
-	  },
-	  traverseEnterLeave: function (from, to, fn, argFrom, argTo) {
-	    return TreeTraversal.traverseEnterLeave(from, to, fn, argFrom, argTo);
-	  },
-	
-	  injection: injection
-	};
-	
-	module.exports = EventPluginUtils;
-
-/***/ },
-/* 64 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule KeyEscapeUtils
-	 * 
-	 */
-	
-	'use strict';
-	
-	/**
-	 * Escape and wrap key so it is safe to use as a reactid
-	 *
-	 * @param {string} key to be escaped.
-	 * @return {string} the escaped key.
-	 */
-	
-	function escape(key) {
-	  var escapeRegex = /[=:]/g;
-	  var escaperLookup = {
-	    '=': '=0',
-	    ':': '=2'
-	  };
-	  var escapedString = ('' + key).replace(escapeRegex, function (match) {
-	    return escaperLookup[match];
-	  });
-	
-	  return '$' + escapedString;
-	}
-	
-	/**
-	 * Unescape and unwrap key for human-readable display
-	 *
-	 * @param {string} key to unescape.
-	 * @return {string} the unescaped key.
-	 */
-	function unescape(key) {
-	  var unescapeRegex = /(=0|=2)/g;
-	  var unescaperLookup = {
-	    '=0': '=',
-	    '=2': ':'
-	  };
-	  var keySubstring = key[0] === '.' && key[1] === '$' ? key.substring(2) : key.substring(1);
-	
-	  return ('' + keySubstring).replace(unescapeRegex, function (match) {
-	    return unescaperLookup[match];
-	  });
-	}
-	
-	var KeyEscapeUtils = {
-	  escape: escape,
-	  unescape: unescape
-	};
-	
-	module.exports = KeyEscapeUtils;
-
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule LinkedValueUtils
-	 */
-	
-	'use strict';
-	
-	var _prodInvariant = __webpack_require__(3);
-	
-	var ReactPropTypes = __webpack_require__(116);
-	var ReactPropTypeLocations = __webpack_require__(43);
-	var ReactPropTypesSecret = __webpack_require__(71);
-	
-	var invariant = __webpack_require__(1);
-	var warning = __webpack_require__(2);
-	
-	var hasReadOnlyValue = {
-	  'button': true,
-	  'checkbox': true,
-	  'image': true,
-	  'hidden': true,
-	  'radio': true,
-	  'reset': true,
-	  'submit': true
-	};
-	
-	function _assertSingleLink(inputProps) {
-	  !(inputProps.checkedLink == null || inputProps.valueLink == null) ?  true ? invariant(false, 'Cannot provide a checkedLink and a valueLink. If you want to use checkedLink, you probably don\'t want to use valueLink and vice versa.') : _prodInvariant('87') : void 0;
-	}
-	function _assertValueLink(inputProps) {
-	  _assertSingleLink(inputProps);
-	  !(inputProps.value == null && inputProps.onChange == null) ?  true ? invariant(false, 'Cannot provide a valueLink and a value or onChange event. If you want to use value or onChange, you probably don\'t want to use valueLink.') : _prodInvariant('88') : void 0;
-	}
-	
-	function _assertCheckedLink(inputProps) {
-	  _assertSingleLink(inputProps);
-	  !(inputProps.checked == null && inputProps.onChange == null) ?  true ? invariant(false, 'Cannot provide a checkedLink and a checked property or onChange event. If you want to use checked or onChange, you probably don\'t want to use checkedLink') : _prodInvariant('89') : void 0;
-	}
-	
-	var propTypes = {
-	  value: function (props, propName, componentName) {
-	    if (!props[propName] || hasReadOnlyValue[props.type] || props.onChange || props.readOnly || props.disabled) {
-	      return null;
-	    }
-	    return new Error('You provided a `value` prop to a form field without an ' + '`onChange` handler. This will render a read-only field. If ' + 'the field should be mutable use `defaultValue`. Otherwise, ' + 'set either `onChange` or `readOnly`.');
-	  },
-	  checked: function (props, propName, componentName) {
-	    if (!props[propName] || props.onChange || props.readOnly || props.disabled) {
-	      return null;
-	    }
-	    return new Error('You provided a `checked` prop to a form field without an ' + '`onChange` handler. This will render a read-only field. If ' + 'the field should be mutable use `defaultChecked`. Otherwise, ' + 'set either `onChange` or `readOnly`.');
-	  },
-	  onChange: ReactPropTypes.func
-	};
-	
-	var loggedTypeFailures = {};
-	function getDeclarationErrorAddendum(owner) {
-	  if (owner) {
-	    var name = owner.getName();
-	    if (name) {
-	      return ' Check the render method of `' + name + '`.';
-	    }
-	  }
-	  return '';
-	}
-	
-	/**
-	 * Provide a linked `value` attribute for controlled forms. You should not use
-	 * this outside of the ReactDOM controlled form components.
-	 */
-	var LinkedValueUtils = {
-	  checkPropTypes: function (tagName, props, owner) {
-	    for (var propName in propTypes) {
-	      if (propTypes.hasOwnProperty(propName)) {
-	        var error = propTypes[propName](props, propName, tagName, ReactPropTypeLocations.prop, null, ReactPropTypesSecret);
-	      }
-	      if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-	        // Only monitor this failure once because there tends to be a lot of the
-	        // same error.
-	        loggedTypeFailures[error.message] = true;
-	
-	        var addendum = getDeclarationErrorAddendum(owner);
-	         true ? warning(false, 'Failed form propType: %s%s', error.message, addendum) : void 0;
-	      }
-	    }
-	  },
-	
-	  /**
-	   * @param {object} inputProps Props for form component
-	   * @return {*} current value of the input either from value prop or link.
-	   */
-	  getValue: function (inputProps) {
-	    if (inputProps.valueLink) {
-	      _assertValueLink(inputProps);
-	      return inputProps.valueLink.value;
-	    }
-	    return inputProps.value;
-	  },
-	
-	  /**
-	   * @param {object} inputProps Props for form component
-	   * @return {*} current checked status of the input either from checked prop
-	   *             or link.
-	   */
-	  getChecked: function (inputProps) {
-	    if (inputProps.checkedLink) {
-	      _assertCheckedLink(inputProps);
-	      return inputProps.checkedLink.value;
-	    }
-	    return inputProps.checked;
-	  },
-	
-	  /**
-	   * @param {object} inputProps Props for form component
-	   * @param {SyntheticEvent} event change event to handle
-	   */
-	  executeOnChange: function (inputProps, event) {
-	    if (inputProps.valueLink) {
-	      _assertValueLink(inputProps);
-	      return inputProps.valueLink.requestChange(event.target.value);
-	    } else if (inputProps.checkedLink) {
-	      _assertCheckedLink(inputProps);
-	      return inputProps.checkedLink.requestChange(event.target.checked);
-	    } else if (inputProps.onChange) {
-	      return inputProps.onChange.call(undefined, event);
-	    }
-	  }
-	};
-	
-	module.exports = LinkedValueUtils;
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactComponent
-	 */
-	
-	'use strict';
-	
-	var _prodInvariant = __webpack_require__(3);
-	
-	var ReactNoopUpdateQueue = __webpack_require__(69);
-	
-	var canDefineProperty = __webpack_require__(73);
-	var emptyObject = __webpack_require__(29);
-	var invariant = __webpack_require__(1);
-	var warning = __webpack_require__(2);
-	
-	/**
-	 * Base class helpers for the updating state of a component.
-	 */
-	function ReactComponent(props, context, updater) {
-	  this.props = props;
-	  this.context = context;
-	  this.refs = emptyObject;
-	  // We initialize the default updater but the real one gets injected by the
-	  // renderer.
-	  this.updater = updater || ReactNoopUpdateQueue;
-	}
-	
-	ReactComponent.prototype.isReactComponent = {};
-	
-	/**
-	 * Sets a subset of the state. Always use this to mutate
-	 * state. You should treat `this.state` as immutable.
-	 *
-	 * There is no guarantee that `this.state` will be immediately updated, so
-	 * accessing `this.state` after calling this method may return the old value.
-	 *
-	 * There is no guarantee that calls to `setState` will run synchronously,
-	 * as they may eventually be batched together.  You can provide an optional
-	 * callback that will be executed when the call to setState is actually
-	 * completed.
-	 *
-	 * When a function is provided to setState, it will be called at some point in
-	 * the future (not synchronously). It will be called with the up to date
-	 * component arguments (state, props, context). These values can be different
-	 * from this.* because your function may be called after receiveProps but before
-	 * shouldComponentUpdate, and this new state, props, and context will not yet be
-	 * assigned to this.
-	 *
-	 * @param {object|function} partialState Next partial state or function to
-	 *        produce next partial state to be merged with current state.
-	 * @param {?function} callback Called after state is updated.
-	 * @final
-	 * @protected
-	 */
-	ReactComponent.prototype.setState = function (partialState, callback) {
-	  !(typeof partialState === 'object' || typeof partialState === 'function' || partialState == null) ?  true ? invariant(false, 'setState(...): takes an object of state variables to update or a function which returns an object of state variables.') : _prodInvariant('85') : void 0;
-	  this.updater.enqueueSetState(this, partialState);
-	  if (callback) {
-	    this.updater.enqueueCallback(this, callback, 'setState');
-	  }
-	};
-	
-	/**
-	 * Forces an update. This should only be invoked when it is known with
-	 * certainty that we are **not** in a DOM transaction.
-	 *
-	 * You may want to call this when you know that some deeper aspect of the
-	 * component's state has changed but `setState` was not called.
-	 *
-	 * This will not invoke `shouldComponentUpdate`, but it will invoke
-	 * `componentWillUpdate` and `componentDidUpdate`.
-	 *
-	 * @param {?function} callback Called after update is complete.
-	 * @final
-	 * @protected
-	 */
-	ReactComponent.prototype.forceUpdate = function (callback) {
-	  this.updater.enqueueForceUpdate(this);
-	  if (callback) {
-	    this.updater.enqueueCallback(this, callback, 'forceUpdate');
-	  }
-	};
-	
-	/**
-	 * Deprecated APIs. These APIs used to exist on classic React classes but since
-	 * we would like to deprecate them, we're not going to move them over to this
-	 * modern base class. Instead, we define a getter that warns if it's accessed.
-	 */
-	if (true) {
-	  var deprecatedAPIs = {
-	    isMounted: ['isMounted', 'Instead, make sure to clean up subscriptions and pending requests in ' + 'componentWillUnmount to prevent memory leaks.'],
-	    replaceState: ['replaceState', 'Refactor your code to use setState instead (see ' + 'https://github.com/facebook/react/issues/3236).']
-	  };
-	  var defineDeprecationWarning = function (methodName, info) {
-	    if (canDefineProperty) {
-	      Object.defineProperty(ReactComponent.prototype, methodName, {
-	        get: function () {
-	           true ? warning(false, '%s(...) is deprecated in plain JavaScript React classes. %s', info[0], info[1]) : void 0;
-	          return undefined;
-	        }
-	      });
-	    }
-	  };
-	  for (var fnName in deprecatedAPIs) {
-	    if (deprecatedAPIs.hasOwnProperty(fnName)) {
-	      defineDeprecationWarning(fnName, deprecatedAPIs[fnName]);
-	    }
-	  }
-	}
-	
-	module.exports = ReactComponent;
-
-/***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2014-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactComponentEnvironment
-	 */
-	
-	'use strict';
-	
-	var _prodInvariant = __webpack_require__(3);
-	
-	var invariant = __webpack_require__(1);
-	
-	var injected = false;
-	
-	var ReactComponentEnvironment = {
-	
-	  /**
-	   * Optionally injectable hook for swapping out mount images in the middle of
-	   * the tree.
-	   */
-	  replaceNodeWithMarkup: null,
-	
-	  /**
-	   * Optionally injectable hook for processing a queue of child updates. Will
-	   * later move into MultiChildComponents.
-	   */
-	  processChildrenUpdates: null,
-	
-	  injection: {
-	    injectEnvironment: function (environment) {
-	      !!injected ?  true ? invariant(false, 'ReactCompositeComponent: injectEnvironment() can only be called once.') : _prodInvariant('104') : void 0;
-	      ReactComponentEnvironment.replaceNodeWithMarkup = environment.replaceNodeWithMarkup;
-	      ReactComponentEnvironment.processChildrenUpdates = environment.processChildrenUpdates;
-	      injected = true;
-	    }
-	  }
-	
-	};
-	
-	module.exports = ReactComponentEnvironment;
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactErrorUtils
-	 */
-	
-	'use strict';
-	
-	var caughtError = null;
-	
-	/**
-	 * Call a function while guarding against errors that happens within it.
-	 *
-	 * @param {?String} name of the guard to use for logging or debugging
-	 * @param {Function} func The function to invoke
-	 * @param {*} a First argument
-	 * @param {*} b Second argument
-	 */
-	function invokeGuardedCallback(name, func, a, b) {
-	  try {
-	    return func(a, b);
-	  } catch (x) {
-	    if (caughtError === null) {
-	      caughtError = x;
-	    }
-	    return undefined;
-	  }
-	}
-	
-	var ReactErrorUtils = {
-	  invokeGuardedCallback: invokeGuardedCallback,
-	
-	  /**
-	   * Invoked by ReactTestUtils.Simulate so that any errors thrown by the event
-	   * handler are sure to be rethrown by rethrowCaughtError.
-	   */
-	  invokeGuardedCallbackWithCatch: invokeGuardedCallback,
-	
-	  /**
-	   * During execution of guarded functions we will capture the first error which
-	   * we will rethrow to be handled by the top level error handler.
-	   */
-	  rethrowCaughtError: function () {
-	    if (caughtError) {
-	      var error = caughtError;
-	      caughtError = null;
-	      throw error;
-	    }
-	  }
-	};
-	
-	if (true) {
-	  /**
-	   * To help development we can get better devtools integration by simulating a
-	   * real browser event.
-	   */
-	  if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof document !== 'undefined' && typeof document.createEvent === 'function') {
-	    var fakeNode = document.createElement('react');
-	    ReactErrorUtils.invokeGuardedCallback = function (name, func, a, b) {
-	      var boundFunc = func.bind(null, a, b);
-	      var evtType = 'react-' + name;
-	      fakeNode.addEventListener(evtType, boundFunc, false);
-	      var evt = document.createEvent('Event');
-	      evt.initEvent(evtType, false, false);
-	      fakeNode.dispatchEvent(evt);
-	      fakeNode.removeEventListener(evtType, boundFunc, false);
-	    };
-	  }
-	}
-	
-	module.exports = ReactErrorUtils;
-
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2015-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactNoopUpdateQueue
-	 */
-	
-	'use strict';
-	
-	var warning = __webpack_require__(2);
-	
-	function warnNoop(publicInstance, callerName) {
-	  if (true) {
-	    var constructor = publicInstance.constructor;
-	     true ? warning(false, '%s(...): Can only update a mounted or mounting component. ' + 'This usually means you called %s() on an unmounted component. ' + 'This is a no-op. Please check the code for the %s component.', callerName, callerName, constructor && (constructor.displayName || constructor.name) || 'ReactClass') : void 0;
-	  }
-	}
-	
-	/**
-	 * This is the abstract API for an update queue.
-	 */
-	var ReactNoopUpdateQueue = {
-	
-	  /**
-	   * Checks whether or not this composite component is mounted.
-	   * @param {ReactClass} publicInstance The instance we want to test.
-	   * @return {boolean} True if mounted, false otherwise.
-	   * @protected
-	   * @final
-	   */
-	  isMounted: function (publicInstance) {
-	    return false;
-	  },
-	
-	  /**
-	   * Enqueue a callback that will be executed after all the pending updates
-	   * have processed.
-	   *
-	   * @param {ReactClass} publicInstance The instance to use as `this` context.
-	   * @param {?function} callback Called after state is updated.
-	   * @internal
-	   */
-	  enqueueCallback: function (publicInstance, callback) {},
-	
-	  /**
-	   * Forces an update. This should only be invoked when it is known with
-	   * certainty that we are **not** in a DOM transaction.
-	   *
-	   * You may want to call this when you know that some deeper aspect of the
-	   * component's state has changed but `setState` was not called.
-	   *
-	   * This will not invoke `shouldComponentUpdate`, but it will invoke
-	   * `componentWillUpdate` and `componentDidUpdate`.
-	   *
-	   * @param {ReactClass} publicInstance The instance that should rerender.
-	   * @internal
-	   */
-	  enqueueForceUpdate: function (publicInstance) {
-	    warnNoop(publicInstance, 'forceUpdate');
-	  },
-	
-	  /**
-	   * Replaces all of the state. Always use this or `setState` to mutate state.
-	   * You should treat `this.state` as immutable.
-	   *
-	   * There is no guarantee that `this.state` will be immediately updated, so
-	   * accessing `this.state` after calling this method may return the old value.
-	   *
-	   * @param {ReactClass} publicInstance The instance that should rerender.
-	   * @param {object} completeState Next state.
-	   * @internal
-	   */
-	  enqueueReplaceState: function (publicInstance, completeState) {
-	    warnNoop(publicInstance, 'replaceState');
-	  },
-	
-	  /**
-	   * Sets a subset of the state. This only exists because _pendingState is
-	   * internal. This provides a merging strategy that is not available to deep
-	   * properties which is confusing. TODO: Expose pendingState or don't use it
-	   * during the merge.
-	   *
-	   * @param {ReactClass} publicInstance The instance that should rerender.
-	   * @param {object} partialState Next partial state to be merged with state.
-	   * @internal
-	   */
-	  enqueueSetState: function (publicInstance, partialState) {
-	    warnNoop(publicInstance, 'setState');
-	  }
-	};
-	
-	module.exports = ReactNoopUpdateQueue;
-
-/***/ },
-/* 70 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactPropTypeLocationNames
-	 */
-	
-	'use strict';
-	
-	var ReactPropTypeLocationNames = {};
-	
-	if (true) {
-	  ReactPropTypeLocationNames = {
-	    prop: 'prop',
-	    context: 'context',
-	    childContext: 'child context'
-	  };
-	}
-	
-	module.exports = ReactPropTypeLocationNames;
-
-/***/ },
-/* 71 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactPropTypesSecret
-	 */
-	
-	'use strict';
-	
-	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-	
-	module.exports = ReactPropTypesSecret;
-
-/***/ },
-/* 72 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2015-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactUpdateQueue
-	 */
-	
-	'use strict';
-	
-	var _prodInvariant = __webpack_require__(3);
-	
-	var ReactCurrentOwner = __webpack_require__(16);
-	var ReactInstanceMap = __webpack_require__(33);
-	var ReactInstrumentation = __webpack_require__(9);
-	var ReactUpdates = __webpack_require__(13);
-	
-	var invariant = __webpack_require__(1);
-	var warning = __webpack_require__(2);
-	
-	function enqueueUpdate(internalInstance) {
-	  ReactUpdates.enqueueUpdate(internalInstance);
-	}
-	
-	function formatUnexpectedArgument(arg) {
-	  var type = typeof arg;
-	  if (type !== 'object') {
-	    return type;
-	  }
-	  var displayName = arg.constructor && arg.constructor.name || type;
-	  var keys = Object.keys(arg);
-	  if (keys.length > 0 && keys.length < 20) {
-	    return displayName + ' (keys: ' + keys.join(', ') + ')';
-	  }
-	  return displayName;
-	}
-	
-	function getInternalInstanceReadyForUpdate(publicInstance, callerName) {
-	  var internalInstance = ReactInstanceMap.get(publicInstance);
-	  if (!internalInstance) {
-	    if (true) {
-	      var ctor = publicInstance.constructor;
-	      // Only warn when we have a callerName. Otherwise we should be silent.
-	      // We're probably calling from enqueueCallback. We don't want to warn
-	      // there because we already warned for the corresponding lifecycle method.
-	       true ? warning(!callerName, '%s(...): Can only update a mounted or mounting component. ' + 'This usually means you called %s() on an unmounted component. ' + 'This is a no-op. Please check the code for the %s component.', callerName, callerName, ctor && (ctor.displayName || ctor.name) || 'ReactClass') : void 0;
-	    }
-	    return null;
-	  }
-	
-	  if (true) {
-	     true ? warning(ReactCurrentOwner.current == null, '%s(...): Cannot update during an existing state transition (such as ' + 'within `render` or another component\'s constructor). Render methods ' + 'should be a pure function of props and state; constructor ' + 'side-effects are an anti-pattern, but can be moved to ' + '`componentWillMount`.', callerName) : void 0;
-	  }
-	
-	  return internalInstance;
-	}
-	
-	/**
-	 * ReactUpdateQueue allows for state updates to be scheduled into a later
-	 * reconciliation step.
-	 */
-	var ReactUpdateQueue = {
-	
-	  /**
-	   * Checks whether or not this composite component is mounted.
-	   * @param {ReactClass} publicInstance The instance we want to test.
-	   * @return {boolean} True if mounted, false otherwise.
-	   * @protected
-	   * @final
-	   */
-	  isMounted: function (publicInstance) {
-	    if (true) {
-	      var owner = ReactCurrentOwner.current;
-	      if (owner !== null) {
-	         true ? warning(owner._warnedAboutRefsInRender, '%s is accessing isMounted inside its render() function. ' + 'render() should be a pure function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such as refs. Move this logic to componentDidMount and ' + 'componentDidUpdate instead.', owner.getName() || 'A component') : void 0;
-	        owner._warnedAboutRefsInRender = true;
-	      }
-	    }
-	    var internalInstance = ReactInstanceMap.get(publicInstance);
-	    if (internalInstance) {
-	      // During componentWillMount and render this will still be null but after
-	      // that will always render to something. At least for now. So we can use
-	      // this hack.
-	      return !!internalInstance._renderedComponent;
-	    } else {
-	      return false;
-	    }
-	  },
-	
-	  /**
-	   * Enqueue a callback that will be executed after all the pending updates
-	   * have processed.
-	   *
-	   * @param {ReactClass} publicInstance The instance to use as `this` context.
-	   * @param {?function} callback Called after state is updated.
-	   * @param {string} callerName Name of the calling function in the public API.
-	   * @internal
-	   */
-	  enqueueCallback: function (publicInstance, callback, callerName) {
-	    ReactUpdateQueue.validateCallback(callback, callerName);
-	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance);
-	
-	    // Previously we would throw an error if we didn't have an internal
-	    // instance. Since we want to make it a no-op instead, we mirror the same
-	    // behavior we have in other enqueue* methods.
-	    // We also need to ignore callbacks in componentWillMount. See
-	    // enqueueUpdates.
-	    if (!internalInstance) {
-	      return null;
-	    }
-	
-	    if (internalInstance._pendingCallbacks) {
-	      internalInstance._pendingCallbacks.push(callback);
-	    } else {
-	      internalInstance._pendingCallbacks = [callback];
-	    }
-	    // TODO: The callback here is ignored when setState is called from
-	    // componentWillMount. Either fix it or disallow doing so completely in
-	    // favor of getInitialState. Alternatively, we can disallow
-	    // componentWillMount during server-side rendering.
-	    enqueueUpdate(internalInstance);
-	  },
-	
-	  enqueueCallbackInternal: function (internalInstance, callback) {
-	    if (internalInstance._pendingCallbacks) {
-	      internalInstance._pendingCallbacks.push(callback);
-	    } else {
-	      internalInstance._pendingCallbacks = [callback];
-	    }
-	    enqueueUpdate(internalInstance);
-	  },
-	
-	  /**
-	   * Forces an update. This should only be invoked when it is known with
-	   * certainty that we are **not** in a DOM transaction.
-	   *
-	   * You may want to call this when you know that some deeper aspect of the
-	   * component's state has changed but `setState` was not called.
-	   *
-	   * This will not invoke `shouldComponentUpdate`, but it will invoke
-	   * `componentWillUpdate` and `componentDidUpdate`.
-	   *
-	   * @param {ReactClass} publicInstance The instance that should rerender.
-	   * @internal
-	   */
-	  enqueueForceUpdate: function (publicInstance) {
-	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, 'forceUpdate');
-	
-	    if (!internalInstance) {
-	      return;
-	    }
-	
-	    internalInstance._pendingForceUpdate = true;
-	
-	    enqueueUpdate(internalInstance);
-	  },
-	
-	  /**
-	   * Replaces all of the state. Always use this or `setState` to mutate state.
-	   * You should treat `this.state` as immutable.
-	   *
-	   * There is no guarantee that `this.state` will be immediately updated, so
-	   * accessing `this.state` after calling this method may return the old value.
-	   *
-	   * @param {ReactClass} publicInstance The instance that should rerender.
-	   * @param {object} completeState Next state.
-	   * @internal
-	   */
-	  enqueueReplaceState: function (publicInstance, completeState) {
-	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, 'replaceState');
-	
-	    if (!internalInstance) {
-	      return;
-	    }
-	
-	    internalInstance._pendingStateQueue = [completeState];
-	    internalInstance._pendingReplaceState = true;
-	
-	    enqueueUpdate(internalInstance);
-	  },
-	
-	  /**
-	   * Sets a subset of the state. This only exists because _pendingState is
-	   * internal. This provides a merging strategy that is not available to deep
-	   * properties which is confusing. TODO: Expose pendingState or don't use it
-	   * during the merge.
-	   *
-	   * @param {ReactClass} publicInstance The instance that should rerender.
-	   * @param {object} partialState Next partial state to be merged with state.
-	   * @internal
-	   */
-	  enqueueSetState: function (publicInstance, partialState) {
-	    if (true) {
-	      ReactInstrumentation.debugTool.onSetState();
-	       true ? warning(partialState != null, 'setState(...): You passed an undefined or null state object; ' + 'instead, use forceUpdate().') : void 0;
-	    }
-	
-	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, 'setState');
-	
-	    if (!internalInstance) {
-	      return;
-	    }
-	
-	    var queue = internalInstance._pendingStateQueue || (internalInstance._pendingStateQueue = []);
-	    queue.push(partialState);
-	
-	    enqueueUpdate(internalInstance);
-	  },
-	
-	  enqueueElementInternal: function (internalInstance, nextElement, nextContext) {
-	    internalInstance._pendingElement = nextElement;
-	    // TODO: introduce _pendingContext instead of setting it directly.
-	    internalInstance._context = nextContext;
-	    enqueueUpdate(internalInstance);
-	  },
-	
-	  validateCallback: function (callback, callerName) {
-	    !(!callback || typeof callback === 'function') ?  true ? invariant(false, '%s(...): Expected the last optional `callback` argument to be a function. Instead received: %s.', callerName, formatUnexpectedArgument(callback)) : _prodInvariant('122', callerName, formatUnexpectedArgument(callback)) : void 0;
-	  }
-	
-	};
-	
-	module.exports = ReactUpdateQueue;
-
-/***/ },
-/* 73 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule canDefineProperty
-	 */
-	
-	'use strict';
-	
-	var canDefineProperty = false;
-	if (true) {
-	  try {
-	    Object.defineProperty({}, 'x', { get: function () {} });
-	    canDefineProperty = true;
-	  } catch (x) {
-	    // IE will fail on defineProperty
-	  }
-	}
-	
-	module.exports = canDefineProperty;
-
-/***/ },
-/* 74 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule createMicrosoftUnsafeLocalFunction
-	 */
-	
-	/* globals MSApp */
-	
-	'use strict';
-	
-	/**
-	 * Create a function which has 'unsafe' privileges (required by windows8 apps)
-	 */
-	
-	var createMicrosoftUnsafeLocalFunction = function (func) {
-	  if (typeof MSApp !== 'undefined' && MSApp.execUnsafeLocalFunction) {
-	    return function (arg0, arg1, arg2, arg3) {
-	      MSApp.execUnsafeLocalFunction(function () {
-	        return func(arg0, arg1, arg2, arg3);
-	      });
-	    };
-	  } else {
-	    return func;
-	  }
-	};
-	
-	module.exports = createMicrosoftUnsafeLocalFunction;
-
-/***/ },
-/* 75 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule getEventCharCode
-	 */
-	
-	'use strict';
-	
-	/**
-	 * `charCode` represents the actual "character code" and is safe to use with
-	 * `String.fromCharCode`. As such, only keys that correspond to printable
-	 * characters produce a valid `charCode`, the only exception to this is Enter.
-	 * The Tab-key is considered non-printable and does not have a `charCode`,
-	 * presumably because it does not produce a tab-character in browsers.
-	 *
-	 * @param {object} nativeEvent Native browser event.
-	 * @return {number} Normalized `charCode` property.
-	 */
-	
-	function getEventCharCode(nativeEvent) {
-	  var charCode;
-	  var keyCode = nativeEvent.keyCode;
-	
-	  if ('charCode' in nativeEvent) {
-	    charCode = nativeEvent.charCode;
-	
-	    // FF does not set `charCode` for the Enter-key, check against `keyCode`.
-	    if (charCode === 0 && keyCode === 13) {
-	      charCode = 13;
-	    }
-	  } else {
-	    // IE8 does not implement `charCode`, but `keyCode` has the correct value.
-	    charCode = keyCode;
-	  }
-	
-	  // Some non-printable keys are reported in `charCode`/`keyCode`, discard them.
-	  // Must not discard the (non-)printable Enter-key.
-	  if (charCode >= 32 || charCode === 13) {
-	    return charCode;
-	  }
-	
-	  return 0;
-	}
-	
-	module.exports = getEventCharCode;
-
-/***/ },
-/* 76 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule getEventModifierState
-	 */
-	
-	'use strict';
-	
-	/**
-	 * Translation from modifier key to the associated property in the event.
-	 * @see http://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
-	 */
-	
-	var modifierKeyToProp = {
-	  'Alt': 'altKey',
-	  'Control': 'ctrlKey',
-	  'Meta': 'metaKey',
-	  'Shift': 'shiftKey'
-	};
-	
-	// IE8 does not implement getModifierState so we simply map it to the only
-	// modifier keys exposed by the event itself, does not support Lock-keys.
-	// Currently, all major browsers except Chrome seems to support Lock-keys.
-	function modifierStateGetter(keyArg) {
-	  var syntheticEvent = this;
-	  var nativeEvent = syntheticEvent.nativeEvent;
-	  if (nativeEvent.getModifierState) {
-	    return nativeEvent.getModifierState(keyArg);
-	  }
-	  var keyProp = modifierKeyToProp[keyArg];
-	  return keyProp ? !!nativeEvent[keyProp] : false;
-	}
-	
-	function getEventModifierState(nativeEvent) {
-	  return modifierStateGetter;
-	}
-	
-	module.exports = getEventModifierState;
-
-/***/ },
-/* 77 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule getEventTarget
-	 */
-	
-	'use strict';
-	
-	/**
-	 * Gets the target node from a native browser event by accounting for
-	 * inconsistencies in browser DOM APIs.
-	 *
-	 * @param {object} nativeEvent Native browser event.
-	 * @return {DOMEventTarget} Target node.
-	 */
-	
-	function getEventTarget(nativeEvent) {
-	  var target = nativeEvent.target || nativeEvent.srcElement || window;
-	
-	  // Normalize SVG <use> element events #4963
-	  if (target.correspondingUseElement) {
-	    target = target.correspondingUseElement;
-	  }
-	
-	  // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
-	  // @see http://www.quirksmode.org/js/events_properties.html
-	  return target.nodeType === 3 ? target.parentNode : target;
-	}
-	
-	module.exports = getEventTarget;
-
-/***/ },
-/* 78 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule getIteratorFn
-	 * 
-	 */
-	
-	'use strict';
-	
-	/* global Symbol */
-	
-	var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-	var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-	
-	/**
-	 * Returns the iterator method function contained on the iterable object.
-	 *
-	 * Be sure to invoke the function with the iterable as context:
-	 *
-	 *     var iteratorFn = getIteratorFn(myIterable);
-	 *     if (iteratorFn) {
-	 *       var iterator = iteratorFn.call(myIterable);
-	 *       ...
-	 *     }
-	 *
-	 * @param {?object} maybeIterable
-	 * @return {?function}
-	 */
-	function getIteratorFn(maybeIterable) {
-	  var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-	  if (typeof iteratorFn === 'function') {
-	    return iteratorFn;
-	  }
-	}
-	
-	module.exports = getIteratorFn;
-
-/***/ },
-/* 79 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule isEventSupported
-	 */
-	
-	'use strict';
-	
-	var ExecutionEnvironment = __webpack_require__(7);
-	
-	var useHasFeature;
-	if (ExecutionEnvironment.canUseDOM) {
-	  useHasFeature = document.implementation && document.implementation.hasFeature &&
-	  // always returns true in newer browsers as per the standard.
-	  // @see http://dom.spec.whatwg.org/#dom-domimplementation-hasfeature
-	  document.implementation.hasFeature('', '') !== true;
-	}
-	
-	/**
-	 * Checks if an event is supported in the current execution environment.
-	 *
-	 * NOTE: This will not work correctly for non-generic events such as `change`,
-	 * `reset`, `load`, `error`, and `select`.
-	 *
-	 * Borrows from Modernizr.
-	 *
-	 * @param {string} eventNameSuffix Event name, e.g. "click".
-	 * @param {?boolean} capture Check if the capture phase is supported.
-	 * @return {boolean} True if the event is supported.
-	 * @internal
-	 * @license Modernizr 3.0.0pre (Custom Build) | MIT
-	 */
-	function isEventSupported(eventNameSuffix, capture) {
-	  if (!ExecutionEnvironment.canUseDOM || capture && !('addEventListener' in document)) {
-	    return false;
-	  }
-	
-	  var eventName = 'on' + eventNameSuffix;
-	  var isSupported = eventName in document;
-	
-	  if (!isSupported) {
-	    var element = document.createElement('div');
-	    element.setAttribute(eventName, 'return;');
-	    isSupported = typeof element[eventName] === 'function';
-	  }
-	
-	  if (!isSupported && useHasFeature && eventNameSuffix === 'wheel') {
-	    // This is the only way to test support for the `wheel` event in IE9+.
-	    isSupported = document.implementation.hasFeature('Events.wheel', '3.0');
-	  }
-	
-	  return isSupported;
-	}
-	
-	module.exports = isEventSupported;
-
-/***/ },
-/* 80 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule shouldUpdateReactComponent
-	 */
-	
-	'use strict';
-	
-	/**
-	 * Given a `prevElement` and `nextElement`, determines if the existing
-	 * instance should be updated as opposed to being destroyed or replaced by a new
-	 * instance. Both arguments are elements. This ensures that this logic can
-	 * operate on stateless trees without any backing instance.
-	 *
-	 * @param {?object} prevElement
-	 * @param {?object} nextElement
-	 * @return {boolean} True if the existing instance should be updated.
-	 * @protected
-	 */
-	
-	function shouldUpdateReactComponent(prevElement, nextElement) {
-	  var prevEmpty = prevElement === null || prevElement === false;
-	  var nextEmpty = nextElement === null || nextElement === false;
-	  if (prevEmpty || nextEmpty) {
-	    return prevEmpty === nextEmpty;
-	  }
-	
-	  var prevType = typeof prevElement;
-	  var nextType = typeof nextElement;
-	  if (prevType === 'string' || prevType === 'number') {
-	    return nextType === 'string' || nextType === 'number';
-	  } else {
-	    return nextType === 'object' && prevElement.type === nextElement.type && prevElement.key === nextElement.key;
-	  }
-	}
-	
-	module.exports = shouldUpdateReactComponent;
-
-/***/ },
-/* 81 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule traverseAllChildren
-	 */
-	
-	'use strict';
-	
-	var _prodInvariant = __webpack_require__(3);
-	
-	var ReactCurrentOwner = __webpack_require__(16);
-	var ReactElement = __webpack_require__(12);
-	
-	var getIteratorFn = __webpack_require__(78);
-	var invariant = __webpack_require__(1);
-	var KeyEscapeUtils = __webpack_require__(64);
-	var warning = __webpack_require__(2);
-	
-	var SEPARATOR = '.';
-	var SUBSEPARATOR = ':';
-	
-	/**
-	 * TODO: Test that a single child and an array with one item have the same key
-	 * pattern.
-	 */
-	
-	var didWarnAboutMaps = false;
-	
-	/**
-	 * Generate a key string that identifies a component within a set.
-	 *
-	 * @param {*} component A component that could contain a manual key.
-	 * @param {number} index Index that is used if a manual key is not provided.
-	 * @return {string}
-	 */
-	function getComponentKey(component, index) {
-	  // Do some typechecking here since we call this blindly. We want to ensure
-	  // that we don't block potential future ES APIs.
-	  if (component && typeof component === 'object' && component.key != null) {
-	    // Explicit key
-	    return KeyEscapeUtils.escape(component.key);
-	  }
-	  // Implicit key determined by the index in the set
-	  return index.toString(36);
-	}
-	
-	/**
-	 * @param {?*} children Children tree container.
-	 * @param {!string} nameSoFar Name of the key path so far.
-	 * @param {!function} callback Callback to invoke with each child found.
-	 * @param {?*} traverseContext Used to pass information throughout the traversal
-	 * process.
-	 * @return {!number} The number of children in this subtree.
-	 */
-	function traverseAllChildrenImpl(children, nameSoFar, callback, traverseContext) {
-	  var type = typeof children;
-	
-	  if (type === 'undefined' || type === 'boolean') {
-	    // All of the above are perceived as null.
-	    children = null;
-	  }
-	
-	  if (children === null || type === 'string' || type === 'number' || ReactElement.isValidElement(children)) {
-	    callback(traverseContext, children,
-	    // If it's the only child, treat the name as if it was wrapped in an array
-	    // so that it's consistent if the number of children grows.
-	    nameSoFar === '' ? SEPARATOR + getComponentKey(children, 0) : nameSoFar);
-	    return 1;
-	  }
-	
-	  var child;
-	  var nextName;
-	  var subtreeCount = 0; // Count of children found in the current subtree.
-	  var nextNamePrefix = nameSoFar === '' ? SEPARATOR : nameSoFar + SUBSEPARATOR;
-	
-	  if (Array.isArray(children)) {
-	    for (var i = 0; i < children.length; i++) {
-	      child = children[i];
-	      nextName = nextNamePrefix + getComponentKey(child, i);
-	      subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
-	    }
-	  } else {
-	    var iteratorFn = getIteratorFn(children);
-	    if (iteratorFn) {
-	      var iterator = iteratorFn.call(children);
-	      var step;
-	      if (iteratorFn !== children.entries) {
-	        var ii = 0;
-	        while (!(step = iterator.next()).done) {
-	          child = step.value;
-	          nextName = nextNamePrefix + getComponentKey(child, ii++);
-	          subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
-	        }
-	      } else {
-	        if (true) {
-	          var mapsAsChildrenAddendum = '';
-	          if (ReactCurrentOwner.current) {
-	            var mapsAsChildrenOwnerName = ReactCurrentOwner.current.getName();
-	            if (mapsAsChildrenOwnerName) {
-	              mapsAsChildrenAddendum = ' Check the render method of `' + mapsAsChildrenOwnerName + '`.';
-	            }
-	          }
-	           true ? warning(didWarnAboutMaps, 'Using Maps as children is not yet fully supported. It is an ' + 'experimental feature that might be removed. Convert it to a ' + 'sequence / iterable of keyed ReactElements instead.%s', mapsAsChildrenAddendum) : void 0;
-	          didWarnAboutMaps = true;
-	        }
-	        // Iterator will provide entry [k,v] tuples rather than values.
-	        while (!(step = iterator.next()).done) {
-	          var entry = step.value;
-	          if (entry) {
-	            child = entry[1];
-	            nextName = nextNamePrefix + KeyEscapeUtils.escape(entry[0]) + SUBSEPARATOR + getComponentKey(child, 0);
-	            subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
-	          }
-	        }
-	      }
-	    } else if (type === 'object') {
-	      var addendum = '';
-	      if (true) {
-	        addendum = ' If you meant to render a collection of children, use an array ' + 'instead or wrap the object using createFragment(object) from the ' + 'React add-ons.';
-	        if (children._isReactElement) {
-	          addendum = ' It looks like you\'re using an element created by a different ' + 'version of React. Make sure to use only one copy of React.';
-	        }
-	        if (ReactCurrentOwner.current) {
-	          var name = ReactCurrentOwner.current.getName();
-	          if (name) {
-	            addendum += ' Check the render method of `' + name + '`.';
-	          }
-	        }
-	      }
-	      var childrenString = String(children);
-	       true ?  true ? invariant(false, 'Objects are not valid as a React child (found: %s).%s', childrenString === '[object Object]' ? 'object with keys {' + Object.keys(children).join(', ') + '}' : childrenString, addendum) : _prodInvariant('31', childrenString === '[object Object]' ? 'object with keys {' + Object.keys(children).join(', ') + '}' : childrenString, addendum) : void 0;
-	    }
-	  }
-	
-	  return subtreeCount;
-	}
-	
-	/**
-	 * Traverses children that are typically specified as `props.children`, but
-	 * might also be specified through attributes:
-	 *
-	 * - `traverseAllChildren(this.props.children, ...)`
-	 * - `traverseAllChildren(this.props.leftPanelChildren, ...)`
-	 *
-	 * The `traverseContext` is an optional argument that is passed through the
-	 * entire traversal. It can be used to store accumulations or anything else that
-	 * the callback might find relevant.
-	 *
-	 * @param {?*} children Children tree object.
-	 * @param {!function} callback To invoke upon traversing each child.
-	 * @param {?*} traverseContext Context for traversal.
-	 * @return {!number} The number of children in this subtree.
-	 */
-	function traverseAllChildren(children, callback, traverseContext) {
-	  if (children == null) {
-	    return 0;
-	  }
-	
-	  return traverseAllChildrenImpl(children, '', callback, traverseContext);
-	}
-	
-	module.exports = traverseAllChildren;
-
-/***/ },
-/* 82 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2015-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule validateDOMNesting
-	 */
-	
-	'use strict';
-	
-	var _assign = __webpack_require__(4);
-	
-	var emptyFunction = __webpack_require__(10);
-	var warning = __webpack_require__(2);
-	
-	var validateDOMNesting = emptyFunction;
-	
-	if (true) {
-	  // This validation code was written based on the HTML5 parsing spec:
-	  // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-scope
-	  //
-	  // Note: this does not catch all invalid nesting, nor does it try to (as it's
-	  // not clear what practical benefit doing so provides); instead, we warn only
-	  // for cases where the parser will give a parse tree differing from what React
-	  // intended. For example, <b><div></div></b> is invalid but we don't warn
-	  // because it still parses correctly; we do warn for other cases like nested
-	  // <p> tags where the beginning of the second element implicitly closes the
-	  // first, causing a confusing mess.
-	
-	  // https://html.spec.whatwg.org/multipage/syntax.html#special
-	  var specialTags = ['address', 'applet', 'area', 'article', 'aside', 'base', 'basefont', 'bgsound', 'blockquote', 'body', 'br', 'button', 'caption', 'center', 'col', 'colgroup', 'dd', 'details', 'dir', 'div', 'dl', 'dt', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'frame', 'frameset', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'iframe', 'img', 'input', 'isindex', 'li', 'link', 'listing', 'main', 'marquee', 'menu', 'menuitem', 'meta', 'nav', 'noembed', 'noframes', 'noscript', 'object', 'ol', 'p', 'param', 'plaintext', 'pre', 'script', 'section', 'select', 'source', 'style', 'summary', 'table', 'tbody', 'td', 'template', 'textarea', 'tfoot', 'th', 'thead', 'title', 'tr', 'track', 'ul', 'wbr', 'xmp'];
-	
-	  // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-scope
-	  var inScopeTags = ['applet', 'caption', 'html', 'table', 'td', 'th', 'marquee', 'object', 'template',
-	
-	  // https://html.spec.whatwg.org/multipage/syntax.html#html-integration-point
-	  // TODO: Distinguish by namespace here -- for <title>, including it here
-	  // errs on the side of fewer warnings
-	  'foreignObject', 'desc', 'title'];
-	
-	  // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-button-scope
-	  var buttonScopeTags = inScopeTags.concat(['button']);
-	
-	  // https://html.spec.whatwg.org/multipage/syntax.html#generate-implied-end-tags
-	  var impliedEndTags = ['dd', 'dt', 'li', 'option', 'optgroup', 'p', 'rp', 'rt'];
-	
-	  var emptyAncestorInfo = {
-	    current: null,
-	
-	    formTag: null,
-	    aTagInScope: null,
-	    buttonTagInScope: null,
-	    nobrTagInScope: null,
-	    pTagInButtonScope: null,
-	
-	    listItemTagAutoclosing: null,
-	    dlItemTagAutoclosing: null
-	  };
-	
-	  var updatedAncestorInfo = function (oldInfo, tag, instance) {
-	    var ancestorInfo = _assign({}, oldInfo || emptyAncestorInfo);
-	    var info = { tag: tag, instance: instance };
-	
-	    if (inScopeTags.indexOf(tag) !== -1) {
-	      ancestorInfo.aTagInScope = null;
-	      ancestorInfo.buttonTagInScope = null;
-	      ancestorInfo.nobrTagInScope = null;
-	    }
-	    if (buttonScopeTags.indexOf(tag) !== -1) {
-	      ancestorInfo.pTagInButtonScope = null;
-	    }
-	
-	    // See rules for 'li', 'dd', 'dt' start tags in
-	    // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inbody
-	    if (specialTags.indexOf(tag) !== -1 && tag !== 'address' && tag !== 'div' && tag !== 'p') {
-	      ancestorInfo.listItemTagAutoclosing = null;
-	      ancestorInfo.dlItemTagAutoclosing = null;
-	    }
-	
-	    ancestorInfo.current = info;
-	
-	    if (tag === 'form') {
-	      ancestorInfo.formTag = info;
-	    }
-	    if (tag === 'a') {
-	      ancestorInfo.aTagInScope = info;
-	    }
-	    if (tag === 'button') {
-	      ancestorInfo.buttonTagInScope = info;
-	    }
-	    if (tag === 'nobr') {
-	      ancestorInfo.nobrTagInScope = info;
-	    }
-	    if (tag === 'p') {
-	      ancestorInfo.pTagInButtonScope = info;
-	    }
-	    if (tag === 'li') {
-	      ancestorInfo.listItemTagAutoclosing = info;
-	    }
-	    if (tag === 'dd' || tag === 'dt') {
-	      ancestorInfo.dlItemTagAutoclosing = info;
-	    }
-	
-	    return ancestorInfo;
-	  };
-	
-	  /**
-	   * Returns whether
-	   */
-	  var isTagValidWithParent = function (tag, parentTag) {
-	    // First, let's check if we're in an unusual parsing mode...
-	    switch (parentTag) {
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inselect
-	      case 'select':
-	        return tag === 'option' || tag === 'optgroup' || tag === '#text';
-	      case 'optgroup':
-	        return tag === 'option' || tag === '#text';
-	      // Strictly speaking, seeing an <option> doesn't mean we're in a <select>
-	      // but
-	      case 'option':
-	        return tag === '#text';
-	
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intd
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-incaption
-	      // No special behavior since these rules fall back to "in body" mode for
-	      // all except special table nodes which cause bad parsing behavior anyway.
-	
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intr
-	      case 'tr':
-	        return tag === 'th' || tag === 'td' || tag === 'style' || tag === 'script' || tag === 'template';
-	
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intbody
-	      case 'tbody':
-	      case 'thead':
-	      case 'tfoot':
-	        return tag === 'tr' || tag === 'style' || tag === 'script' || tag === 'template';
-	
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-incolgroup
-	      case 'colgroup':
-	        return tag === 'col' || tag === 'template';
-	
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intable
-	      case 'table':
-	        return tag === 'caption' || tag === 'colgroup' || tag === 'tbody' || tag === 'tfoot' || tag === 'thead' || tag === 'style' || tag === 'script' || tag === 'template';
-	
-	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inhead
-	      case 'head':
-	        return tag === 'base' || tag === 'basefont' || tag === 'bgsound' || tag === 'link' || tag === 'meta' || tag === 'title' || tag === 'noscript' || tag === 'noframes' || tag === 'style' || tag === 'script' || tag === 'template';
-	
-	      // https://html.spec.whatwg.org/multipage/semantics.html#the-html-element
-	      case 'html':
-	        return tag === 'head' || tag === 'body';
-	      case '#document':
-	        return tag === 'html';
-	    }
-	
-	    // Probably in the "in body" parsing mode, so we outlaw only tag combos
-	    // where the parsing rules cause implicit opens or closes to be added.
-	    // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inbody
-	    switch (tag) {
-	      case 'h1':
-	      case 'h2':
-	      case 'h3':
-	      case 'h4':
-	      case 'h5':
-	      case 'h6':
-	        return parentTag !== 'h1' && parentTag !== 'h2' && parentTag !== 'h3' && parentTag !== 'h4' && parentTag !== 'h5' && parentTag !== 'h6';
-	
-	      case 'rp':
-	      case 'rt':
-	        return impliedEndTags.indexOf(parentTag) === -1;
-	
-	      case 'body':
-	      case 'caption':
-	      case 'col':
-	      case 'colgroup':
-	      case 'frame':
-	      case 'head':
-	      case 'html':
-	      case 'tbody':
-	      case 'td':
-	      case 'tfoot':
-	      case 'th':
-	      case 'thead':
-	      case 'tr':
-	        // These tags are only valid with a few parents that have special child
-	        // parsing rules -- if we're down here, then none of those matched and
-	        // so we allow it only if we don't know what the parent is, as all other
-	        // cases are invalid.
-	        return parentTag == null;
-	    }
-	
-	    return true;
-	  };
-	
-	  /**
-	   * Returns whether
-	   */
-	  var findInvalidAncestorForTag = function (tag, ancestorInfo) {
-	    switch (tag) {
-	      case 'address':
-	      case 'article':
-	      case 'aside':
-	      case 'blockquote':
-	      case 'center':
-	      case 'details':
-	      case 'dialog':
-	      case 'dir':
-	      case 'div':
-	      case 'dl':
-	      case 'fieldset':
-	      case 'figcaption':
-	      case 'figure':
-	      case 'footer':
-	      case 'header':
-	      case 'hgroup':
-	      case 'main':
-	      case 'menu':
-	      case 'nav':
-	      case 'ol':
-	      case 'p':
-	      case 'section':
-	      case 'summary':
-	      case 'ul':
-	
-	      case 'pre':
-	      case 'listing':
-	
-	      case 'table':
-	
-	      case 'hr':
-	
-	      case 'xmp':
-	
-	      case 'h1':
-	      case 'h2':
-	      case 'h3':
-	      case 'h4':
-	      case 'h5':
-	      case 'h6':
-	        return ancestorInfo.pTagInButtonScope;
-	
-	      case 'form':
-	        return ancestorInfo.formTag || ancestorInfo.pTagInButtonScope;
-	
-	      case 'li':
-	        return ancestorInfo.listItemTagAutoclosing;
-	
-	      case 'dd':
-	      case 'dt':
-	        return ancestorInfo.dlItemTagAutoclosing;
-	
-	      case 'button':
-	        return ancestorInfo.buttonTagInScope;
-	
-	      case 'a':
-	        // Spec says something about storing a list of markers, but it sounds
-	        // equivalent to this check.
-	        return ancestorInfo.aTagInScope;
-	
-	      case 'nobr':
-	        return ancestorInfo.nobrTagInScope;
-	    }
-	
-	    return null;
-	  };
-	
-	  /**
-	   * Given a ReactCompositeComponent instance, return a list of its recursive
-	   * owners, starting at the root and ending with the instance itself.
-	   */
-	  var findOwnerStack = function (instance) {
-	    if (!instance) {
-	      return [];
-	    }
-	
-	    var stack = [];
-	    do {
-	      stack.push(instance);
-	    } while (instance = instance._currentElement._owner);
-	    stack.reverse();
-	    return stack;
-	  };
-	
-	  var didWarn = {};
-	
-	  validateDOMNesting = function (childTag, childText, childInstance, ancestorInfo) {
-	    ancestorInfo = ancestorInfo || emptyAncestorInfo;
-	    var parentInfo = ancestorInfo.current;
-	    var parentTag = parentInfo && parentInfo.tag;
-	
-	    if (childText != null) {
-	       true ? warning(childTag == null, 'validateDOMNesting: when childText is passed, childTag should be null') : void 0;
-	      childTag = '#text';
-	    }
-	
-	    var invalidParent = isTagValidWithParent(childTag, parentTag) ? null : parentInfo;
-	    var invalidAncestor = invalidParent ? null : findInvalidAncestorForTag(childTag, ancestorInfo);
-	    var problematic = invalidParent || invalidAncestor;
-	
-	    if (problematic) {
-	      var ancestorTag = problematic.tag;
-	      var ancestorInstance = problematic.instance;
-	
-	      var childOwner = childInstance && childInstance._currentElement._owner;
-	      var ancestorOwner = ancestorInstance && ancestorInstance._currentElement._owner;
-	
-	      var childOwners = findOwnerStack(childOwner);
-	      var ancestorOwners = findOwnerStack(ancestorOwner);
-	
-	      var minStackLen = Math.min(childOwners.length, ancestorOwners.length);
-	      var i;
-	
-	      var deepestCommon = -1;
-	      for (i = 0; i < minStackLen; i++) {
-	        if (childOwners[i] === ancestorOwners[i]) {
-	          deepestCommon = i;
-	        } else {
-	          break;
-	        }
-	      }
-	
-	      var UNKNOWN = '(unknown)';
-	      var childOwnerNames = childOwners.slice(deepestCommon + 1).map(function (inst) {
-	        return inst.getName() || UNKNOWN;
-	      });
-	      var ancestorOwnerNames = ancestorOwners.slice(deepestCommon + 1).map(function (inst) {
-	        return inst.getName() || UNKNOWN;
-	      });
-	      var ownerInfo = [].concat(
-	      // If the parent and child instances have a common owner ancestor, start
-	      // with that -- otherwise we just start with the parent's owners.
-	      deepestCommon !== -1 ? childOwners[deepestCommon].getName() || UNKNOWN : [], ancestorOwnerNames, ancestorTag,
-	      // If we're warning about an invalid (non-parent) ancestry, add '...'
-	      invalidAncestor ? ['...'] : [], childOwnerNames, childTag).join(' > ');
-	
-	      var warnKey = !!invalidParent + '|' + childTag + '|' + ancestorTag + '|' + ownerInfo;
-	      if (didWarn[warnKey]) {
-	        return;
-	      }
-	      didWarn[warnKey] = true;
-	
-	      var tagDisplayName = childTag;
-	      var whitespaceInfo = '';
-	      if (childTag === '#text') {
-	        if (/\S/.test(childText)) {
-	          tagDisplayName = 'Text nodes';
-	        } else {
-	          tagDisplayName = 'Whitespace text nodes';
-	          whitespaceInfo = ' Make sure you don\'t have any extra whitespace between tags on ' + 'each line of your source code.';
-	        }
-	      } else {
-	        tagDisplayName = '<' + childTag + '>';
-	      }
-	
-	      if (invalidParent) {
-	        var info = '';
-	        if (ancestorTag === 'table' && childTag === 'tr') {
-	          info += ' Add a <tbody> to your code to match the DOM tree generated by ' + 'the browser.';
-	        }
-	         true ? warning(false, 'validateDOMNesting(...): %s cannot appear as a child of <%s>.%s ' + 'See %s.%s', tagDisplayName, ancestorTag, whitespaceInfo, ownerInfo, info) : void 0;
-	      } else {
-	         true ? warning(false, 'validateDOMNesting(...): %s cannot appear as a descendant of ' + '<%s>. See %s.', tagDisplayName, ancestorTag, ownerInfo) : void 0;
-	      }
-	    }
-	  };
-	
-	  validateDOMNesting.updatedAncestorInfo = updatedAncestorInfo;
-	
-	  // For testing
-	  validateDOMNesting.isTagValidInContext = function (tag, ancestorInfo) {
-	    ancestorInfo = ancestorInfo || emptyAncestorInfo;
-	    var parentInfo = ancestorInfo.current;
-	    var parentTag = parentInfo && parentInfo.tag;
-	    return isTagValidWithParent(tag, parentTag) && !findInvalidAncestorForTag(tag, ancestorInfo);
-	  };
-	}
-	
-	module.exports = validateDOMNesting;
-
-/***/ },
-/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscore.js 1.8.3
@@ -10512,10 +7321,3204 @@
 
 
 /***/ },
+/* 52 */
+29,
+/* 53 */
+29,
+/* 54 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @typechecks
+	 * 
+	 */
+	
+	/*eslint-disable no-self-compare */
+	
+	'use strict';
+	
+	var hasOwnProperty = Object.prototype.hasOwnProperty;
+	
+	/**
+	 * inlined Object.is polyfill to avoid requiring consumers ship their own
+	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+	 */
+	function is(x, y) {
+	  // SameValue algorithm
+	  if (x === y) {
+	    // Steps 1-5, 7-10
+	    // Steps 6.b-6.e: +0 != -0
+	    // Added the nonzero y check to make Flow happy, but it is redundant
+	    return x !== 0 || y !== 0 || 1 / x === 1 / y;
+	  } else {
+	    // Step 6.a: NaN == NaN
+	    return x !== x && y !== y;
+	  }
+	}
+	
+	/**
+	 * Performs equality by iterating through keys on an object and returning false
+	 * when any key has values which are not strictly equal between the arguments.
+	 * Returns true when the values of all keys are strictly equal.
+	 */
+	function shallowEqual(objA, objB) {
+	  if (is(objA, objB)) {
+	    return true;
+	  }
+	
+	  if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) {
+	    return false;
+	  }
+	
+	  var keysA = Object.keys(objA);
+	  var keysB = Object.keys(objB);
+	
+	  if (keysA.length !== keysB.length) {
+	    return false;
+	  }
+	
+	  // Test for A's keys different from B.
+	  for (var i = 0; i < keysA.length; i++) {
+	    if (!hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
+	      return false;
+	    }
+	  }
+	
+	  return true;
+	}
+	
+	module.exports = shallowEqual;
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.go = exports.replaceLocation = exports.pushLocation = exports.startListener = exports.getUserConfirmation = exports.getCurrentLocation = undefined;
+	
+	var _LocationUtils = __webpack_require__(24);
+	
+	var _DOMUtils = __webpack_require__(42);
+	
+	var _DOMStateStorage = __webpack_require__(89);
+	
+	var _PathUtils = __webpack_require__(19);
+	
+	var _ExecutionEnvironment = __webpack_require__(56);
+	
+	var PopStateEvent = 'popstate';
+	var HashChangeEvent = 'hashchange';
+	
+	var needsHashchangeListener = _ExecutionEnvironment.canUseDOM && !(0, _DOMUtils.supportsPopstateOnHashchange)();
+	
+	var _createLocation = function _createLocation(historyState) {
+	  var key = historyState && historyState.key;
+	
+	  return (0, _LocationUtils.createLocation)({
+	    pathname: window.location.pathname,
+	    search: window.location.search,
+	    hash: window.location.hash,
+	    state: key ? (0, _DOMStateStorage.readState)(key) : undefined
+	  }, undefined, key);
+	};
+	
+	var getCurrentLocation = exports.getCurrentLocation = function getCurrentLocation() {
+	  var historyState = void 0;
+	  try {
+	    historyState = window.history.state || {};
+	  } catch (error) {
+	    // IE 11 sometimes throws when accessing window.history.state
+	    // See https://github.com/ReactTraining/history/pull/289
+	    historyState = {};
+	  }
+	
+	  return _createLocation(historyState);
+	};
+	
+	var getUserConfirmation = exports.getUserConfirmation = function getUserConfirmation(message, callback) {
+	  return callback(window.confirm(message));
+	}; // eslint-disable-line no-alert
+	
+	var startListener = exports.startListener = function startListener(listener) {
+	  var handlePopState = function handlePopState(event) {
+	    if (event.state !== undefined) // Ignore extraneous popstate events in WebKit
+	      listener(_createLocation(event.state));
+	  };
+	
+	  (0, _DOMUtils.addEventListener)(window, PopStateEvent, handlePopState);
+	
+	  var handleUnpoppedHashChange = function handleUnpoppedHashChange() {
+	    return listener(getCurrentLocation());
+	  };
+	
+	  if (needsHashchangeListener) {
+	    (0, _DOMUtils.addEventListener)(window, HashChangeEvent, handleUnpoppedHashChange);
+	  }
+	
+	  return function () {
+	    (0, _DOMUtils.removeEventListener)(window, PopStateEvent, handlePopState);
+	
+	    if (needsHashchangeListener) {
+	      (0, _DOMUtils.removeEventListener)(window, HashChangeEvent, handleUnpoppedHashChange);
+	    }
+	  };
+	};
+	
+	var updateLocation = function updateLocation(location, updateState) {
+	  var state = location.state;
+	  var key = location.key;
+	
+	
+	  if (state !== undefined) (0, _DOMStateStorage.saveState)(key, state);
+	
+	  updateState({ key: key }, (0, _PathUtils.createPath)(location));
+	};
+	
+	var pushLocation = exports.pushLocation = function pushLocation(location) {
+	  return updateLocation(location, function (state, path) {
+	    return window.history.pushState(state, null, path);
+	  });
+	};
+	
+	var replaceLocation = exports.replaceLocation = function replaceLocation(location) {
+	  return updateLocation(location, function (state, path) {
+	    return window.history.replaceState(state, null, path);
+	  });
+	};
+	
+	var go = exports.go = function go(n) {
+	  if (n) window.history.go(n);
+	};
+
+/***/ },
+/* 56 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	var canUseDOM = exports.canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+/***/ },
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _AsyncUtils = __webpack_require__(206);
+	
+	var _PathUtils = __webpack_require__(19);
+	
+	var _runTransitionHook = __webpack_require__(58);
+	
+	var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
+	
+	var _Actions = __webpack_require__(41);
+	
+	var _LocationUtils = __webpack_require__(24);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var createHistory = function createHistory() {
+	  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+	  var getCurrentLocation = options.getCurrentLocation;
+	  var getUserConfirmation = options.getUserConfirmation;
+	  var pushLocation = options.pushLocation;
+	  var replaceLocation = options.replaceLocation;
+	  var go = options.go;
+	  var keyLength = options.keyLength;
+	
+	
+	  var currentLocation = void 0;
+	  var pendingLocation = void 0;
+	  var beforeListeners = [];
+	  var listeners = [];
+	  var allKeys = [];
+	
+	  var getCurrentIndex = function getCurrentIndex() {
+	    if (pendingLocation && pendingLocation.action === _Actions.POP) return allKeys.indexOf(pendingLocation.key);
+	
+	    if (currentLocation) return allKeys.indexOf(currentLocation.key);
+	
+	    return -1;
+	  };
+	
+	  var updateLocation = function updateLocation(nextLocation) {
+	    var currentIndex = getCurrentIndex();
+	
+	    currentLocation = nextLocation;
+	
+	    if (currentLocation.action === _Actions.PUSH) {
+	      allKeys = [].concat(allKeys.slice(0, currentIndex + 1), [currentLocation.key]);
+	    } else if (currentLocation.action === _Actions.REPLACE) {
+	      allKeys[currentIndex] = currentLocation.key;
+	    }
+	
+	    listeners.forEach(function (listener) {
+	      return listener(currentLocation);
+	    });
+	  };
+	
+	  var listenBefore = function listenBefore(listener) {
+	    beforeListeners.push(listener);
+	
+	    return function () {
+	      return beforeListeners = beforeListeners.filter(function (item) {
+	        return item !== listener;
+	      });
+	    };
+	  };
+	
+	  var listen = function listen(listener) {
+	    listeners.push(listener);
+	
+	    return function () {
+	      return listeners = listeners.filter(function (item) {
+	        return item !== listener;
+	      });
+	    };
+	  };
+	
+	  var confirmTransitionTo = function confirmTransitionTo(location, callback) {
+	    (0, _AsyncUtils.loopAsync)(beforeListeners.length, function (index, next, done) {
+	      (0, _runTransitionHook2.default)(beforeListeners[index], location, function (result) {
+	        return result != null ? done(result) : next();
+	      });
+	    }, function (message) {
+	      if (getUserConfirmation && typeof message === 'string') {
+	        getUserConfirmation(message, function (ok) {
+	          return callback(ok !== false);
+	        });
+	      } else {
+	        callback(message !== false);
+	      }
+	    });
+	  };
+	
+	  var transitionTo = function transitionTo(nextLocation) {
+	    if (currentLocation && (0, _LocationUtils.locationsAreEqual)(currentLocation, nextLocation) || pendingLocation && (0, _LocationUtils.locationsAreEqual)(pendingLocation, nextLocation)) return; // Nothing to do
+	
+	    pendingLocation = nextLocation;
+	
+	    confirmTransitionTo(nextLocation, function (ok) {
+	      if (pendingLocation !== nextLocation) return; // Transition was interrupted during confirmation
+	
+	      pendingLocation = null;
+	
+	      if (ok) {
+	        // Treat PUSH to same path like REPLACE to be consistent with browsers
+	        if (nextLocation.action === _Actions.PUSH) {
+	          var prevPath = (0, _PathUtils.createPath)(currentLocation);
+	          var nextPath = (0, _PathUtils.createPath)(nextLocation);
+	
+	          if (nextPath === prevPath && (0, _LocationUtils.statesAreEqual)(currentLocation.state, nextLocation.state)) nextLocation.action = _Actions.REPLACE;
+	        }
+	
+	        if (nextLocation.action === _Actions.POP) {
+	          updateLocation(nextLocation);
+	        } else if (nextLocation.action === _Actions.PUSH) {
+	          if (pushLocation(nextLocation) !== false) updateLocation(nextLocation);
+	        } else if (nextLocation.action === _Actions.REPLACE) {
+	          if (replaceLocation(nextLocation) !== false) updateLocation(nextLocation);
+	        }
+	      } else if (currentLocation && nextLocation.action === _Actions.POP) {
+	        var prevIndex = allKeys.indexOf(currentLocation.key);
+	        var nextIndex = allKeys.indexOf(nextLocation.key);
+	
+	        if (prevIndex !== -1 && nextIndex !== -1) go(prevIndex - nextIndex); // Restore the URL
+	      }
+	    });
+	  };
+	
+	  var push = function push(input) {
+	    return transitionTo(createLocation(input, _Actions.PUSH));
+	  };
+	
+	  var replace = function replace(input) {
+	    return transitionTo(createLocation(input, _Actions.REPLACE));
+	  };
+	
+	  var goBack = function goBack() {
+	    return go(-1);
+	  };
+	
+	  var goForward = function goForward() {
+	    return go(1);
+	  };
+	
+	  var createKey = function createKey() {
+	    return Math.random().toString(36).substr(2, keyLength || 6);
+	  };
+	
+	  var createHref = function createHref(location) {
+	    return (0, _PathUtils.createPath)(location);
+	  };
+	
+	  var createLocation = function createLocation(location, action) {
+	    var key = arguments.length <= 2 || arguments[2] === undefined ? createKey() : arguments[2];
+	    return (0, _LocationUtils.createLocation)(location, action, key);
+	  };
+	
+	  return {
+	    getCurrentLocation: getCurrentLocation,
+	    listenBefore: listenBefore,
+	    listen: listen,
+	    transitionTo: transitionTo,
+	    push: push,
+	    replace: replace,
+	    go: go,
+	    goBack: goBack,
+	    goForward: goForward,
+	    createKey: createKey,
+	    createPath: _PathUtils.createPath,
+	    createHref: createHref,
+	    createLocation: createLocation
+	  };
+	};
+	
+	exports.default = createHistory;
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _warning = __webpack_require__(22);
+	
+	var _warning2 = _interopRequireDefault(_warning);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var runTransitionHook = function runTransitionHook(hook, location, callback) {
+	  var result = hook(location, callback);
+	
+	  if (hook.length < 2) {
+	    // Assume the hook runs synchronously and automatically
+	    // call the callback with the return value.
+	    callback(result);
+	  } else {
+	     true ? (0, _warning2.default)(result === undefined, 'You should not "return" in a transition hook with a callback argument; ' + 'call the callback instead') : void 0;
+	  }
+	};
+	
+	exports.default = runTransitionHook;
+
+/***/ },
+/* 59 */
+/***/ function(module, exports) {
+
+	// shim for using process in browser
+	var process = module.exports = {};
+	
+	// cached from whatever global is present so that test runners that stub it
+	// don't break things.  But we need to wrap it in a try catch in case it is
+	// wrapped in strict mode code which doesn't define any globals.  It's inside a
+	// function because try/catches deoptimize in certain engines.
+	
+	var cachedSetTimeout;
+	var cachedClearTimeout;
+	
+	function defaultSetTimout() {
+	    throw new Error('setTimeout has not been defined');
+	}
+	function defaultClearTimeout () {
+	    throw new Error('clearTimeout has not been defined');
+	}
+	(function () {
+	    try {
+	        if (typeof setTimeout === 'function') {
+	            cachedSetTimeout = setTimeout;
+	        } else {
+	            cachedSetTimeout = defaultSetTimout;
+	        }
+	    } catch (e) {
+	        cachedSetTimeout = defaultSetTimout;
+	    }
+	    try {
+	        if (typeof clearTimeout === 'function') {
+	            cachedClearTimeout = clearTimeout;
+	        } else {
+	            cachedClearTimeout = defaultClearTimeout;
+	        }
+	    } catch (e) {
+	        cachedClearTimeout = defaultClearTimeout;
+	    }
+	} ())
+	function runTimeout(fun) {
+	    if (cachedSetTimeout === setTimeout) {
+	        //normal enviroments in sane situations
+	        return setTimeout(fun, 0);
+	    }
+	    // if setTimeout wasn't available but was latter defined
+	    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+	        cachedSetTimeout = setTimeout;
+	        return setTimeout(fun, 0);
+	    }
+	    try {
+	        // when when somebody has screwed with setTimeout but no I.E. maddness
+	        return cachedSetTimeout(fun, 0);
+	    } catch(e){
+	        try {
+	            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+	            return cachedSetTimeout.call(null, fun, 0);
+	        } catch(e){
+	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+	            return cachedSetTimeout.call(this, fun, 0);
+	        }
+	    }
+	
+	
+	}
+	function runClearTimeout(marker) {
+	    if (cachedClearTimeout === clearTimeout) {
+	        //normal enviroments in sane situations
+	        return clearTimeout(marker);
+	    }
+	    // if clearTimeout wasn't available but was latter defined
+	    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+	        cachedClearTimeout = clearTimeout;
+	        return clearTimeout(marker);
+	    }
+	    try {
+	        // when when somebody has screwed with setTimeout but no I.E. maddness
+	        return cachedClearTimeout(marker);
+	    } catch (e){
+	        try {
+	            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+	            return cachedClearTimeout.call(null, marker);
+	        } catch (e){
+	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+	            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+	            return cachedClearTimeout.call(this, marker);
+	        }
+	    }
+	
+	
+	
+	}
+	var queue = [];
+	var draining = false;
+	var currentQueue;
+	var queueIndex = -1;
+	
+	function cleanUpNextTick() {
+	    if (!draining || !currentQueue) {
+	        return;
+	    }
+	    draining = false;
+	    if (currentQueue.length) {
+	        queue = currentQueue.concat(queue);
+	    } else {
+	        queueIndex = -1;
+	    }
+	    if (queue.length) {
+	        drainQueue();
+	    }
+	}
+	
+	function drainQueue() {
+	    if (draining) {
+	        return;
+	    }
+	    var timeout = runTimeout(cleanUpNextTick);
+	    draining = true;
+	
+	    var len = queue.length;
+	    while(len) {
+	        currentQueue = queue;
+	        queue = [];
+	        while (++queueIndex < len) {
+	            if (currentQueue) {
+	                currentQueue[queueIndex].run();
+	            }
+	        }
+	        queueIndex = -1;
+	        len = queue.length;
+	    }
+	    currentQueue = null;
+	    draining = false;
+	    runClearTimeout(timeout);
+	}
+	
+	process.nextTick = function (fun) {
+	    var args = new Array(arguments.length - 1);
+	    if (arguments.length > 1) {
+	        for (var i = 1; i < arguments.length; i++) {
+	            args[i - 1] = arguments[i];
+	        }
+	    }
+	    queue.push(new Item(fun, args));
+	    if (queue.length === 1 && !draining) {
+	        runTimeout(drainQueue);
+	    }
+	};
+	
+	// v8 likes predictible objects
+	function Item(fun, array) {
+	    this.fun = fun;
+	    this.array = array;
+	}
+	Item.prototype.run = function () {
+	    this.fun.apply(null, this.array);
+	};
+	process.title = 'browser';
+	process.browser = true;
+	process.env = {};
+	process.argv = [];
+	process.version = ''; // empty string to avoid regexp issues
+	process.versions = {};
+	
+	function noop() {}
+	
+	process.on = noop;
+	process.addListener = noop;
+	process.once = noop;
+	process.off = noop;
+	process.removeListener = noop;
+	process.removeAllListeners = noop;
+	process.emit = noop;
+	
+	process.binding = function (name) {
+	    throw new Error('process.binding is not supported');
+	};
+	
+	process.cwd = function () { return '/' };
+	process.chdir = function (dir) {
+	    throw new Error('process.chdir is not supported');
+	};
+	process.umask = function() { return 0; };
+
+
+/***/ },
+/* 60 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	exports.__esModule = true;
+	exports.loopAsync = loopAsync;
+	exports.mapAsync = mapAsync;
+	function loopAsync(turns, work, callback) {
+	  var currentTurn = 0,
+	      isDone = false;
+	  var sync = false,
+	      hasNext = false,
+	      doneArgs = void 0;
+	
+	  function done() {
+	    isDone = true;
+	    if (sync) {
+	      // Iterate instead of recursing if possible.
+	      doneArgs = [].concat(Array.prototype.slice.call(arguments));
+	      return;
+	    }
+	
+	    callback.apply(this, arguments);
+	  }
+	
+	  function next() {
+	    if (isDone) {
+	      return;
+	    }
+	
+	    hasNext = true;
+	    if (sync) {
+	      // Iterate instead of recursing if possible.
+	      return;
+	    }
+	
+	    sync = true;
+	
+	    while (!isDone && currentTurn < turns && hasNext) {
+	      hasNext = false;
+	      work.call(this, currentTurn++, next, done);
+	    }
+	
+	    sync = false;
+	
+	    if (isDone) {
+	      // This means the loop finished synchronously.
+	      callback.apply(this, doneArgs);
+	      return;
+	    }
+	
+	    if (currentTurn >= turns && hasNext) {
+	      isDone = true;
+	      callback();
+	    }
+	  }
+	
+	  next();
+	}
+	
+	function mapAsync(array, work, callback) {
+	  var length = array.length;
+	  var values = [];
+	
+	  if (length === 0) return callback(null, values);
+	
+	  var isDone = false,
+	      doneCount = 0;
+	
+	  function done(index, error, value) {
+	    if (isDone) return;
+	
+	    if (error) {
+	      isDone = true;
+	      callback(error);
+	    } else {
+	      values[index] = value;
+	
+	      isDone = ++doneCount === length;
+	
+	      if (isDone) callback(null, values);
+	    }
+	  }
+	
+	  array.forEach(function (item, index) {
+	    work(item, index, function (error, value) {
+	      done(index, error, value);
+	    });
+	  });
+	}
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.ContextProvider = ContextProvider;
+	exports.ContextSubscriber = ContextSubscriber;
+	
+	var _react = __webpack_require__(5);
+	
+	// Works around issues with context updates failing to propagate.
+	// Caveat: the context value is expected to never change its identity.
+	// https://github.com/facebook/react/issues/2517
+	// https://github.com/reactjs/react-router/issues/470
+	
+	var contextProviderShape = _react.PropTypes.shape({
+	  subscribe: _react.PropTypes.func.isRequired,
+	  eventIndex: _react.PropTypes.number.isRequired
+	});
+	
+	function makeContextName(name) {
+	  return '@@contextSubscriber/' + name;
+	}
+	
+	function ContextProvider(name) {
+	  var _childContextTypes, _ref2;
+	
+	  var contextName = makeContextName(name);
+	  var listenersKey = contextName + '/listeners';
+	  var eventIndexKey = contextName + '/eventIndex';
+	  var subscribeKey = contextName + '/subscribe';
+	
+	  return _ref2 = {
+	    childContextTypes: (_childContextTypes = {}, _childContextTypes[contextName] = contextProviderShape.isRequired, _childContextTypes),
+	
+	    getChildContext: function getChildContext() {
+	      var _ref;
+	
+	      return _ref = {}, _ref[contextName] = {
+	        eventIndex: this[eventIndexKey],
+	        subscribe: this[subscribeKey]
+	      }, _ref;
+	    },
+	    componentWillMount: function componentWillMount() {
+	      this[listenersKey] = [];
+	      this[eventIndexKey] = 0;
+	    },
+	    componentWillReceiveProps: function componentWillReceiveProps() {
+	      this[eventIndexKey]++;
+	    },
+	    componentDidUpdate: function componentDidUpdate() {
+	      var _this = this;
+	
+	      this[listenersKey].forEach(function (listener) {
+	        return listener(_this[eventIndexKey]);
+	      });
+	    }
+	  }, _ref2[subscribeKey] = function (listener) {
+	    var _this2 = this;
+	
+	    // No need to immediately call listener here.
+	    this[listenersKey].push(listener);
+	
+	    return function () {
+	      _this2[listenersKey] = _this2[listenersKey].filter(function (item) {
+	        return item !== listener;
+	      });
+	    };
+	  }, _ref2;
+	}
+	
+	function ContextSubscriber(name) {
+	  var _contextTypes, _ref4;
+	
+	  var contextName = makeContextName(name);
+	  var lastRenderedEventIndexKey = contextName + '/lastRenderedEventIndex';
+	  var handleContextUpdateKey = contextName + '/handleContextUpdate';
+	  var unsubscribeKey = contextName + '/unsubscribe';
+	
+	  return _ref4 = {
+	    contextTypes: (_contextTypes = {}, _contextTypes[contextName] = contextProviderShape, _contextTypes),
+	
+	    getInitialState: function getInitialState() {
+	      var _ref3;
+	
+	      if (!this.context[contextName]) {
+	        return {};
+	      }
+	
+	      return _ref3 = {}, _ref3[lastRenderedEventIndexKey] = this.context[contextName].eventIndex, _ref3;
+	    },
+	    componentDidMount: function componentDidMount() {
+	      if (!this.context[contextName]) {
+	        return;
+	      }
+	
+	      this[unsubscribeKey] = this.context[contextName].subscribe(this[handleContextUpdateKey]);
+	    },
+	    componentWillReceiveProps: function componentWillReceiveProps() {
+	      var _setState;
+	
+	      if (!this.context[contextName]) {
+	        return;
+	      }
+	
+	      this.setState((_setState = {}, _setState[lastRenderedEventIndexKey] = this.context[contextName].eventIndex, _setState));
+	    },
+	    componentWillUnmount: function componentWillUnmount() {
+	      if (!this[unsubscribeKey]) {
+	        return;
+	      }
+	
+	      this[unsubscribeKey]();
+	      this[unsubscribeKey] = null;
+	    }
+	  }, _ref4[handleContextUpdateKey] = function (eventIndex) {
+	    if (eventIndex !== this.state[lastRenderedEventIndexKey]) {
+	      var _setState2;
+	
+	      this.setState((_setState2 = {}, _setState2[lastRenderedEventIndexKey] = eventIndex, _setState2));
+	    }
+	  }, _ref4;
+	}
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.locationShape = exports.routerShape = undefined;
+	
+	var _react = __webpack_require__(5);
+	
+	var func = _react.PropTypes.func,
+	    object = _react.PropTypes.object,
+	    shape = _react.PropTypes.shape,
+	    string = _react.PropTypes.string;
+	var routerShape = exports.routerShape = shape({
+	  push: func.isRequired,
+	  replace: func.isRequired,
+	  go: func.isRequired,
+	  goBack: func.isRequired,
+	  goForward: func.isRequired,
+	  setRouteLeaveHook: func.isRequired,
+	  isActive: func.isRequired
+	});
+	
+	var locationShape = exports.locationShape = shape({
+	  pathname: string.isRequired,
+	  search: string.isRequired,
+	  state: object,
+	  action: string.isRequired,
+	  key: string
+	});
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	var _invariant = __webpack_require__(8);
+	
+	var _invariant2 = _interopRequireDefault(_invariant);
+	
+	var _react = __webpack_require__(5);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _getRouteParams = __webpack_require__(225);
+	
+	var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
+	
+	var _ContextUtils = __webpack_require__(61);
+	
+	var _RouteUtils = __webpack_require__(20);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var _React$PropTypes = _react2.default.PropTypes,
+	    array = _React$PropTypes.array,
+	    func = _React$PropTypes.func,
+	    object = _React$PropTypes.object;
+	
+	/**
+	 * A <RouterContext> renders the component tree for a given router state
+	 * and sets the history object and the current location in context.
+	 */
+	
+	var RouterContext = _react2.default.createClass({
+	  displayName: 'RouterContext',
+	
+	
+	  mixins: [(0, _ContextUtils.ContextProvider)('router')],
+	
+	  propTypes: {
+	    router: object.isRequired,
+	    location: object.isRequired,
+	    routes: array.isRequired,
+	    params: object.isRequired,
+	    components: array.isRequired,
+	    createElement: func.isRequired
+	  },
+	
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      createElement: _react2.default.createElement
+	    };
+	  },
+	
+	
+	  childContextTypes: {
+	    router: object.isRequired
+	  },
+	
+	  getChildContext: function getChildContext() {
+	    return {
+	      router: this.props.router
+	    };
+	  },
+	  createElement: function createElement(component, props) {
+	    return component == null ? null : this.props.createElement(component, props);
+	  },
+	  render: function render() {
+	    var _this = this;
+	
+	    var _props = this.props,
+	        location = _props.location,
+	        routes = _props.routes,
+	        params = _props.params,
+	        components = _props.components,
+	        router = _props.router;
+	
+	    var element = null;
+	
+	    if (components) {
+	      element = components.reduceRight(function (element, components, index) {
+	        if (components == null) return element; // Don't create new children; use the grandchildren.
+	
+	        var route = routes[index];
+	        var routeParams = (0, _getRouteParams2.default)(route, params);
+	        var props = {
+	          location: location,
+	          params: params,
+	          route: route,
+	          router: router,
+	          routeParams: routeParams,
+	          routes: routes
+	        };
+	
+	        if ((0, _RouteUtils.isReactChildren)(element)) {
+	          props.children = element;
+	        } else if (element) {
+	          for (var prop in element) {
+	            if (Object.prototype.hasOwnProperty.call(element, prop)) props[prop] = element[prop];
+	          }
+	        }
+	
+	        if ((typeof components === 'undefined' ? 'undefined' : _typeof(components)) === 'object') {
+	          var elements = {};
+	
+	          for (var key in components) {
+	            if (Object.prototype.hasOwnProperty.call(components, key)) {
+	              // Pass through the key as a prop to createElement to allow
+	              // custom createElement functions to know which named component
+	              // they're rendering, for e.g. matching up to fetched data.
+	              elements[key] = _this.createElement(components[key], _extends({
+	                key: key }, props));
+	            }
+	          }
+	
+	          return elements;
+	        }
+	
+	        return _this.createElement(components, props);
+	      }, element);
+	    }
+	
+	    !(element === null || element === false || _react2.default.isValidElement(element)) ?  true ? (0, _invariant2.default)(false, 'The root route must render a single element') : (0, _invariant2.default)(false) : void 0;
+	
+	    return element;
+	  }
+	});
+	
+	exports.default = RouterContext;
+	module.exports = exports['default'];
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule DOMChildrenOperations
+	 */
+	
+	'use strict';
+	
+	var DOMLazyTree = __webpack_require__(27);
+	var Danger = __webpack_require__(235);
+	var ReactMultiChildUpdateTypes = __webpack_require__(114);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactInstrumentation = __webpack_require__(9);
+	
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(77);
+	var setInnerHTML = __webpack_require__(50);
+	var setTextContent = __webpack_require__(126);
+	
+	function getNodeAfter(parentNode, node) {
+	  // Special case for text components, which return [open, close] comments
+	  // from getHostNode.
+	  if (Array.isArray(node)) {
+	    node = node[1];
+	  }
+	  return node ? node.nextSibling : parentNode.firstChild;
+	}
+	
+	/**
+	 * Inserts `childNode` as a child of `parentNode` at the `index`.
+	 *
+	 * @param {DOMElement} parentNode Parent node in which to insert.
+	 * @param {DOMElement} childNode Child node to insert.
+	 * @param {number} index Index at which to insert the child.
+	 * @internal
+	 */
+	var insertChildAt = createMicrosoftUnsafeLocalFunction(function (parentNode, childNode, referenceNode) {
+	  // We rely exclusively on `insertBefore(node, null)` instead of also using
+	  // `appendChild(node)`. (Using `undefined` is not allowed by all browsers so
+	  // we are careful to use `null`.)
+	  parentNode.insertBefore(childNode, referenceNode);
+	});
+	
+	function insertLazyTreeChildAt(parentNode, childTree, referenceNode) {
+	  DOMLazyTree.insertTreeBefore(parentNode, childTree, referenceNode);
+	}
+	
+	function moveChild(parentNode, childNode, referenceNode) {
+	  if (Array.isArray(childNode)) {
+	    moveDelimitedText(parentNode, childNode[0], childNode[1], referenceNode);
+	  } else {
+	    insertChildAt(parentNode, childNode, referenceNode);
+	  }
+	}
+	
+	function removeChild(parentNode, childNode) {
+	  if (Array.isArray(childNode)) {
+	    var closingComment = childNode[1];
+	    childNode = childNode[0];
+	    removeDelimitedText(parentNode, childNode, closingComment);
+	    parentNode.removeChild(closingComment);
+	  }
+	  parentNode.removeChild(childNode);
+	}
+	
+	function moveDelimitedText(parentNode, openingComment, closingComment, referenceNode) {
+	  var node = openingComment;
+	  while (true) {
+	    var nextNode = node.nextSibling;
+	    insertChildAt(parentNode, node, referenceNode);
+	    if (node === closingComment) {
+	      break;
+	    }
+	    node = nextNode;
+	  }
+	}
+	
+	function removeDelimitedText(parentNode, startNode, closingComment) {
+	  while (true) {
+	    var node = startNode.nextSibling;
+	    if (node === closingComment) {
+	      // The closing comment is removed by ReactMultiChild.
+	      break;
+	    } else {
+	      parentNode.removeChild(node);
+	    }
+	  }
+	}
+	
+	function replaceDelimitedText(openingComment, closingComment, stringText) {
+	  var parentNode = openingComment.parentNode;
+	  var nodeAfterComment = openingComment.nextSibling;
+	  if (nodeAfterComment === closingComment) {
+	    // There are no text nodes between the opening and closing comments; insert
+	    // a new one if stringText isn't empty.
+	    if (stringText) {
+	      insertChildAt(parentNode, document.createTextNode(stringText), nodeAfterComment);
+	    }
+	  } else {
+	    if (stringText) {
+	      // Set the text content of the first node after the opening comment, and
+	      // remove all following nodes up until the closing comment.
+	      setTextContent(nodeAfterComment, stringText);
+	      removeDelimitedText(parentNode, nodeAfterComment, closingComment);
+	    } else {
+	      removeDelimitedText(parentNode, openingComment, closingComment);
+	    }
+	  }
+	
+	  if (true) {
+	    ReactInstrumentation.debugTool.onHostOperation(ReactDOMComponentTree.getInstanceFromNode(openingComment)._debugID, 'replace text', stringText);
+	  }
+	}
+	
+	var dangerouslyReplaceNodeWithMarkup = Danger.dangerouslyReplaceNodeWithMarkup;
+	if (true) {
+	  dangerouslyReplaceNodeWithMarkup = function (oldChild, markup, prevInstance) {
+	    Danger.dangerouslyReplaceNodeWithMarkup(oldChild, markup);
+	    if (prevInstance._debugID !== 0) {
+	      ReactInstrumentation.debugTool.onHostOperation(prevInstance._debugID, 'replace with', markup.toString());
+	    } else {
+	      var nextInstance = ReactDOMComponentTree.getInstanceFromNode(markup.node);
+	      if (nextInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onHostOperation(nextInstance._debugID, 'mount', markup.toString());
+	      }
+	    }
+	  };
+	}
+	
+	/**
+	 * Operations for updating with DOM children.
+	 */
+	var DOMChildrenOperations = {
+	
+	  dangerouslyReplaceNodeWithMarkup: dangerouslyReplaceNodeWithMarkup,
+	
+	  replaceDelimitedText: replaceDelimitedText,
+	
+	  /**
+	   * Updates a component's children by processing a series of updates. The
+	   * update configurations are each expected to have a `parentNode` property.
+	   *
+	   * @param {array<object>} updates List of update configurations.
+	   * @internal
+	   */
+	  processUpdates: function (parentNode, updates) {
+	    if (true) {
+	      var parentNodeDebugID = ReactDOMComponentTree.getInstanceFromNode(parentNode)._debugID;
+	    }
+	
+	    for (var k = 0; k < updates.length; k++) {
+	      var update = updates[k];
+	      switch (update.type) {
+	        case ReactMultiChildUpdateTypes.INSERT_MARKUP:
+	          insertLazyTreeChildAt(parentNode, update.content, getNodeAfter(parentNode, update.afterNode));
+	          if (true) {
+	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'insert child', { toIndex: update.toIndex, content: update.content.toString() });
+	          }
+	          break;
+	        case ReactMultiChildUpdateTypes.MOVE_EXISTING:
+	          moveChild(parentNode, update.fromNode, getNodeAfter(parentNode, update.afterNode));
+	          if (true) {
+	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'move child', { fromIndex: update.fromIndex, toIndex: update.toIndex });
+	          }
+	          break;
+	        case ReactMultiChildUpdateTypes.SET_MARKUP:
+	          setInnerHTML(parentNode, update.content);
+	          if (true) {
+	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'replace children', update.content.toString());
+	          }
+	          break;
+	        case ReactMultiChildUpdateTypes.TEXT_CONTENT:
+	          setTextContent(parentNode, update.content);
+	          if (true) {
+	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'replace text', update.content.toString());
+	          }
+	          break;
+	        case ReactMultiChildUpdateTypes.REMOVE_NODE:
+	          removeChild(parentNode, update.fromNode);
+	          if (true) {
+	            ReactInstrumentation.debugTool.onHostOperation(parentNodeDebugID, 'remove child', { fromIndex: update.fromIndex });
+	          }
+	          break;
+	      }
+	    }
+	  }
+	
+	};
+	
+	module.exports = DOMChildrenOperations;
+
+/***/ },
+/* 65 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule DOMNamespaces
+	 */
+	
+	'use strict';
+	
+	var DOMNamespaces = {
+	  html: 'http://www.w3.org/1999/xhtml',
+	  mathml: 'http://www.w3.org/1998/Math/MathML',
+	  svg: 'http://www.w3.org/2000/svg'
+	};
+	
+	module.exports = DOMNamespaces;
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule EventPluginUtils
+	 */
+	
+	'use strict';
+	
+	var _prodInvariant = __webpack_require__(3);
+	
+	var EventConstants = __webpack_require__(15);
+	var ReactErrorUtils = __webpack_require__(71);
+	
+	var invariant = __webpack_require__(1);
+	var warning = __webpack_require__(2);
+	
+	/**
+	 * Injected dependencies:
+	 */
+	
+	/**
+	 * - `ComponentTree`: [required] Module that can convert between React instances
+	 *   and actual node references.
+	 */
+	var ComponentTree;
+	var TreeTraversal;
+	var injection = {
+	  injectComponentTree: function (Injected) {
+	    ComponentTree = Injected;
+	    if (true) {
+	       true ? warning(Injected && Injected.getNodeFromInstance && Injected.getInstanceFromNode, 'EventPluginUtils.injection.injectComponentTree(...): Injected ' + 'module is missing getNodeFromInstance or getInstanceFromNode.') : void 0;
+	    }
+	  },
+	  injectTreeTraversal: function (Injected) {
+	    TreeTraversal = Injected;
+	    if (true) {
+	       true ? warning(Injected && Injected.isAncestor && Injected.getLowestCommonAncestor, 'EventPluginUtils.injection.injectTreeTraversal(...): Injected ' + 'module is missing isAncestor or getLowestCommonAncestor.') : void 0;
+	    }
+	  }
+	};
+	
+	var topLevelTypes = EventConstants.topLevelTypes;
+	
+	function isEndish(topLevelType) {
+	  return topLevelType === topLevelTypes.topMouseUp || topLevelType === topLevelTypes.topTouchEnd || topLevelType === topLevelTypes.topTouchCancel;
+	}
+	
+	function isMoveish(topLevelType) {
+	  return topLevelType === topLevelTypes.topMouseMove || topLevelType === topLevelTypes.topTouchMove;
+	}
+	function isStartish(topLevelType) {
+	  return topLevelType === topLevelTypes.topMouseDown || topLevelType === topLevelTypes.topTouchStart;
+	}
+	
+	var validateEventDispatches;
+	if (true) {
+	  validateEventDispatches = function (event) {
+	    var dispatchListeners = event._dispatchListeners;
+	    var dispatchInstances = event._dispatchInstances;
+	
+	    var listenersIsArr = Array.isArray(dispatchListeners);
+	    var listenersLen = listenersIsArr ? dispatchListeners.length : dispatchListeners ? 1 : 0;
+	
+	    var instancesIsArr = Array.isArray(dispatchInstances);
+	    var instancesLen = instancesIsArr ? dispatchInstances.length : dispatchInstances ? 1 : 0;
+	
+	     true ? warning(instancesIsArr === listenersIsArr && instancesLen === listenersLen, 'EventPluginUtils: Invalid `event`.') : void 0;
+	  };
+	}
+	
+	/**
+	 * Dispatch the event to the listener.
+	 * @param {SyntheticEvent} event SyntheticEvent to handle
+	 * @param {boolean} simulated If the event is simulated (changes exn behavior)
+	 * @param {function} listener Application-level callback
+	 * @param {*} inst Internal component instance
+	 */
+	function executeDispatch(event, simulated, listener, inst) {
+	  var type = event.type || 'unknown-event';
+	  event.currentTarget = EventPluginUtils.getNodeFromInstance(inst);
+	  if (simulated) {
+	    ReactErrorUtils.invokeGuardedCallbackWithCatch(type, listener, event);
+	  } else {
+	    ReactErrorUtils.invokeGuardedCallback(type, listener, event);
+	  }
+	  event.currentTarget = null;
+	}
+	
+	/**
+	 * Standard/simple iteration through an event's collected dispatches.
+	 */
+	function executeDispatchesInOrder(event, simulated) {
+	  var dispatchListeners = event._dispatchListeners;
+	  var dispatchInstances = event._dispatchInstances;
+	  if (true) {
+	    validateEventDispatches(event);
+	  }
+	  if (Array.isArray(dispatchListeners)) {
+	    for (var i = 0; i < dispatchListeners.length; i++) {
+	      if (event.isPropagationStopped()) {
+	        break;
+	      }
+	      // Listeners and Instances are two parallel arrays that are always in sync.
+	      executeDispatch(event, simulated, dispatchListeners[i], dispatchInstances[i]);
+	    }
+	  } else if (dispatchListeners) {
+	    executeDispatch(event, simulated, dispatchListeners, dispatchInstances);
+	  }
+	  event._dispatchListeners = null;
+	  event._dispatchInstances = null;
+	}
+	
+	/**
+	 * Standard/simple iteration through an event's collected dispatches, but stops
+	 * at the first dispatch execution returning true, and returns that id.
+	 *
+	 * @return {?string} id of the first dispatch execution who's listener returns
+	 * true, or null if no listener returned true.
+	 */
+	function executeDispatchesInOrderStopAtTrueImpl(event) {
+	  var dispatchListeners = event._dispatchListeners;
+	  var dispatchInstances = event._dispatchInstances;
+	  if (true) {
+	    validateEventDispatches(event);
+	  }
+	  if (Array.isArray(dispatchListeners)) {
+	    for (var i = 0; i < dispatchListeners.length; i++) {
+	      if (event.isPropagationStopped()) {
+	        break;
+	      }
+	      // Listeners and Instances are two parallel arrays that are always in sync.
+	      if (dispatchListeners[i](event, dispatchInstances[i])) {
+	        return dispatchInstances[i];
+	      }
+	    }
+	  } else if (dispatchListeners) {
+	    if (dispatchListeners(event, dispatchInstances)) {
+	      return dispatchInstances;
+	    }
+	  }
+	  return null;
+	}
+	
+	/**
+	 * @see executeDispatchesInOrderStopAtTrueImpl
+	 */
+	function executeDispatchesInOrderStopAtTrue(event) {
+	  var ret = executeDispatchesInOrderStopAtTrueImpl(event);
+	  event._dispatchInstances = null;
+	  event._dispatchListeners = null;
+	  return ret;
+	}
+	
+	/**
+	 * Execution of a "direct" dispatch - there must be at most one dispatch
+	 * accumulated on the event or it is considered an error. It doesn't really make
+	 * sense for an event with multiple dispatches (bubbled) to keep track of the
+	 * return values at each dispatch execution, but it does tend to make sense when
+	 * dealing with "direct" dispatches.
+	 *
+	 * @return {*} The return value of executing the single dispatch.
+	 */
+	function executeDirectDispatch(event) {
+	  if (true) {
+	    validateEventDispatches(event);
+	  }
+	  var dispatchListener = event._dispatchListeners;
+	  var dispatchInstance = event._dispatchInstances;
+	  !!Array.isArray(dispatchListener) ?  true ? invariant(false, 'executeDirectDispatch(...): Invalid `event`.') : _prodInvariant('103') : void 0;
+	  event.currentTarget = dispatchListener ? EventPluginUtils.getNodeFromInstance(dispatchInstance) : null;
+	  var res = dispatchListener ? dispatchListener(event) : null;
+	  event.currentTarget = null;
+	  event._dispatchListeners = null;
+	  event._dispatchInstances = null;
+	  return res;
+	}
+	
+	/**
+	 * @param {SyntheticEvent} event
+	 * @return {boolean} True iff number of dispatches accumulated is greater than 0.
+	 */
+	function hasDispatches(event) {
+	  return !!event._dispatchListeners;
+	}
+	
+	/**
+	 * General utilities that are useful in creating custom Event Plugins.
+	 */
+	var EventPluginUtils = {
+	  isEndish: isEndish,
+	  isMoveish: isMoveish,
+	  isStartish: isStartish,
+	
+	  executeDirectDispatch: executeDirectDispatch,
+	  executeDispatchesInOrder: executeDispatchesInOrder,
+	  executeDispatchesInOrderStopAtTrue: executeDispatchesInOrderStopAtTrue,
+	  hasDispatches: hasDispatches,
+	
+	  getInstanceFromNode: function (node) {
+	    return ComponentTree.getInstanceFromNode(node);
+	  },
+	  getNodeFromInstance: function (node) {
+	    return ComponentTree.getNodeFromInstance(node);
+	  },
+	  isAncestor: function (a, b) {
+	    return TreeTraversal.isAncestor(a, b);
+	  },
+	  getLowestCommonAncestor: function (a, b) {
+	    return TreeTraversal.getLowestCommonAncestor(a, b);
+	  },
+	  getParentInstance: function (inst) {
+	    return TreeTraversal.getParentInstance(inst);
+	  },
+	  traverseTwoPhase: function (target, fn, arg) {
+	    return TreeTraversal.traverseTwoPhase(target, fn, arg);
+	  },
+	  traverseEnterLeave: function (from, to, fn, argFrom, argTo) {
+	    return TreeTraversal.traverseEnterLeave(from, to, fn, argFrom, argTo);
+	  },
+	
+	  injection: injection
+	};
+	
+	module.exports = EventPluginUtils;
+
+/***/ },
+/* 67 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule KeyEscapeUtils
+	 * 
+	 */
+	
+	'use strict';
+	
+	/**
+	 * Escape and wrap key so it is safe to use as a reactid
+	 *
+	 * @param {string} key to be escaped.
+	 * @return {string} the escaped key.
+	 */
+	
+	function escape(key) {
+	  var escapeRegex = /[=:]/g;
+	  var escaperLookup = {
+	    '=': '=0',
+	    ':': '=2'
+	  };
+	  var escapedString = ('' + key).replace(escapeRegex, function (match) {
+	    return escaperLookup[match];
+	  });
+	
+	  return '$' + escapedString;
+	}
+	
+	/**
+	 * Unescape and unwrap key for human-readable display
+	 *
+	 * @param {string} key to unescape.
+	 * @return {string} the unescaped key.
+	 */
+	function unescape(key) {
+	  var unescapeRegex = /(=0|=2)/g;
+	  var unescaperLookup = {
+	    '=0': '=',
+	    '=2': ':'
+	  };
+	  var keySubstring = key[0] === '.' && key[1] === '$' ? key.substring(2) : key.substring(1);
+	
+	  return ('' + keySubstring).replace(unescapeRegex, function (match) {
+	    return unescaperLookup[match];
+	  });
+	}
+	
+	var KeyEscapeUtils = {
+	  escape: escape,
+	  unescape: unescape
+	};
+	
+	module.exports = KeyEscapeUtils;
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule LinkedValueUtils
+	 */
+	
+	'use strict';
+	
+	var _prodInvariant = __webpack_require__(3);
+	
+	var ReactPropTypes = __webpack_require__(116);
+	var ReactPropTypeLocations = __webpack_require__(47);
+	var ReactPropTypesSecret = __webpack_require__(74);
+	
+	var invariant = __webpack_require__(1);
+	var warning = __webpack_require__(2);
+	
+	var hasReadOnlyValue = {
+	  'button': true,
+	  'checkbox': true,
+	  'image': true,
+	  'hidden': true,
+	  'radio': true,
+	  'reset': true,
+	  'submit': true
+	};
+	
+	function _assertSingleLink(inputProps) {
+	  !(inputProps.checkedLink == null || inputProps.valueLink == null) ?  true ? invariant(false, 'Cannot provide a checkedLink and a valueLink. If you want to use checkedLink, you probably don\'t want to use valueLink and vice versa.') : _prodInvariant('87') : void 0;
+	}
+	function _assertValueLink(inputProps) {
+	  _assertSingleLink(inputProps);
+	  !(inputProps.value == null && inputProps.onChange == null) ?  true ? invariant(false, 'Cannot provide a valueLink and a value or onChange event. If you want to use value or onChange, you probably don\'t want to use valueLink.') : _prodInvariant('88') : void 0;
+	}
+	
+	function _assertCheckedLink(inputProps) {
+	  _assertSingleLink(inputProps);
+	  !(inputProps.checked == null && inputProps.onChange == null) ?  true ? invariant(false, 'Cannot provide a checkedLink and a checked property or onChange event. If you want to use checked or onChange, you probably don\'t want to use checkedLink') : _prodInvariant('89') : void 0;
+	}
+	
+	var propTypes = {
+	  value: function (props, propName, componentName) {
+	    if (!props[propName] || hasReadOnlyValue[props.type] || props.onChange || props.readOnly || props.disabled) {
+	      return null;
+	    }
+	    return new Error('You provided a `value` prop to a form field without an ' + '`onChange` handler. This will render a read-only field. If ' + 'the field should be mutable use `defaultValue`. Otherwise, ' + 'set either `onChange` or `readOnly`.');
+	  },
+	  checked: function (props, propName, componentName) {
+	    if (!props[propName] || props.onChange || props.readOnly || props.disabled) {
+	      return null;
+	    }
+	    return new Error('You provided a `checked` prop to a form field without an ' + '`onChange` handler. This will render a read-only field. If ' + 'the field should be mutable use `defaultChecked`. Otherwise, ' + 'set either `onChange` or `readOnly`.');
+	  },
+	  onChange: ReactPropTypes.func
+	};
+	
+	var loggedTypeFailures = {};
+	function getDeclarationErrorAddendum(owner) {
+	  if (owner) {
+	    var name = owner.getName();
+	    if (name) {
+	      return ' Check the render method of `' + name + '`.';
+	    }
+	  }
+	  return '';
+	}
+	
+	/**
+	 * Provide a linked `value` attribute for controlled forms. You should not use
+	 * this outside of the ReactDOM controlled form components.
+	 */
+	var LinkedValueUtils = {
+	  checkPropTypes: function (tagName, props, owner) {
+	    for (var propName in propTypes) {
+	      if (propTypes.hasOwnProperty(propName)) {
+	        var error = propTypes[propName](props, propName, tagName, ReactPropTypeLocations.prop, null, ReactPropTypesSecret);
+	      }
+	      if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+	        // Only monitor this failure once because there tends to be a lot of the
+	        // same error.
+	        loggedTypeFailures[error.message] = true;
+	
+	        var addendum = getDeclarationErrorAddendum(owner);
+	         true ? warning(false, 'Failed form propType: %s%s', error.message, addendum) : void 0;
+	      }
+	    }
+	  },
+	
+	  /**
+	   * @param {object} inputProps Props for form component
+	   * @return {*} current value of the input either from value prop or link.
+	   */
+	  getValue: function (inputProps) {
+	    if (inputProps.valueLink) {
+	      _assertValueLink(inputProps);
+	      return inputProps.valueLink.value;
+	    }
+	    return inputProps.value;
+	  },
+	
+	  /**
+	   * @param {object} inputProps Props for form component
+	   * @return {*} current checked status of the input either from checked prop
+	   *             or link.
+	   */
+	  getChecked: function (inputProps) {
+	    if (inputProps.checkedLink) {
+	      _assertCheckedLink(inputProps);
+	      return inputProps.checkedLink.value;
+	    }
+	    return inputProps.checked;
+	  },
+	
+	  /**
+	   * @param {object} inputProps Props for form component
+	   * @param {SyntheticEvent} event change event to handle
+	   */
+	  executeOnChange: function (inputProps, event) {
+	    if (inputProps.valueLink) {
+	      _assertValueLink(inputProps);
+	      return inputProps.valueLink.requestChange(event.target.value);
+	    } else if (inputProps.checkedLink) {
+	      _assertCheckedLink(inputProps);
+	      return inputProps.checkedLink.requestChange(event.target.checked);
+	    } else if (inputProps.onChange) {
+	      return inputProps.onChange.call(undefined, event);
+	    }
+	  }
+	};
+	
+	module.exports = LinkedValueUtils;
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactComponent
+	 */
+	
+	'use strict';
+	
+	var _prodInvariant = __webpack_require__(3);
+	
+	var ReactNoopUpdateQueue = __webpack_require__(72);
+	
+	var canDefineProperty = __webpack_require__(76);
+	var emptyObject = __webpack_require__(30);
+	var invariant = __webpack_require__(1);
+	var warning = __webpack_require__(2);
+	
+	/**
+	 * Base class helpers for the updating state of a component.
+	 */
+	function ReactComponent(props, context, updater) {
+	  this.props = props;
+	  this.context = context;
+	  this.refs = emptyObject;
+	  // We initialize the default updater but the real one gets injected by the
+	  // renderer.
+	  this.updater = updater || ReactNoopUpdateQueue;
+	}
+	
+	ReactComponent.prototype.isReactComponent = {};
+	
+	/**
+	 * Sets a subset of the state. Always use this to mutate
+	 * state. You should treat `this.state` as immutable.
+	 *
+	 * There is no guarantee that `this.state` will be immediately updated, so
+	 * accessing `this.state` after calling this method may return the old value.
+	 *
+	 * There is no guarantee that calls to `setState` will run synchronously,
+	 * as they may eventually be batched together.  You can provide an optional
+	 * callback that will be executed when the call to setState is actually
+	 * completed.
+	 *
+	 * When a function is provided to setState, it will be called at some point in
+	 * the future (not synchronously). It will be called with the up to date
+	 * component arguments (state, props, context). These values can be different
+	 * from this.* because your function may be called after receiveProps but before
+	 * shouldComponentUpdate, and this new state, props, and context will not yet be
+	 * assigned to this.
+	 *
+	 * @param {object|function} partialState Next partial state or function to
+	 *        produce next partial state to be merged with current state.
+	 * @param {?function} callback Called after state is updated.
+	 * @final
+	 * @protected
+	 */
+	ReactComponent.prototype.setState = function (partialState, callback) {
+	  !(typeof partialState === 'object' || typeof partialState === 'function' || partialState == null) ?  true ? invariant(false, 'setState(...): takes an object of state variables to update or a function which returns an object of state variables.') : _prodInvariant('85') : void 0;
+	  this.updater.enqueueSetState(this, partialState);
+	  if (callback) {
+	    this.updater.enqueueCallback(this, callback, 'setState');
+	  }
+	};
+	
+	/**
+	 * Forces an update. This should only be invoked when it is known with
+	 * certainty that we are **not** in a DOM transaction.
+	 *
+	 * You may want to call this when you know that some deeper aspect of the
+	 * component's state has changed but `setState` was not called.
+	 *
+	 * This will not invoke `shouldComponentUpdate`, but it will invoke
+	 * `componentWillUpdate` and `componentDidUpdate`.
+	 *
+	 * @param {?function} callback Called after update is complete.
+	 * @final
+	 * @protected
+	 */
+	ReactComponent.prototype.forceUpdate = function (callback) {
+	  this.updater.enqueueForceUpdate(this);
+	  if (callback) {
+	    this.updater.enqueueCallback(this, callback, 'forceUpdate');
+	  }
+	};
+	
+	/**
+	 * Deprecated APIs. These APIs used to exist on classic React classes but since
+	 * we would like to deprecate them, we're not going to move them over to this
+	 * modern base class. Instead, we define a getter that warns if it's accessed.
+	 */
+	if (true) {
+	  var deprecatedAPIs = {
+	    isMounted: ['isMounted', 'Instead, make sure to clean up subscriptions and pending requests in ' + 'componentWillUnmount to prevent memory leaks.'],
+	    replaceState: ['replaceState', 'Refactor your code to use setState instead (see ' + 'https://github.com/facebook/react/issues/3236).']
+	  };
+	  var defineDeprecationWarning = function (methodName, info) {
+	    if (canDefineProperty) {
+	      Object.defineProperty(ReactComponent.prototype, methodName, {
+	        get: function () {
+	           true ? warning(false, '%s(...) is deprecated in plain JavaScript React classes. %s', info[0], info[1]) : void 0;
+	          return undefined;
+	        }
+	      });
+	    }
+	  };
+	  for (var fnName in deprecatedAPIs) {
+	    if (deprecatedAPIs.hasOwnProperty(fnName)) {
+	      defineDeprecationWarning(fnName, deprecatedAPIs[fnName]);
+	    }
+	  }
+	}
+	
+	module.exports = ReactComponent;
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2014-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactComponentEnvironment
+	 */
+	
+	'use strict';
+	
+	var _prodInvariant = __webpack_require__(3);
+	
+	var invariant = __webpack_require__(1);
+	
+	var injected = false;
+	
+	var ReactComponentEnvironment = {
+	
+	  /**
+	   * Optionally injectable hook for swapping out mount images in the middle of
+	   * the tree.
+	   */
+	  replaceNodeWithMarkup: null,
+	
+	  /**
+	   * Optionally injectable hook for processing a queue of child updates. Will
+	   * later move into MultiChildComponents.
+	   */
+	  processChildrenUpdates: null,
+	
+	  injection: {
+	    injectEnvironment: function (environment) {
+	      !!injected ?  true ? invariant(false, 'ReactCompositeComponent: injectEnvironment() can only be called once.') : _prodInvariant('104') : void 0;
+	      ReactComponentEnvironment.replaceNodeWithMarkup = environment.replaceNodeWithMarkup;
+	      ReactComponentEnvironment.processChildrenUpdates = environment.processChildrenUpdates;
+	      injected = true;
+	    }
+	  }
+	
+	};
+	
+	module.exports = ReactComponentEnvironment;
+
+/***/ },
+/* 71 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactErrorUtils
+	 */
+	
+	'use strict';
+	
+	var caughtError = null;
+	
+	/**
+	 * Call a function while guarding against errors that happens within it.
+	 *
+	 * @param {?String} name of the guard to use for logging or debugging
+	 * @param {Function} func The function to invoke
+	 * @param {*} a First argument
+	 * @param {*} b Second argument
+	 */
+	function invokeGuardedCallback(name, func, a, b) {
+	  try {
+	    return func(a, b);
+	  } catch (x) {
+	    if (caughtError === null) {
+	      caughtError = x;
+	    }
+	    return undefined;
+	  }
+	}
+	
+	var ReactErrorUtils = {
+	  invokeGuardedCallback: invokeGuardedCallback,
+	
+	  /**
+	   * Invoked by ReactTestUtils.Simulate so that any errors thrown by the event
+	   * handler are sure to be rethrown by rethrowCaughtError.
+	   */
+	  invokeGuardedCallbackWithCatch: invokeGuardedCallback,
+	
+	  /**
+	   * During execution of guarded functions we will capture the first error which
+	   * we will rethrow to be handled by the top level error handler.
+	   */
+	  rethrowCaughtError: function () {
+	    if (caughtError) {
+	      var error = caughtError;
+	      caughtError = null;
+	      throw error;
+	    }
+	  }
+	};
+	
+	if (true) {
+	  /**
+	   * To help development we can get better devtools integration by simulating a
+	   * real browser event.
+	   */
+	  if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof document !== 'undefined' && typeof document.createEvent === 'function') {
+	    var fakeNode = document.createElement('react');
+	    ReactErrorUtils.invokeGuardedCallback = function (name, func, a, b) {
+	      var boundFunc = func.bind(null, a, b);
+	      var evtType = 'react-' + name;
+	      fakeNode.addEventListener(evtType, boundFunc, false);
+	      var evt = document.createEvent('Event');
+	      evt.initEvent(evtType, false, false);
+	      fakeNode.dispatchEvent(evt);
+	      fakeNode.removeEventListener(evtType, boundFunc, false);
+	    };
+	  }
+	}
+	
+	module.exports = ReactErrorUtils;
+
+/***/ },
+/* 72 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2015-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactNoopUpdateQueue
+	 */
+	
+	'use strict';
+	
+	var warning = __webpack_require__(2);
+	
+	function warnNoop(publicInstance, callerName) {
+	  if (true) {
+	    var constructor = publicInstance.constructor;
+	     true ? warning(false, '%s(...): Can only update a mounted or mounting component. ' + 'This usually means you called %s() on an unmounted component. ' + 'This is a no-op. Please check the code for the %s component.', callerName, callerName, constructor && (constructor.displayName || constructor.name) || 'ReactClass') : void 0;
+	  }
+	}
+	
+	/**
+	 * This is the abstract API for an update queue.
+	 */
+	var ReactNoopUpdateQueue = {
+	
+	  /**
+	   * Checks whether or not this composite component is mounted.
+	   * @param {ReactClass} publicInstance The instance we want to test.
+	   * @return {boolean} True if mounted, false otherwise.
+	   * @protected
+	   * @final
+	   */
+	  isMounted: function (publicInstance) {
+	    return false;
+	  },
+	
+	  /**
+	   * Enqueue a callback that will be executed after all the pending updates
+	   * have processed.
+	   *
+	   * @param {ReactClass} publicInstance The instance to use as `this` context.
+	   * @param {?function} callback Called after state is updated.
+	   * @internal
+	   */
+	  enqueueCallback: function (publicInstance, callback) {},
+	
+	  /**
+	   * Forces an update. This should only be invoked when it is known with
+	   * certainty that we are **not** in a DOM transaction.
+	   *
+	   * You may want to call this when you know that some deeper aspect of the
+	   * component's state has changed but `setState` was not called.
+	   *
+	   * This will not invoke `shouldComponentUpdate`, but it will invoke
+	   * `componentWillUpdate` and `componentDidUpdate`.
+	   *
+	   * @param {ReactClass} publicInstance The instance that should rerender.
+	   * @internal
+	   */
+	  enqueueForceUpdate: function (publicInstance) {
+	    warnNoop(publicInstance, 'forceUpdate');
+	  },
+	
+	  /**
+	   * Replaces all of the state. Always use this or `setState` to mutate state.
+	   * You should treat `this.state` as immutable.
+	   *
+	   * There is no guarantee that `this.state` will be immediately updated, so
+	   * accessing `this.state` after calling this method may return the old value.
+	   *
+	   * @param {ReactClass} publicInstance The instance that should rerender.
+	   * @param {object} completeState Next state.
+	   * @internal
+	   */
+	  enqueueReplaceState: function (publicInstance, completeState) {
+	    warnNoop(publicInstance, 'replaceState');
+	  },
+	
+	  /**
+	   * Sets a subset of the state. This only exists because _pendingState is
+	   * internal. This provides a merging strategy that is not available to deep
+	   * properties which is confusing. TODO: Expose pendingState or don't use it
+	   * during the merge.
+	   *
+	   * @param {ReactClass} publicInstance The instance that should rerender.
+	   * @param {object} partialState Next partial state to be merged with state.
+	   * @internal
+	   */
+	  enqueueSetState: function (publicInstance, partialState) {
+	    warnNoop(publicInstance, 'setState');
+	  }
+	};
+	
+	module.exports = ReactNoopUpdateQueue;
+
+/***/ },
+/* 73 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactPropTypeLocationNames
+	 */
+	
+	'use strict';
+	
+	var ReactPropTypeLocationNames = {};
+	
+	if (true) {
+	  ReactPropTypeLocationNames = {
+	    prop: 'prop',
+	    context: 'context',
+	    childContext: 'child context'
+	  };
+	}
+	
+	module.exports = ReactPropTypeLocationNames;
+
+/***/ },
+/* 74 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactPropTypesSecret
+	 */
+	
+	'use strict';
+	
+	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+	
+	module.exports = ReactPropTypesSecret;
+
+/***/ },
+/* 75 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2015-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactUpdateQueue
+	 */
+	
+	'use strict';
+	
+	var _prodInvariant = __webpack_require__(3);
+	
+	var ReactCurrentOwner = __webpack_require__(16);
+	var ReactInstanceMap = __webpack_require__(34);
+	var ReactInstrumentation = __webpack_require__(9);
+	var ReactUpdates = __webpack_require__(14);
+	
+	var invariant = __webpack_require__(1);
+	var warning = __webpack_require__(2);
+	
+	function enqueueUpdate(internalInstance) {
+	  ReactUpdates.enqueueUpdate(internalInstance);
+	}
+	
+	function formatUnexpectedArgument(arg) {
+	  var type = typeof arg;
+	  if (type !== 'object') {
+	    return type;
+	  }
+	  var displayName = arg.constructor && arg.constructor.name || type;
+	  var keys = Object.keys(arg);
+	  if (keys.length > 0 && keys.length < 20) {
+	    return displayName + ' (keys: ' + keys.join(', ') + ')';
+	  }
+	  return displayName;
+	}
+	
+	function getInternalInstanceReadyForUpdate(publicInstance, callerName) {
+	  var internalInstance = ReactInstanceMap.get(publicInstance);
+	  if (!internalInstance) {
+	    if (true) {
+	      var ctor = publicInstance.constructor;
+	      // Only warn when we have a callerName. Otherwise we should be silent.
+	      // We're probably calling from enqueueCallback. We don't want to warn
+	      // there because we already warned for the corresponding lifecycle method.
+	       true ? warning(!callerName, '%s(...): Can only update a mounted or mounting component. ' + 'This usually means you called %s() on an unmounted component. ' + 'This is a no-op. Please check the code for the %s component.', callerName, callerName, ctor && (ctor.displayName || ctor.name) || 'ReactClass') : void 0;
+	    }
+	    return null;
+	  }
+	
+	  if (true) {
+	     true ? warning(ReactCurrentOwner.current == null, '%s(...): Cannot update during an existing state transition (such as ' + 'within `render` or another component\'s constructor). Render methods ' + 'should be a pure function of props and state; constructor ' + 'side-effects are an anti-pattern, but can be moved to ' + '`componentWillMount`.', callerName) : void 0;
+	  }
+	
+	  return internalInstance;
+	}
+	
+	/**
+	 * ReactUpdateQueue allows for state updates to be scheduled into a later
+	 * reconciliation step.
+	 */
+	var ReactUpdateQueue = {
+	
+	  /**
+	   * Checks whether or not this composite component is mounted.
+	   * @param {ReactClass} publicInstance The instance we want to test.
+	   * @return {boolean} True if mounted, false otherwise.
+	   * @protected
+	   * @final
+	   */
+	  isMounted: function (publicInstance) {
+	    if (true) {
+	      var owner = ReactCurrentOwner.current;
+	      if (owner !== null) {
+	         true ? warning(owner._warnedAboutRefsInRender, '%s is accessing isMounted inside its render() function. ' + 'render() should be a pure function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such as refs. Move this logic to componentDidMount and ' + 'componentDidUpdate instead.', owner.getName() || 'A component') : void 0;
+	        owner._warnedAboutRefsInRender = true;
+	      }
+	    }
+	    var internalInstance = ReactInstanceMap.get(publicInstance);
+	    if (internalInstance) {
+	      // During componentWillMount and render this will still be null but after
+	      // that will always render to something. At least for now. So we can use
+	      // this hack.
+	      return !!internalInstance._renderedComponent;
+	    } else {
+	      return false;
+	    }
+	  },
+	
+	  /**
+	   * Enqueue a callback that will be executed after all the pending updates
+	   * have processed.
+	   *
+	   * @param {ReactClass} publicInstance The instance to use as `this` context.
+	   * @param {?function} callback Called after state is updated.
+	   * @param {string} callerName Name of the calling function in the public API.
+	   * @internal
+	   */
+	  enqueueCallback: function (publicInstance, callback, callerName) {
+	    ReactUpdateQueue.validateCallback(callback, callerName);
+	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance);
+	
+	    // Previously we would throw an error if we didn't have an internal
+	    // instance. Since we want to make it a no-op instead, we mirror the same
+	    // behavior we have in other enqueue* methods.
+	    // We also need to ignore callbacks in componentWillMount. See
+	    // enqueueUpdates.
+	    if (!internalInstance) {
+	      return null;
+	    }
+	
+	    if (internalInstance._pendingCallbacks) {
+	      internalInstance._pendingCallbacks.push(callback);
+	    } else {
+	      internalInstance._pendingCallbacks = [callback];
+	    }
+	    // TODO: The callback here is ignored when setState is called from
+	    // componentWillMount. Either fix it or disallow doing so completely in
+	    // favor of getInitialState. Alternatively, we can disallow
+	    // componentWillMount during server-side rendering.
+	    enqueueUpdate(internalInstance);
+	  },
+	
+	  enqueueCallbackInternal: function (internalInstance, callback) {
+	    if (internalInstance._pendingCallbacks) {
+	      internalInstance._pendingCallbacks.push(callback);
+	    } else {
+	      internalInstance._pendingCallbacks = [callback];
+	    }
+	    enqueueUpdate(internalInstance);
+	  },
+	
+	  /**
+	   * Forces an update. This should only be invoked when it is known with
+	   * certainty that we are **not** in a DOM transaction.
+	   *
+	   * You may want to call this when you know that some deeper aspect of the
+	   * component's state has changed but `setState` was not called.
+	   *
+	   * This will not invoke `shouldComponentUpdate`, but it will invoke
+	   * `componentWillUpdate` and `componentDidUpdate`.
+	   *
+	   * @param {ReactClass} publicInstance The instance that should rerender.
+	   * @internal
+	   */
+	  enqueueForceUpdate: function (publicInstance) {
+	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, 'forceUpdate');
+	
+	    if (!internalInstance) {
+	      return;
+	    }
+	
+	    internalInstance._pendingForceUpdate = true;
+	
+	    enqueueUpdate(internalInstance);
+	  },
+	
+	  /**
+	   * Replaces all of the state. Always use this or `setState` to mutate state.
+	   * You should treat `this.state` as immutable.
+	   *
+	   * There is no guarantee that `this.state` will be immediately updated, so
+	   * accessing `this.state` after calling this method may return the old value.
+	   *
+	   * @param {ReactClass} publicInstance The instance that should rerender.
+	   * @param {object} completeState Next state.
+	   * @internal
+	   */
+	  enqueueReplaceState: function (publicInstance, completeState) {
+	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, 'replaceState');
+	
+	    if (!internalInstance) {
+	      return;
+	    }
+	
+	    internalInstance._pendingStateQueue = [completeState];
+	    internalInstance._pendingReplaceState = true;
+	
+	    enqueueUpdate(internalInstance);
+	  },
+	
+	  /**
+	   * Sets a subset of the state. This only exists because _pendingState is
+	   * internal. This provides a merging strategy that is not available to deep
+	   * properties which is confusing. TODO: Expose pendingState or don't use it
+	   * during the merge.
+	   *
+	   * @param {ReactClass} publicInstance The instance that should rerender.
+	   * @param {object} partialState Next partial state to be merged with state.
+	   * @internal
+	   */
+	  enqueueSetState: function (publicInstance, partialState) {
+	    if (true) {
+	      ReactInstrumentation.debugTool.onSetState();
+	       true ? warning(partialState != null, 'setState(...): You passed an undefined or null state object; ' + 'instead, use forceUpdate().') : void 0;
+	    }
+	
+	    var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, 'setState');
+	
+	    if (!internalInstance) {
+	      return;
+	    }
+	
+	    var queue = internalInstance._pendingStateQueue || (internalInstance._pendingStateQueue = []);
+	    queue.push(partialState);
+	
+	    enqueueUpdate(internalInstance);
+	  },
+	
+	  enqueueElementInternal: function (internalInstance, nextElement, nextContext) {
+	    internalInstance._pendingElement = nextElement;
+	    // TODO: introduce _pendingContext instead of setting it directly.
+	    internalInstance._context = nextContext;
+	    enqueueUpdate(internalInstance);
+	  },
+	
+	  validateCallback: function (callback, callerName) {
+	    !(!callback || typeof callback === 'function') ?  true ? invariant(false, '%s(...): Expected the last optional `callback` argument to be a function. Instead received: %s.', callerName, formatUnexpectedArgument(callback)) : _prodInvariant('122', callerName, formatUnexpectedArgument(callback)) : void 0;
+	  }
+	
+	};
+	
+	module.exports = ReactUpdateQueue;
+
+/***/ },
+/* 76 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule canDefineProperty
+	 */
+	
+	'use strict';
+	
+	var canDefineProperty = false;
+	if (true) {
+	  try {
+	    Object.defineProperty({}, 'x', { get: function () {} });
+	    canDefineProperty = true;
+	  } catch (x) {
+	    // IE will fail on defineProperty
+	  }
+	}
+	
+	module.exports = canDefineProperty;
+
+/***/ },
+/* 77 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule createMicrosoftUnsafeLocalFunction
+	 */
+	
+	/* globals MSApp */
+	
+	'use strict';
+	
+	/**
+	 * Create a function which has 'unsafe' privileges (required by windows8 apps)
+	 */
+	
+	var createMicrosoftUnsafeLocalFunction = function (func) {
+	  if (typeof MSApp !== 'undefined' && MSApp.execUnsafeLocalFunction) {
+	    return function (arg0, arg1, arg2, arg3) {
+	      MSApp.execUnsafeLocalFunction(function () {
+	        return func(arg0, arg1, arg2, arg3);
+	      });
+	    };
+	  } else {
+	    return func;
+	  }
+	};
+	
+	module.exports = createMicrosoftUnsafeLocalFunction;
+
+/***/ },
+/* 78 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule getEventCharCode
+	 */
+	
+	'use strict';
+	
+	/**
+	 * `charCode` represents the actual "character code" and is safe to use with
+	 * `String.fromCharCode`. As such, only keys that correspond to printable
+	 * characters produce a valid `charCode`, the only exception to this is Enter.
+	 * The Tab-key is considered non-printable and does not have a `charCode`,
+	 * presumably because it does not produce a tab-character in browsers.
+	 *
+	 * @param {object} nativeEvent Native browser event.
+	 * @return {number} Normalized `charCode` property.
+	 */
+	
+	function getEventCharCode(nativeEvent) {
+	  var charCode;
+	  var keyCode = nativeEvent.keyCode;
+	
+	  if ('charCode' in nativeEvent) {
+	    charCode = nativeEvent.charCode;
+	
+	    // FF does not set `charCode` for the Enter-key, check against `keyCode`.
+	    if (charCode === 0 && keyCode === 13) {
+	      charCode = 13;
+	    }
+	  } else {
+	    // IE8 does not implement `charCode`, but `keyCode` has the correct value.
+	    charCode = keyCode;
+	  }
+	
+	  // Some non-printable keys are reported in `charCode`/`keyCode`, discard them.
+	  // Must not discard the (non-)printable Enter-key.
+	  if (charCode >= 32 || charCode === 13) {
+	    return charCode;
+	  }
+	
+	  return 0;
+	}
+	
+	module.exports = getEventCharCode;
+
+/***/ },
+/* 79 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule getEventModifierState
+	 */
+	
+	'use strict';
+	
+	/**
+	 * Translation from modifier key to the associated property in the event.
+	 * @see http://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
+	 */
+	
+	var modifierKeyToProp = {
+	  'Alt': 'altKey',
+	  'Control': 'ctrlKey',
+	  'Meta': 'metaKey',
+	  'Shift': 'shiftKey'
+	};
+	
+	// IE8 does not implement getModifierState so we simply map it to the only
+	// modifier keys exposed by the event itself, does not support Lock-keys.
+	// Currently, all major browsers except Chrome seems to support Lock-keys.
+	function modifierStateGetter(keyArg) {
+	  var syntheticEvent = this;
+	  var nativeEvent = syntheticEvent.nativeEvent;
+	  if (nativeEvent.getModifierState) {
+	    return nativeEvent.getModifierState(keyArg);
+	  }
+	  var keyProp = modifierKeyToProp[keyArg];
+	  return keyProp ? !!nativeEvent[keyProp] : false;
+	}
+	
+	function getEventModifierState(nativeEvent) {
+	  return modifierStateGetter;
+	}
+	
+	module.exports = getEventModifierState;
+
+/***/ },
+/* 80 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule getEventTarget
+	 */
+	
+	'use strict';
+	
+	/**
+	 * Gets the target node from a native browser event by accounting for
+	 * inconsistencies in browser DOM APIs.
+	 *
+	 * @param {object} nativeEvent Native browser event.
+	 * @return {DOMEventTarget} Target node.
+	 */
+	
+	function getEventTarget(nativeEvent) {
+	  var target = nativeEvent.target || nativeEvent.srcElement || window;
+	
+	  // Normalize SVG <use> element events #4963
+	  if (target.correspondingUseElement) {
+	    target = target.correspondingUseElement;
+	  }
+	
+	  // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
+	  // @see http://www.quirksmode.org/js/events_properties.html
+	  return target.nodeType === 3 ? target.parentNode : target;
+	}
+	
+	module.exports = getEventTarget;
+
+/***/ },
+/* 81 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule getIteratorFn
+	 * 
+	 */
+	
+	'use strict';
+	
+	/* global Symbol */
+	
+	var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+	var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+	
+	/**
+	 * Returns the iterator method function contained on the iterable object.
+	 *
+	 * Be sure to invoke the function with the iterable as context:
+	 *
+	 *     var iteratorFn = getIteratorFn(myIterable);
+	 *     if (iteratorFn) {
+	 *       var iterator = iteratorFn.call(myIterable);
+	 *       ...
+	 *     }
+	 *
+	 * @param {?object} maybeIterable
+	 * @return {?function}
+	 */
+	function getIteratorFn(maybeIterable) {
+	  var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+	  if (typeof iteratorFn === 'function') {
+	    return iteratorFn;
+	  }
+	}
+	
+	module.exports = getIteratorFn;
+
+/***/ },
+/* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule isEventSupported
+	 */
+	
+	'use strict';
+	
+	var ExecutionEnvironment = __webpack_require__(7);
+	
+	var useHasFeature;
+	if (ExecutionEnvironment.canUseDOM) {
+	  useHasFeature = document.implementation && document.implementation.hasFeature &&
+	  // always returns true in newer browsers as per the standard.
+	  // @see http://dom.spec.whatwg.org/#dom-domimplementation-hasfeature
+	  document.implementation.hasFeature('', '') !== true;
+	}
+	
+	/**
+	 * Checks if an event is supported in the current execution environment.
+	 *
+	 * NOTE: This will not work correctly for non-generic events such as `change`,
+	 * `reset`, `load`, `error`, and `select`.
+	 *
+	 * Borrows from Modernizr.
+	 *
+	 * @param {string} eventNameSuffix Event name, e.g. "click".
+	 * @param {?boolean} capture Check if the capture phase is supported.
+	 * @return {boolean} True if the event is supported.
+	 * @internal
+	 * @license Modernizr 3.0.0pre (Custom Build) | MIT
+	 */
+	function isEventSupported(eventNameSuffix, capture) {
+	  if (!ExecutionEnvironment.canUseDOM || capture && !('addEventListener' in document)) {
+	    return false;
+	  }
+	
+	  var eventName = 'on' + eventNameSuffix;
+	  var isSupported = eventName in document;
+	
+	  if (!isSupported) {
+	    var element = document.createElement('div');
+	    element.setAttribute(eventName, 'return;');
+	    isSupported = typeof element[eventName] === 'function';
+	  }
+	
+	  if (!isSupported && useHasFeature && eventNameSuffix === 'wheel') {
+	    // This is the only way to test support for the `wheel` event in IE9+.
+	    isSupported = document.implementation.hasFeature('Events.wheel', '3.0');
+	  }
+	
+	  return isSupported;
+	}
+	
+	module.exports = isEventSupported;
+
+/***/ },
+/* 83 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule shouldUpdateReactComponent
+	 */
+	
+	'use strict';
+	
+	/**
+	 * Given a `prevElement` and `nextElement`, determines if the existing
+	 * instance should be updated as opposed to being destroyed or replaced by a new
+	 * instance. Both arguments are elements. This ensures that this logic can
+	 * operate on stateless trees without any backing instance.
+	 *
+	 * @param {?object} prevElement
+	 * @param {?object} nextElement
+	 * @return {boolean} True if the existing instance should be updated.
+	 * @protected
+	 */
+	
+	function shouldUpdateReactComponent(prevElement, nextElement) {
+	  var prevEmpty = prevElement === null || prevElement === false;
+	  var nextEmpty = nextElement === null || nextElement === false;
+	  if (prevEmpty || nextEmpty) {
+	    return prevEmpty === nextEmpty;
+	  }
+	
+	  var prevType = typeof prevElement;
+	  var nextType = typeof nextElement;
+	  if (prevType === 'string' || prevType === 'number') {
+	    return nextType === 'string' || nextType === 'number';
+	  } else {
+	    return nextType === 'object' && prevElement.type === nextElement.type && prevElement.key === nextElement.key;
+	  }
+	}
+	
+	module.exports = shouldUpdateReactComponent;
+
+/***/ },
 /* 84 */
-36,
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule traverseAllChildren
+	 */
+	
+	'use strict';
+	
+	var _prodInvariant = __webpack_require__(3);
+	
+	var ReactCurrentOwner = __webpack_require__(16);
+	var ReactElement = __webpack_require__(12);
+	
+	var getIteratorFn = __webpack_require__(81);
+	var invariant = __webpack_require__(1);
+	var KeyEscapeUtils = __webpack_require__(67);
+	var warning = __webpack_require__(2);
+	
+	var SEPARATOR = '.';
+	var SUBSEPARATOR = ':';
+	
+	/**
+	 * TODO: Test that a single child and an array with one item have the same key
+	 * pattern.
+	 */
+	
+	var didWarnAboutMaps = false;
+	
+	/**
+	 * Generate a key string that identifies a component within a set.
+	 *
+	 * @param {*} component A component that could contain a manual key.
+	 * @param {number} index Index that is used if a manual key is not provided.
+	 * @return {string}
+	 */
+	function getComponentKey(component, index) {
+	  // Do some typechecking here since we call this blindly. We want to ensure
+	  // that we don't block potential future ES APIs.
+	  if (component && typeof component === 'object' && component.key != null) {
+	    // Explicit key
+	    return KeyEscapeUtils.escape(component.key);
+	  }
+	  // Implicit key determined by the index in the set
+	  return index.toString(36);
+	}
+	
+	/**
+	 * @param {?*} children Children tree container.
+	 * @param {!string} nameSoFar Name of the key path so far.
+	 * @param {!function} callback Callback to invoke with each child found.
+	 * @param {?*} traverseContext Used to pass information throughout the traversal
+	 * process.
+	 * @return {!number} The number of children in this subtree.
+	 */
+	function traverseAllChildrenImpl(children, nameSoFar, callback, traverseContext) {
+	  var type = typeof children;
+	
+	  if (type === 'undefined' || type === 'boolean') {
+	    // All of the above are perceived as null.
+	    children = null;
+	  }
+	
+	  if (children === null || type === 'string' || type === 'number' || ReactElement.isValidElement(children)) {
+	    callback(traverseContext, children,
+	    // If it's the only child, treat the name as if it was wrapped in an array
+	    // so that it's consistent if the number of children grows.
+	    nameSoFar === '' ? SEPARATOR + getComponentKey(children, 0) : nameSoFar);
+	    return 1;
+	  }
+	
+	  var child;
+	  var nextName;
+	  var subtreeCount = 0; // Count of children found in the current subtree.
+	  var nextNamePrefix = nameSoFar === '' ? SEPARATOR : nameSoFar + SUBSEPARATOR;
+	
+	  if (Array.isArray(children)) {
+	    for (var i = 0; i < children.length; i++) {
+	      child = children[i];
+	      nextName = nextNamePrefix + getComponentKey(child, i);
+	      subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
+	    }
+	  } else {
+	    var iteratorFn = getIteratorFn(children);
+	    if (iteratorFn) {
+	      var iterator = iteratorFn.call(children);
+	      var step;
+	      if (iteratorFn !== children.entries) {
+	        var ii = 0;
+	        while (!(step = iterator.next()).done) {
+	          child = step.value;
+	          nextName = nextNamePrefix + getComponentKey(child, ii++);
+	          subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
+	        }
+	      } else {
+	        if (true) {
+	          var mapsAsChildrenAddendum = '';
+	          if (ReactCurrentOwner.current) {
+	            var mapsAsChildrenOwnerName = ReactCurrentOwner.current.getName();
+	            if (mapsAsChildrenOwnerName) {
+	              mapsAsChildrenAddendum = ' Check the render method of `' + mapsAsChildrenOwnerName + '`.';
+	            }
+	          }
+	           true ? warning(didWarnAboutMaps, 'Using Maps as children is not yet fully supported. It is an ' + 'experimental feature that might be removed. Convert it to a ' + 'sequence / iterable of keyed ReactElements instead.%s', mapsAsChildrenAddendum) : void 0;
+	          didWarnAboutMaps = true;
+	        }
+	        // Iterator will provide entry [k,v] tuples rather than values.
+	        while (!(step = iterator.next()).done) {
+	          var entry = step.value;
+	          if (entry) {
+	            child = entry[1];
+	            nextName = nextNamePrefix + KeyEscapeUtils.escape(entry[0]) + SUBSEPARATOR + getComponentKey(child, 0);
+	            subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
+	          }
+	        }
+	      }
+	    } else if (type === 'object') {
+	      var addendum = '';
+	      if (true) {
+	        addendum = ' If you meant to render a collection of children, use an array ' + 'instead or wrap the object using createFragment(object) from the ' + 'React add-ons.';
+	        if (children._isReactElement) {
+	          addendum = ' It looks like you\'re using an element created by a different ' + 'version of React. Make sure to use only one copy of React.';
+	        }
+	        if (ReactCurrentOwner.current) {
+	          var name = ReactCurrentOwner.current.getName();
+	          if (name) {
+	            addendum += ' Check the render method of `' + name + '`.';
+	          }
+	        }
+	      }
+	      var childrenString = String(children);
+	       true ?  true ? invariant(false, 'Objects are not valid as a React child (found: %s).%s', childrenString === '[object Object]' ? 'object with keys {' + Object.keys(children).join(', ') + '}' : childrenString, addendum) : _prodInvariant('31', childrenString === '[object Object]' ? 'object with keys {' + Object.keys(children).join(', ') + '}' : childrenString, addendum) : void 0;
+	    }
+	  }
+	
+	  return subtreeCount;
+	}
+	
+	/**
+	 * Traverses children that are typically specified as `props.children`, but
+	 * might also be specified through attributes:
+	 *
+	 * - `traverseAllChildren(this.props.children, ...)`
+	 * - `traverseAllChildren(this.props.leftPanelChildren, ...)`
+	 *
+	 * The `traverseContext` is an optional argument that is passed through the
+	 * entire traversal. It can be used to store accumulations or anything else that
+	 * the callback might find relevant.
+	 *
+	 * @param {?*} children Children tree object.
+	 * @param {!function} callback To invoke upon traversing each child.
+	 * @param {?*} traverseContext Context for traversal.
+	 * @return {!number} The number of children in this subtree.
+	 */
+	function traverseAllChildren(children, callback, traverseContext) {
+	  if (children == null) {
+	    return 0;
+	  }
+	
+	  return traverseAllChildrenImpl(children, '', callback, traverseContext);
+	}
+	
+	module.exports = traverseAllChildren;
+
+/***/ },
 /* 85 */
-36,
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2015-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule validateDOMNesting
+	 */
+	
+	'use strict';
+	
+	var _assign = __webpack_require__(4);
+	
+	var emptyFunction = __webpack_require__(10);
+	var warning = __webpack_require__(2);
+	
+	var validateDOMNesting = emptyFunction;
+	
+	if (true) {
+	  // This validation code was written based on the HTML5 parsing spec:
+	  // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-scope
+	  //
+	  // Note: this does not catch all invalid nesting, nor does it try to (as it's
+	  // not clear what practical benefit doing so provides); instead, we warn only
+	  // for cases where the parser will give a parse tree differing from what React
+	  // intended. For example, <b><div></div></b> is invalid but we don't warn
+	  // because it still parses correctly; we do warn for other cases like nested
+	  // <p> tags where the beginning of the second element implicitly closes the
+	  // first, causing a confusing mess.
+	
+	  // https://html.spec.whatwg.org/multipage/syntax.html#special
+	  var specialTags = ['address', 'applet', 'area', 'article', 'aside', 'base', 'basefont', 'bgsound', 'blockquote', 'body', 'br', 'button', 'caption', 'center', 'col', 'colgroup', 'dd', 'details', 'dir', 'div', 'dl', 'dt', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'frame', 'frameset', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'iframe', 'img', 'input', 'isindex', 'li', 'link', 'listing', 'main', 'marquee', 'menu', 'menuitem', 'meta', 'nav', 'noembed', 'noframes', 'noscript', 'object', 'ol', 'p', 'param', 'plaintext', 'pre', 'script', 'section', 'select', 'source', 'style', 'summary', 'table', 'tbody', 'td', 'template', 'textarea', 'tfoot', 'th', 'thead', 'title', 'tr', 'track', 'ul', 'wbr', 'xmp'];
+	
+	  // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-scope
+	  var inScopeTags = ['applet', 'caption', 'html', 'table', 'td', 'th', 'marquee', 'object', 'template',
+	
+	  // https://html.spec.whatwg.org/multipage/syntax.html#html-integration-point
+	  // TODO: Distinguish by namespace here -- for <title>, including it here
+	  // errs on the side of fewer warnings
+	  'foreignObject', 'desc', 'title'];
+	
+	  // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-button-scope
+	  var buttonScopeTags = inScopeTags.concat(['button']);
+	
+	  // https://html.spec.whatwg.org/multipage/syntax.html#generate-implied-end-tags
+	  var impliedEndTags = ['dd', 'dt', 'li', 'option', 'optgroup', 'p', 'rp', 'rt'];
+	
+	  var emptyAncestorInfo = {
+	    current: null,
+	
+	    formTag: null,
+	    aTagInScope: null,
+	    buttonTagInScope: null,
+	    nobrTagInScope: null,
+	    pTagInButtonScope: null,
+	
+	    listItemTagAutoclosing: null,
+	    dlItemTagAutoclosing: null
+	  };
+	
+	  var updatedAncestorInfo = function (oldInfo, tag, instance) {
+	    var ancestorInfo = _assign({}, oldInfo || emptyAncestorInfo);
+	    var info = { tag: tag, instance: instance };
+	
+	    if (inScopeTags.indexOf(tag) !== -1) {
+	      ancestorInfo.aTagInScope = null;
+	      ancestorInfo.buttonTagInScope = null;
+	      ancestorInfo.nobrTagInScope = null;
+	    }
+	    if (buttonScopeTags.indexOf(tag) !== -1) {
+	      ancestorInfo.pTagInButtonScope = null;
+	    }
+	
+	    // See rules for 'li', 'dd', 'dt' start tags in
+	    // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inbody
+	    if (specialTags.indexOf(tag) !== -1 && tag !== 'address' && tag !== 'div' && tag !== 'p') {
+	      ancestorInfo.listItemTagAutoclosing = null;
+	      ancestorInfo.dlItemTagAutoclosing = null;
+	    }
+	
+	    ancestorInfo.current = info;
+	
+	    if (tag === 'form') {
+	      ancestorInfo.formTag = info;
+	    }
+	    if (tag === 'a') {
+	      ancestorInfo.aTagInScope = info;
+	    }
+	    if (tag === 'button') {
+	      ancestorInfo.buttonTagInScope = info;
+	    }
+	    if (tag === 'nobr') {
+	      ancestorInfo.nobrTagInScope = info;
+	    }
+	    if (tag === 'p') {
+	      ancestorInfo.pTagInButtonScope = info;
+	    }
+	    if (tag === 'li') {
+	      ancestorInfo.listItemTagAutoclosing = info;
+	    }
+	    if (tag === 'dd' || tag === 'dt') {
+	      ancestorInfo.dlItemTagAutoclosing = info;
+	    }
+	
+	    return ancestorInfo;
+	  };
+	
+	  /**
+	   * Returns whether
+	   */
+	  var isTagValidWithParent = function (tag, parentTag) {
+	    // First, let's check if we're in an unusual parsing mode...
+	    switch (parentTag) {
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inselect
+	      case 'select':
+	        return tag === 'option' || tag === 'optgroup' || tag === '#text';
+	      case 'optgroup':
+	        return tag === 'option' || tag === '#text';
+	      // Strictly speaking, seeing an <option> doesn't mean we're in a <select>
+	      // but
+	      case 'option':
+	        return tag === '#text';
+	
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intd
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-incaption
+	      // No special behavior since these rules fall back to "in body" mode for
+	      // all except special table nodes which cause bad parsing behavior anyway.
+	
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intr
+	      case 'tr':
+	        return tag === 'th' || tag === 'td' || tag === 'style' || tag === 'script' || tag === 'template';
+	
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intbody
+	      case 'tbody':
+	      case 'thead':
+	      case 'tfoot':
+	        return tag === 'tr' || tag === 'style' || tag === 'script' || tag === 'template';
+	
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-incolgroup
+	      case 'colgroup':
+	        return tag === 'col' || tag === 'template';
+	
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-intable
+	      case 'table':
+	        return tag === 'caption' || tag === 'colgroup' || tag === 'tbody' || tag === 'tfoot' || tag === 'thead' || tag === 'style' || tag === 'script' || tag === 'template';
+	
+	      // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inhead
+	      case 'head':
+	        return tag === 'base' || tag === 'basefont' || tag === 'bgsound' || tag === 'link' || tag === 'meta' || tag === 'title' || tag === 'noscript' || tag === 'noframes' || tag === 'style' || tag === 'script' || tag === 'template';
+	
+	      // https://html.spec.whatwg.org/multipage/semantics.html#the-html-element
+	      case 'html':
+	        return tag === 'head' || tag === 'body';
+	      case '#document':
+	        return tag === 'html';
+	    }
+	
+	    // Probably in the "in body" parsing mode, so we outlaw only tag combos
+	    // where the parsing rules cause implicit opens or closes to be added.
+	    // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inbody
+	    switch (tag) {
+	      case 'h1':
+	      case 'h2':
+	      case 'h3':
+	      case 'h4':
+	      case 'h5':
+	      case 'h6':
+	        return parentTag !== 'h1' && parentTag !== 'h2' && parentTag !== 'h3' && parentTag !== 'h4' && parentTag !== 'h5' && parentTag !== 'h6';
+	
+	      case 'rp':
+	      case 'rt':
+	        return impliedEndTags.indexOf(parentTag) === -1;
+	
+	      case 'body':
+	      case 'caption':
+	      case 'col':
+	      case 'colgroup':
+	      case 'frame':
+	      case 'head':
+	      case 'html':
+	      case 'tbody':
+	      case 'td':
+	      case 'tfoot':
+	      case 'th':
+	      case 'thead':
+	      case 'tr':
+	        // These tags are only valid with a few parents that have special child
+	        // parsing rules -- if we're down here, then none of those matched and
+	        // so we allow it only if we don't know what the parent is, as all other
+	        // cases are invalid.
+	        return parentTag == null;
+	    }
+	
+	    return true;
+	  };
+	
+	  /**
+	   * Returns whether
+	   */
+	  var findInvalidAncestorForTag = function (tag, ancestorInfo) {
+	    switch (tag) {
+	      case 'address':
+	      case 'article':
+	      case 'aside':
+	      case 'blockquote':
+	      case 'center':
+	      case 'details':
+	      case 'dialog':
+	      case 'dir':
+	      case 'div':
+	      case 'dl':
+	      case 'fieldset':
+	      case 'figcaption':
+	      case 'figure':
+	      case 'footer':
+	      case 'header':
+	      case 'hgroup':
+	      case 'main':
+	      case 'menu':
+	      case 'nav':
+	      case 'ol':
+	      case 'p':
+	      case 'section':
+	      case 'summary':
+	      case 'ul':
+	
+	      case 'pre':
+	      case 'listing':
+	
+	      case 'table':
+	
+	      case 'hr':
+	
+	      case 'xmp':
+	
+	      case 'h1':
+	      case 'h2':
+	      case 'h3':
+	      case 'h4':
+	      case 'h5':
+	      case 'h6':
+	        return ancestorInfo.pTagInButtonScope;
+	
+	      case 'form':
+	        return ancestorInfo.formTag || ancestorInfo.pTagInButtonScope;
+	
+	      case 'li':
+	        return ancestorInfo.listItemTagAutoclosing;
+	
+	      case 'dd':
+	      case 'dt':
+	        return ancestorInfo.dlItemTagAutoclosing;
+	
+	      case 'button':
+	        return ancestorInfo.buttonTagInScope;
+	
+	      case 'a':
+	        // Spec says something about storing a list of markers, but it sounds
+	        // equivalent to this check.
+	        return ancestorInfo.aTagInScope;
+	
+	      case 'nobr':
+	        return ancestorInfo.nobrTagInScope;
+	    }
+	
+	    return null;
+	  };
+	
+	  /**
+	   * Given a ReactCompositeComponent instance, return a list of its recursive
+	   * owners, starting at the root and ending with the instance itself.
+	   */
+	  var findOwnerStack = function (instance) {
+	    if (!instance) {
+	      return [];
+	    }
+	
+	    var stack = [];
+	    do {
+	      stack.push(instance);
+	    } while (instance = instance._currentElement._owner);
+	    stack.reverse();
+	    return stack;
+	  };
+	
+	  var didWarn = {};
+	
+	  validateDOMNesting = function (childTag, childText, childInstance, ancestorInfo) {
+	    ancestorInfo = ancestorInfo || emptyAncestorInfo;
+	    var parentInfo = ancestorInfo.current;
+	    var parentTag = parentInfo && parentInfo.tag;
+	
+	    if (childText != null) {
+	       true ? warning(childTag == null, 'validateDOMNesting: when childText is passed, childTag should be null') : void 0;
+	      childTag = '#text';
+	    }
+	
+	    var invalidParent = isTagValidWithParent(childTag, parentTag) ? null : parentInfo;
+	    var invalidAncestor = invalidParent ? null : findInvalidAncestorForTag(childTag, ancestorInfo);
+	    var problematic = invalidParent || invalidAncestor;
+	
+	    if (problematic) {
+	      var ancestorTag = problematic.tag;
+	      var ancestorInstance = problematic.instance;
+	
+	      var childOwner = childInstance && childInstance._currentElement._owner;
+	      var ancestorOwner = ancestorInstance && ancestorInstance._currentElement._owner;
+	
+	      var childOwners = findOwnerStack(childOwner);
+	      var ancestorOwners = findOwnerStack(ancestorOwner);
+	
+	      var minStackLen = Math.min(childOwners.length, ancestorOwners.length);
+	      var i;
+	
+	      var deepestCommon = -1;
+	      for (i = 0; i < minStackLen; i++) {
+	        if (childOwners[i] === ancestorOwners[i]) {
+	          deepestCommon = i;
+	        } else {
+	          break;
+	        }
+	      }
+	
+	      var UNKNOWN = '(unknown)';
+	      var childOwnerNames = childOwners.slice(deepestCommon + 1).map(function (inst) {
+	        return inst.getName() || UNKNOWN;
+	      });
+	      var ancestorOwnerNames = ancestorOwners.slice(deepestCommon + 1).map(function (inst) {
+	        return inst.getName() || UNKNOWN;
+	      });
+	      var ownerInfo = [].concat(
+	      // If the parent and child instances have a common owner ancestor, start
+	      // with that -- otherwise we just start with the parent's owners.
+	      deepestCommon !== -1 ? childOwners[deepestCommon].getName() || UNKNOWN : [], ancestorOwnerNames, ancestorTag,
+	      // If we're warning about an invalid (non-parent) ancestry, add '...'
+	      invalidAncestor ? ['...'] : [], childOwnerNames, childTag).join(' > ');
+	
+	      var warnKey = !!invalidParent + '|' + childTag + '|' + ancestorTag + '|' + ownerInfo;
+	      if (didWarn[warnKey]) {
+	        return;
+	      }
+	      didWarn[warnKey] = true;
+	
+	      var tagDisplayName = childTag;
+	      var whitespaceInfo = '';
+	      if (childTag === '#text') {
+	        if (/\S/.test(childText)) {
+	          tagDisplayName = 'Text nodes';
+	        } else {
+	          tagDisplayName = 'Whitespace text nodes';
+	          whitespaceInfo = ' Make sure you don\'t have any extra whitespace between tags on ' + 'each line of your source code.';
+	        }
+	      } else {
+	        tagDisplayName = '<' + childTag + '>';
+	      }
+	
+	      if (invalidParent) {
+	        var info = '';
+	        if (ancestorTag === 'table' && childTag === 'tr') {
+	          info += ' Add a <tbody> to your code to match the DOM tree generated by ' + 'the browser.';
+	        }
+	         true ? warning(false, 'validateDOMNesting(...): %s cannot appear as a child of <%s>.%s ' + 'See %s.%s', tagDisplayName, ancestorTag, whitespaceInfo, ownerInfo, info) : void 0;
+	      } else {
+	         true ? warning(false, 'validateDOMNesting(...): %s cannot appear as a descendant of ' + '<%s>. See %s.', tagDisplayName, ancestorTag, ownerInfo) : void 0;
+	      }
+	    }
+	  };
+	
+	  validateDOMNesting.updatedAncestorInfo = updatedAncestorInfo;
+	
+	  // For testing
+	  validateDOMNesting.isTagValidInContext = function (tag, ancestorInfo) {
+	    ancestorInfo = ancestorInfo || emptyAncestorInfo;
+	    var parentInfo = ancestorInfo.current;
+	    var parentTag = parentInfo && parentInfo.tag;
+	    return isTagValidWithParent(tag, parentTag) && !findInvalidAncestorForTag(tag, ancestorInfo);
+	  };
+	}
+	
+	module.exports = validateDOMNesting;
+
+/***/ },
 /* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -10773,7 +10776,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _runTransitionHook = __webpack_require__(54);
+	var _runTransitionHook = __webpack_require__(58);
 	
 	var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 	
@@ -10887,9 +10890,9 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _queryString = __webpack_require__(195);
+	var _queryString = __webpack_require__(213);
 	
-	var _runTransitionHook = __webpack_require__(54);
+	var _runTransitionHook = __webpack_require__(58);
 	
 	var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 	
@@ -11013,7 +11016,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -11021,9 +11024,9 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _PropTypes = __webpack_require__(59);
+	var _PropTypes = __webpack_require__(62);
 	
-	var _ContextUtils = __webpack_require__(58);
+	var _ContextUtils = __webpack_require__(61);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -11186,7 +11189,7 @@
 	
 	exports.__esModule = true;
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -11198,7 +11201,7 @@
 	
 	var _PatternUtils = __webpack_require__(25);
 	
-	var _InternalPropTypes = __webpack_require__(30);
+	var _InternalPropTypes = __webpack_require__(31);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -11336,7 +11339,7 @@
 	
 	var _useBasename2 = _interopRequireDefault(_useBasename);
 	
-	var _createMemoryHistory = __webpack_require__(193);
+	var _createMemoryHistory = __webpack_require__(211);
 	
 	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 	
@@ -11395,21 +11398,21 @@
 	
 	var _routerWarning2 = _interopRequireDefault(_routerWarning);
 	
-	var _computeChangedRoutes2 = __webpack_require__(205);
+	var _computeChangedRoutes2 = __webpack_require__(223);
 	
 	var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 	
-	var _TransitionUtils = __webpack_require__(202);
+	var _TransitionUtils = __webpack_require__(220);
 	
-	var _isActive2 = __webpack_require__(209);
+	var _isActive2 = __webpack_require__(227);
 	
 	var _isActive3 = _interopRequireDefault(_isActive2);
 	
-	var _getComponents = __webpack_require__(206);
+	var _getComponents = __webpack_require__(224);
 	
 	var _getComponents2 = _interopRequireDefault(_getComponents);
 	
-	var _matchRoutes = __webpack_require__(211);
+	var _matchRoutes = __webpack_require__(229);
 	
 	var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 	
@@ -11677,7 +11680,7 @@
 	  }
 	});
 	
-	var _PropTypes = __webpack_require__(59);
+	var _PropTypes = __webpack_require__(62);
 	
 	Object.defineProperty(exports, 'locationShape', {
 	  enumerable: true,
@@ -11701,7 +11704,7 @@
 	  }
 	});
 	
-	var _Router2 = __webpack_require__(201);
+	var _Router2 = __webpack_require__(219);
 	
 	var _Router3 = _interopRequireDefault(_Router2);
 	
@@ -11709,19 +11712,19 @@
 	
 	var _Link3 = _interopRequireDefault(_Link2);
 	
-	var _IndexLink2 = __webpack_require__(197);
+	var _IndexLink2 = __webpack_require__(215);
 	
 	var _IndexLink3 = _interopRequireDefault(_IndexLink2);
 	
-	var _withRouter2 = __webpack_require__(212);
+	var _withRouter2 = __webpack_require__(230);
 	
 	var _withRouter3 = _interopRequireDefault(_withRouter2);
 	
-	var _IndexRedirect2 = __webpack_require__(198);
+	var _IndexRedirect2 = __webpack_require__(216);
 	
 	var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
 	
-	var _IndexRoute2 = __webpack_require__(199);
+	var _IndexRoute2 = __webpack_require__(217);
 	
 	var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
 	
@@ -11729,15 +11732,15 @@
 	
 	var _Redirect3 = _interopRequireDefault(_Redirect2);
 	
-	var _Route2 = __webpack_require__(200);
+	var _Route2 = __webpack_require__(218);
 	
 	var _Route3 = _interopRequireDefault(_Route2);
 	
-	var _RouterContext2 = __webpack_require__(60);
+	var _RouterContext2 = __webpack_require__(63);
 	
 	var _RouterContext3 = _interopRequireDefault(_RouterContext2);
 	
-	var _match2 = __webpack_require__(210);
+	var _match2 = __webpack_require__(228);
 	
 	var _match3 = _interopRequireDefault(_match2);
 	
@@ -11745,15 +11748,15 @@
 	
 	var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
 	
-	var _applyRouterMiddleware2 = __webpack_require__(203);
+	var _applyRouterMiddleware2 = __webpack_require__(221);
 	
 	var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
 	
-	var _browserHistory2 = __webpack_require__(204);
+	var _browserHistory2 = __webpack_require__(222);
 	
 	var _browserHistory3 = _interopRequireDefault(_browserHistory2);
 	
-	var _hashHistory2 = __webpack_require__(208);
+	var _hashHistory2 = __webpack_require__(226);
 	
 	var _hashHistory3 = _interopRequireDefault(_hashHistory2);
 	
@@ -12098,10 +12101,10 @@
 	'use strict';
 	
 	var DOMProperty = __webpack_require__(23);
-	var ReactDOMComponentTree = __webpack_require__(5);
+	var ReactDOMComponentTree = __webpack_require__(6);
 	var ReactInstrumentation = __webpack_require__(9);
 	
-	var quoteAttributeValueForBrowser = __webpack_require__(280);
+	var quoteAttributeValueForBrowser = __webpack_require__(298);
 	var warning = __webpack_require__(2);
 	
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -12327,7 +12330,7 @@
 	var ReactElement = __webpack_require__(12);
 	
 	var emptyFunction = __webpack_require__(10);
-	var traverseAllChildren = __webpack_require__(81);
+	var traverseAllChildren = __webpack_require__(84);
 	
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
 	var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -12522,15 +12525,15 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var ReactComponent = __webpack_require__(66);
+	var ReactComponent = __webpack_require__(69);
 	var ReactElement = __webpack_require__(12);
-	var ReactPropTypeLocations = __webpack_require__(43);
-	var ReactPropTypeLocationNames = __webpack_require__(70);
-	var ReactNoopUpdateQueue = __webpack_require__(69);
+	var ReactPropTypeLocations = __webpack_require__(47);
+	var ReactPropTypeLocationNames = __webpack_require__(73);
+	var ReactNoopUpdateQueue = __webpack_require__(72);
 	
-	var emptyObject = __webpack_require__(29);
+	var emptyObject = __webpack_require__(30);
 	var invariant = __webpack_require__(1);
-	var keyMirror = __webpack_require__(37);
+	var keyMirror = __webpack_require__(38);
 	var keyOf = __webpack_require__(18);
 	var warning = __webpack_require__(2);
 	
@@ -13281,10 +13284,10 @@
 	
 	var _assign = __webpack_require__(4);
 	
-	var DisabledInputUtils = __webpack_require__(40);
-	var LinkedValueUtils = __webpack_require__(65);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactUpdates = __webpack_require__(13);
+	var DisabledInputUtils = __webpack_require__(44);
+	var LinkedValueUtils = __webpack_require__(68);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactUpdates = __webpack_require__(14);
 	
 	var warning = __webpack_require__(2);
 	
@@ -13495,12 +13498,12 @@
 	var ReactCurrentOwner = __webpack_require__(16);
 	var ReactComponentTreeHook = __webpack_require__(11);
 	var ReactElement = __webpack_require__(12);
-	var ReactPropTypeLocations = __webpack_require__(43);
+	var ReactPropTypeLocations = __webpack_require__(47);
 	
 	var checkReactTypeSpec = __webpack_require__(120);
 	
-	var canDefineProperty = __webpack_require__(73);
-	var getIteratorFn = __webpack_require__(78);
+	var canDefineProperty = __webpack_require__(76);
+	var getIteratorFn = __webpack_require__(81);
 	var warning = __webpack_require__(2);
 	
 	function getDeclarationErrorAddendum() {
@@ -13861,9 +13864,9 @@
 	
 	'use strict';
 	
-	var ReactDOMSelection = __webpack_require__(238);
+	var ReactDOMSelection = __webpack_require__(256);
 	
-	var containsNode = __webpack_require__(136);
+	var containsNode = __webpack_require__(137);
 	var focusNode = __webpack_require__(87);
 	var getActiveElement = __webpack_require__(88);
 	
@@ -13994,25 +13997,25 @@
 	
 	var DOMLazyTree = __webpack_require__(27);
 	var DOMProperty = __webpack_require__(23);
-	var ReactBrowserEventEmitter = __webpack_require__(42);
+	var ReactBrowserEventEmitter = __webpack_require__(46);
 	var ReactCurrentOwner = __webpack_require__(16);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMContainerInfo = __webpack_require__(230);
-	var ReactDOMFeatureFlags = __webpack_require__(233);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactDOMContainerInfo = __webpack_require__(248);
+	var ReactDOMFeatureFlags = __webpack_require__(251);
 	var ReactElement = __webpack_require__(12);
 	var ReactFeatureFlags = __webpack_require__(110);
-	var ReactInstanceMap = __webpack_require__(33);
+	var ReactInstanceMap = __webpack_require__(34);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactMarkupChecksum = __webpack_require__(251);
+	var ReactMarkupChecksum = __webpack_require__(269);
 	var ReactReconciler = __webpack_require__(28);
-	var ReactUpdateQueue = __webpack_require__(72);
-	var ReactUpdates = __webpack_require__(13);
+	var ReactUpdateQueue = __webpack_require__(75);
+	var ReactUpdates = __webpack_require__(14);
 	
-	var emptyObject = __webpack_require__(29);
+	var emptyObject = __webpack_require__(30);
 	var instantiateReactComponent = __webpack_require__(124);
 	var invariant = __webpack_require__(1);
-	var setInnerHTML = __webpack_require__(46);
-	var shouldUpdateReactComponent = __webpack_require__(80);
+	var setInnerHTML = __webpack_require__(50);
+	var shouldUpdateReactComponent = __webpack_require__(83);
 	var warning = __webpack_require__(2);
 	
 	var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
@@ -14529,7 +14532,7 @@
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(37);
+	var keyMirror = __webpack_require__(38);
 	
 	/**
 	 * When a component's children are updated, a series of update configuration
@@ -14612,11 +14615,11 @@
 	'use strict';
 	
 	var ReactElement = __webpack_require__(12);
-	var ReactPropTypeLocationNames = __webpack_require__(70);
-	var ReactPropTypesSecret = __webpack_require__(71);
+	var ReactPropTypeLocationNames = __webpack_require__(73);
+	var ReactPropTypesSecret = __webpack_require__(74);
 	
 	var emptyFunction = __webpack_require__(10);
-	var getIteratorFn = __webpack_require__(78);
+	var getIteratorFn = __webpack_require__(81);
 	var warning = __webpack_require__(2);
 	
 	/**
@@ -15163,8 +15166,8 @@
 	
 	var _prodInvariant = __webpack_require__(3);
 	
-	var ReactPropTypeLocationNames = __webpack_require__(70);
-	var ReactPropTypesSecret = __webpack_require__(71);
+	var ReactPropTypeLocationNames = __webpack_require__(73);
+	var ReactPropTypesSecret = __webpack_require__(74);
 	
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(2);
@@ -15235,7 +15238,7 @@
 	}
 	
 	module.exports = checkReactTypeSpec;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(56)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ },
 /* 121 */
@@ -15366,7 +15369,7 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var ReactCompositeComponent = __webpack_require__(226);
+	var ReactCompositeComponent = __webpack_require__(244);
 	var ReactEmptyComponent = __webpack_require__(109);
 	var ReactHostComponent = __webpack_require__(111);
 	
@@ -15544,8 +15547,8 @@
 	'use strict';
 	
 	var ExecutionEnvironment = __webpack_require__(7);
-	var escapeTextContentForBrowser = __webpack_require__(45);
-	var setInnerHTML = __webpack_require__(46);
+	var escapeTextContentForBrowser = __webpack_require__(49);
+	var setInnerHTML = __webpack_require__(50);
 	
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -15589,19 +15592,19 @@
 	    value: true
 	});
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _underscore = __webpack_require__(83);
+	var _underscore = __webpack_require__(51);
 	
 	var _underscore2 = _interopRequireDefault(_underscore);
 	
-	var _nav = __webpack_require__(131);
+	var _nav = __webpack_require__(132);
 	
 	var _nav2 = _interopRequireDefault(_nav);
 	
-	__webpack_require__(36);
+	__webpack_require__(29);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -15620,8 +15623,53 @@
 	            lang: 'en'
 	        };
 	    },
-	    changeLang: function changeLang(newLang) {
-	        this.state.lang !== newLang ? this.setState({ lang: newLang }) : {};
+	    componentWillMount: function componentWillMount() {
+	        // let jivo_magic_var;
+	        // if (typeof window.jivo_magic_var == "undefined"){
+	        //     jivo_magic_var = 123321;
+	        //     window.jivo_config={
+	        //         "widget_id":"vy9cavgAjm",
+	        //         "site_id":134717,
+	        //         "widget_color":"#ecedef",
+	        //         "widget_font_color":"dark",
+	        //         "widget_padding":"100",
+	        //         "widget_height":"0",
+	        //         "widget_orientation":"bottom",
+	        //         "font_size":"14",
+	        //         "font_family":"Arial",
+	        //         "font_type":"normal",
+	        //         "locale":"ru_RU",
+	        //         "show_rate_form":1,
+	        //         "hide_ad":0,
+	        //         "secure":0,
+	        //         "contacts_ask":0,
+	        //         "style_string":"jivo_shadow jivo_rounded_corners jivo_gradient jivo_3d_effect jivo_border jivo_3px_border jivo_dark_text",
+	        //         "chat_mode":1?"online":"offline",
+	        //         "options":0,
+	        //         "hide_offline":0,
+	        //         "vox_login":"jivosite@chat.jivosite.voximplant.components",
+	        //         "avatar_url":"\/\/s3-eu-west-1.amazonaws.components\/jivo-userdata",
+	        //         "online_widget_label":"\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u043d\u0430\u043c, \u043c\u044b \u043e\u043d\u043b\u0430\u0439\u043d!",
+	        //         "offline_widget_label":"\u041e\u0442\u043f\u0440\u0430\u0432\u044c\u0442\u0435 \u043d\u0430\u043c \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435",
+	        //         "offline_form_text":"\u041e\u0441\u0442\u0430\u0432\u044c\u0442\u0435 \u0441\u0432\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u0432 \u044d\u0442\u043e\u0439 \u0444\u043e\u0440\u043c\u0435, \u0438 \u043c\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043c \u0435\u0433\u043e \u043d\u0430 e-mail \u0438 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043e\u0442\u0432\u0435\u0442\u0438\u043c!",
+	        //         "base_url":"\/\/code2.jivosite.components",
+	        //         "static_host":"cdn.jivosite.components\/v2",
+	        //         "comet":{"host":"node16.jivosite.components"},
+	        //         "contacts_settings":{
+	        //             "name":{"show":true,"required":false},
+	        //             "phone":{"show":true,"required":false},
+	        //             "email":{"show":true,"required":true}
+	        //         }
+	        //     };
+	        //     let sc = document.getElementsByTagName("script"),
+	        //         iA = sc[0],
+	        //         se = document.createElement("script");
+	        //
+	        //     se.type = "text/javascript";
+	        //     se.async = true;
+	        //     se.charset="UTF-8";
+	        //     iA.parentNode.insertBefore(se, iA).src="http://cdn.jivosite.components/v2/js/widget_"+ jivo_config.locale+ ".js?rand=1447161939";
+	        // }
 	    },
 	    render: function render() {
 	        var _this = this;
@@ -15649,6 +15697,9 @@
 	            _react2.default.createElement(_nav2.default, { lang: lang }),
 	            _react2.default.cloneElement(this.props.children, { lang: lang })
 	        );
+	    },
+	    changeLang: function changeLang(newLang) {
+	        this.state.lang !== newLang ? this.setState({ lang: newLang }) : {};
 	    }
 	});
 	
@@ -15664,111 +15715,103 @@
 	    value: true
 	});
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _underscore = __webpack_require__(83);
+	var _underscore = __webpack_require__(51);
 	
 	var _underscore2 = _interopRequireDefault(_underscore);
 	
-	__webpack_require__(84);
+	__webpack_require__(52);
 	
-	__webpack_require__(36);
+	__webpack_require__(29);
 	
-	__webpack_require__(47);
+	__webpack_require__(37);
 	
-	__webpack_require__(85);
+	__webpack_require__(53);
 	
-	var _languages = __webpack_require__(55);
+	var _languages = __webpack_require__(43);
 	
 	var _languages2 = _interopRequireDefault(_languages);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var IMAGES_DATA = [{
-	    url: __webpack_require__(160),
-	    title: 'Реглан \n Флис , футер, двунитка \n Изготовлено для 1с предприятия по заказу Business Tuning Center'
-	}, {
-	    url: __webpack_require__(161),
-	    title: 'Утепленный костюм (полукомбинезон и куртка) \n Ткань плащевая «Гретта», синтепон \n Изготовлено для компании Promo-Cup'
-	}, {
-	    url: __webpack_require__(168),
-	    title: 'Техники нанесения логотипов - машинная вышивка и прямая шелкотрафаретная печать'
-	}, {
-	    url: __webpack_require__(162),
-	    title: 'Промо-костюм, ветровка \n Габардин, болонья «Силвер» \n Изготовлено для компании Life по заказу Business Tuning Center'
-	}, {
-	    url: __webpack_require__(163),
-	    title: 'Костюм трикотажный ( Футболка-поло, юбка, шорты) \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для компании McDonald`s по заказу Business Tuning Center'
-	}, {
-	    url: __webpack_require__(164),
-	    title: 'Футболка-поло \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для компании Microsoft по заказу Business Tuning Center'
-	}, {
-	    url: __webpack_require__(167),
-	    title: 'Фартук, юбка-фартук, костюм бармена \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для Pinta Trattoria and Pub'
-	}, {
-	    url: __webpack_require__(165),
-	    title: 'Костюм трикотажный ( Футболка-поло, юбка, шорты) \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для компании MTC по заказу Business Tuning Center'
-	}, {
-	    url: __webpack_require__(166),
-	    title: 'Платья для хостес \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено по заказу «СК Арсенал и Business Tuning Centr'
-	}, {
-	    url: __webpack_require__(169),
-	    title: 'Детские трикотажные футболки \n Трикотажное полотно «Лакоста» 100% хлопок'
-	}, {
-	    url: __webpack_require__(170),
-	    title: 'Костюм для горничной и охранника \n Трикотажное полотно с эластаном и смесовой ткани \n Изготовлено для «Azov le Chalet»'
-	}, {
-	    url: __webpack_require__(171),
-	    title: 'Костюм для шеф-повара \n Смесовая ткань 65% полиэстр и 35 х/б \n Изготовлено для «Azov le Chalet»'
-	}, {
-	    url: __webpack_require__(172),
-	    title: 'Футболка - трикотажное полотно с эластаном \n Изготовлено для телеканала 1+1 по заказу Havas Engage Ukraine'
-	}, {
-	    url: __webpack_require__(173),
-	    title: 'Футболка - трикотажное полотно «Кулир» 100% хлопок \n Изготовлено для PepsiCo по заказу Фри Бренд'
-	}];
+	var IMAGE = {
+	    gallery: [{
+	        url: __webpack_require__(165),
+	        title: 'Реглан \n Флис , футер, двунитка \n Изготовлено для 1с предприятия по заказу Business Tuning Center'
+	    }, {
+	        url: __webpack_require__(166),
+	        title: 'Утепленный костюм (полукомбинезон и куртка) \n Ткань плащевая «Гретта», синтепон \n Изготовлено для компании Promo-Cup'
+	    }, {
+	        url: __webpack_require__(173),
+	        title: 'Техники нанесения логотипов - машинная вышивка и прямая шелкотрафаретная печать'
+	    }, {
+	        url: __webpack_require__(167),
+	        title: 'Промо-костюм, ветровка \n Габардин, болонья «Силвер» \n Изготовлено для компании Life по заказу Business Tuning Center'
+	    }, {
+	        url: __webpack_require__(168),
+	        title: 'Костюм трикотажный ( Футболка-поло, юбка, шорты) \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для компании McDonald`s по заказу Business Tuning Center'
+	    }, {
+	        url: __webpack_require__(169),
+	        title: 'Футболка-поло \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для компании Microsoft по заказу Business Tuning Center'
+	    }, {
+	        url: __webpack_require__(172),
+	        title: 'Фартук, юбка-фартук, костюм бармена \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для Pinta Trattoria and Pub'
+	    }, {
+	        url: __webpack_require__(170),
+	        title: 'Костюм трикотажный ( Футболка-поло, юбка, шорты) \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено для компании MTC по заказу Business Tuning Center'
+	    }, {
+	        url: __webpack_require__(171),
+	        title: 'Платья для хостес \n Трикотажное полотно «Лакоста» 100% хлопок \n Изготовлено по заказу «СК Арсенал и Business Tuning Centr'
+	    }, {
+	        url: __webpack_require__(174),
+	        title: 'Детские трикотажные футболки \n Трикотажное полотно «Лакоста» 100% хлопок'
+	    }, {
+	        url: __webpack_require__(175),
+	        title: 'Костюм для горничной и охранника \n Трикотажное полотно с эластаном и смесовой ткани \n Изготовлено для «Azov le Chalet»'
+	    }, {
+	        url: __webpack_require__(176),
+	        title: 'Костюм для шеф-повара \n Смесовая ткань 65% полиэстр и 35 х/б \n Изготовлено для «Azov le Chalet»'
+	    }, {
+	        url: __webpack_require__(177),
+	        title: 'Футболка - трикотажное полотно с эластаном \n Изготовлено для телеканала 1+1 по заказу Havas Engage Ukraine'
+	    }, {
+	        url: __webpack_require__(178),
+	        title: 'Футболка - трикотажное полотно «Кулир» 100% хлопок \n Изготовлено для PepsiCo по заказу Фри Бренд'
+	    }],
+	    page: [{
+	        background: __webpack_require__(149),
+	        logo: __webpack_require__(13)
+	    }, {
+	        background: __webpack_require__(150),
+	        logo: __webpack_require__(13)
+	    }, {
+	        background: __webpack_require__(151),
+	        logo: __webpack_require__(13)
+	    }, {
+	        background: __webpack_require__(152),
+	        logo: __webpack_require__(13)
+	    }]
+	};
 	
 	//noinspection JSUnresolvedVariable
 	
 	
-	var PAGE_BLOCK = [{
-	    background: __webpack_require__(148),
-	    logo: __webpack_require__(14)
-	}, {
-	    background: __webpack_require__(149),
-	    logo: __webpack_require__(14)
-	}, {
-	    background: __webpack_require__(150),
-	    logo: __webpack_require__(14)
-	}, {
-	    background: __webpack_require__(151),
-	    logo: __webpack_require__(14)
-	}];
-	
-	var Horeca = _react2.default.createClass({
-	    displayName: 'Horeca',
+	var Clothes = _react2.default.createClass({
+	    displayName: 'Clothes',
 	
 	    propTypes: {
 	        lang: _react2.default.PropTypes.string,
 	        cont: _react2.default.PropTypes.func
 	    },
 	
-	    html: function html(sectionid) {
-	        var contant = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "body";
-	
-	        var home_translate = _languages2.default[this.props.lang].clothes || {};
-	        return { __html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!' };
-	    },
-	    sectionLink: function sectionLink(sectionlinkid) {
-	        $(this.refs.Clothes).fullpage.moveTo(sectionlinkid);
-	    },
 	    componentDidMount: function componentDidMount() {
-	        var htmlElem = document.documentElement;
-	
-	        htmlElem.classList.contains('fp-enabled') ? $(this.refs.Clothes).fullpage.destroy('all') : {};
-	        htmlElem.className = 'Clothes';
+	        var htmlElem = document;
+	        htmlElem.title = 'Clothes';
+	        htmlElem.documentElement.classList.contains('fp-enabled') ? $(this.refs.Clothes).fullpage.destroy('all') : {};
+	        htmlElem.documentElement.className = 'Clothes';
 	
 	        $(this.refs.Clothes).fullpage({
 	            css3: true,
@@ -15799,7 +15842,7 @@
 	            _react2.default.createElement(
 	                'div',
 	                { ref: 'Clothes' },
-	                _underscore2.default.map(PAGE_BLOCK, function (value, key) {
+	                _underscore2.default.map(IMAGE.page, function (value, key) {
 	                    return _react2.default.createElement(
 	                        'div',
 	                        { key: key,
@@ -15831,7 +15874,7 @@
 	                    { className: 'section',
 	                        id: 'section4',
 	                        style: {
-	                            background: 'url(' + __webpack_require__(50) + ') no-repeat center',
+	                            background: 'url(' + __webpack_require__(40) + ') no-repeat center',
 	                            backgroundSize: 'cover'
 	                        } },
 	                    _react2.default.createElement(
@@ -15840,7 +15883,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'col-1' },
-	                            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(49) })
+	                            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(39) })
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
@@ -15858,7 +15901,7 @@
 	            _react2.default.createElement(
 	                'div',
 	                { ref: 'linksImg' },
-	                _underscore2.default.map(IMAGES_DATA, function (value, key) {
+	                _underscore2.default.map(IMAGE.gallery, function (value, key) {
 	                    return _react2.default.createElement('a', { key: key,
 	                        href: value.url,
 	                        title: value.title
@@ -15869,15 +15912,7 @@
 	                'div',
 	                { id: 'blueimp-gallery', className: 'blueimp-gallery blueimp-gallery-controls' },
 	                _react2.default.createElement('div', { className: 'slides' }),
-	                _react2.default.createElement('pre', { className: 'title',
-	                    style: {
-	                        backgroundColor: "rgba(0,0,0,0.5)",
-	                        border: "0",
-	                        color: "rgba(255,255,255,0.90)",
-	                        fontSize: "80%",
-	                        fontFamily: 'FreeSet Cyrillic, arial',
-	                        lineHeight: "2em"
-	                    } }),
+	                _react2.default.createElement('pre', { className: 'title' }),
 	                _react2.default.createElement('p', { className: 'description' }),
 	                _react2.default.createElement(
 	                    'a',
@@ -15898,10 +15933,19 @@
 	                _react2.default.createElement('ol', { className: 'indicator' })
 	            )
 	        );
+	    },
+	    html: function html(sectionid) {
+	        var contant = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "body";
+	
+	        var home_translate = _languages2.default[this.props.lang].clothes || {};
+	        return { __html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!' };
+	    },
+	    sectionLink: function sectionLink(sectionlinkid) {
+	        $(this.refs.Clothes).fullpage.moveTo(sectionlinkid);
 	    }
 	});
 	
-	exports.default = Horeca;
+	exports.default = Clothes;
 
 /***/ },
 /* 129 */
@@ -15913,17 +15957,252 @@
 	    value: true
 	});
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(132);
+	var _underscore = __webpack_require__(51);
 	
-	__webpack_require__(36);
+	var _underscore2 = _interopRequireDefault(_underscore);
 	
-	__webpack_require__(47);
+	__webpack_require__(52);
 	
-	var _languages = __webpack_require__(55);
+	__webpack_require__(29);
+	
+	__webpack_require__(37);
+	
+	__webpack_require__(53);
+	
+	var _languages = __webpack_require__(43);
+	
+	var _languages2 = _interopRequireDefault(_languages);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var IMAGE = {
+	    gallery: [{
+	        url: __webpack_require__(179),
+	        title: 'Декорированная фарфоровая тарелка \n Изготовлено по заказу А-Групп для компании NOVARTIS'
+	    }, {
+	        url: __webpack_require__(180),
+	        title: 'Декорированная фарфоровая чашка \n Изготовлено по заказу компании Галерея Стекла и Фарфора'
+	    }, {
+	        url: __webpack_require__(190),
+	        title: 'Декорированная термо-кружка \n Изготовлено по заказу А-Групп для компании KYIVSTAR'
+	    }, {
+	        url: __webpack_require__(181),
+	        title: 'Декорированная стеклянная чашка \n Изготовлено по заказу компании Галерея Стекла и Фарфора'
+	    }, {
+	        url: __webpack_require__(182),
+	        title: 'Декорированная стеклянная чашка \n Изготовлено по заказу компании Галерея Стекла и Фарфора'
+	    }, {
+	        url: __webpack_require__(183),
+	        title: 'Декорированная стеклянная чашка \n Изготовлено по заказу RADISSON BLU KYIV PODIL'
+	    }, {
+	        url: __webpack_require__(184),
+	        title: 'Декорированная фарфоровая чашка в индивидуальной упаковке \n Изготовлено по заказу компании Галерея Стекла и Фарфора'
+	    }, {
+	        url: __webpack_require__(185),
+	        title: 'Декорированная фарфоровая чашка в индивидуальной упаковке \n Изготовлено по заказу компании Галерея Стекла и Фарфора'
+	    }, {
+	        url: __webpack_require__(186),
+	        title: 'Образец декорации питьевой посуды'
+	    }, {
+	        url: __webpack_require__(187),
+	        title: 'Образец декорации коньячных бокалов'
+	    }, {
+	        url: __webpack_require__(188),
+	        title: 'Образец декорации кружек для глинтвейна'
+	    }, {
+	        url: __webpack_require__(189),
+	        title: 'Образец декорации сувенирной продукции'
+	    }, {
+	        url: __webpack_require__(191),
+	        title: 'Декорированная фарфоровая чашка \n Изготовлено по заказу А-Групп для компании KYIVSTAR'
+	    }],
+	    page: [{
+	        background: __webpack_require__(153)
+	    }, {
+	        background: __webpack_require__(154)
+	    }, {
+	        background: __webpack_require__(155)
+	    }, {
+	        background: __webpack_require__(156)
+	    }],
+	    logo: __webpack_require__(13)
+	};
+	
+	//noinspection JSUnresolvedVariable
+	
+	
+	var Decol = _react2.default.createClass({
+	    displayName: 'Decol',
+	
+	    propTypes: {
+	        lang: _react2.default.PropTypes.string,
+	        cont: _react2.default.PropTypes.func
+	    },
+	
+	    componentDidMount: function componentDidMount() {
+	        var htmlElem = document;
+	        htmlElem.title = 'Decol';
+	        htmlElem.documentElement.classList.contains('fp-enabled') ? $(this.refs.Decol).fullpage.destroy('all') : {};
+	        htmlElem.documentElement.className = 'Decol';
+	
+	        $(this.refs.Decol).fullpage({
+	            css3: true,
+	            navigation: true,
+	            scrollOverflow: true,
+	            scrollingSpeed: 1000
+	        });
+	    },
+	    render: function render() {
+	        var _this = this;
+	
+	        var cont = _languages2.default[this.props.lang].section4;
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'gallery' },
+	                _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                            return blueimp.Gallery($(_this.refs.linksImg).find('a'));
+	                        } },
+	                    'GALLERY'
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { ref: 'Decol' },
+	                _underscore2.default.map(IMAGE.page, function (value, key) {
+	                    return _react2.default.createElement(
+	                        'div',
+	                        { key: key,
+	                            className: 'section',
+	                            id: "section" + key,
+	                            style: {
+	                                background: 'url(' + value.background + ') no-repeat center',
+	                                backgroundSize: 'cover'
+	                            } },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'container-col' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-1' },
+	                                _react2.default.createElement('img', { className: 'logo', src: IMAGE.logo })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-2' },
+	                                _react2.default.createElement('b', { className: 'title', dangerouslySetInnerHTML: _this.html("section" + key, "title") }),
+	                                _react2.default.createElement('p', { className: 'textOlso', dangerouslySetInnerHTML: _this.html("section" + key) })
+	                            )
+	                        )
+	                    );
+	                }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'section',
+	                        id: 'section4',
+	                        style: {
+	                            background: 'url(' + __webpack_require__(40) + ') no-repeat center',
+	                            backgroundSize: 'cover'
+	                        } },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'container-col' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-1' },
+	                            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(39) })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-1 left' },
+	                            _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: cont.title } })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col-3' },
+	                            _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: cont.body } })
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { ref: 'linksImg' },
+	                _underscore2.default.map(IMAGE.gallery, function (value, key) {
+	                    return _react2.default.createElement('a', { key: key,
+	                        href: value.url,
+	                        title: value.title
+	                    });
+	                })
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { id: 'blueimp-gallery', className: 'blueimp-gallery blueimp-gallery-controls' },
+	                _react2.default.createElement('div', { className: 'slides' }),
+	                _react2.default.createElement('pre', { className: 'title' }),
+	                _react2.default.createElement('p', { className: 'description' }),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'prev' },
+	                    '\u2039'
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'next' },
+	                    '\u203A'
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'close' },
+	                    '\xD7'
+	                ),
+	                _react2.default.createElement('a', { className: 'play-pause' }),
+	                _react2.default.createElement('ol', { className: 'indicator' })
+	            )
+	        );
+	    },
+	    html: function html(sectionid) {
+	        var contant = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "body";
+	
+	        var home_translate = _languages2.default[this.props.lang].decol || {};
+	        return { __html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!' };
+	    },
+	    sectionLink: function sectionLink(sectionlinkid) {
+	        $(this.refs.Decol).fullpage.moveTo(sectionlinkid);
+	    }
+	});
+	
+	exports.default = Decol;
+
+/***/ },
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(5);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(133);
+	
+	__webpack_require__(29);
+	
+	__webpack_require__(37);
+	
+	var _languages = __webpack_require__(43);
 	
 	var _languages2 = _interopRequireDefault(_languages);
 	
@@ -15946,10 +16225,10 @@
 	        $(this.refs.Home).fullpage.moveTo(sectionlinkid);
 	    },
 	    componentDidMount: function componentDidMount() {
-	        var htmlElem = document.documentElement;
-	
-	        htmlElem.classList.contains('fp-enabled') ? $(this.refs.Home).fullpage.destroy('all') : {};
-	        htmlElem.className = 'Home';
+	        var htmlElem = document;
+	        htmlElem.title = 'Home';
+	        htmlElem.documentElement.classList.contains('fp-enabled') ? $(this.refs.Home).fullpage.destroy('all') : {};
+	        htmlElem.documentElement.className = 'Home';
 	
 	        $(this.refs.Home).fullpage({
 	            css3: true,
@@ -15969,7 +16248,7 @@
 	                { className: 'section active',
 	                    id: 'section0',
 	                    style: {
-	                        background: 'url(' + __webpack_require__(156) + ') no-repeat center',
+	                        background: 'url(' + __webpack_require__(161) + ') no-repeat center',
 	                        backgroundSize: 'cover'
 	                    } },
 	                _react2.default.createElement(
@@ -15978,7 +16257,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'col-1' },
-	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(14) })
+	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(13) })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -15993,7 +16272,7 @@
 	                { className: 'section',
 	                    id: 'section1',
 	                    style: {
-	                        background: 'url(' + __webpack_require__(158) + ') no-repeat center',
+	                        background: 'url(' + __webpack_require__(163) + ') no-repeat center',
 	                        backgroundSize: 'cover'
 	                    } },
 	                _react2.default.createElement(
@@ -16011,7 +16290,7 @@
 	                { className: 'section',
 	                    id: 'section2',
 	                    style: {
-	                        background: 'url(' + __webpack_require__(157) + ') no-repeat center',
+	                        background: 'url(' + __webpack_require__(162) + ') no-repeat center',
 	                        backgroundSize: 'cover'
 	                    } },
 	                _react2.default.createElement(
@@ -16029,7 +16308,7 @@
 	                { className: 'section',
 	                    id: 'section3',
 	                    style: {
-	                        background: 'url(' + __webpack_require__(159) + ') no-repeat center',
+	                        background: 'url(' + __webpack_require__(164) + ') no-repeat center',
 	                        backgroundSize: 'cover'
 	                    } },
 	                _react2.default.createElement(
@@ -16047,7 +16326,7 @@
 	                { className: 'section',
 	                    id: 'section4',
 	                    style: {
-	                        background: 'url(' + __webpack_require__(50) + ') no-repeat center',
+	                        background: 'url(' + __webpack_require__(40) + ') no-repeat center',
 	                        backgroundSize: 'cover'
 	                    } },
 	                _react2.default.createElement(
@@ -16056,7 +16335,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'col-1' },
-	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(49) })
+	                        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(39) })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -16078,7 +16357,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16087,88 +16366,89 @@
 	    value: true
 	});
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _underscore = __webpack_require__(83);
+	var _underscore = __webpack_require__(51);
 	
 	var _underscore2 = _interopRequireDefault(_underscore);
 	
-	__webpack_require__(84);
+	__webpack_require__(52);
 	
-	__webpack_require__(36);
+	__webpack_require__(29);
 	
-	__webpack_require__(47);
+	__webpack_require__(37);
 	
-	__webpack_require__(85);
+	__webpack_require__(53);
 	
-	var _languages = __webpack_require__(55);
+	var _languages = __webpack_require__(43);
 	
 	var _languages2 = _interopRequireDefault(_languages);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var IMAGES_DATA = [{
-	    url: __webpack_require__(179),
-	    title: 'Чашка фарфоровая декорированная \n Изготовлено для Coffee Life'
-	}, {
-	    url: __webpack_require__(180),
-	    title: 'Меню ресторана FLAVOURS \n Изготовлено для Four Points by Sheraton Запорожье'
-	}, {
-	    url: __webpack_require__(181),
-	    title: 'Меню ресторана THE GRILLED \n Изготовлено для Redisson SAS Resort Алушта'
-	}, {
-	    url: __webpack_require__(182),
-	    title: 'Набор фарфоровой посуды \n Изготовлен для ТМ JACOBS'
-	}, {
-	    url: __webpack_require__(183),
-	    title: 'Набор фарфоровой посуды \n Изготовлен для сети L`Kafa Cafe'
-	}, {
-	    url: __webpack_require__(184),
-	    title: 'Футболка-поло и декорированные пивные бокалы \n Изготовлено для Pinta Trattoria and Pub'
-	}, {
-	    url: __webpack_require__(185),
-	    title: 'Набор фарфоровой посуды \n Изготовлено для Pinta Trattoria and Pub'
-	}, {
-	    url: __webpack_require__(186),
-	    title: 'Меню ресторана RIVER LOUNGE \n Изготовлено для  Four Points by Sheraton Запорожье'
-	}, {
-	    url: __webpack_require__(187),
-	    title: 'Набор декорированной столовой фарфоровой посуды \n Изготовлен для ресторана Суп & Ко'
-	}, {
-	    url: __webpack_require__(174),
-	    title: 'Бирдекель ( нем. Bierdeckel) - подставка под пивную кружку'
-	}, {
-	    url: __webpack_require__(175),
-	    title: 'Переноска для кофе \n Изготовлено для компании Promo-Cup'
-	}, {
-	    url: __webpack_require__(176),
-	    title: 'Холдер для кофе \n Изготовлено для компании Promo-Cup'
-	}, {
-	    url: __webpack_require__(177),
-	    title: 'Дорхенгер (Door Hanger) - Табличка на дверь'
-	}, {
-	    url: __webpack_require__(178),
-	    title: 'Коробка для пиццы \n Изготовлено для Pinta Trattoria and Pub'
-	}];
+	var IMAGE = {
+	    gallery: [{
+	        url: __webpack_require__(197),
+	        title: 'Чашка фарфоровая декорированная \n Изготовлено для Coffee Life'
+	    }, {
+	        url: __webpack_require__(198),
+	        title: 'Меню ресторана FLAVOURS \n Изготовлено для Four Points by Sheraton Запорожье'
+	    }, {
+	        url: __webpack_require__(199),
+	        title: 'Меню ресторана THE GRILLED \n Изготовлено для Redisson SAS Resort Алушта'
+	    }, {
+	        url: __webpack_require__(200),
+	        title: 'Набор фарфоровой посуды \n Изготовлен для ТМ JACOBS'
+	    }, {
+	        url: __webpack_require__(201),
+	        title: 'Набор фарфоровой посуды \n Изготовлен для сети L`Kafa Cafe'
+	    }, {
+	        url: __webpack_require__(202),
+	        title: 'Футболка-поло и декорированные пивные бокалы \n Изготовлено для Pinta Trattoria and Pub'
+	    }, {
+	        url: __webpack_require__(203),
+	        title: 'Набор фарфоровой посуды \n Изготовлено для Pinta Trattoria and Pub'
+	    }, {
+	        url: __webpack_require__(204),
+	        title: 'Меню ресторана RIVER LOUNGE \n Изготовлено для  Four Points by Sheraton Запорожье'
+	    }, {
+	        url: __webpack_require__(205),
+	        title: 'Набор декорированной столовой фарфоровой посуды \n Изготовлен для ресторана Суп & Ко'
+	    }, {
+	        url: __webpack_require__(192),
+	        title: 'Бирдекель ( нем. Bierdeckel) - подставка под пивную кружку'
+	    }, {
+	        url: __webpack_require__(193),
+	        title: 'Переноска для кофе \n Изготовлено для компании Promo-Cup'
+	    }, {
+	        url: __webpack_require__(194),
+	        title: 'Холдер для кофе \n Изготовлено для компании Promo-Cup'
+	    }, {
+	        url: __webpack_require__(195),
+	        title: 'Дорхенгер (Door Hanger) - Табличка на дверь'
+	    }, {
+	        url: __webpack_require__(196),
+	        title: 'Коробка для пиццы \n Изготовлено для Pinta Trattoria and Pub'
+	    }],
+	    page: [{
+	        background: __webpack_require__(157),
+	        logo: __webpack_require__(13)
+	    }, {
+	        background: __webpack_require__(158),
+	        logo: __webpack_require__(13)
+	    }, {
+	        background: __webpack_require__(159),
+	        logo: __webpack_require__(13)
+	    }, {
+	        background: __webpack_require__(160),
+	        logo: __webpack_require__(13)
+	    }]
+	};
 	
 	//noinspection JSUnresolvedVariable
 	
-	
-	var PAGE_BLOCK = [{
-	    background: __webpack_require__(152),
-	    logo: __webpack_require__(14)
-	}, {
-	    background: __webpack_require__(153),
-	    logo: __webpack_require__(14)
-	}, {
-	    background: __webpack_require__(154),
-	    logo: __webpack_require__(14)
-	}, {
-	    background: __webpack_require__(155),
-	    logo: __webpack_require__(14)
-	}];
 	
 	var Horeca = _react2.default.createClass({
 	    displayName: 'Horeca',
@@ -16178,20 +16458,11 @@
 	        cont: _react2.default.PropTypes.func
 	    },
 	
-	    html: function html(sectionid) {
-	        var contant = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "body";
-	
-	        var home_translate = _languages2.default[this.props.lang].horeca || {};
-	        return { __html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!' };
-	    },
-	    sectionLink: function sectionLink(sectionlinkid) {
-	        $(this.refs.Horeca).fullpage.moveTo(sectionlinkid);
-	    },
 	    componentDidMount: function componentDidMount() {
-	        var htmlElem = document.documentElement;
-	
-	        htmlElem.classList.contains('fp-enabled') ? $(this.refs.Horeca).fullpage.destroy('all') : {};
-	        htmlElem.className = 'Horeca';
+	        var htmlElem = document;
+	        htmlElem.title = 'HoReCa';
+	        htmlElem.documentElement.classList.contains('fp-enabled') ? $(this.refs.Horeca).fullpage.destroy('all') : {};
+	        htmlElem.documentElement.className = 'Horeca';
 	
 	        $(this.refs.Horeca).fullpage({
 	            css3: true,
@@ -16204,7 +16475,6 @@
 	        var _this = this;
 	
 	        var cont = _languages2.default[this.props.lang].section4;
-	
 	        return _react2.default.createElement(
 	            'div',
 	            null,
@@ -16222,7 +16492,7 @@
 	            _react2.default.createElement(
 	                'div',
 	                { ref: 'Horeca' },
-	                _underscore2.default.map(PAGE_BLOCK, function (value, key) {
+	                _underscore2.default.map(IMAGE.page, function (value, key) {
 	                    return _react2.default.createElement(
 	                        'div',
 	                        { key: key,
@@ -16254,7 +16524,7 @@
 	                    { className: 'section',
 	                        id: 'section4',
 	                        style: {
-	                            background: 'url(' + __webpack_require__(50) + ') no-repeat center',
+	                            background: 'url(' + __webpack_require__(40) + ') no-repeat center',
 	                            backgroundSize: 'cover'
 	                        } },
 	                    _react2.default.createElement(
@@ -16263,7 +16533,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'col-1' },
-	                            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(49) })
+	                            _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(39) })
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
@@ -16281,7 +16551,7 @@
 	            _react2.default.createElement(
 	                'div',
 	                { ref: 'linksImg' },
-	                _underscore2.default.map(IMAGES_DATA, function (value, key) {
+	                _underscore2.default.map(IMAGE.gallery, function (value, key) {
 	                    return _react2.default.createElement('a', { key: key,
 	                        href: value.url,
 	                        title: value.title
@@ -16292,15 +16562,7 @@
 	                'div',
 	                { id: 'blueimp-gallery', className: 'blueimp-gallery blueimp-gallery-controls' },
 	                _react2.default.createElement('div', { className: 'slides' }),
-	                _react2.default.createElement('pre', { className: 'title',
-	                    style: {
-	                        backgroundColor: "rgba(0,0,0,0.5)",
-	                        border: "0",
-	                        color: "rgba(255,255,255,0.90)",
-	                        fontSize: "80%",
-	                        fontFamily: 'FreeSet Cyrillic, arial',
-	                        lineHeight: "2em"
-	                    } }),
+	                _react2.default.createElement('pre', { className: 'title' }),
 	                _react2.default.createElement('p', { className: 'description' }),
 	                _react2.default.createElement(
 	                    'a',
@@ -16321,13 +16583,22 @@
 	                _react2.default.createElement('ol', { className: 'indicator' })
 	            )
 	        );
+	    },
+	    html: function html(sectionid) {
+	        var contant = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "body";
+	
+	        var home_translate = _languages2.default[this.props.lang].horeca || {};
+	        return { __html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!' };
+	    },
+	    sectionLink: function sectionLink(sectionlinkid) {
+	        $(this.refs.Horeca).fullpage.moveTo(sectionlinkid);
 	    }
 	});
 	
 	exports.default = Horeca;
 
 /***/ },
-/* 131 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16336,13 +16607,13 @@
 	    value: true
 	});
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
 	var _reactRouter = __webpack_require__(99);
 	
-	__webpack_require__(133);
+	__webpack_require__(134);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -16394,8 +16665,8 @@
 	                'li',
 	                { className: 'olso' },
 	                _react2.default.createElement(
-	                    'a',
-	                    { href: '#/fb/section3' },
+	                    _reactRouter.Link,
+	                    { to: '/decol' },
 	                    'DECOL'
 	                )
 	            ),
@@ -16415,7 +16686,9 @@
 	                { className: 'olso last' },
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: '#/fb/section5' },
+	                    { onClick: function onClick(e) {
+	                            return jivo_api.open();
+	                        } },
 	                    'FEEDBACK'
 	                )
 	            )
@@ -16426,11 +16699,11 @@
 	exports.default = Nav;
 
 /***/ },
-/* 132 */
-36,
 /* 133 */
-36,
+29,
 /* 134 */
+29,
+/* 135 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16466,7 +16739,7 @@
 	module.exports = camelize;
 
 /***/ },
-/* 135 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16482,7 +16755,7 @@
 	
 	'use strict';
 	
-	var camelize = __webpack_require__(134);
+	var camelize = __webpack_require__(135);
 	
 	var msPattern = /^-ms-/;
 	
@@ -16510,7 +16783,7 @@
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 136 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16526,7 +16799,7 @@
 	 * 
 	 */
 	
-	var isTextNode = __webpack_require__(144);
+	var isTextNode = __webpack_require__(145);
 	
 	/*eslint-disable no-bitwise */
 	
@@ -16554,7 +16827,7 @@
 	module.exports = containsNode;
 
 /***/ },
-/* 137 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16685,7 +16958,7 @@
 	module.exports = createArrayFromMixed;
 
 /***/ },
-/* 138 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16705,8 +16978,8 @@
 	
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var createArrayFromMixed = __webpack_require__(137);
-	var getMarkupWrap = __webpack_require__(139);
+	var createArrayFromMixed = __webpack_require__(138);
+	var getMarkupWrap = __webpack_require__(140);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -16773,7 +17046,7 @@
 	module.exports = createNodesFromMarkup;
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16872,7 +17145,7 @@
 	module.exports = getMarkupWrap;
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports) {
 
 	/**
@@ -16915,7 +17188,7 @@
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16952,7 +17225,7 @@
 	module.exports = hyphenate;
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16968,7 +17241,7 @@
 	
 	'use strict';
 	
-	var hyphenate = __webpack_require__(141);
+	var hyphenate = __webpack_require__(142);
 	
 	var msPattern = /^ms-/;
 	
@@ -16995,7 +17268,7 @@
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -17022,7 +17295,7 @@
 	module.exports = isNode;
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17038,7 +17311,7 @@
 	 * @typechecks
 	 */
 	
-	var isNode = __webpack_require__(143);
+	var isNode = __webpack_require__(144);
 	
 	/**
 	 * @param {*} object The object to check.
@@ -17051,7 +17324,7 @@
 	module.exports = isTextNode;
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports) {
 
 	/**
@@ -17085,7 +17358,7 @@
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17112,7 +17385,7 @@
 	module.exports = performance || {};
 
 /***/ },
-/* 147 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17128,7 +17401,7 @@
 	 * @typechecks
 	 */
 	
-	var performance = __webpack_require__(146);
+	var performance = __webpack_require__(147);
 	
 	var performanceNow;
 	
@@ -17150,247 +17423,349 @@
 	module.exports = performanceNow;
 
 /***/ },
-/* 148 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/img/backgrounds/c/d3353e85394f1ce79107e8f321aac604.jpg";
 
 /***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/img/backgrounds/c/117d12289b2f8b29fc303893c5f55cc7.jpg";
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/img/backgrounds/c/776de349de2f6279627676fa01fe4114.jpg";
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "src/img/backgrounds/c/19c8571b0ecce7b5d174ad1aa4d3cd0a.jpg";
 
 /***/ },
-/* 152 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/03b19b6838dd4fb98de0a393189839da.jpg";
-
-/***/ },
 /* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/280d9356a6d60908a89c2d5bc9635fdf.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/cc51e8d140ce13762a35a95e9d58bd11.jpg";
 
 /***/ },
 /* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/443317a8f54ae0b5d8adbcb5eec88544.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/f146b9972a3e3883518f5b98a15bb07e.jpg";
 
 /***/ },
 /* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/a3823321babd6cb4611f1e820516d6c1.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/5bed264cd66fa177b5c7cde35d41ce55.jpg";
 
 /***/ },
 /* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/200683909e50ecf37530945bd1fcfbed.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/325301089b85a46e640f8253f1c795d3.jpg";
 
 /***/ },
 /* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/89c669a259bd0d6a95304c0c0aac31f5.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/03b19b6838dd4fb98de0a393189839da.jpg";
 
 /***/ },
 /* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/993a42e8abd6cd3cf16b2cdd9aedbe36.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/280d9356a6d60908a89c2d5bc9635fdf.jpg";
 
 /***/ },
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/f75a14bd1b568a22c77c3089b0afbbc8.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/443317a8f54ae0b5d8adbcb5eec88544.jpg";
 
 /***/ },
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/fa79a2f088857e82052ae948ed102b4e.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/a3823321babd6cb4611f1e820516d6c1.jpg";
 
 /***/ },
 /* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/67b8a94f1c2ebfbbddeef86e065cd65d.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/200683909e50ecf37530945bd1fcfbed.jpg";
 
 /***/ },
 /* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/9d62eb6d2d210fead537f0473c9da265.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/89c669a259bd0d6a95304c0c0aac31f5.jpg";
 
 /***/ },
 /* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/f8b1a1064690e745da1d03075d14ea98.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/993a42e8abd6cd3cf16b2cdd9aedbe36.jpg";
 
 /***/ },
 /* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/ff648edd243e08d2ef6fbf901eb9a686.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/f75a14bd1b568a22c77c3089b0afbbc8.jpg";
 
 /***/ },
 /* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/579fbec33bf8299a48a97a73c4834579.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/fa79a2f088857e82052ae948ed102b4e.jpg";
 
 /***/ },
 /* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/a87c9977264d7c7526ec37cb19541c3c.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/67b8a94f1c2ebfbbddeef86e065cd65d.jpg";
 
 /***/ },
 /* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/f0a74b0ab856337ceec15ddb5f0ce90c.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/9d62eb6d2d210fead537f0473c9da265.jpg";
 
 /***/ },
 /* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/360cf5fe11a130cdb2f4e0e0c0e6c7ac.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/f8b1a1064690e745da1d03075d14ea98.jpg";
 
 /***/ },
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/e9094b70951d8334fb40e0b32a9c6043.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/ff648edd243e08d2ef6fbf901eb9a686.jpg";
 
 /***/ },
 /* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/fed51a6f94a5e71ca37bbd7b895e9f27.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/579fbec33bf8299a48a97a73c4834579.jpg";
 
 /***/ },
 /* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/c4c5545b52138f00d8e41f2348989265.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/a87c9977264d7c7526ec37cb19541c3c.jpg";
 
 /***/ },
 /* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/f6feb2956ccc8c9e3a04c8b03a4f751c.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/f0a74b0ab856337ceec15ddb5f0ce90c.jpg";
 
 /***/ },
 /* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/0763cbc64343a161d472987748e7009e.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/360cf5fe11a130cdb2f4e0e0c0e6c7ac.jpg";
 
 /***/ },
 /* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/43143de9746c8086c489ef64558def28.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/e9094b70951d8334fb40e0b32a9c6043.jpg";
 
 /***/ },
 /* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/26fde8290dac2ba5c30f1cbec6175490.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/fed51a6f94a5e71ca37bbd7b895e9f27.jpg";
 
 /***/ },
 /* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/75fd81cfebcd9569dd88fc75087d4b95.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/c4c5545b52138f00d8e41f2348989265.jpg";
 
 /***/ },
 /* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/7b6e9ce8897343d35d5f614aa1ad3254.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/f6feb2956ccc8c9e3a04c8b03a4f751c.jpg";
 
 /***/ },
 /* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/c5dc7c636a5d1823cdd7aa16ae965cdf.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/0763cbc64343a161d472987748e7009e.jpg";
 
 /***/ },
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/5443e50eda33e2439151d592ef57df01.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/69ae83b1532abc1bb41df8c9a267f636.jpg";
 
 /***/ },
 /* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/70710d681f4b6d11360ab09d1ed6ac6a.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/1f4589fd139c63d1facdc5746e5100a2.jpg";
 
 /***/ },
 /* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/b171e1e8356b601078f02518f77ff30e.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/3c3962d86c1efce2dc65eac7500e4087.jpg";
 
 /***/ },
 /* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/175b69f27c1f60af31349c07abee03eb.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/8603fa98ea1a578c31a1ce1c6d37991d.jpg";
 
 /***/ },
 /* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/1a5f949467ef594635b40e76ecf90b9c.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/c1befe08477601c7c46ec5f7b6e6c902.jpg";
 
 /***/ },
 /* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/afe3f657bf634cac981222112acf39ce.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/194d3274fb308f23296791cc2f585590.jpg";
 
 /***/ },
 /* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/729c8773e75c25553b79b8ea3ebe40b5.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/2298d50235096569ab86217f51aa4309.jpg";
 
 /***/ },
 /* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/3007da69b74a95cbd387d7f08ed8b2d9.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/3c3809c5d53f4f717d6e8867231db5e3.jpg";
 
 /***/ },
 /* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/2542cb3b85b79d7e106435f62acee867.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/83033b76a6c4491612cb1b7efcad2c48.jpg";
 
 /***/ },
 /* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/decol/02beb8379de48048cef86911f520b1a9.jpg";
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/decol/be6cb60d419f8980a71c437b5de225cb.jpg";
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/decol/6ee1c86569919663682f575d692f6a27.jpg";
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/decol/8d9dec83c5ae55a2c255b360dd2e2630.jpg";
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/43143de9746c8086c489ef64558def28.jpg";
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/26fde8290dac2ba5c30f1cbec6175490.jpg";
+
+/***/ },
+/* 194 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/75fd81cfebcd9569dd88fc75087d4b95.jpg";
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/7b6e9ce8897343d35d5f614aa1ad3254.jpg";
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/c5dc7c636a5d1823cdd7aa16ae965cdf.jpg";
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/5443e50eda33e2439151d592ef57df01.jpg";
+
+/***/ },
+/* 198 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/70710d681f4b6d11360ab09d1ed6ac6a.jpg";
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/b171e1e8356b601078f02518f77ff30e.jpg";
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/175b69f27c1f60af31349c07abee03eb.jpg";
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/1a5f949467ef594635b40e76ecf90b9c.jpg";
+
+/***/ },
+/* 202 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/afe3f657bf634cac981222112acf39ce.jpg";
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/729c8773e75c25553b79b8ea3ebe40b5.jpg";
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/3007da69b74a95cbd387d7f08ed8b2d9.jpg";
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "src/img/horeca/2542cb3b85b79d7e106435f62acee867.jpg";
+
+/***/ },
+/* 206 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17451,7 +17826,7 @@
 	};
 
 /***/ },
-/* 189 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17459,7 +17834,7 @@
 	exports.__esModule = true;
 	exports.replaceLocation = exports.pushLocation = exports.startListener = exports.getCurrentLocation = exports.go = exports.getUserConfirmation = undefined;
 	
-	var _BrowserProtocol = __webpack_require__(51);
+	var _BrowserProtocol = __webpack_require__(55);
 	
 	Object.defineProperty(exports, 'getUserConfirmation', {
 	  enumerable: true,
@@ -17480,7 +17855,7 @@
 	
 	var _LocationUtils = __webpack_require__(24);
 	
-	var _DOMUtils = __webpack_require__(39);
+	var _DOMUtils = __webpack_require__(42);
 	
 	var _DOMStateStorage = __webpack_require__(89);
 	
@@ -17592,7 +17967,7 @@
 	};
 
 /***/ },
-/* 190 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17600,7 +17975,7 @@
 	exports.__esModule = true;
 	exports.replaceLocation = exports.pushLocation = exports.getCurrentLocation = exports.go = exports.getUserConfirmation = undefined;
 	
-	var _BrowserProtocol = __webpack_require__(51);
+	var _BrowserProtocol = __webpack_require__(55);
 	
 	Object.defineProperty(exports, 'getUserConfirmation', {
 	  enumerable: true,
@@ -17634,7 +18009,7 @@
 	};
 
 /***/ },
-/* 191 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17647,19 +18022,19 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _ExecutionEnvironment = __webpack_require__(52);
+	var _ExecutionEnvironment = __webpack_require__(56);
 	
-	var _BrowserProtocol = __webpack_require__(51);
+	var _BrowserProtocol = __webpack_require__(55);
 	
 	var BrowserProtocol = _interopRequireWildcard(_BrowserProtocol);
 	
-	var _RefreshProtocol = __webpack_require__(190);
+	var _RefreshProtocol = __webpack_require__(208);
 	
 	var RefreshProtocol = _interopRequireWildcard(_RefreshProtocol);
 	
-	var _DOMUtils = __webpack_require__(39);
+	var _DOMUtils = __webpack_require__(42);
 	
-	var _createHistory = __webpack_require__(53);
+	var _createHistory = __webpack_require__(57);
 	
 	var _createHistory2 = _interopRequireDefault(_createHistory);
 	
@@ -17732,7 +18107,7 @@
 	exports.default = createBrowserHistory;
 
 /***/ },
-/* 192 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17749,15 +18124,15 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _ExecutionEnvironment = __webpack_require__(52);
+	var _ExecutionEnvironment = __webpack_require__(56);
 	
-	var _DOMUtils = __webpack_require__(39);
+	var _DOMUtils = __webpack_require__(42);
 	
-	var _HashProtocol = __webpack_require__(189);
+	var _HashProtocol = __webpack_require__(207);
 	
 	var HashProtocol = _interopRequireWildcard(_HashProtocol);
 	
-	var _createHistory = __webpack_require__(53);
+	var _createHistory = __webpack_require__(57);
 	
 	var _createHistory2 = _interopRequireDefault(_createHistory);
 	
@@ -17884,7 +18259,7 @@
 	exports.default = createHashHistory;
 
 /***/ },
-/* 193 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17905,11 +18280,11 @@
 	
 	var _PathUtils = __webpack_require__(19);
 	
-	var _createHistory = __webpack_require__(53);
+	var _createHistory = __webpack_require__(57);
 	
 	var _createHistory2 = _interopRequireDefault(_createHistory);
 	
-	var _Actions = __webpack_require__(38);
+	var _Actions = __webpack_require__(41);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -18029,7 +18404,7 @@
 	exports.default = createMemoryHistory;
 
 /***/ },
-/* 194 */
+/* 212 */
 /***/ function(module, exports) {
 
 	/**
@@ -18085,11 +18460,11 @@
 
 
 /***/ },
-/* 195 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strictUriEncode = __webpack_require__(282);
+	var strictUriEncode = __webpack_require__(300);
 	var objectAssign = __webpack_require__(4);
 	
 	function encode(value, opts) {
@@ -18189,16 +18564,16 @@
 
 
 /***/ },
-/* 196 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(227);
+	module.exports = __webpack_require__(245);
 
 
 /***/ },
-/* 197 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18207,7 +18582,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -18231,14 +18606,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 198 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -18254,7 +18629,7 @@
 	
 	var _Redirect2 = _interopRequireDefault(_Redirect);
 	
-	var _InternalPropTypes = __webpack_require__(30);
+	var _InternalPropTypes = __webpack_require__(31);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -18300,14 +18675,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 199 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -18321,7 +18696,7 @@
 	
 	var _RouteUtils = __webpack_require__(20);
 	
-	var _InternalPropTypes = __webpack_require__(30);
+	var _InternalPropTypes = __webpack_require__(31);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -18366,14 +18741,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 200 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -18383,7 +18758,7 @@
 	
 	var _RouteUtils = __webpack_require__(20);
 	
-	var _InternalPropTypes = __webpack_require__(30);
+	var _InternalPropTypes = __webpack_require__(31);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -18429,7 +18804,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 201 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18442,7 +18817,7 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -18450,9 +18825,9 @@
 	
 	var _createTransitionManager3 = _interopRequireDefault(_createTransitionManager2);
 	
-	var _InternalPropTypes = __webpack_require__(30);
+	var _InternalPropTypes = __webpack_require__(31);
 	
-	var _RouterContext = __webpack_require__(60);
+	var _RouterContext = __webpack_require__(63);
 	
 	var _RouterContext2 = _interopRequireDefault(_RouterContext);
 	
@@ -18609,7 +18984,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 202 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18619,7 +18994,7 @@
 	exports.runChangeHooks = runChangeHooks;
 	exports.runLeaveHooks = runLeaveHooks;
 	
-	var _AsyncUtils = __webpack_require__(57);
+	var _AsyncUtils = __webpack_require__(60);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -18769,7 +19144,7 @@
 	}
 
 /***/ },
-/* 203 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18778,11 +19153,11 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _RouterContext = __webpack_require__(60);
+	var _RouterContext = __webpack_require__(63);
 	
 	var _RouterContext2 = _interopRequireDefault(_RouterContext);
 	
@@ -18831,14 +19206,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 204 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _createBrowserHistory = __webpack_require__(191);
+	var _createBrowserHistory = __webpack_require__(209);
 	
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 	
@@ -18852,7 +19227,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 205 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18934,14 +19309,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 206 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _AsyncUtils = __webpack_require__(57);
+	var _AsyncUtils = __webpack_require__(60);
 	
 	var _PromiseUtils = __webpack_require__(93);
 	
@@ -18979,7 +19354,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 207 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19010,14 +19385,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 208 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _createHashHistory = __webpack_require__(192);
+	var _createHashHistory = __webpack_require__(210);
 	
 	var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 	
@@ -19031,7 +19406,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 209 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19188,7 +19563,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 210 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19197,7 +19572,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _Actions = __webpack_require__(38);
+	var _Actions = __webpack_require__(41);
 	
 	var _invariant = __webpack_require__(8);
 	
@@ -19265,7 +19640,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 211 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19278,7 +19653,7 @@
 	
 	exports.default = matchRoutes;
 	
-	var _AsyncUtils = __webpack_require__(57);
+	var _AsyncUtils = __webpack_require__(60);
 	
 	var _PromiseUtils = __webpack_require__(93);
 	
@@ -19523,7 +19898,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 212 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19538,17 +19913,17 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _react = __webpack_require__(6);
+	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _hoistNonReactStatics = __webpack_require__(194);
+	var _hoistNonReactStatics = __webpack_require__(212);
 	
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 	
-	var _ContextUtils = __webpack_require__(58);
+	var _ContextUtils = __webpack_require__(61);
 	
-	var _PropTypes = __webpack_require__(59);
+	var _PropTypes = __webpack_require__(62);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -19600,7 +19975,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 213 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19616,7 +19991,7 @@
 	
 	'use strict';
 	
-	var ReactDOMComponentTree = __webpack_require__(5);
+	var ReactDOMComponentTree = __webpack_require__(6);
 	
 	var focusNode = __webpack_require__(87);
 	
@@ -19629,7 +20004,7 @@
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 214 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19646,11 +20021,11 @@
 	'use strict';
 	
 	var EventConstants = __webpack_require__(15);
-	var EventPropagators = __webpack_require__(32);
+	var EventPropagators = __webpack_require__(33);
 	var ExecutionEnvironment = __webpack_require__(7);
-	var FallbackCompositionState = __webpack_require__(220);
-	var SyntheticCompositionEvent = __webpack_require__(264);
-	var SyntheticInputEvent = __webpack_require__(267);
+	var FallbackCompositionState = __webpack_require__(238);
+	var SyntheticCompositionEvent = __webpack_require__(282);
+	var SyntheticInputEvent = __webpack_require__(285);
 	
 	var keyOf = __webpack_require__(18);
 	
@@ -20024,7 +20399,7 @@
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 215 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20044,10 +20419,10 @@
 	var ExecutionEnvironment = __webpack_require__(7);
 	var ReactInstrumentation = __webpack_require__(9);
 	
-	var camelizeStyleName = __webpack_require__(135);
-	var dangerousStyleValue = __webpack_require__(273);
-	var hyphenateStyleName = __webpack_require__(142);
-	var memoizeStringOnly = __webpack_require__(145);
+	var camelizeStyleName = __webpack_require__(136);
+	var dangerousStyleValue = __webpack_require__(291);
+	var hyphenateStyleName = __webpack_require__(143);
+	var memoizeStringOnly = __webpack_require__(146);
 	var warning = __webpack_require__(2);
 	
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -20234,7 +20609,7 @@
 	module.exports = CSSPropertyOperations;
 
 /***/ },
-/* 216 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20251,15 +20626,15 @@
 	'use strict';
 	
 	var EventConstants = __webpack_require__(15);
-	var EventPluginHub = __webpack_require__(31);
-	var EventPropagators = __webpack_require__(32);
+	var EventPluginHub = __webpack_require__(32);
+	var EventPropagators = __webpack_require__(33);
 	var ExecutionEnvironment = __webpack_require__(7);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactUpdates = __webpack_require__(13);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactUpdates = __webpack_require__(14);
 	var SyntheticEvent = __webpack_require__(17);
 	
-	var getEventTarget = __webpack_require__(77);
-	var isEventSupported = __webpack_require__(79);
+	var getEventTarget = __webpack_require__(80);
+	var isEventSupported = __webpack_require__(82);
 	var isTextInputElement = __webpack_require__(125);
 	var keyOf = __webpack_require__(18);
 	
@@ -20564,7 +20939,7 @@
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 217 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20585,7 +20960,7 @@
 	var DOMLazyTree = __webpack_require__(27);
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var createNodesFromMarkup = __webpack_require__(138);
+	var createNodesFromMarkup = __webpack_require__(139);
 	var emptyFunction = __webpack_require__(10);
 	var invariant = __webpack_require__(1);
 	
@@ -20617,7 +20992,7 @@
 	module.exports = Danger;
 
 /***/ },
-/* 218 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20649,7 +21024,7 @@
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 219 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20666,9 +21041,9 @@
 	'use strict';
 	
 	var EventConstants = __webpack_require__(15);
-	var EventPropagators = __webpack_require__(32);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var SyntheticMouseEvent = __webpack_require__(44);
+	var EventPropagators = __webpack_require__(33);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var SyntheticMouseEvent = __webpack_require__(48);
 	
 	var keyOf = __webpack_require__(18);
 	
@@ -20759,7 +21134,7 @@
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 220 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20859,7 +21234,7 @@
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 221 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21076,7 +21451,7 @@
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 222 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21095,15 +21470,15 @@
 	var _assign = __webpack_require__(4);
 	
 	var ReactChildren = __webpack_require__(104);
-	var ReactComponent = __webpack_require__(66);
-	var ReactPureComponent = __webpack_require__(254);
+	var ReactComponent = __webpack_require__(69);
+	var ReactPureComponent = __webpack_require__(272);
 	var ReactClass = __webpack_require__(105);
-	var ReactDOMFactories = __webpack_require__(232);
+	var ReactDOMFactories = __webpack_require__(250);
 	var ReactElement = __webpack_require__(12);
 	var ReactPropTypes = __webpack_require__(116);
 	var ReactVersion = __webpack_require__(117);
 	
-	var onlyChild = __webpack_require__(279);
+	var onlyChild = __webpack_require__(297);
 	var warning = __webpack_require__(2);
 	
 	var createElement = ReactElement.createElement;
@@ -21170,7 +21545,7 @@
 	module.exports = React;
 
 /***/ },
-/* 223 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21189,9 +21564,9 @@
 	var ReactReconciler = __webpack_require__(28);
 	
 	var instantiateReactComponent = __webpack_require__(124);
-	var KeyEscapeUtils = __webpack_require__(64);
-	var shouldUpdateReactComponent = __webpack_require__(80);
-	var traverseAllChildren = __webpack_require__(81);
+	var KeyEscapeUtils = __webpack_require__(67);
+	var shouldUpdateReactComponent = __webpack_require__(83);
+	var traverseAllChildren = __webpack_require__(84);
 	var warning = __webpack_require__(2);
 	
 	var ReactComponentTreeHook;
@@ -21327,10 +21702,10 @@
 	};
 	
 	module.exports = ReactChildReconciler;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(56)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ },
-/* 224 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21389,7 +21764,7 @@
 	module.exports = ReactChildrenMutationWarningHook;
 
 /***/ },
-/* 225 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21405,8 +21780,8 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(61);
-	var ReactDOMIDOperations = __webpack_require__(234);
+	var DOMChildrenOperations = __webpack_require__(64);
+	var ReactDOMIDOperations = __webpack_require__(252);
 	
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -21424,7 +21799,7 @@
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 226 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21443,21 +21818,21 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var ReactComponentEnvironment = __webpack_require__(67);
+	var ReactComponentEnvironment = __webpack_require__(70);
 	var ReactCurrentOwner = __webpack_require__(16);
 	var ReactElement = __webpack_require__(12);
-	var ReactErrorUtils = __webpack_require__(68);
-	var ReactInstanceMap = __webpack_require__(33);
+	var ReactErrorUtils = __webpack_require__(71);
+	var ReactInstanceMap = __webpack_require__(34);
 	var ReactInstrumentation = __webpack_require__(9);
 	var ReactNodeTypes = __webpack_require__(115);
-	var ReactPropTypeLocations = __webpack_require__(43);
+	var ReactPropTypeLocations = __webpack_require__(47);
 	var ReactReconciler = __webpack_require__(28);
 	
 	var checkReactTypeSpec = __webpack_require__(120);
-	var emptyObject = __webpack_require__(29);
+	var emptyObject = __webpack_require__(30);
 	var invariant = __webpack_require__(1);
-	var shallowEqual = __webpack_require__(48);
-	var shouldUpdateReactComponent = __webpack_require__(80);
+	var shallowEqual = __webpack_require__(54);
+	var shouldUpdateReactComponent = __webpack_require__(83);
 	var warning = __webpack_require__(2);
 	
 	var CompositeTypes = {
@@ -22333,7 +22708,7 @@
 	module.exports = ReactCompositeComponent;
 
 /***/ },
-/* 227 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22351,16 +22726,16 @@
 	
 	'use strict';
 	
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDefaultInjection = __webpack_require__(245);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactDefaultInjection = __webpack_require__(263);
 	var ReactMount = __webpack_require__(113);
 	var ReactReconciler = __webpack_require__(28);
-	var ReactUpdates = __webpack_require__(13);
+	var ReactUpdates = __webpack_require__(14);
 	var ReactVersion = __webpack_require__(117);
 	
-	var findDOMNode = __webpack_require__(274);
+	var findDOMNode = __webpack_require__(292);
 	var getHostComponentFromComposite = __webpack_require__(122);
-	var renderSubtreeIntoContainer = __webpack_require__(281);
+	var renderSubtreeIntoContainer = __webpack_require__(299);
 	var warning = __webpack_require__(2);
 	
 	ReactDefaultInjection.inject();
@@ -22438,8 +22813,8 @@
 	
 	if (true) {
 	  var ReactInstrumentation = __webpack_require__(9);
-	  var ReactDOMUnknownPropertyHook = __webpack_require__(242);
-	  var ReactDOMNullInputValuePropHook = __webpack_require__(236);
+	  var ReactDOMUnknownPropertyHook = __webpack_require__(260);
+	  var ReactDOMNullInputValuePropHook = __webpack_require__(254);
 	
 	  ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
 	  ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -22448,7 +22823,7 @@
 	module.exports = ReactDOM;
 
 /***/ },
-/* 228 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22464,7 +22839,7 @@
 	
 	'use strict';
 	
-	var DisabledInputUtils = __webpack_require__(40);
+	var DisabledInputUtils = __webpack_require__(44);
 	
 	/**
 	 * Implements a <button> host component that does not receive mouse events
@@ -22477,7 +22852,7 @@
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 229 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22498,34 +22873,34 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var AutoFocusUtils = __webpack_require__(213);
-	var CSSPropertyOperations = __webpack_require__(215);
+	var AutoFocusUtils = __webpack_require__(231);
+	var CSSPropertyOperations = __webpack_require__(233);
 	var DOMLazyTree = __webpack_require__(27);
-	var DOMNamespaces = __webpack_require__(62);
+	var DOMNamespaces = __webpack_require__(65);
 	var DOMProperty = __webpack_require__(23);
 	var DOMPropertyOperations = __webpack_require__(103);
 	var EventConstants = __webpack_require__(15);
-	var EventPluginHub = __webpack_require__(31);
-	var EventPluginRegistry = __webpack_require__(41);
-	var ReactBrowserEventEmitter = __webpack_require__(42);
-	var ReactDOMButton = __webpack_require__(228);
+	var EventPluginHub = __webpack_require__(32);
+	var EventPluginRegistry = __webpack_require__(45);
+	var ReactBrowserEventEmitter = __webpack_require__(46);
+	var ReactDOMButton = __webpack_require__(246);
 	var ReactDOMComponentFlags = __webpack_require__(106);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMInput = __webpack_require__(235);
-	var ReactDOMOption = __webpack_require__(237);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactDOMInput = __webpack_require__(253);
+	var ReactDOMOption = __webpack_require__(255);
 	var ReactDOMSelect = __webpack_require__(107);
-	var ReactDOMTextarea = __webpack_require__(240);
+	var ReactDOMTextarea = __webpack_require__(258);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactMultiChild = __webpack_require__(252);
-	var ReactServerRenderingTransaction = __webpack_require__(257);
+	var ReactMultiChild = __webpack_require__(270);
+	var ReactServerRenderingTransaction = __webpack_require__(275);
 	
 	var emptyFunction = __webpack_require__(10);
-	var escapeTextContentForBrowser = __webpack_require__(45);
+	var escapeTextContentForBrowser = __webpack_require__(49);
 	var invariant = __webpack_require__(1);
-	var isEventSupported = __webpack_require__(79);
+	var isEventSupported = __webpack_require__(82);
 	var keyOf = __webpack_require__(18);
-	var shallowEqual = __webpack_require__(48);
-	var validateDOMNesting = __webpack_require__(82);
+	var shallowEqual = __webpack_require__(54);
+	var validateDOMNesting = __webpack_require__(85);
 	var warning = __webpack_require__(2);
 	
 	var Flags = ReactDOMComponentFlags;
@@ -23488,7 +23863,7 @@
 	module.exports = ReactDOMComponent;
 
 /***/ },
-/* 230 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23504,7 +23879,7 @@
 	
 	'use strict';
 	
-	var validateDOMNesting = __webpack_require__(82);
+	var validateDOMNesting = __webpack_require__(85);
 	
 	var DOC_NODE_TYPE = 9;
 	
@@ -23526,7 +23901,7 @@
 	module.exports = ReactDOMContainerInfo;
 
 /***/ },
-/* 231 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23545,7 +23920,7 @@
 	var _assign = __webpack_require__(4);
 	
 	var DOMLazyTree = __webpack_require__(27);
-	var ReactDOMComponentTree = __webpack_require__(5);
+	var ReactDOMComponentTree = __webpack_require__(6);
 	
 	var ReactDOMEmptyComponent = function (instantiate) {
 	  // ReactCompositeComponent uses this:
@@ -23591,7 +23966,7 @@
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 232 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23766,7 +24141,7 @@
 	module.exports = ReactDOMFactories;
 
 /***/ },
-/* 233 */
+/* 251 */
 /***/ function(module, exports) {
 
 	/**
@@ -23789,7 +24164,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 234 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23805,8 +24180,8 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(61);
-	var ReactDOMComponentTree = __webpack_require__(5);
+	var DOMChildrenOperations = __webpack_require__(64);
+	var ReactDOMComponentTree = __webpack_require__(6);
 	
 	/**
 	 * Operations used to process updates to DOM nodes.
@@ -23828,7 +24203,7 @@
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 235 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23847,11 +24222,11 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var DisabledInputUtils = __webpack_require__(40);
+	var DisabledInputUtils = __webpack_require__(44);
 	var DOMPropertyOperations = __webpack_require__(103);
-	var LinkedValueUtils = __webpack_require__(65);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactUpdates = __webpack_require__(13);
+	var LinkedValueUtils = __webpack_require__(68);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactUpdates = __webpack_require__(14);
 	
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(2);
@@ -24102,7 +24477,7 @@
 	module.exports = ReactDOMInput;
 
 /***/ },
-/* 236 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24150,7 +24525,7 @@
 	module.exports = ReactDOMNullInputValuePropHook;
 
 /***/ },
-/* 237 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24169,7 +24544,7 @@
 	var _assign = __webpack_require__(4);
 	
 	var ReactChildren = __webpack_require__(104);
-	var ReactDOMComponentTree = __webpack_require__(5);
+	var ReactDOMComponentTree = __webpack_require__(6);
 	var ReactDOMSelect = __webpack_require__(107);
 	
 	var warning = __webpack_require__(2);
@@ -24278,7 +24653,7 @@
 	module.exports = ReactDOMOption;
 
 /***/ },
-/* 238 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24296,7 +24671,7 @@
 	
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var getNodeForCharacterOffset = __webpack_require__(277);
+	var getNodeForCharacterOffset = __webpack_require__(295);
 	var getTextContentAccessor = __webpack_require__(123);
 	
 	/**
@@ -24495,7 +24870,7 @@
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 239 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24514,13 +24889,13 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var DOMChildrenOperations = __webpack_require__(61);
+	var DOMChildrenOperations = __webpack_require__(64);
 	var DOMLazyTree = __webpack_require__(27);
-	var ReactDOMComponentTree = __webpack_require__(5);
+	var ReactDOMComponentTree = __webpack_require__(6);
 	
-	var escapeTextContentForBrowser = __webpack_require__(45);
+	var escapeTextContentForBrowser = __webpack_require__(49);
 	var invariant = __webpack_require__(1);
-	var validateDOMNesting = __webpack_require__(82);
+	var validateDOMNesting = __webpack_require__(85);
 	
 	/**
 	 * Text nodes violate a couple assumptions that React makes about components:
@@ -24664,7 +25039,7 @@
 	module.exports = ReactDOMTextComponent;
 
 /***/ },
-/* 240 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24683,10 +25058,10 @@
 	var _prodInvariant = __webpack_require__(3),
 	    _assign = __webpack_require__(4);
 	
-	var DisabledInputUtils = __webpack_require__(40);
-	var LinkedValueUtils = __webpack_require__(65);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactUpdates = __webpack_require__(13);
+	var DisabledInputUtils = __webpack_require__(44);
+	var LinkedValueUtils = __webpack_require__(68);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactUpdates = __webpack_require__(14);
 	
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(2);
@@ -24824,7 +25199,7 @@
 	module.exports = ReactDOMTextarea;
 
 /***/ },
-/* 241 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24965,7 +25340,7 @@
 	};
 
 /***/ },
-/* 242 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24982,7 +25357,7 @@
 	'use strict';
 	
 	var DOMProperty = __webpack_require__(23);
-	var EventPluginRegistry = __webpack_require__(41);
+	var EventPluginRegistry = __webpack_require__(45);
 	var ReactComponentTreeHook = __webpack_require__(11);
 	
 	var warning = __webpack_require__(2);
@@ -25082,7 +25457,7 @@
 	module.exports = ReactDOMUnknownPropertyHook;
 
 /***/ },
-/* 243 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25098,13 +25473,13 @@
 	
 	'use strict';
 	
-	var ReactInvalidSetStateWarningHook = __webpack_require__(250);
-	var ReactHostOperationHistoryHook = __webpack_require__(248);
+	var ReactInvalidSetStateWarningHook = __webpack_require__(268);
+	var ReactHostOperationHistoryHook = __webpack_require__(266);
 	var ReactComponentTreeHook = __webpack_require__(11);
-	var ReactChildrenMutationWarningHook = __webpack_require__(224);
+	var ReactChildrenMutationWarningHook = __webpack_require__(242);
 	var ExecutionEnvironment = __webpack_require__(7);
 	
-	var performanceNow = __webpack_require__(147);
+	var performanceNow = __webpack_require__(148);
 	var warning = __webpack_require__(2);
 	
 	var hooks = [];
@@ -25388,7 +25763,7 @@
 	module.exports = ReactDebugTool;
 
 /***/ },
-/* 244 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25406,8 +25781,8 @@
 	
 	var _assign = __webpack_require__(4);
 	
-	var ReactUpdates = __webpack_require__(13);
-	var Transaction = __webpack_require__(35);
+	var ReactUpdates = __webpack_require__(14);
+	var Transaction = __webpack_require__(36);
 	
 	var emptyFunction = __webpack_require__(10);
 	
@@ -25461,7 +25836,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 245 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25477,24 +25852,24 @@
 	
 	'use strict';
 	
-	var BeforeInputEventPlugin = __webpack_require__(214);
-	var ChangeEventPlugin = __webpack_require__(216);
-	var DefaultEventPluginOrder = __webpack_require__(218);
-	var EnterLeaveEventPlugin = __webpack_require__(219);
-	var HTMLDOMPropertyConfig = __webpack_require__(221);
-	var ReactComponentBrowserEnvironment = __webpack_require__(225);
-	var ReactDOMComponent = __webpack_require__(229);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactDOMEmptyComponent = __webpack_require__(231);
-	var ReactDOMTreeTraversal = __webpack_require__(241);
-	var ReactDOMTextComponent = __webpack_require__(239);
-	var ReactDefaultBatchingStrategy = __webpack_require__(244);
-	var ReactEventListener = __webpack_require__(247);
-	var ReactInjection = __webpack_require__(249);
-	var ReactReconcileTransaction = __webpack_require__(255);
-	var SVGDOMPropertyConfig = __webpack_require__(259);
-	var SelectEventPlugin = __webpack_require__(260);
-	var SimpleEventPlugin = __webpack_require__(261);
+	var BeforeInputEventPlugin = __webpack_require__(232);
+	var ChangeEventPlugin = __webpack_require__(234);
+	var DefaultEventPluginOrder = __webpack_require__(236);
+	var EnterLeaveEventPlugin = __webpack_require__(237);
+	var HTMLDOMPropertyConfig = __webpack_require__(239);
+	var ReactComponentBrowserEnvironment = __webpack_require__(243);
+	var ReactDOMComponent = __webpack_require__(247);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactDOMEmptyComponent = __webpack_require__(249);
+	var ReactDOMTreeTraversal = __webpack_require__(259);
+	var ReactDOMTextComponent = __webpack_require__(257);
+	var ReactDefaultBatchingStrategy = __webpack_require__(262);
+	var ReactEventListener = __webpack_require__(265);
+	var ReactInjection = __webpack_require__(267);
+	var ReactReconcileTransaction = __webpack_require__(273);
+	var SVGDOMPropertyConfig = __webpack_require__(277);
+	var SelectEventPlugin = __webpack_require__(278);
+	var SimpleEventPlugin = __webpack_require__(279);
 	
 	var alreadyInjected = false;
 	
@@ -25550,7 +25925,7 @@
 	};
 
 /***/ },
-/* 246 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25566,7 +25941,7 @@
 	
 	'use strict';
 	
-	var EventPluginHub = __webpack_require__(31);
+	var EventPluginHub = __webpack_require__(32);
 	
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -25588,7 +25963,7 @@
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 247 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25609,11 +25984,11 @@
 	var EventListener = __webpack_require__(86);
 	var ExecutionEnvironment = __webpack_require__(7);
 	var PooledClass = __webpack_require__(21);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactUpdates = __webpack_require__(13);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactUpdates = __webpack_require__(14);
 	
-	var getEventTarget = __webpack_require__(77);
-	var getUnboundedScrollPosition = __webpack_require__(140);
+	var getEventTarget = __webpack_require__(80);
+	var getUnboundedScrollPosition = __webpack_require__(141);
 	
 	/**
 	 * Find the deepest React component completely containing the root of the
@@ -25750,7 +26125,7 @@
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 248 */
+/* 266 */
 /***/ function(module, exports) {
 
 	/**
@@ -25792,7 +26167,7 @@
 	module.exports = ReactHostOperationHistoryHook;
 
 /***/ },
-/* 249 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25809,14 +26184,14 @@
 	'use strict';
 	
 	var DOMProperty = __webpack_require__(23);
-	var EventPluginHub = __webpack_require__(31);
-	var EventPluginUtils = __webpack_require__(63);
-	var ReactComponentEnvironment = __webpack_require__(67);
+	var EventPluginHub = __webpack_require__(32);
+	var EventPluginUtils = __webpack_require__(66);
+	var ReactComponentEnvironment = __webpack_require__(70);
 	var ReactClass = __webpack_require__(105);
 	var ReactEmptyComponent = __webpack_require__(109);
-	var ReactBrowserEventEmitter = __webpack_require__(42);
+	var ReactBrowserEventEmitter = __webpack_require__(46);
 	var ReactHostComponent = __webpack_require__(111);
-	var ReactUpdates = __webpack_require__(13);
+	var ReactUpdates = __webpack_require__(14);
 	
 	var ReactInjection = {
 	  Component: ReactComponentEnvironment.injection,
@@ -25833,7 +26208,7 @@
 	module.exports = ReactInjection;
 
 /***/ },
-/* 250 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25874,7 +26249,7 @@
 	module.exports = ReactInvalidSetStateWarningHook;
 
 /***/ },
-/* 251 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25890,7 +26265,7 @@
 	
 	'use strict';
 	
-	var adler32 = __webpack_require__(272);
+	var adler32 = __webpack_require__(290);
 	
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -25929,7 +26304,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 252 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25947,17 +26322,17 @@
 	
 	var _prodInvariant = __webpack_require__(3);
 	
-	var ReactComponentEnvironment = __webpack_require__(67);
-	var ReactInstanceMap = __webpack_require__(33);
+	var ReactComponentEnvironment = __webpack_require__(70);
+	var ReactInstanceMap = __webpack_require__(34);
 	var ReactInstrumentation = __webpack_require__(9);
 	var ReactMultiChildUpdateTypes = __webpack_require__(114);
 	
 	var ReactCurrentOwner = __webpack_require__(16);
 	var ReactReconciler = __webpack_require__(28);
-	var ReactChildReconciler = __webpack_require__(223);
+	var ReactChildReconciler = __webpack_require__(241);
 	
 	var emptyFunction = __webpack_require__(10);
-	var flattenChildren = __webpack_require__(275);
+	var flattenChildren = __webpack_require__(293);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -26385,7 +26760,7 @@
 	module.exports = ReactMultiChild;
 
 /***/ },
-/* 253 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26484,7 +26859,7 @@
 	module.exports = ReactOwner;
 
 /***/ },
-/* 254 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26502,10 +26877,10 @@
 	
 	var _assign = __webpack_require__(4);
 	
-	var ReactComponent = __webpack_require__(66);
-	var ReactNoopUpdateQueue = __webpack_require__(69);
+	var ReactComponent = __webpack_require__(69);
+	var ReactNoopUpdateQueue = __webpack_require__(72);
 	
-	var emptyObject = __webpack_require__(29);
+	var emptyObject = __webpack_require__(30);
 	
 	/**
 	 * Base class helpers for the updating state of a component.
@@ -26531,7 +26906,7 @@
 	module.exports = ReactPureComponent;
 
 /***/ },
-/* 255 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26551,11 +26926,11 @@
 	
 	var CallbackQueue = __webpack_require__(102);
 	var PooledClass = __webpack_require__(21);
-	var ReactBrowserEventEmitter = __webpack_require__(42);
+	var ReactBrowserEventEmitter = __webpack_require__(46);
 	var ReactInputSelection = __webpack_require__(112);
 	var ReactInstrumentation = __webpack_require__(9);
-	var Transaction = __webpack_require__(35);
-	var ReactUpdateQueue = __webpack_require__(72);
+	var Transaction = __webpack_require__(36);
+	var ReactUpdateQueue = __webpack_require__(75);
 	
 	/**
 	 * Ensures that, when possible, the selection range (currently selected text
@@ -26714,7 +27089,7 @@
 	module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 256 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26730,7 +27105,7 @@
 	
 	'use strict';
 	
-	var ReactOwner = __webpack_require__(253);
+	var ReactOwner = __webpack_require__(271);
 	
 	var ReactRef = {};
 	
@@ -26799,7 +27174,7 @@
 	module.exports = ReactRef;
 
 /***/ },
-/* 257 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26818,9 +27193,9 @@
 	var _assign = __webpack_require__(4);
 	
 	var PooledClass = __webpack_require__(21);
-	var Transaction = __webpack_require__(35);
+	var Transaction = __webpack_require__(36);
 	var ReactInstrumentation = __webpack_require__(9);
-	var ReactServerUpdateQueue = __webpack_require__(258);
+	var ReactServerUpdateQueue = __webpack_require__(276);
 	
 	/**
 	 * Executed within the scope of the `Transaction` instance. Consider these as
@@ -26894,7 +27269,7 @@
 	module.exports = ReactServerRenderingTransaction;
 
 /***/ },
-/* 258 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26913,8 +27288,8 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var ReactUpdateQueue = __webpack_require__(72);
-	var Transaction = __webpack_require__(35);
+	var ReactUpdateQueue = __webpack_require__(75);
+	var Transaction = __webpack_require__(36);
 	var warning = __webpack_require__(2);
 	
 	function warnNoop(publicInstance, callerName) {
@@ -27040,7 +27415,7 @@
 	module.exports = ReactServerUpdateQueue;
 
 /***/ },
-/* 259 */
+/* 277 */
 /***/ function(module, exports) {
 
 	/**
@@ -27347,7 +27722,7 @@
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 260 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27364,16 +27739,16 @@
 	'use strict';
 	
 	var EventConstants = __webpack_require__(15);
-	var EventPropagators = __webpack_require__(32);
+	var EventPropagators = __webpack_require__(33);
 	var ExecutionEnvironment = __webpack_require__(7);
-	var ReactDOMComponentTree = __webpack_require__(5);
+	var ReactDOMComponentTree = __webpack_require__(6);
 	var ReactInputSelection = __webpack_require__(112);
 	var SyntheticEvent = __webpack_require__(17);
 	
 	var getActiveElement = __webpack_require__(88);
 	var isTextInputElement = __webpack_require__(125);
 	var keyOf = __webpack_require__(18);
-	var shallowEqual = __webpack_require__(48);
+	var shallowEqual = __webpack_require__(54);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -27548,7 +27923,7 @@
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 261 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27568,22 +27943,22 @@
 	
 	var EventConstants = __webpack_require__(15);
 	var EventListener = __webpack_require__(86);
-	var EventPropagators = __webpack_require__(32);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var SyntheticAnimationEvent = __webpack_require__(262);
-	var SyntheticClipboardEvent = __webpack_require__(263);
+	var EventPropagators = __webpack_require__(33);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var SyntheticAnimationEvent = __webpack_require__(280);
+	var SyntheticClipboardEvent = __webpack_require__(281);
 	var SyntheticEvent = __webpack_require__(17);
-	var SyntheticFocusEvent = __webpack_require__(266);
-	var SyntheticKeyboardEvent = __webpack_require__(268);
-	var SyntheticMouseEvent = __webpack_require__(44);
-	var SyntheticDragEvent = __webpack_require__(265);
-	var SyntheticTouchEvent = __webpack_require__(269);
-	var SyntheticTransitionEvent = __webpack_require__(270);
-	var SyntheticUIEvent = __webpack_require__(34);
-	var SyntheticWheelEvent = __webpack_require__(271);
+	var SyntheticFocusEvent = __webpack_require__(284);
+	var SyntheticKeyboardEvent = __webpack_require__(286);
+	var SyntheticMouseEvent = __webpack_require__(48);
+	var SyntheticDragEvent = __webpack_require__(283);
+	var SyntheticTouchEvent = __webpack_require__(287);
+	var SyntheticTransitionEvent = __webpack_require__(288);
+	var SyntheticUIEvent = __webpack_require__(35);
+	var SyntheticWheelEvent = __webpack_require__(289);
 	
 	var emptyFunction = __webpack_require__(10);
-	var getEventCharCode = __webpack_require__(75);
+	var getEventCharCode = __webpack_require__(78);
 	var invariant = __webpack_require__(1);
 	var keyOf = __webpack_require__(18);
 	
@@ -28188,7 +28563,7 @@
 	module.exports = SimpleEventPlugin;
 
 /***/ },
-/* 262 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28232,7 +28607,7 @@
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 263 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28275,7 +28650,7 @@
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 264 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28316,7 +28691,7 @@
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 265 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28332,7 +28707,7 @@
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(44);
+	var SyntheticMouseEvent = __webpack_require__(48);
 	
 	/**
 	 * @interface DragEvent
@@ -28357,7 +28732,7 @@
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 266 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28373,7 +28748,7 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(34);
+	var SyntheticUIEvent = __webpack_require__(35);
 	
 	/**
 	 * @interface FocusEvent
@@ -28398,7 +28773,7 @@
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 267 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28440,7 +28815,7 @@
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 268 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28456,11 +28831,11 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(34);
+	var SyntheticUIEvent = __webpack_require__(35);
 	
-	var getEventCharCode = __webpack_require__(75);
-	var getEventKey = __webpack_require__(276);
-	var getEventModifierState = __webpack_require__(76);
+	var getEventCharCode = __webpack_require__(78);
+	var getEventKey = __webpack_require__(294);
+	var getEventModifierState = __webpack_require__(79);
 	
 	/**
 	 * @interface KeyboardEvent
@@ -28529,7 +28904,7 @@
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 269 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28545,9 +28920,9 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(34);
+	var SyntheticUIEvent = __webpack_require__(35);
 	
-	var getEventModifierState = __webpack_require__(76);
+	var getEventModifierState = __webpack_require__(79);
 	
 	/**
 	 * @interface TouchEvent
@@ -28579,7 +28954,7 @@
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 270 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28623,7 +28998,7 @@
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 271 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28639,7 +29014,7 @@
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(44);
+	var SyntheticMouseEvent = __webpack_require__(48);
 	
 	/**
 	 * @interface WheelEvent
@@ -28682,7 +29057,7 @@
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 272 */
+/* 290 */
 /***/ function(module, exports) {
 
 	/**
@@ -28731,7 +29106,7 @@
 	module.exports = adler32;
 
 /***/ },
-/* 273 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28815,7 +29190,7 @@
 	module.exports = dangerousStyleValue;
 
 /***/ },
-/* 274 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28834,8 +29209,8 @@
 	var _prodInvariant = __webpack_require__(3);
 	
 	var ReactCurrentOwner = __webpack_require__(16);
-	var ReactDOMComponentTree = __webpack_require__(5);
-	var ReactInstanceMap = __webpack_require__(33);
+	var ReactDOMComponentTree = __webpack_require__(6);
+	var ReactInstanceMap = __webpack_require__(34);
 	
 	var getHostComponentFromComposite = __webpack_require__(122);
 	var invariant = __webpack_require__(1);
@@ -28880,7 +29255,7 @@
 	module.exports = findDOMNode;
 
 /***/ },
-/* 275 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -28897,8 +29272,8 @@
 	
 	'use strict';
 	
-	var KeyEscapeUtils = __webpack_require__(64);
-	var traverseAllChildren = __webpack_require__(81);
+	var KeyEscapeUtils = __webpack_require__(67);
+	var traverseAllChildren = __webpack_require__(84);
 	var warning = __webpack_require__(2);
 	
 	var ReactComponentTreeHook;
@@ -28959,10 +29334,10 @@
 	}
 	
 	module.exports = flattenChildren;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(56)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ },
-/* 276 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28978,7 +29353,7 @@
 	
 	'use strict';
 	
-	var getEventCharCode = __webpack_require__(75);
+	var getEventCharCode = __webpack_require__(78);
 	
 	/**
 	 * Normalization of deprecated HTML5 `key` values
@@ -29069,7 +29444,7 @@
 	module.exports = getEventKey;
 
 /***/ },
-/* 277 */
+/* 295 */
 /***/ function(module, exports) {
 
 	/**
@@ -29148,7 +29523,7 @@
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 278 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -29254,7 +29629,7 @@
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 279 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -29297,7 +29672,7 @@
 	module.exports = onlyChild;
 
 /***/ },
-/* 280 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -29313,7 +29688,7 @@
 	
 	'use strict';
 	
-	var escapeTextContentForBrowser = __webpack_require__(45);
+	var escapeTextContentForBrowser = __webpack_require__(49);
 	
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -29328,7 +29703,7 @@
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 281 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -29349,7 +29724,7 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 282 */
+/* 300 */
 /***/ function(module, exports) {
 
 	'use strict';

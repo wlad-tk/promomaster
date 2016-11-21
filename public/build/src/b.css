@@ -142,6 +142,15 @@
 .gallery {
   display: none;
 }
+#blueimp-gallery .title {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 75%;
+  font-family: "FreeSet Cyrillic", Arial, sans-serif;
+  line-height: 1.5em;
+  white-space: pre-wrap;
+}
 body:not(.fp-viewing-4) .gallery {
   position: fixed;
   z-index: 70;
