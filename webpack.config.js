@@ -57,7 +57,7 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
                 loaders: [
-                    'file?hash=sha512&name=[path][hash].[ext]'
+                    'file?name=[path][name].[ext]'
                 ]
             },
             // {

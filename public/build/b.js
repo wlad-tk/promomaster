@@ -4306,19 +4306,19 @@
 /* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/ec90afa86ce8f8159e8bcb7e145f241b.svg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/logo_main.svg";
 
 /***/ },
 /* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/226511b5e36f664df8d417813f041a22.svg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/logofoot.svg";
 
 /***/ },
 /* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/3f15fb3ca109d5f930fd7f87d5652c02.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/promo_works_master.jpg";
 
 /***/ },
 /* 41 */
@@ -17390,343 +17390,343 @@
 /* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/c/d3353e85394f1ce79107e8f321aac604.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/c/o_001.jpg";
 
 /***/ },
 /* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/c/117d12289b2f8b29fc303893c5f55cc7.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/c/o_002.jpg";
 
 /***/ },
 /* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/c/776de349de2f6279627676fa01fe4114.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/c/o_003.jpg";
 
 /***/ },
 /* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/c/19c8571b0ecce7b5d174ad1aa4d3cd0a.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/c/o_004.jpg";
 
 /***/ },
 /* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/d/cc51e8d140ce13762a35a95e9d58bd11.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/d_001.jpg";
 
 /***/ },
 /* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/d/f146b9972a3e3883518f5b98a15bb07e.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/d_002.jpg";
 
 /***/ },
 /* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/d/5bed264cd66fa177b5c7cde35d41ce55.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/d_003.jpg";
 
 /***/ },
 /* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/d/325301089b85a46e640f8253f1c795d3.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/d/d_004.jpg";
 
 /***/ },
 /* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/03b19b6838dd4fb98de0a393189839da.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/h_001.jpg";
 
 /***/ },
 /* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/280d9356a6d60908a89c2d5bc9635fdf.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/h_002.jpg";
 
 /***/ },
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/443317a8f54ae0b5d8adbcb5eec88544.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/h_003.jpg";
 
 /***/ },
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/h/a3823321babd6cb4611f1e820516d6c1.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/h/h_004.jpg";
 
 /***/ },
 /* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/200683909e50ecf37530945bd1fcfbed.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/1-.jpg";
 
 /***/ },
 /* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/89c669a259bd0d6a95304c0c0aac31f5.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/DSC_6399.jpg";
 
 /***/ },
 /* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/993a42e8abd6cd3cf16b2cdd9aedbe36.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/about_5.jpg";
 
 /***/ },
 /* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/backgrounds/home/f75a14bd1b568a22c77c3089b0afbbc8.jpg";
+	module.exports = __webpack_require__.p + "src/img/backgrounds/home/sh_p_005.jpg";
 
 /***/ },
 /* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/fa79a2f088857e82052ae948ed102b4e.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/pm_1c_01.jpg";
 
 /***/ },
 /* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/67b8a94f1c2ebfbbddeef86e065cd65d.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/pm_coffeemen.jpg";
 
 /***/ },
 /* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/9d62eb6d2d210fead537f0473c9da265.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/pm_life_01.jpg";
 
 /***/ },
 /* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/f8b1a1064690e745da1d03075d14ea98.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/pm_mc_ds_01.jpg";
 
 /***/ },
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/ff648edd243e08d2ef6fbf901eb9a686.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/pm_microsoft_01.jpg";
 
 /***/ },
 /* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/579fbec33bf8299a48a97a73c4834579.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/pm_mts_01.jpg";
 
 /***/ },
 /* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/a87c9977264d7c7526ec37cb19541c3c.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/pm_nes_ars_01.jpg";
 
 /***/ },
 /* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/f0a74b0ab856337ceec15ddb5f0ce90c.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/promo_010.jpg";
 
 /***/ },
 /* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/360cf5fe11a130cdb2f4e0e0c0e6c7ac.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/promo_014.jpg";
 
 /***/ },
 /* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/e9094b70951d8334fb40e0b32a9c6043.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/promo_odezh_02.jpg";
 
 /***/ },
 /* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/fed51a6f94a5e71ca37bbd7b895e9f27.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/promo_odezh_03.jpg";
 
 /***/ },
 /* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/c4c5545b52138f00d8e41f2348989265.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/promo_odezh_04.jpg";
 
 /***/ },
 /* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/f6feb2956ccc8c9e3a04c8b03a4f751c.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/promo_odezh_06.jpg";
 
 /***/ },
 /* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/clothes/0763cbc64343a161d472987748e7009e.jpg";
+	module.exports = __webpack_require__.p + "src/img/clothes/promo_odezh_07.jpg";
 
 /***/ },
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/69ae83b1532abc1bb41df8c9a267f636.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/ceramique_01.jpg";
 
 /***/ },
 /* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/1f4589fd139c63d1facdc5746e5100a2.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/cup_ceramique_01.jpg";
 
 /***/ },
 /* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/3c3962d86c1efce2dc65eac7500e4087.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/cup_glass_01.jpg";
 
 /***/ },
 /* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/8603fa98ea1a578c31a1ce1c6d37991d.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/cup_glass_05.jpg";
 
 /***/ },
 /* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/c1befe08477601c7c46ec5f7b6e6c902.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/cup_glass_06.jpg";
 
 /***/ },
 /* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/194d3274fb308f23296791cc2f585590.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/cup_pack_01.jpg";
 
 /***/ },
 /* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/2298d50235096569ab86217f51aa4309.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/cup_pack_02.jpg";
 
 /***/ },
 /* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/3c3809c5d53f4f717d6e8867231db5e3.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/glass_005.jpg";
 
 /***/ },
 /* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/83033b76a6c4491612cb1b7efcad2c48.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/glass_006.jpg";
 
 /***/ },
 /* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/02beb8379de48048cef86911f520b1a9.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/glass_007.jpg";
 
 /***/ },
 /* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/be6cb60d419f8980a71c437b5de225cb.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/holder_ceramique.jpg";
 
 /***/ },
 /* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/6ee1c86569919663682f575d692f6a27.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/pm_004.jpg";
 
 /***/ },
 /* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/decol/8d9dec83c5ae55a2c255b360dd2e2630.jpg";
+	module.exports = __webpack_require__.p + "src/img/decol/pm_005.jpg";
 
 /***/ },
 /* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/43143de9746c8086c489ef64558def28.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_001.jpg";
 
 /***/ },
 /* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/26fde8290dac2ba5c30f1cbec6175490.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_002.jpg";
 
 /***/ },
 /* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/75fd81cfebcd9569dd88fc75087d4b95.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_003.jpg";
 
 /***/ },
 /* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/7b6e9ce8897343d35d5f614aa1ad3254.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_006.jpg";
 
 /***/ },
 /* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/c5dc7c636a5d1823cdd7aa16ae965cdf.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_007.jpg";
 
 /***/ },
 /* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/5443e50eda33e2439151d592ef57df01.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_coffeeme.jpg";
 
 /***/ },
 /* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/70710d681f4b6d11360ab09d1ed6ac6a.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_flavours_01.jpg";
 
 /***/ },
 /* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/b171e1e8356b601078f02518f77ff30e.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_grilled_01.jpg";
 
 /***/ },
 /* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/175b69f27c1f60af31349c07abee03eb.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_jacobs_01.jpg";
 
 /***/ },
 /* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/1a5f949467ef594635b40e76ecf90b9c.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_kaa_01.jpg";
 
 /***/ },
 /* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/afe3f657bf634cac981222112acf39ce.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_pinta_01.jpg";
 
 /***/ },
 /* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/729c8773e75c25553b79b8ea3ebe40b5.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_pinta_05.jpg";
 
 /***/ },
 /* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/3007da69b74a95cbd387d7f08ed8b2d9.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_r_l.jpg";
 
 /***/ },
 /* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "src/img/horeca/2542cb3b85b79d7e106435f62acee867.jpg";
+	module.exports = __webpack_require__.p + "src/img/horeca/pm_supko_01.jpg";
 
 /***/ },
 /* 206 */
