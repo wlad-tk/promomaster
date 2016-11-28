@@ -28,7 +28,7 @@
   flex: 3;
 }
 .home a {
-  background: rgba(245, 245, 245, 0.8) url(/build/src/img/backgrounds/20d793f1a13382838a42505467ca2a73.png) 14px no-repeat;
+  background: rgba(245, 245, 245, 0.8) url(/build/src/img/backgrounds/google.png) 14px no-repeat;
   border-radius: 5px 0 0 5px;
   padding-left: 57px;
 }
@@ -36,7 +36,7 @@
   width: 8px;
   min-height: 4em;
   padding: 0;
-  background: rgba(245, 245, 245, 0) url(/build/src/img/backgrounds/64daeb6c85a5d3edd570cdc9a16d2d18.png) repeat;
+  background: rgba(245, 245, 245, 0) url(/build/src/img/backgrounds/perfo.png) repeat;
 }
 .olso {
   text-align: center;
