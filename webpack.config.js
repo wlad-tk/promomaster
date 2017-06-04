@@ -33,7 +33,7 @@ const rules = [
     },
     {
         test: /\.(png|gif|jpg|svg)$/,
-        use: 'file-loader?hash=sha512&name=[path][hash].[ext]',
+        use: 'file-loader?name=[path][name].[ext]',
     },
     {
         test: /\.css$/,
@@ -69,9 +69,10 @@ const rules = [
     }
 ];
 
+let plugins;
 if (isProduction) {
     // Production plugins
-    var plugins = [
+    plugins = [
         new webpack.NamedModulesPlugin(),
         new HtmlWebpackPlugin({
             template: path.join(sourcePath, 'index.html'),
@@ -122,7 +123,7 @@ if (isProduction) {
     ];
 } else {
     // Development plugins
-    var plugins = [
+    plugins = [
         new webpack.NamedModulesPlugin(),
         new HtmlWebpackPlugin({
             template: path.join(sourcePath, 'index.html'),
@@ -161,12 +162,13 @@ module.exports = {
     devtool: 'source-map',
     context: sourcePath,
     entry: {
-        js: './index.js',
+        "jquery-paralax": ['./jquery.min.js', './scrolloverflow.min.js', './jquery.fullPage.js'],
+        "index": './index.js',
     },
     output: {
         path: buildPath,
         publicPath: '/',
-        filename: isProduction ? 'js/index.min.js' : 'js/index.js', //'bundle.min.js' or 'bundle.js'
+        filename: isProduction ? 'js/[name].min.js' : 'js/[name].js', //'bundle.min.js' or 'bundle.js'
     },
     module: {
         rules
