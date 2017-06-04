@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // import App from './App.jsx';
 // import AboutPage from './components/AboutPage.jsx';
@@ -14,7 +14,7 @@ import Horeca from './components/content/Horeca.jsx';
 // import Decol from './components/content/Decol.jsx';
 
 ReactDOM.render(
-    <Router history={hashHistory}>
+    <Router>
         {/*<Route path='/' component={App}>*/}
             {/*<IndexRoute component={AboutPage}/>*/}
             {/*<Route path='/about' component={AboutPage} />*/}
@@ -23,7 +23,7 @@ ReactDOM.render(
             {/*</Route>*/}
         {/*</Route>*/}
         <Route path='/' component={FirstBlock}>
-            <IndexRoute component={Home}/>
+            <Route exact path='/' component={Home}/>
             <Route path='/horeca' component={Horeca} />
             {/*<Route path='/fb/clothes' component={Clothes} />*/}
             {/*<Route path='/fb/decol' component={Decol} />*/}

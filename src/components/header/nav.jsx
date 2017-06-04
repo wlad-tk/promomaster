@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 import '../../styles/Nav.less';
 
@@ -8,8 +8,6 @@ const Nav = React.createClass ({
         lang: React.PropTypes.string.isRequired
     },
     render() {
-        console.log(this.props.lang);
-
         return (
             <ul className="navigation-bar">
                 <li className="home"><Link to='/'>HOME</Link></li>
