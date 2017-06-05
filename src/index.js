@@ -1,32 +1,20 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-// import App from './App.jsx';
-// import AboutPage from './components/AboutPage.jsx';
-// import InboxPage from './components/InboxPage.jsx';
-// import Message from './components/Message.jsx';
+import {browserHistory, Router, Route, IndexRoute} from 'react-router';
 
 import FirstBlock from './components/FirstBlock.jsx';
 import Home from './components/content/Home.jsx';
-import Horeca from './components/content/Horeca.jsx';
+// import Horeca from './components/content/Horeca.jsx';
 // import Clothes from './components/content/Clothes.jsx';
 // import Decol from './components/content/Decol.jsx';
 
 ReactDOM.render(
-    <Router>
-        {/*<Route path='/' component={App}>*/}
-            {/*<IndexRoute component={AboutPage}/>*/}
-            {/*<Route path='/about' component={AboutPage} />*/}
-            {/*<Route path='/inbox' component={InboxPage}>*/}
-                {/*<Route path='/inbox/messages/:messageId' component={Message} />*/}
-            {/*</Route>*/}
-        {/*</Route>*/}
+    <Router history={browserHistory}>
         <Route path='/' component={FirstBlock}>
-            <Route exact path='/' component={Home}/>
-            <Route path='/horeca' component={Horeca} />
-            {/*<Route path='/fb/clothes' component={Clothes} />*/}
-            {/*<Route path='/fb/decol' component={Decol} />*/}
+            <IndexRoute component={Home}/>
+            {/*<Route path='/horeca' component={Horeca} />*/}
+            {/*<Route path='/clothes' component={Clothes} />*/}
+            {/*<Route path='/decol' component={Decol} />*/}
         </Route>
     </Router>,
     document.getElementById('first')

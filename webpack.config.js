@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const nodeEnv = process.env.NODE_ENV || 'development';
@@ -120,6 +121,26 @@ if (isProduction) {
         }),
         new ExtractTextPlugin('css/b.min.css'),
         new BundleTracker({filename: './build/webpack-stats.json'}),
+        new CopyWebpackPlugin([
+                {
+                    from: path.join(sourcePath, 'jquery.min.js'),
+                    to: 'js'
+                },
+                {
+                    from: path.join(sourcePath, 'scrolloverflow.min.js'),
+                    to: 'js'
+                },
+                {
+                    from: path.join(sourcePath, 'jquery.fullPage.js'),
+                    to: 'js'
+                },
+                {
+                    from: path.join(sourcePath, 'jquery.blueimp-gallery.min.js'),
+                    to: 'js'
+                },
+            ],
+            {copyUnmodified: true}
+        )
     ];
 } else {
     // Development plugins
@@ -155,6 +176,27 @@ if (isProduction) {
         // new BundleAnalyzerPlugin({
         //   reportFilename: 'report.html',
         // })
+
+        new CopyWebpackPlugin([
+            {
+                from: path.join(sourcePath, 'jquery.min.js'),
+                to: 'js'
+            },
+            {
+                from: path.join(sourcePath, 'scrolloverflow.min.js'),
+                to: 'js'
+            },
+            {
+                from: path.join(sourcePath, 'jquery.fullPage.js'),
+                to: 'js'
+            },
+            {
+                from: path.join(sourcePath, 'jquery.blueimp-gallery.min.js'),
+                to: 'js'
+            },
+        ],
+            {copyUnmodified: true}
+        )
     ];
 }
 
@@ -162,7 +204,6 @@ module.exports = {
     devtool: 'source-map',
     context: sourcePath,
     entry: {
-        "jquery-paralax": ['./jquery.min.js', './scrolloverflow.min.js', './jquery.fullPage.js'],
         "index": './index.js',
     },
     output: {

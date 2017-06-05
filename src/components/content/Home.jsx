@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {PureComponent, PropTypes} from 'react';
 
 import '../../styles/Home.less';
 import '../../styles/FirstBlock.less';
@@ -7,39 +7,41 @@ import '../../styles/jquery.fullPage.css';
 //noinspection JSUnresolvedVariable
 import languages from '../../languages.json';
 
-const Home = React.createClass({
-    propTypes: {
-        lang: React.PropTypes.string,
-    },
+class Home extends PureComponent {
+    constructor(props) {
+        super(props);
+    };
+
+    static displayName = 'Home Page';
+
+    static propTypes = {
+        lang: PropTypes.string
+    };
 
     html(sectionid, contant="body" ) {
         let home_translate = languages[this.props.lang].home || {};
         return {__html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!'}
-    },
-
-    sectionLink(sectionlinkid) {
-        return $.fn.fullpage.moveTo(sectionlinkid);
-    },
+    };
 
     componentDidMount() {
-        let htmlElem = document.documentElement;
+        let htmlElem = document;
+        htmlElem.title = 'Home';
+        htmlElem.documentElement.classList.contains('fp-enabled') ? $(this.refs.Home).fullpage.destroy('all'): {};
+        htmlElem.documentElement.className = 'Home';
 
-        htmlElem.classList.contains('fp-enabled') ? $.fn.fullpage.destroy('all'): {};
-        htmlElem.className = 'Home';
-
-        $('#Home').fullpage({
+        $(this.refs.Home).fullpage({
             css3: true,
             navigation: true,
             scrollOverflow: true,
             scrollingSpeed: 1000,
         });
-    },
+    };
 
     render() {
-        const cont = languages[this.props.lang].home || {};
+        const cont = languages[this.props.lang].section4;
 
         return (
-            <div id="Home">
+            <div ref="Home">
                 <div className="section active"
                      id="section0"
                      style={{
@@ -52,7 +54,7 @@ const Home = React.createClass({
                             <img className="logo" src={require('../../img/backgrounds/logo_main.svg')}/>
                         </div>
                         <div className="col-2">
-                            <b className="title">{cont.section0.title}</b><br/>
+                            <b className="title" dangerouslySetInnerHTML={this.html("section0", "title")}/>
                             <p className="textSection0" dangerouslySetInnerHTML={this.html("section0")}/>
                         </div>
                     </div>
@@ -108,16 +110,15 @@ const Home = React.createClass({
                             <img className="logo" src={require('../../img/backgrounds/logofoot.svg')}/>
                         </div>
                         <div className="col-1 left">
-                            <p dangerouslySetInnerHTML={this.html("section4", "title")}/>
+                            <p dangerouslySetInnerHTML={{__html: cont.title}}/>
                         </div>
                         <div className="col-3">
-                            <p dangerouslySetInnerHTML={this.html("section4")}/>
+                            <p dangerouslySetInnerHTML={{__html: cont.body}}/>
                         </div>
                     </div>
                 </div>
             </div>
         )
     }
-});
-
+}
 export default Home;

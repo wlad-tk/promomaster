@@ -1,6 +1,6 @@
-import React from 'react';
-import _ from 'underscore';
-
+import React, {PureComponent, PropTypes, cloneElement} from 'react';
+// import {connect} from 'react-redux';
+import _ from 'lodash';
 import Nav from './header/nav.jsx';
 
 import '../styles/FirstBlock.less';
@@ -13,32 +13,25 @@ const SUPPORTED_LANGUAGES = {
     de: 'DE'
 };
 
-const FirstBlock = React.createClass({
-    getInitialState() {
-        return {
-            lang: 'en'
-        }
-    },
+// @connect()
+class FirstBlock extends PureComponent {
+    constructor(props) {
+        super(props);
 
-    // contantpage() {
-    //     $('html').hasClass('fp-enabled') ? $.fn.fullpage.destroy('all'): false;
-    //
-    //     return $('#contantpage').fullpage({
-    //         // anchors: ['zero', 'one', 'two', 'three', 'four'],
-    //         css3: true,
-    //         navigation: true,
-    //         scrollOverflow: true,
-    //         scrollingSpeed: 1000,
-    //     });
-    // },
+        this.state = {
+            lang: 'en'
+        };
+    };
+
+    static displayName = 'First Block';
+
+    static propTypes = {
+        children: PropTypes.element,
+    };
 
     changeLang(newLang) {
         this.setState({lang: newLang});
-    },
-
-    componentDidMount() {
-        // this.contantpage()
-    },
+    };
 
     render() {
         let {lang} = this.state;
@@ -54,10 +47,10 @@ const FirstBlock = React.createClass({
                     )}
                 </ul>
                 <Nav lang={lang} />
-                {React.cloneElement(this.props.children, {lang: lang})}
+                {cloneElement(this.props.children, {lang: lang})}
             </div>
         )
     }
-});
+}
 
 export default FirstBlock;
