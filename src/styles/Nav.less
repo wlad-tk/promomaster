@@ -17,25 +17,96 @@
   -webkit-flex-flow: row wrap;
   justify-content: space-between;
 }
-
 .navigation-bar a {
   text-decoration: none;
   display: block;
-  padding: 1.4em 1em 1.4em 1em;
+  padding: 1em;
   color: black;
-
   background-color: rgba(245,245,245,0.80);
 }
-
 .navigation-bar a:hover {
-  color: rgba(185,45,33,1.00);
+  color: rgba(185,45,33,1);
 }
 
 .home {
-  flex: 3;
   a {
-    background: rgba(245,245,245,0.80) url(../img/backgrounds/google.png) 14px no-repeat;
+    background: rgba(245,245,245,0.80) url(../img/ico/google.png) 14px no-repeat;
     border-radius: 5px 0 0 5px;
+  }
+}
+.horeca {
+  &:hover {
+    a {
+      background: rgba(245,245,245,0.80) url(../img/ico/pinterest-hover.png) 14px no-repeat;
+    }
+  }
+  a {
+    background: rgba(245,245,245,0.80) url(../img/ico/pinterest.png) 14px no-repeat;
+  }
+  a.active {
+    background: rgba(245,245,245,0.80) url(../img/ico/pinterest-hover.png) 14px no-repeat;
+  }
+}
+.clothes {
+  &:hover {
+    a {
+      background: rgba(245,245,245,0.80) url(../img/ico/youtube-hover.png) 14px no-repeat;
+    }
+  }
+  a {
+    background: rgba(245,245,245,0.80) url(../img/ico/youtube.png) 14px no-repeat;
+  }
+  a.active {
+    background: rgba(245,245,245,0.80) url(../img/ico/youtube-hover.png) 14px no-repeat;
+  }
+}
+.decol {
+  &:hover {
+    a {
+      background: rgba(245,245,245,0.80) url(../img/ico/d_003.png) 14px no-repeat;
+    }
+  }
+  a {
+    background: rgba(245,245,245,0.80) url(../img/ico/d_001.png) 14px no-repeat;
+  }
+  a.active {
+    background: rgba(245,245,245,0.80) url(../img/ico/d_003.png) 14px no-repeat;
+  }
+}
+.contact {
+  &:hover {
+    a {
+      background: rgba(245,245,245,0.80) url(../img/ico/e_003.png) 14px no-repeat;
+    }
+  }
+  a {
+    background: rgba(245,245,245,0.80) url(../img/ico/e_001.png) 14px no-repeat;
+  }
+  a.active {
+    background: rgba(245,245,245,0.80) url(../img/ico/e_003.png) 14px no-repeat;
+  }
+}
+.feedback {
+  a {
+    background: rgba(245,245,245,0.80) url(../img/ico/f_001.png) 14px no-repeat;
+  }
+}
+
+.home, .horeca, .clothes, .decol, .contact, .feedback, .gallery {
+  cursor: pointer;
+  flex: 2;
+
+  .caption {
+    margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  a {
     padding-left: 57px;
   }
 }
@@ -47,12 +118,10 @@
   padding: 0;
   background: rgba(245,245,245,0) url(../img/backgrounds/perfo.png) repeat;
 }
-
 .olso {
   text-align: center;
   flex: 2;
 }
-
 .last a {
   border-radius: 0 5px 5px 0;
 }
@@ -64,7 +133,6 @@
     margin: 0 0 0 0;
   }
 }
-
 @media all and (max-width: 600px) {
   .navigation-bar {
     //-webkit-flex-flow: column wrap;
@@ -86,5 +154,10 @@
 
   .blockimage a {
     padding: 0;
+  }
+}
+@media all and (max-width: 700px) {
+  .navigation-bar {
+    display: none;
   }
 }

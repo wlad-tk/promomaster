@@ -39,7 +39,6 @@ class Home extends PureComponent {
 
     render() {
         const cont = languages[this.props.lang].section4;
-
         return (
             <div ref="Home">
                 <div className="section active"

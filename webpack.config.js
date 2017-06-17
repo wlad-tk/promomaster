@@ -26,9 +26,15 @@ const rules = [
                 plugins: [
                     'transform-runtime',
                     'transform-decorators-legacy',
-                    'transform-class-properties'
+                    'transform-class-properties',
+                    'lodash'
                 ],
-                presets: [['es2015', { 'modules': false}], 'react', 'stage-0']
+                presets: [
+                    ['es2015', { 'modules': false}],
+                    'react',
+                    'stage-0',
+                    ['env', { 'targets': { 'node': 4 } }]
+                ]
             }
         }],
     },
@@ -65,7 +71,7 @@ const rules = [
         loader: 'json-loader'
     },
     {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?hash=sha512&name=[path][hash].[ext]'
     }
 ];
@@ -215,7 +221,7 @@ module.exports = {
         rules
     },
     resolve: {
-        extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx'],
+        extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx', '.less', '.css'],
         modules: [
             path.resolve(__dirname, 'node_modules'),
             sourcePath,

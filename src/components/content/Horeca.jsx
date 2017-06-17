@@ -67,8 +67,7 @@ const IMAGE = {
 
 const Horeca = React.createClass({
     propTypes: {
-        lang: React.PropTypes.string,
-        cont: React.PropTypes.func
+        lang: React.PropTypes.string
     },
 
     componentDidMount() {
@@ -90,7 +89,10 @@ const Horeca = React.createClass({
         return (
             <div>
                 <ul className="gallery">
-                    <a onClick={e => blueimp.Gallery($(this.refs.linksImg).find('a'))}>GALLERY</a>
+                    <a onClick={e => blueimp.Gallery($(this.refs.linksImg).find('a'))}>
+                        <p className="caption">GALLERY</p>
+                        <p className="text">our works</p>
+                    </a>
                 </ul>
                 <div ref='Horeca'>
                     {_.map(IMAGE.page, (value, key) =>
