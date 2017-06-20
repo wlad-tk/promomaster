@@ -144,6 +144,10 @@ if (isProduction) {
                     from: path.join(sourcePath, 'jquery.blueimp-gallery.min.js'),
                     to: 'js'
                 },
+                {
+                    from: path.join(sourcePath, 'img/backgrounds/ajax-loader.gif'),
+                    to: 'img/backgrounds'
+                },
             ],
             {copyUnmodified: true}
         )
@@ -199,6 +203,10 @@ if (isProduction) {
             {
                 from: path.join(sourcePath, 'jquery.blueimp-gallery.min.js'),
                 to: 'js'
+            },
+            {
+                from: path.join(sourcePath, 'img/backgrounds/ajax-loader.gif'),
+                to: 'img/backgrounds'
             },
         ],
             {copyUnmodified: true}

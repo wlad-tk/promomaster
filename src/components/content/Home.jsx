@@ -13,15 +13,38 @@ class Home extends PureComponent {
     };
 
     static displayName = 'Home Page';
-
     static propTypes = {
-        lang: PropTypes.string
+        lang: PropTypes.string,
+        slideout: PropTypes.object
     };
 
     html(sectionid, contant="body" ) {
         let home_translate = languages[this.props.lang].home || {};
         return {__html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!'}
     };
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.lang !== this.props.lang) {
+            $(this.refs.Home).fullpage.destroy('all');
+            $(this.refs.Home).fullpage({
+                css3: true,
+                navigation: true,
+                scrollOverflow: true,
+                scrollingSpeed: 1000,
+            });
+        }
+        if (prevProps.slideout !== this.props.slideout) {
+            let {slideout} = this.props;
+            slideout.on('open', function() {
+                $('#Home').fullpage.setAllowScrolling(false);
+                $('#fp-nav').css({"display": "none"})
+            });
+            slideout.on('close', function() {
+                $('#Home').fullpage.setAllowScrolling(true);
+                $('#fp-nav').css({"display": "block"})
+            });
+        }
+    }
 
     componentDidMount() {
         let htmlElem = document;
@@ -40,7 +63,7 @@ class Home extends PureComponent {
     render() {
         const cont = languages[this.props.lang].section4;
         return (
-            <div ref="Home">
+            <div ref="Home" id="Home">
                 <div className="section active"
                      id="section0"
                      style={{

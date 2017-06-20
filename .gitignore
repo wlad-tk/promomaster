@@ -2,4 +2,6 @@
 old_site/
 log/
 node_modules/
+build/
+public/
 npm-debug.log

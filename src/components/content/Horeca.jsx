@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {PureComponent, PropTypes} from 'react';
 import _ from 'lodash';
 
 import '../../styles/HoClDe.less';
@@ -7,7 +7,6 @@ import '../../styles/FirstBlock.less';
 import '../../styles/jquery.fullPage.css';
 import '../../styles/blueimp-gallery.min.css';
 
-//noinspection JSUnresolvedVariable
 import languages from '../../languages.json';
 
 const IMAGE = {
@@ -65,10 +64,39 @@ const IMAGE = {
     logo: require('../../img/backgrounds/logo_main.svg')
 };
 
-const Horeca = React.createClass({
-    propTypes: {
-        lang: React.PropTypes.string
-    },
+class Horeca extends PureComponent {
+    constructor(props) {
+        super(props);
+    };
+
+    static displayName = 'Horeca Page';
+    static propTypes = {
+        lang: PropTypes.string,
+        slideout: PropTypes.object
+    };
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.lang !== this.props.lang) {
+            $(this.refs.Horeca).fullpage.destroy('all');
+            $(this.refs.Horeca).fullpage({
+                css3: true,
+                navigation: true,
+                scrollOverflow: true,
+                scrollingSpeed: 1000,
+            });
+        }
+        if (prevProps.slideout !== this.props.slideout) {
+            let {slideout} = this.props;
+            slideout.on('open', function() {
+                $('#Horeca').fullpage.setAllowScrolling(false);
+                $('#fp-nav').css({"display": "none"})
+            });
+            slideout.on('close', function() {
+                $('#Horeca').fullpage.setAllowScrolling(true);
+                $('#fp-nav').css({"display": "block"})
+            });
+        }
+    }
 
     componentDidMount() {
         let htmlElem = document;
@@ -82,7 +110,7 @@ const Horeca = React.createClass({
             scrollOverflow: true,
             scrollingSpeed: 1000,
         });
-    },
+    };
 
     render() {
         const cont = languages[this.props.lang].section4;
@@ -94,7 +122,7 @@ const Horeca = React.createClass({
                         <p className="text">our works</p>
                     </a>
                 </ul>
-                <div ref='Horeca'>
+                <div ref='Horeca' id="Horeca">
                     {_.map(IMAGE.page, (value, key) =>
                         <div key={key}
                              className="section"
@@ -146,7 +174,7 @@ const Horeca = React.createClass({
                 </div>
 
                 <div id="blueimp-gallery" className='blueimp-gallery blueimp-gallery-controls'>
-                    <div className='slides'></div>
+                    <div className='slides'/>
                     <pre className='title'/>
                     <p className="description"/>
                     <a className='prev'>‹</a>
@@ -157,16 +185,12 @@ const Horeca = React.createClass({
                 </div>
             </div>
         )
-    },
+    }
 
     html(sectionid, contant="body" ) {
         let home_translate = languages[this.props.lang].horeca || {};
         return {__html: home_translate[sectionid] ? home_translate[sectionid][contant] : 'Такого элемента нет в массиве!'}
-    },
-
-    sectionLink(sectionlinkid) {
-        $(this.refs.Horeca).fullpage.moveTo(sectionlinkid);
     }
-});
+}
 
 export default Horeca;

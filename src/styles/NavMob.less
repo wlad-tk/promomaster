@@ -1,0 +1,121 @@
+.navigation-bar-mob {
+  list-style: none;
+}
+ul.navigation-bar-mob {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+.navigation-bar-mob a {
+  text-decoration: none;
+  color: black;
+}
+.navigation-bar-mob a:hover {
+  color: rgba(185,45,33,1);
+}
+
+.home-mob {
+  a {
+    background: url(../img/ico/google.png) 0 no-repeat;
+  }
+}
+.horeca-mob {
+  &:hover {
+    a {
+      background: url(../img/ico/pinterest-hover.png) 0 no-repeat;
+    }
+  }
+  a {
+    background: url(../img/ico/pinterest.png) 0 no-repeat;
+  }
+  a.active {
+    background: url(../img/ico/pinterest-hover.png) 0 no-repeat;
+  }
+}
+.clothes-mob {
+  &:hover {
+    a {
+      background: url(../img/ico/youtube-hover.png) 0 no-repeat;
+    }
+  }
+  a {
+    background: url(../img/ico/youtube.png) 0 no-repeat;
+  }
+  a.active {
+    background: url(../img/ico/youtube-hover.png) 0 no-repeat;
+  }
+}
+.decol-mob {
+  &:hover {
+    a {
+      background: url(../img/ico/d_003.png) 0 no-repeat;
+    }
+  }
+  a {
+    background: url(../img/ico/d_001.png) 0 no-repeat;
+  }
+  a.active {
+    background: url(../img/ico/d_003.png) 0 no-repeat;
+  }
+}
+.contact-mob {
+  &:hover {
+    a {
+      background: url(../img/ico/e_003.png) 0 no-repeat;
+    }
+  }
+  a {
+    background: url(../img/ico/e_001.png) 0 no-repeat;
+  }
+  a.active {
+    background: url(../img/ico/e_003.png) 0 no-repeat;
+  }
+}
+.feedback-mob {
+  a {
+    background: url(../img/ico/f_001.png) 0 no-repeat;
+  }
+}
+
+.home-mob, .horeca-mob, .clothes-mob, .decol-mob, .contact-mob, .feedback-mob, .gallery-mob {
+  cursor: pointer;
+
+  .caption {
+    margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  a {
+    display: inline-block;
+    padding-left: 30%;
+    margin: 10px;
+  }
+}
+
+.lang-mob {
+  list-style: none;
+  display: flex;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+.lang-mob .li {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  min-height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(#b53129, #e0342a) #e0342a;
+  border-radius: 0;
+  color: white;
+
+}

@@ -2,10 +2,13 @@ import React, {PureComponent, PropTypes, cloneElement} from 'react';
 // import {connect} from 'react-redux';
 import _ from 'lodash';
 import Nav from './header/nav.jsx';
+import NavMenuMobile from './header/nav-mobile.jsx';
 
 import '../styles/FirstBlock.less';
 import Slideout from 'slideout';
 import SUPPORTED_LANGUAGES from './Constants';
+
+let slideout = {};
 
 // @connect()
 class FirstBlock extends PureComponent {
@@ -13,6 +16,7 @@ class FirstBlock extends PureComponent {
         super(props);
         this.state = {
             lang: 'en',
+            slideout: {}
         };
     };
     static displayName = 'First Block';
@@ -25,21 +29,22 @@ class FirstBlock extends PureComponent {
     };
 
     componentDidMount() {
-        const slideout = new Slideout({
+        slideout = new Slideout({
             'panel': this.refs.panel,
             'menu': this.refs.menu,
             'padding': 256,
             'tolerance': 70
         });
+        this.setState({slideout: slideout});
     }
 
     render() {
-        let {lang} = this.state;
+        let {lang, slideout} = this.state;
 
         return (
             <div>
                 <nav ref="menu">
-                    <h2>Menu</h2>
+                    <NavMenuMobile slideout={slideout} lang_func={::this.changeLang}/>
                 </nav>
                 <main ref="panel">
                     <ul className="lang">
@@ -51,7 +56,7 @@ class FirstBlock extends PureComponent {
                         )}
                     </ul>
                     <Nav lang={lang} />
-                    {cloneElement(this.props.children, {lang: lang})}
+                    {cloneElement(this.props.children, {lang: lang, slideout: slideout})}
                 </main>
             </div>
         )
