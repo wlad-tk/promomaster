@@ -6,6 +6,7 @@ const DashboardPlugin = require('webpack-dashboard/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const nodeEnv = process.env.NODE_ENV || 'development';
@@ -150,7 +151,11 @@ if (isProduction) {
                 },
             ],
             {copyUnmodified: true}
-        )
+        ),
+        new ManifestPlugin({
+            fileName: 'manifest.json',
+            basePath: sourcePath
+        })
     ];
 } else {
     // Development plugins
@@ -210,7 +215,11 @@ if (isProduction) {
             },
         ],
             {copyUnmodified: true}
-        )
+        ),
+        new ManifestPlugin({
+            fileName: 'manifest.json',
+            basePath: sourcePath
+        })
     ];
 }
 

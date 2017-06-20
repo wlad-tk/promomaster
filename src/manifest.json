@@ -1,0 +1,25 @@
+{
+  "short_name": "Promomaster",
+  "name": "Hit Chat",
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon.ico",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon.ico",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "rgb(0, 112, 192)"
+}
